@@ -5,15 +5,16 @@ description: >
   regulation set's rules (team building, format, timers, legal roster) and
   the per-Pokemon dex data (types, base stats, abilities, Mega Evolutions)
   that every other coaching skill in this plugin reads instead of looking
-  things up live. Use this skill whenever the user mentions a new season,
-  regulation set, or ruleset change in Pokemon Champions (for example "M-C
-  just dropped", "check if the rules changed", "is my reference data still
-  current", "update the pokemon data", or "what's legal right now") -- and
-  proactively at the start of any Pokemon Champions coaching conversation if
-  references/current-season.yaml looks stale (regulation sets typically run
-  for a couple of months, so check the date). Always run this before trusting
-  stale-looking reference data for a competitive question; don't silently
-  answer from possibly-outdated files.
+  things up live. Only invoke this when the user explicitly asks for it --
+  for example "M-C just dropped", "check if the rules changed", "is my
+  reference data still current", "update the pokemon data/references", or
+  "refresh the regulation data". This skill does real outbound
+  research (web search/fetches) and rewrites shared reference files, so it
+  should never fire on its own just because a file looks old or a
+  conversation happens to be about Pokemon Champions -- if you notice the
+  data might be stale while doing something else, mention that to the user
+  and let them decide whether they want a refresh, rather than running it
+  for them.
 ---
 
 # Refresh Pokemon Champions references
