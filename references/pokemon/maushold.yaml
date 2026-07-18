@@ -1,0 +1,19 @@
+name: Maushold
+national_dex_number: 925
+types: [Normal]
+base_stats: {hp: 74, atk: 75, def: 70, spa: 65, spd: 75, spe: 111}
+abilities:
+  - name: Friend Guard
+    hidden: false
+  - name: Cheek Pouch
+    hidden: false
+  - name: Technician
+    hidden: true
+mega: null  # TODO: fill in if this species has a Mega Evolution
+added_in_regulation: M-B
+legal_in_regulations: [M-B]
+notes: >
+  Family of Four is the default form; Family of Three is purely cosmetic
+  (identical stats/type/ability) and isn't broken out as a separate file.
+data_confidence: >
+  Base stats/types/abilities fetched live from PokeAPI (https://pokeapi.co/api/v2) by fetch_pokemon_data.py. Mega Evolution data (if any) and competitive notes are NOT from PokeAPI and should be verified/updated by hand each season.

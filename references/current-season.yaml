@@ -6,10 +6,13 @@ regulation_file: rules/regulation-m-b.yaml
 last_refreshed: "2026-07-18"
 refreshed_by: refresh-references skill
 notes: >
-  Verified against multiple community sources (Serebii, Bulbapedia, Game8,
-  StrataDex, Pokemon.com, PokemonZone, ChampDex) via web search on 2026-07-18.
-  Direct page fetches to most of these sites were blocked by this session's
-  network policy, so details came from search-result synthesis rather than
-  full page reads. Re-verify against a primary source (official Pokemon.com
-  post or in-game patch notes) when precision matters, e.g. for tournament
-  rules-lawyering.
+  Regulation identity/dates verified against multiple community sources
+  (Serebii, Bulbapedia, Game8, StrataDex, Pokemon.com, PokemonZone,
+  ChampDex) via web search on 2026-07-18. A follow-up session the same day
+  had working outbound network access and directly fetched Serebii, Game8,
+  and PokeAPI pages (rather than search-result synthesis), used them to
+  complete the full references/pokemon/ roster, and confirmed M-B is still
+  the active regulation. Re-verify against a primary source (official
+  Pokemon.com post or in-game patch notes) when precision matters, e.g. for
+  tournament rules-lawyering -- turn-timer numbers in particular are still
+  flagged as source-inconsistent in references/rules/regulation-m-b.yaml.

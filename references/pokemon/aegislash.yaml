@@ -1,0 +1,17 @@
+name: Aegislash
+national_dex_number: 681
+types: [Steel, Ghost]
+base_stats: {hp: 60, atk: 50, def: 140, spa: 50, spd: 140, spe: 60}
+abilities:
+  - name: Stance Change
+    hidden: false
+mega: null  # TODO: fill in if this species has a Mega Evolution
+added_in_regulation: M-B
+legal_in_regulations: [M-B]
+notes: >
+  Stats shown are Shield Forme (the resting/default form). Stance Change
+  swaps it to all-offense Blade Forme (atk/spa 150, def/spd 50) on any
+  attacking move, and back to Shield Forme on King's Shield -- this is an
+  in-battle transformation, not a separate recruit/catch.
+data_confidence: >
+  Base stats/types/abilities fetched live from PokeAPI (https://pokeapi.co/api/v2) by fetch_pokemon_data.py. Mega Evolution data (if any) and competitive notes are NOT from PokeAPI and should be verified/updated by hand each season.

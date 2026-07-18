@@ -9,26 +9,26 @@ abilities:
     hidden: true
 mega:
   name: Mega Staraptor
-  types: null  # unconfirmed
-  ability: null  # unconfirmed
-  base_stats: null  # unconfirmed
+  types: [Fighting, Flying]
+  ability: Contrary
+  base_stats: {hp: 85, atk: 140, def: 100, spa: 60, spd: 90, spe: 110}
   note: >
-    Champions-exclusive Mega Evolution introduced in Regulation M-B. Stats,
-    typing, and ability were not confirmed by this session's web search or
-    training data -- do not guess these for coaching calls. Re-run the refresh
-    skill with network/browsing access to fill this in from an official or wiki
-    source.
-added_in_regulation: M-B
+    Confirmed via PokeAPI (pokemon/staraptor-mega, id 10306) on 2026-07-18:
+    type changes from Normal/Flying to Fighting/Flying, and it swaps
+    Intimidate/Reckless for Contrary, which reverses every stat change
+    applied to it -- a debuff (e.g. an opposing Intimidate, or a self-used
+    Close Combat's Def/SpD drop) becomes a buff instead.
+added_in_regulation: M-A or earlier (base) / M-B (Mega)
 legal_in_regulations: [M-B]  # earliest confirmed regulation only; may be legal earlier too
 notes: >
   Base form is already fast (100) with Intimidate; Reckless boosts recoil
-  moves like Brave Bird. Champions-exclusive Mega Evolution -- see mega.note
-  for what's unverified.
+  moves like Brave Bird. Mega Evolution is Champions-exclusive (new in
+  Regulation M-B) -- see mega.note.
 data_confidence: >
-  Base stats/types/abilities recalled from mainline Pokemon games during the
-  refresh-references skill run on 2026-07-18; live network access (PokeAPI,
-  wiki fetches) was blocked by this session's egress policy, so nothing here
-  was fetched from a primary source this pass. Re-run
-  scripts/fetch_pokemon_data.py in an environment with network access to
-  verify/refresh these numbers, and to confirm Champions-specific movepool or
-  stat differences from the mainline games.
+  Base stats/types/abilities fetched live from PokeAPI
+  (https://pokeapi.co/api/v2) by fetch_pokemon_data.py on 2026-07-18. Mega
+  Evolution data also fetched live from PokeAPI's staraptor-mega entry this
+  same pass (matches independent web-search summaries of Contrary +
+  Fighting/Flying) -- higher confidence than a pure recall/search-synthesis
+  pass, but still not primary-source-verified against an official Pokemon
+  Champions patch note.

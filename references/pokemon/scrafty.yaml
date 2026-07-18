@@ -11,25 +11,26 @@ abilities:
     hidden: true
 mega:
   name: Mega Scrafty
-  types: null  # unconfirmed
-  ability: null  # unconfirmed
-  base_stats: null  # unconfirmed
+  types: [Dark, Fighting]
+  ability: Intimidate
+  base_stats: {hp: 65, atk: 130, def: 135, spa: 55, spd: 135, spe: 68}
   note: >
-    Champions-exclusive Mega Evolution introduced in Regulation M-B. Stats,
-    typing, and ability were not confirmed by this session's web search or
-    training data -- do not guess these for coaching calls. Re-run the refresh
-    skill with network/browsing access to fill this in from an official or wiki
-    source.
-added_in_regulation: M-B
+    Confirmed via PokeAPI (pokemon/scrafty-mega, id 10308) on 2026-07-18:
+    keeps Dark/Fighting typing, ability becomes (regular, non-hidden)
+    Intimidate -- lowers the incoming switch-in's Attack the moment it Mega
+    Evolves in -- while every stat except Speed rises substantially
+    (Atk 90->130, Def 115->135, SpD 115->135).
+added_in_regulation: M-A or earlier (base) / M-B (Mega)
 legal_in_regulations: [M-B]  # earliest confirmed regulation only; may be legal earlier too
 notes: >
-  Slow (58) but very physically/specially bulky on both sides; Moxie ramps
-  Attack on KOs. Champions-exclusive Mega -- see mega.note.
+  Slow (58) but very physically/specially bulky on both sides even before
+  Mega Evolving; base-form Moxie ramps Attack on KOs, though Mega Scrafty
+  trades that away for Intimidate -- see mega.note.
 data_confidence: >
-  Base stats/types/abilities recalled from mainline Pokemon games during the
-  refresh-references skill run on 2026-07-18; live network access (PokeAPI,
-  wiki fetches) was blocked by this session's egress policy, so nothing here
-  was fetched from a primary source this pass. Re-run
-  scripts/fetch_pokemon_data.py in an environment with network access to
-  verify/refresh these numbers, and to confirm Champions-specific movepool or
-  stat differences from the mainline games.
+  Base stats/types/abilities fetched live from PokeAPI
+  (https://pokeapi.co/api/v2) by fetch_pokemon_data.py on 2026-07-18. Mega
+  Evolution data also fetched live from PokeAPI's scrafty-mega entry this
+  same pass (matches independent web-search summaries describing an
+  Intimidate-like on-switch-in Attack drop) -- higher confidence than a pure
+  recall/search-synthesis pass, but still not primary-source-verified
+  against an official Pokemon Champions patch note.

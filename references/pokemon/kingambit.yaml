@@ -1,0 +1,18 @@
+name: Kingambit
+national_dex_number: 983
+types: [Dark, Steel]
+base_stats: {hp: 100, atk: 135, def: 120, spa: 60, spd: 85, spe: 50}
+abilities:
+  - name: Defiant
+    hidden: false
+  - name: Supreme Overlord
+    hidden: false
+  - name: Pressure
+    hidden: true
+mega: null  # TODO: fill in if this species has a Mega Evolution
+added_in_regulation: M-B
+legal_in_regulations: [M-B]
+notes: >
+  TODO: add competitive notes (role, speed-control relevance, etc).
+data_confidence: >
+  Base stats/types/abilities fetched live from PokeAPI (https://pokeapi.co/api/v2) by fetch_pokemon_data.py. Mega Evolution data (if any) and competitive notes are NOT from PokeAPI and should be verified/updated by hand each season.

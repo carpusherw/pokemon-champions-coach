@@ -1,0 +1,18 @@
+name: Houndstone
+national_dex_number: 972
+types: [Ghost]
+base_stats: {hp: 72, atk: 101, def: 100, spa: 50, spd: 97, spe: 68}
+abilities:
+  - name: Sand Rush
+    hidden: false
+  - name: Fluffy
+    hidden: true
+mega: null  # TODO: fill in if this species has a Mega Evolution
+added_in_regulation: M-B
+legal_in_regulations: [M-B]
+notes: >
+  Evolution of Greavard; pure Ghost typing with no relevant weaknesses to
+  exploit besides Ghost/Dark. Hidden ability Fluffy halves contact-move
+  damage but doubles Fire damage taken. No Mega Evolution.
+data_confidence: >
+  Base stats/types/abilities fetched live from PokeAPI (https://pokeapi.co/api/v2) by fetch_pokemon_data.py. Mega Evolution data (if any) and competitive notes are NOT from PokeAPI and should be verified/updated by hand each season.

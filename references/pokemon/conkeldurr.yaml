@@ -1,0 +1,18 @@
+name: Conkeldurr
+national_dex_number: 534
+types: [Fighting]
+base_stats: {hp: 105, atk: 140, def: 95, spa: 55, spd: 65, spe: 45}
+abilities:
+  - name: Guts
+    hidden: false
+  - name: Sheer Force
+    hidden: false
+  - name: Iron Fist
+    hidden: true
+mega: null  # TODO: fill in if this species has a Mega Evolution
+added_in_regulation: M-B
+legal_in_regulations: [M-B]
+notes: >
+  TODO: add competitive notes (role, speed-control relevance, etc).
+data_confidence: >
+  Base stats/types/abilities fetched live from PokeAPI (https://pokeapi.co/api/v2) by fetch_pokemon_data.py. Mega Evolution data (if any) and competitive notes are NOT from PokeAPI and should be verified/updated by hand each season.

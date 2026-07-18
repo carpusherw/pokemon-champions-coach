@@ -1,0 +1,18 @@
+name: Rhyperior
+national_dex_number: 464
+types: [Ground, Rock]
+base_stats: {hp: 115, atk: 140, def: 130, spa: 55, spd: 55, spe: 40}
+abilities:
+  - name: Lightning Rod
+    hidden: false
+  - name: Solid Rock
+    hidden: false
+  - name: Reckless
+    hidden: true
+mega: null  # TODO: fill in if this species has a Mega Evolution
+added_in_regulation: M-B
+legal_in_regulations: [M-B]
+notes: >
+  TODO: add competitive notes (role, speed-control relevance, etc).
+data_confidence: >
+  Base stats/types/abilities fetched live from PokeAPI (https://pokeapi.co/api/v2) by fetch_pokemon_data.py. Mega Evolution data (if any) and competitive notes are NOT from PokeAPI and should be verified/updated by hand each season.

@@ -1,7 +1,7 @@
 name: Qwilfish
 national_dex_number: 211
 types: [Water, Poison]
-base_stats: {hp: 65, atk: 95, def: 75, spa: 55, spd: 55, spe: 85}
+base_stats: {hp: 65, atk: 95, def: 85, spa: 55, spd: 55, spe: 85}
 abilities:
   - name: Poison Point
     hidden: false
@@ -9,18 +9,12 @@ abilities:
     hidden: false
   - name: Intimidate
     hidden: true
-mega: null
+mega: null  # TODO: fill in if this species has a Mega Evolution
 added_in_regulation: M-B
-legal_in_regulations: [M-B]  # earliest confirmed regulation only; may be legal earlier too
+legal_in_regulations: [M-B]
 notes: >
-  Fast physical poker with Intimidate as hidden ability; Hisuian
-  Qwilfish/Overqwil line is a separate evolution family, not assumed included
-  here.
+  Fast physical poker with Intimidate as hidden ability; the Hisuian
+  Qwilfish/Overqwil line is a separate evolution family from this base
+  (Water/Poison) Qwilfish -- see overqwil.yaml. No Mega Evolution.
 data_confidence: >
-  Base stats/types/abilities recalled from mainline Pokemon games during the
-  refresh-references skill run on 2026-07-18; live network access (PokeAPI,
-  wiki fetches) was blocked by this session's egress policy, so nothing here
-  was fetched from a primary source this pass. Re-run
-  scripts/fetch_pokemon_data.py in an environment with network access to
-  verify/refresh these numbers, and to confirm Champions-specific movepool or
-  stat differences from the mainline games.
+  Base stats/types/abilities fetched live from PokeAPI (https://pokeapi.co/api/v2) by fetch_pokemon_data.py. Mega Evolution data (if any) and competitive notes are NOT from PokeAPI and should be verified/updated by hand each season.

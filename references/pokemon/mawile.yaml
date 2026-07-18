@@ -16,18 +16,16 @@ mega:
   ability: Huge Power
   base_stats: {hp: 50, atk: 105, def: 125, spa: 55, spd: 95, spe: 50}
   note: >
-    Mainline-returning Mega. Huge Power doubles Attack (effectively ~210 Atk),
-    one of the hardest physical hitters in the game despite mediocre Speed.
+    Mainline-returning Mega. Huge Power doubles Attack (effectively ~210
+    Atk), one of the hardest physical hitters in the game despite mediocre
+    Speed. Confirmed via PokeAPI (pokemon/mawile-mega) on 2026-07-18.
 added_in_regulation: M-A (base) / M-B (Mega)
 legal_in_regulations: [M-B]  # earliest confirmed regulation only; may be legal earlier too
 notes: >
-  Low Speed even Mega'd (50 base) -- almost always moves in the back half of a
-  turn; plan around Trick Room or just accept it as a slow wallbreaker.
+  Low Speed even Mega'd (50 base) -- almost always moves in the back half of
+  a turn; plan around Trick Room or just accept it as a slow wallbreaker.
 data_confidence: >
-  Base stats/types/abilities recalled from mainline Pokemon games during the
-  refresh-references skill run on 2026-07-18; live network access (PokeAPI,
-  wiki fetches) was blocked by this session's egress policy, so nothing here
-  was fetched from a primary source this pass. Re-run
-  scripts/fetch_pokemon_data.py in an environment with network access to
-  verify/refresh these numbers, and to confirm Champions-specific movepool or
-  stat differences from the mainline games.
+  Base stats/types/abilities fetched live from PokeAPI
+  (https://pokeapi.co/api/v2) by fetch_pokemon_data.py on 2026-07-18. Mega
+  Evolution data cross-checked live against PokeAPI's mawile-mega entry the
+  same pass and matches this session's prior recall exactly.

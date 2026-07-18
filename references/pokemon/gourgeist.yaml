@@ -1,0 +1,21 @@
+name: Gourgeist
+national_dex_number: 711
+types: [Ghost, Grass]
+base_stats: {hp: 65, atk: 90, def: 122, spa: 58, spd: 75, spe: 84}
+abilities:
+  - name: Pickup
+    hidden: false
+  - name: Frisk
+    hidden: false
+  - name: Insomnia
+    hidden: true
+mega: null  # TODO: fill in if this species has a Mega Evolution
+added_in_regulation: M-B
+legal_in_regulations: [M-B]
+notes: >
+  Stats shown are Average size, the only size form Pokemon Champions'
+  roster lists separately (mainline games also have Small/Large/Super sizes
+  with real speed/bulk trade-offs, but those aren't broken out as distinct
+  legal entries here).
+data_confidence: >
+  Base stats/types/abilities fetched live from PokeAPI (https://pokeapi.co/api/v2) by fetch_pokemon_data.py. Mega Evolution data (if any) and competitive notes are NOT from PokeAPI and should be verified/updated by hand each season.

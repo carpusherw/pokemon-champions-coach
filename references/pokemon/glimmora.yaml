@@ -1,0 +1,16 @@
+name: Glimmora
+national_dex_number: 970
+types: [Rock, Poison]
+base_stats: {hp: 83, atk: 55, def: 90, spa: 130, spd: 81, spe: 86}
+abilities:
+  - name: Toxic Debris
+    hidden: false
+  - name: Corrosion
+    hidden: true
+mega: null  # TODO: fill in if this species has a Mega Evolution
+added_in_regulation: M-B
+legal_in_regulations: [M-B]
+notes: >
+  TODO: add competitive notes (role, speed-control relevance, etc).
+data_confidence: >
+  Base stats/types/abilities fetched live from PokeAPI (https://pokeapi.co/api/v2) by fetch_pokemon_data.py. Mega Evolution data (if any) and competitive notes are NOT from PokeAPI and should be verified/updated by hand each season.

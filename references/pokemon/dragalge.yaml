@@ -5,32 +5,32 @@ base_stats: {hp: 65, atk: 75, def: 90, spa: 97, spd: 123, spe: 44}
 abilities:
   - name: Poison Point
     hidden: false
-  - name: Adaptability
+  - name: Poison Touch
     hidden: false
-  - name: Sap Sipper
+  - name: Adaptability
     hidden: true
 mega:
   name: Mega Dragalge
-  types: null  # unconfirmed
-  ability: null  # unconfirmed
-  base_stats: null  # unconfirmed
+  types: [Poison, Dragon]
+  ability: Regenerator
+  base_stats: {hp: 65, atk: 85, def: 105, spa: 132, spd: 163, spe: 44}
   note: >
-    Champions-exclusive Mega Evolution introduced in Regulation M-B. Stats,
-    typing, and ability were not confirmed by this session's web search or
-    training data -- do not guess these for coaching calls. Re-run the refresh
-    skill with network/browsing access to fill this in from an official or wiki
-    source.
-added_in_regulation: M-B
+    Confirmed via PokeAPI (pokemon/dragalge-mega, id 10311) on 2026-07-18:
+    keeps Poison/Dragon typing, trades its abilities for Regenerator
+    (heals ~1/3 max HP on switch-out), and becomes an even more extreme
+    special wall (Sp. Def 123 -> 163, Sp. Atk 97 -> 132) at the same
+    already-low Speed (44).
+added_in_regulation: M-A or earlier (base) / M-B (Mega)
 legal_in_regulations: [M-B]  # earliest confirmed regulation only; may be legal earlier too
 notes: >
-  Very slow (44) special wall with Adaptability (STAB moves hit for 2x instead
-  of 1.5x) as a regular ability option. Champions-exclusive Mega -- see
-  mega.note.
+  Very slow (44) special wall with Adaptability (STAB moves hit for 2x
+  instead of 1.5x) as a regular ability option pre-Mega. Mega Evolution is
+  Champions-exclusive (new in Regulation M-B) and adds Regenerator-backed
+  switch-in value -- see mega.note.
 data_confidence: >
-  Base stats/types/abilities recalled from mainline Pokemon games during the
-  refresh-references skill run on 2026-07-18; live network access (PokeAPI,
-  wiki fetches) was blocked by this session's egress policy, so nothing here
-  was fetched from a primary source this pass. Re-run
-  scripts/fetch_pokemon_data.py in an environment with network access to
-  verify/refresh these numbers, and to confirm Champions-specific movepool or
-  stat differences from the mainline games.
+  Base stats/types/abilities fetched live from PokeAPI
+  (https://pokeapi.co/api/v2) by fetch_pokemon_data.py on 2026-07-18. Mega
+  Evolution data also fetched live from PokeAPI's dragalge-mega entry this
+  same pass (matches independent web-search summaries of Regenerator) --
+  higher confidence than a pure recall/search-synthesis pass, but still not
+  primary-source-verified against an official Pokemon Champions patch note.

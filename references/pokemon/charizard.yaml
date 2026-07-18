@@ -1,0 +1,16 @@
+name: Charizard
+national_dex_number: 6
+types: [Fire, Flying]
+base_stats: {hp: 78, atk: 84, def: 78, spa: 109, spd: 85, spe: 100}
+abilities:
+  - name: Blaze
+    hidden: false
+  - name: Solar Power
+    hidden: true
+mega: null  # TODO: fill in if this species has a Mega Evolution
+added_in_regulation: M-B
+legal_in_regulations: [M-B]
+notes: >
+  TODO: add competitive notes (role, speed-control relevance, etc).
+data_confidence: >
+  Base stats/types/abilities fetched live from PokeAPI (https://pokeapi.co/api/v2) by fetch_pokemon_data.py. Mega Evolution data (if any) and competitive notes are NOT from PokeAPI and should be verified/updated by hand each season.
