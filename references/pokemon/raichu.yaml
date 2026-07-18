@@ -9,6 +9,9 @@ abilities:
     hidden: true
 mega:
   name: Mega Raichu X / Mega Raichu Y
+  types: null  # unconfirmed
+  ability: null  # unconfirmed
+  base_stats: null  # unconfirmed
   note: >
     Uniquely gets two Mega Stones this regulation (mirrors Charizard/Mewtwo X/Y
     elsewhere in the franchise) but which typing/ability go with X vs Y, and

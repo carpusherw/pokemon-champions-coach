@@ -11,6 +11,9 @@ abilities:
     hidden: true
 mega:
   name: Mega Malamar
+  types: null  # unconfirmed
+  ability: null  # unconfirmed
+  base_stats: null  # unconfirmed
   note: >
     Champions-exclusive Mega Evolution introduced in Regulation M-B. Stats,
     typing, and ability were not confirmed by this session's web search or

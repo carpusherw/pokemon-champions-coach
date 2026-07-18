@@ -100,8 +100,9 @@ For each newly-legal or newly-changed species:
    Evolution in this format, especially **Champions-exclusive Megas that
    don't exist in any mainline game**, you have to fill in the `mega:` block
    by hand from web research. If you can't confirm a Mega's stats/typing/
-   ability, don't guess -- write `status: unknown` and a short note on what's
-   missing, the same way the M-B batch handled the 9+ Champions-exclusive
+   ability, don't guess -- set the unconfirmed field(s) (`types`,
+   `base_stats`, `ability`) to `null` and explain what's missing and why in
+   `mega.note`, the same way the M-B batch handled the Champions-exclusive
    Megas it couldn't confirm. A coaching skill that trusts a fabricated stat
    line is worse than one that says "verify this."
 3. Add a one or two sentence `notes:` field per species: not a full moveset

@@ -26,6 +26,7 @@ import argparse
 import json
 import os
 import sys
+import textwrap
 import time
 import urllib.error
 import urllib.request
@@ -90,16 +91,74 @@ def fmt_stats(s):
 
 
 def read_existing_yaml(path):
-    """Minimal hand-rolled reader for just the fields we need to preserve.
-    Avoids requiring PyYAML as a hard dependency for this script."""
+    """Reads the fields we need to preserve out of an existing file.
+
+    Returns None only when there's genuinely nothing to preserve (the file
+    doesn't exist yet). If the file *does* exist but PyYAML isn't installed,
+    raise instead of returning None -- silently treating a hand-curated file
+    as "doesn't exist" would make write_yaml overwrite its mega/notes fields
+    with placeholder text even when --overwrite wasn't requested, which is
+    exactly the data loss this function exists to prevent.
+    """
     if not os.path.exists(path):
         return None
     try:
-        import yaml  # optional; use it if available for a real parse
-        with open(path) as f:
-            return yaml.safe_load(f)
+        import yaml
     except ImportError:
-        return None  # fall back to overwrite-everything-but-warn behavior
+        raise RuntimeError(
+            f"{path} already exists but PyYAML isn't installed, so its "
+            "hand-curated fields (mega, notes, etc.) can't be safely read "
+            "and preserved. Install it first (`pip install pyyaml`), or "
+            "pass --overwrite if you actually intend to replace this "
+            "file's mega/notes data."
+        )
+    with open(path) as f:
+        return yaml.safe_load(f)
+
+
+def emit_field(key, value, indent):
+    """Return the YAML lines for `key: value` at the given indent string.
+
+    Preserved fields (mega sub-fields, notes) round-trip through here after
+    being parsed back out of an existing hand-written file, so a string that
+    was written as a folded `>` block scalar comes back from yaml.safe_load
+    as a single string that may still contain embedded newlines (from blank
+    lines separating paragraphs in the original block). Re-emitting that as
+    a bare `key: value` line breaks YAML the moment there's a newline in the
+    middle of it, or even just when the text contains a colon or a leading
+    special character -- so any multi-line or otherwise unsafe string goes
+    back out as a proper indented block scalar instead of a plain scalar.
+    """
+    if value is None:
+        return [f"{indent}{key}: null"]
+    if isinstance(value, dict):
+        if key == "base_stats":
+            return [f"{indent}{key}: {fmt_stats(value)}"]
+        lines = [f"{indent}{key}:"]
+        for k2, v2 in value.items():
+            lines.extend(emit_field(k2, v2, indent + "  "))
+        return lines
+    if isinstance(value, list):
+        return [f"{indent}{key}: [{', '.join(str(x) for x in value)}]"]
+    if isinstance(value, bool):
+        return [f"{indent}{key}: {str(value).lower()}"]
+    if isinstance(value, str):
+        needs_block = "\n" in value or len(value) > 80 or value[:1] in ":#-\"'"
+        if needs_block:
+            lines = [f"{indent}{key}: >"]
+            # Each "\n" in a string that came from yaml.safe_load-ing a
+            # folded (`>`) block scalar marks one paragraph break, so
+            # re-insert a blank line between paragraphs to preserve that
+            # instead of letting them re-fold into a single paragraph.
+            for i, paragraph in enumerate(value.split("\n")):
+                if i > 0:
+                    lines.append("")
+                if paragraph:
+                    wrapped = textwrap.wrap(paragraph, width=76) or [""]
+                    lines.extend(f"{indent}  {line}" for line in wrapped)
+            return lines
+        return [f"{indent}{key}: {value}"]
+    return [f"{indent}{key}: {value}"]
 
 
 def write_yaml(path, fresh, existing, regulation, overwrite):
@@ -120,25 +179,18 @@ def write_yaml(path, fresh, existing, regulation, overwrite):
         lines.append(f"    hidden: {str(a['hidden']).lower()}")
 
     if "mega" in preserved:
-        lines.append("mega:")
         mega = preserved["mega"]
         if isinstance(mega, dict):
+            lines.append("mega:")
             for k, v in mega.items():
-                if isinstance(v, dict):
-                    lines.append(f"  {k}: {fmt_stats(v)}" if k == "base_stats" else f"  {k}: {v}")
-                elif isinstance(v, list):
-                    lines.append(f"  {k}: [{', '.join(str(x) for x in v)}]")
-                elif v is None:
-                    lines.append(f"  {k}: null")
-                else:
-                    lines.append(f"  {k}: {v}")
+                lines.extend(emit_field(k, v, "  "))
         else:
-            lines.append("  null")
+            lines.append("mega: null")
     else:
         lines.append("mega: null  # TODO: fill in if this species has a Mega Evolution")
 
     added_in = preserved.get("added_in_regulation", regulation)
-    lines.append(f"added_in_regulation: {added_in}")
+    lines.extend(emit_field("added_in_regulation", added_in, ""))
 
     legal_in = preserved.get("legal_in_regulations", [regulation])
     if isinstance(legal_in, list) and regulation not in legal_in:
@@ -146,8 +198,7 @@ def write_yaml(path, fresh, existing, regulation, overwrite):
     lines.append(f"legal_in_regulations: [{', '.join(legal_in)}]")
 
     notes = preserved.get("notes", "TODO: add competitive notes (role, speed-control relevance, etc).")
-    lines.append("notes: >")
-    lines.append(f"  {notes}")
+    lines.extend(emit_field("notes", notes, ""))
 
     lines.append("data_confidence: >")
     lines.append(
@@ -200,7 +251,12 @@ def main():
             continue
 
         out_path = os.path.join(args.output_dir, f"{slug_for_filename(fresh['name'])}.yaml")
-        existing = read_existing_yaml(out_path)
+        try:
+            existing = None if args.overwrite else read_existing_yaml(out_path)
+        except RuntimeError as e:
+            print(f"ERROR: {e}", file=sys.stderr)
+            failed.append(raw_name)
+            continue
         write_yaml(out_path, fresh, existing, args.regulation, args.overwrite)
         print(f"wrote {out_path}")
         ok.append(raw_name)

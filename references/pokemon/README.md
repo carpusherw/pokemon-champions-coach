@@ -40,10 +40,12 @@ Every file has a `data_confidence` field explaining how its data was
 sourced. A few specific things to double check before trusting a file for a
 close competitive call:
 
-- Any `mega:` block with `status: unknown` or `status: partially known` —
-  Champions-exclusive Megas (Staraptor, Scolipede, Scrafty, Malamar,
-  Barbaracle, Dragalge, Falinks, Raichu X/Y, and partially Eelektross/Pyroar)
-  have unconfirmed stats/typing/ability in this batch.
+- Any `mega:` block containing `types: null`, `ability: null`, or
+  `base_stats: null` has that specific field unconfirmed — read `mega.note`
+  for what's actually missing and why. Champions-exclusive Megas (Staraptor,
+  Scolipede, Scrafty, Malamar, Barbaracle, Dragalge, Falinks, Raichu X/Y)
+  have all three fields null; Eelektross and Pyroar have a confirmed
+  `ability` but null `types`/`base_stats`.
 - `pyroar.yaml` — Pyroar has a male/female base-stat split in mainline games;
   this file uses one commonly-cited baseline, not a verified per-gender
   split.
