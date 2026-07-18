@@ -1,3 +1,7 @@
 __pycache__/
 *.pyc
 .DS_Store
+
+# skill-creator eval scratch workspaces (test-run outputs, draft eval sets) --
+# not part of the shipped plugin, don't belong in the repo.
+*-workspace/
