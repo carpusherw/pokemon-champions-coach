@@ -1,0 +1,36 @@
+name: Raichu
+national_dex_number: 26
+types: [Electric]
+base_stats: {hp: 60, atk: 90, def: 55, spa: 90, spd: 80, spe: 110}
+abilities:
+  - name: Static
+    hidden: false
+  - name: Lightning Rod
+    hidden: true
+mega:
+  name: Mega Raichu X / Mega Raichu Y
+  types: null  # unconfirmed
+  ability: null  # unconfirmed
+  base_stats: null  # unconfirmed
+  note: >
+    Uniquely gets two Mega Stones this regulation (mirrors Charizard/Mewtwo X/Y
+    elsewhere in the franchise) but which typing/ability go with X vs Y, and
+    their stats, were not confirmed this session. Champions-exclusive Mega
+    Evolution introduced in Regulation M-B. Stats, typing, and ability were not
+    confirmed by this session's web search or training data -- do not guess
+    these for coaching calls. Re-run the refresh skill with network/browsing
+    access to fill this in from an official or wiki source.
+added_in_regulation: M-A or earlier (base) / M-B (both Megas)
+legal_in_regulations: [M-B]  # earliest confirmed regulation only; may be legal earlier too
+notes: >
+  This entry assumes standard (Kantonian) Raichu, not Alolan Raichu
+  (Electric/Psychic, Surge Surfer) -- confirm which form Champions actually
+  grants Mega Stones for on refresh.
+data_confidence: >
+  Base stats/types/abilities recalled from mainline Pokemon games during the
+  refresh-references skill run on 2026-07-18; live network access (PokeAPI,
+  wiki fetches) was blocked by this session's egress policy, so nothing here
+  was fetched from a primary source this pass. Re-run
+  scripts/fetch_pokemon_data.py in an environment with network access to
+  verify/refresh these numbers, and to confirm Champions-specific movepool or
+  stat differences from the mainline games.

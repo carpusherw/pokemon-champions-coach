@@ -1,0 +1,17 @@
+{
+  "name": "pokemon-champions-coach",
+  "owner": {
+    "name": "carpusherw"
+  },
+  "version": "0.1.0",
+  "description": "Skills for competitive coaching in Pokemon Champions: season rules/roster sync and in-battle decision support.",
+  "plugins": [
+    {
+      "name": "pokemon-champions-coach",
+      "source": "./agents/claude/pokemon-champions-coach",
+      "description": "Pokemon Champions competitive coaching skills for Claude: refresh season rules/roster references, and coach speed/move order during battles.",
+      "version": "0.1.0",
+      "keywords": ["pokemon", "pokemon-champions", "vgc", "competitive", "coaching"]
+    }
+  ]
+}

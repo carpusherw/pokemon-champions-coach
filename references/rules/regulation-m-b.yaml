@@ -1,0 +1,148 @@
+# Pokemon Champions — Regulation Set M-B
+#
+# Sources (via web search on 2026-07-18; direct fetches to most of these were
+# blocked by this session's network policy, so treat exact numbers — timers
+# especially — as "best available" rather than verbatim-quoted):
+#   - Serebii.net ranked battle regulation pages
+#   - Bulbapedia "Regulation Set M-B" / "Regulation Sets in Pokemon Champions"
+#   - Game8 "Regulation M-B: Complete Roster and Schedule"
+#   - Pokemon.com official news post announcing M-B
+#   - StrataDex (m-b-new-pokemon, m-b-mega-evolutions guides)
+#   - Pokemon Zone / ChampDex / Victory Road regulation trackers
+#
+id: M-B
+name: "Regulation Set M-B"
+active_from: "2026-06-17"
+active_until: "2026-09-02"
+supersedes: M-A
+summary: >
+  Second regulation set of Pokemon Champions and the second "Mega format":
+  every species legal in M-A stays legal, plus 22 newly-recruitable species
+  and 16 new Mega Evolutions (across 15 species — Raichu gets both Mega
+  Raichu X and Mega Raichu Y). Also the format used for the 2026 World
+  Championships during this window.
+
+format:
+  # Pokemon Champions has two independent ranked ladders (separate
+  # matchmaking, separate rank progress, separate season rewards). Regulation
+  # rules below apply to both unless noted.
+  modes:
+    singles:
+      battlers_per_side: 1
+    doubles:
+      battlers_per_side: 2
+      description: >
+        The primary competitive/VGC-style format. Bring a Battle Team of
+        6, bring 4 into the actual battle (team preview first).
+  win_condition: "Opponent's active battle team (4 Pokemon) all faint, or in-game timer expires (then it's decided by remaining HP/Pokemon count)."
+  level: 50
+  auto_leveling: true  # Pokemon are auto-adjusted to level 50 in battle regardless of their out-of-battle level.
+  team_preview_seconds: 90
+  # Reported turn-timer numbers are inconsistent across sources (45s/turn +
+  # 7 min total vs 60s/turn + 10 min total). Both appear in circulation;
+  # re-check in-game before relying on this for tournament rules.
+  per_turn_seconds: "45-60 (source-dependent, verify in-game)"
+  match_time_limit_minutes: "7-10 (source-dependent, verify in-game)"
+
+team_building_rules:
+  battle_team_size: 6
+  brought_to_battle: 4
+  species_clause:
+    enabled: true
+    description: >
+      No two Pokemon on a team may share a National Pokedex number.
+      Alternate forms of the same base species (e.g. Heat Rotom + Wash
+      Rotom) still count as the same species and are not allowed together.
+  item_clause:
+    enabled: true
+    description: "No two Pokemon on a team may hold the exact same item (including duplicate Mega Stones)."
+  mega_evolution:
+    allowed: true
+    max_per_battle: 1
+    description: >
+      A team may carry more than one Mega Stone, but only one Pokemon may
+      actually Mega Evolve per battle.
+
+legality:
+  # Pokemon Champions is a live-service game with a still-growing launch
+  # roster, not the full National Dex. There is currently no separate ban
+  # list beyond the roster itself — legality is simply "has this species
+  # been added to the game yet."
+  no_separate_banlist: true
+  currently_excluded_categories:
+    - "Non-final evolution stages (unevolved Pokemon of any line are not battle-usable at launch)"
+    - "Box legendaries"
+    - "Paradox Pokemon"
+    - "Treasures of Ruin"
+    - "Restricted/transfer-only species not yet added to the game"
+  approx_legal_species_count: "224-228 (source estimates vary depending on whether regional forms are counted separately)"
+  full_roster_reference: >
+    An exhaustive, verified species-by-species list was not obtainable in
+    this session (see references/pokemon/README.md for why, and how to
+    complete it). references/pokemon/ currently holds a curated subset:
+    every M-B-new species/Mega plus common meta staples, not the full 224+.
+
+new_in_this_regulation:
+  new_species_count: 22
+  # Partial list — search results converged on these, but did not confirm
+  # all 22 names. Cross-check against StrataDex's "m-b-new-pokemon" guide
+  # or in-game Pokedex filter when doing a full refresh.
+  new_species_partial_list:
+    - Vileplume
+    - Qwilfish
+    - Sceptile
+    - Blaziken
+    - Swampert
+    - Mawile
+    - Metagross
+    - Staraptor
+    - Musharna
+    - Scolipede
+    - Scrafty
+    - Eelektross
+    - Pyroar
+    - Malamar
+    - Barbaracle
+    - Dragalge
+    - Grimmsnarl
+    - Gholdengo
+    - Annihilape
+  new_mega_evolutions:
+    count: 16
+    species_count: 15
+    note: "Raichu is the only species with two Mega forms (Mega Raichu X and Mega Raichu Y) this regulation, mirroring how Charizard/Mewtwo work elsewhere in the franchise."
+    mainline_returning_megas:
+      - Sceptile
+      - Blaziken
+      - Swampert
+      - Mawile
+      - Metagross
+    champions_exclusive_new_megas:
+      - Staraptor
+      - Scolipede
+      - Scrafty
+      - Eelektross
+      - Pyroar
+      - Malamar
+      - Barbaracle
+      - Dragalge
+      - Falinks
+      - Raichu (X)
+      - Raichu (Y)
+    brand_new_abilities:
+      - name: Eelevate
+        exclusive_to: Mega Eelektross
+        effect: >
+          Grants Ground immunity and protection from Spikes/Toxic
+          Spikes/Sticky Web like Levitate, plus: every KO this Pokemon
+          scores raises its highest stat by 1 stage.
+      - name: Fire Mane
+        exclusive_to: Mega Pyroar
+        effect: "Not fully detailed in available sources — verify in-game before relying on it for coaching calls."
+
+ranked_ladder:
+  tiers: [Beginner, "Poke Ball", "Great Ball", "Ultra Ball", "Master Ball", Champion]
+  sub_ranks_per_tier: "4 (lowest) to 1 (highest)"
+  promotion: "Win fills the rank gauge 1/4; loss drains it 1/4. Once you promote out of a tier you can no longer fall back into it."
+  gating: "Master Ball ranks 3-1 and Champion tier unlock one week into the season, so day-one players cannot rush to top rank immediately."
+  singles_and_doubles_are_independent: true

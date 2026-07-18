@@ -1,0 +1,35 @@
+name: Pyroar
+national_dex_number: 668
+types: [Fire, Normal]
+base_stats: {hp: 86, atk: 68, def: 72, spa: 109, spd: 66, spe: 106}
+abilities:
+  - name: Rivalry
+    hidden: false
+  - name: Unnerve
+    hidden: false
+  - name: Moxie
+    hidden: true
+mega:
+  name: Mega Pyroar
+  types: null  # unconfirmed
+  ability: Fire Mane
+  base_stats: null  # unconfirmed
+  note: >
+    Ability confirmed by name only: Fire Mane -- exact effect was not confirmed
+    by this session's search results. Mega typing and base stats also
+    unconfirmed. Verify all of this before using it in coaching calls.
+added_in_regulation: M-B
+legal_in_regulations: [M-B]  # earliest confirmed regulation only; may be legal earlier too
+notes: >
+  Base-form stats listed are for one gender (Pyroar has a documented
+  male/female base-stat split in mainline games, roughly trading Attack for
+  Sp. Atk between genders) -- re-verify the exact split per-gender on refresh.
+  Champions-exclusive Mega -- see mega.note.
+data_confidence: >
+  Base stats/types/abilities recalled from mainline Pokemon games during the
+  refresh-references skill run on 2026-07-18; live network access (PokeAPI,
+  wiki fetches) was blocked by this session's egress policy, so nothing here
+  was fetched from a primary source this pass. Re-run
+  scripts/fetch_pokemon_data.py in an environment with network access to
+  verify/refresh these numbers, and to confirm Champions-specific movepool or
+  stat differences from the mainline games.

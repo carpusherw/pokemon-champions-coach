@@ -1,0 +1,31 @@
+name: Swampert
+national_dex_number: 260
+types: [Water, Ground]
+base_stats: {hp: 100, atk: 110, def: 90, spa: 85, spd: 90, spe: 60}
+abilities:
+  - name: Torrent
+    hidden: false
+  - name: Damp
+    hidden: true
+mega:
+  name: Mega Swampert
+  item: Swampertite
+  types: [Water, Ground]
+  ability: Swift Swim
+  base_stats: {hp: 100, atk: 150, def: 110, spa: 95, spd: 110, spe: 70}
+  note: >
+    Mainline-returning Mega. Swift Swim doubles Speed in Rain, turning a slow
+    bulky attacker into a rain sweeper.
+added_in_regulation: M-A (base) / M-B (Mega)
+legal_in_regulations: [M-B]  # earliest confirmed regulation only; may be legal earlier too
+notes: >
+  Classic bulky Water/Ground physical wall-breaker; pairs with Rain setters
+  when Mega Evolved.
+data_confidence: >
+  Base stats/types/abilities recalled from mainline Pokemon games during the
+  refresh-references skill run on 2026-07-18; live network access (PokeAPI,
+  wiki fetches) was blocked by this session's egress policy, so nothing here
+  was fetched from a primary source this pass. Re-run
+  scripts/fetch_pokemon_data.py in an environment with network access to
+  verify/refresh these numbers, and to confirm Champions-specific movepool or
+  stat differences from the mainline games.
