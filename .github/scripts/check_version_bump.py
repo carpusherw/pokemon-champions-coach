@@ -36,7 +36,12 @@ def parse_version(raw: str) -> tuple[int, ...]:
 
 def json_at_ref(ref: str, path: str) -> dict | None:
     text = file_at_ref(ref, path)
-    return json.loads(text) if text is not None else None
+    if text is None:
+        return None
+    try:
+        return json.loads(text)
+    except json.JSONDecodeError as exc:
+        raise SystemExit(f"::error::{path} at {ref} isn't valid JSON: {exc}") from exc
 
 
 def main() -> int:
@@ -65,7 +70,7 @@ def main() -> int:
 
     errors = []
 
-    base_plugin_version = base_plugin["version"] if base_plugin else "0.0.0"
+    base_plugin_version = base_plugin.get("version", "0.0.0") if base_plugin else "0.0.0"
     head_plugin_version = head_plugin["version"]
     if parse_version(head_plugin_version) <= parse_version(base_plugin_version):
         errors.append(
@@ -88,7 +93,7 @@ def main() -> int:
             "Keep the marketplace entry's version in sync with plugin.json."
         )
 
-    base_marketplace_version = base_marketplace["version"] if base_marketplace else "0.0.0"
+    base_marketplace_version = base_marketplace.get("version", "0.0.0") if base_marketplace else "0.0.0"
     head_marketplace_version = head_marketplace.get("version")
     if head_marketplace_version is None:
         errors.append(f"{MARKETPLACE_FILE} is missing a top-level \"version\" field.")
