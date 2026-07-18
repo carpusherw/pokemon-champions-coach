@@ -1,0 +1,15 @@
+# Points at the currently-active regulation set. The refresh-references skill
+# updates this file (and adds a new regulation-<id>.yaml) whenever a new
+# season/regulation set goes live.
+current_regulation: M-B
+regulation_file: rules/regulation-m-b.yaml
+last_refreshed: "2026-07-18"
+refreshed_by: refresh-references skill
+notes: >
+  Verified against multiple community sources (Serebii, Bulbapedia, Game8,
+  StrataDex, Pokemon.com, PokemonZone, ChampDex) via web search on 2026-07-18.
+  Direct page fetches to most of these sites were blocked by this session's
+  network policy, so details came from search-result synthesis rather than
+  full page reads. Re-verify against a primary source (official Pokemon.com
+  post or in-game patch notes) when precision matters, e.g. for tournament
+  rules-lawyering.

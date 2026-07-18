@@ -1,0 +1,31 @@
+name: Blaziken
+national_dex_number: 257
+types: [Fire, Fighting]
+base_stats: {hp: 80, atk: 120, def: 70, spa: 110, spd: 70, spe: 80}
+abilities:
+  - name: Blaze
+    hidden: false
+  - name: Speed Boost
+    hidden: true
+mega:
+  name: Mega Blaziken
+  item: Blazikenite
+  types: [Fire, Fighting]
+  ability: Speed Boost
+  base_stats: {hp: 80, atk: 160, def: 80, spa: 130, spd: 80, spe: 100}
+  note: >
+    Mainline-returning Mega, historically banned to Ubers in mainline formats
+    due to Speed Boost + huge Attack -- likely to be a top-tier threat here too.
+added_in_regulation: M-A (base) / M-B (Mega)
+legal_in_regulations: [M-B]  # earliest confirmed regulation only; may be legal earlier too
+notes: >
+  Even unmega'd, its Hidden Ability Speed Boost lets it ramp Speed every turn
+  it's active.
+data_confidence: >
+  Base stats/types/abilities recalled from mainline Pokemon games during the
+  refresh-references skill run on 2026-07-18; live network access (PokeAPI,
+  wiki fetches) was blocked by this session's egress policy, so nothing here
+  was fetched from a primary source this pass. Re-run
+  scripts/fetch_pokemon_data.py in an environment with network access to
+  verify/refresh these numbers, and to confirm Champions-specific movepool or
+  stat differences from the mainline games.
