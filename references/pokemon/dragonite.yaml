@@ -1,0 +1,16 @@
+name: Dragonite
+national_dex_number: 149
+types: [Dragon, Flying]
+base_stats: {hp: 91, atk: 134, def: 95, spa: 100, spd: 100, spe: 80}
+abilities:
+  - name: Inner Focus
+    hidden: false
+  - name: Multiscale
+    hidden: true
+mega: null  # TODO: fill in if this species has a Mega Evolution
+added_in_regulation: M-B
+legal_in_regulations: [M-B]
+notes: >
+  TODO: add competitive notes (role, speed-control relevance, etc).
+data_confidence: >
+  Base stats/types/abilities fetched live from PokeAPI (https://pokeapi.co/api/v2) by fetch_pokemon_data.py. Mega Evolution data (if any) and competitive notes are NOT from PokeAPI and should be verified/updated by hand each season.

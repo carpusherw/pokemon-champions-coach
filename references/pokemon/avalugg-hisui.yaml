@@ -1,0 +1,18 @@
+name: Avalugg Hisui
+national_dex_number: 10243
+types: [Ice, Rock]
+base_stats: {hp: 95, atk: 127, def: 184, spa: 34, spd: 36, spe: 38}
+abilities:
+  - name: Strong Jaw
+    hidden: false
+  - name: Ice Body
+    hidden: false
+  - name: Sturdy
+    hidden: true
+mega: null  # TODO: fill in if this species has a Mega Evolution
+added_in_regulation: M-B
+legal_in_regulations: [M-B]
+notes: >
+  TODO: add competitive notes (role, speed-control relevance, etc).
+data_confidence: >
+  Base stats/types/abilities fetched live from PokeAPI (https://pokeapi.co/api/v2) by fetch_pokemon_data.py. Mega Evolution data (if any) and competitive notes are NOT from PokeAPI and should be verified/updated by hand each season.

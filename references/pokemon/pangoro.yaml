@@ -1,0 +1,18 @@
+name: Pangoro
+national_dex_number: 675
+types: [Fighting, Dark]
+base_stats: {hp: 95, atk: 124, def: 78, spa: 69, spd: 71, spe: 58}
+abilities:
+  - name: Iron Fist
+    hidden: false
+  - name: Mold Breaker
+    hidden: false
+  - name: Scrappy
+    hidden: true
+mega: null  # TODO: fill in if this species has a Mega Evolution
+added_in_regulation: M-B
+legal_in_regulations: [M-B]
+notes: >
+  TODO: add competitive notes (role, speed-control relevance, etc).
+data_confidence: >
+  Base stats/types/abilities fetched live from PokeAPI (https://pokeapi.co/api/v2) by fetch_pokemon_data.py. Mega Evolution data (if any) and competitive notes are NOT from PokeAPI and should be verified/updated by hand each season.

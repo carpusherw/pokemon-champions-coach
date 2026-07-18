@@ -1,0 +1,18 @@
+name: Gardevoir
+national_dex_number: 282
+types: [Psychic, Fairy]
+base_stats: {hp: 68, atk: 65, def: 65, spa: 125, spd: 115, spe: 80}
+abilities:
+  - name: Synchronize
+    hidden: false
+  - name: Trace
+    hidden: false
+  - name: Telepathy
+    hidden: true
+mega: null  # TODO: fill in if this species has a Mega Evolution
+added_in_regulation: M-B
+legal_in_regulations: [M-B]
+notes: >
+  TODO: add competitive notes (role, speed-control relevance, etc).
+data_confidence: >
+  Base stats/types/abilities fetched live from PokeAPI (https://pokeapi.co/api/v2) by fetch_pokemon_data.py. Mega Evolution data (if any) and competitive notes are NOT from PokeAPI and should be verified/updated by hand each season.

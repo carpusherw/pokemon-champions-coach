@@ -1,0 +1,18 @@
+name: Garganacl
+national_dex_number: 934
+types: [Rock]
+base_stats: {hp: 100, atk: 100, def: 130, spa: 45, spd: 90, spe: 35}
+abilities:
+  - name: Purifying Salt
+    hidden: false
+  - name: Sturdy
+    hidden: false
+  - name: Clear Body
+    hidden: true
+mega: null  # TODO: fill in if this species has a Mega Evolution
+added_in_regulation: M-B
+legal_in_regulations: [M-B]
+notes: >
+  TODO: add competitive notes (role, speed-control relevance, etc).
+data_confidence: >
+  Base stats/types/abilities fetched live from PokeAPI (https://pokeapi.co/api/v2) by fetch_pokemon_data.py. Mega Evolution data (if any) and competitive notes are NOT from PokeAPI and should be verified/updated by hand each season.

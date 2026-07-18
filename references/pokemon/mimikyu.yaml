@@ -1,0 +1,17 @@
+name: Mimikyu
+national_dex_number: 778
+types: [Ghost, Fairy]
+base_stats: {hp: 55, atk: 90, def: 80, spa: 50, spd: 105, spe: 96}
+abilities:
+  - name: Disguise
+    hidden: false
+mega: null  # TODO: fill in if this species has a Mega Evolution
+added_in_regulation: M-B
+legal_in_regulations: [M-B]
+notes: >
+  Stats shown are Disguised Form. Disguise breaks (Busted Form) after
+  absorbing one hit -- same stats, but the defensive Disguise ability is
+  spent for the rest of the battle. This is an in-battle state change, not
+  a separate recruit/catch.
+data_confidence: >
+  Base stats/types/abilities fetched live from PokeAPI (https://pokeapi.co/api/v2) by fetch_pokemon_data.py. Mega Evolution data (if any) and competitive notes are NOT from PokeAPI and should be verified/updated by hand each season.

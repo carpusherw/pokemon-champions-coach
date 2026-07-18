@@ -33,7 +33,7 @@ import urllib.request
 
 POKEAPI_BASE = "https://pokeapi.co/api/v2"
 DEFAULT_OUTPUT_DIR = os.path.normpath(
-    os.path.join(os.path.dirname(__file__), "..", "..", "..", "..", "..", "references", "pokemon")
+    os.path.join(os.path.dirname(__file__), "..", "..", "..", "..", "..", "..", "references", "pokemon")
 )
 
 
@@ -43,9 +43,12 @@ def api_slug(name):
 
 def fetch_json(url, retries=3, backoff=2.0):
     last_err = None
+    # PokeAPI's CDN returns 403 for requests without a browser-like User-Agent
+    # (the default "Python-urllib/x.y" gets blocked), so set one explicitly.
+    req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 (fetch_pokemon_data.py)"})
     for attempt in range(retries):
         try:
-            with urllib.request.urlopen(url, timeout=20) as resp:
+            with urllib.request.urlopen(req, timeout=20) as resp:
                 return json.loads(resp.read().decode("utf-8"))
         except urllib.error.HTTPError as e:
             if e.code == 404:
@@ -143,7 +146,7 @@ def emit_field(key, value, indent):
     if isinstance(value, bool):
         return [f"{indent}{key}: {str(value).lower()}"]
     if isinstance(value, str):
-        needs_block = "\n" in value or len(value) > 80 or value[:1] in ":#-\"'"
+        needs_block = "\n" in value or len(value) > 80 or value[:1] in ":#-\"'" or ": " in value
         if needs_block:
             lines = [f"{indent}{key}: >"]
             # Each "\n" in a string that came from yaml.safe_load-ing a

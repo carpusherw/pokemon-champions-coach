@@ -3,36 +3,54 @@
 One YAML file per legal Pokemon species (`<species-slug>.yaml`), so coaching
 skills can read stats/types/abilities/Mega data without a live lookup.
 
-## Current coverage: partial (21 of ~224-228 legal species)
+## Current coverage: complete for Regulation M-B (232 files)
 
-This directory currently covers every species confirmed to be new to
-Regulation M-B, plus every species that gained a Mega Evolution in M-B. It
-does **not** yet cover the full legal roster (the M-A carryover base, minus
-the M-B additions above).
+This directory covers the full Regulation M-B legal roster: every carryover
+species from M-A plus all 22 species newly added in M-B, including regional
+forms (Alolan/Galarian/Hisuian/Paldean), Rotom's appliance forms, and other
+battle-relevant variants (Lycanroc time forms, Meowstic/Basculegion gender
+splits, the three Paldean Tauros breeds) that have genuinely different
+types/stats/abilities. Purely cosmetic variants (Alcremie flavors, Florges
+colors, Furfrou trims, Vivillon patterns, Maushold family size, Polteageist
+form) are *not* broken out into separate files since they share identical
+battle data with their default form — see each species' `notes` field for
+which forms a file's data applies to when that's non-obvious (e.g.
+`aegislash.yaml`, `morpeko.yaml`, `palafin.yaml`, `mimikyu.yaml`,
+`gourgeist.yaml`, `maushold.yaml`).
 
-Why: populating this file set requires either (a) bulk stat lookups from a
-data API like [PokeAPI](https://pokeapi.co), or (b) fetching wiki/roster
-pages to get the exhaustive species list. Both require outbound network
-access that this session's sandbox blocked (see `../current-season.yaml` for
-details). The 21 files here were written from the assistant's own knowledge
-of mainline-game Pokemon data, cross-checked against what web search could
-confirm about Regulation M-B specifically.
+The full species list was sourced from Game8's "Regulation M-B Complete
+Roster" page, cross-checked against Serebii's ranked-battle and recruit
+roster pages. Base stats, types, and abilities for every file were fetched
+live from [PokeAPI](https://pokeapi.co) via `scripts/fetch_pokemon_data.py`
+on 2026-07-18.
 
-## Completing the roster
+## Mega Evolution coverage
 
-Run `scripts/fetch_pokemon_data.py` (in the `refresh-references` skill,
-`agents/claude/pokemon-champions-coach/skills/refresh-references/scripts/`)
-from an environment with normal internet access:
+PokeAPI has already ingested Pokemon Champions' Mega Evolution data (as
+`<slug>-mega` / `-mega-x` / `-mega-y` pokemon entries), which made it
+possible to fetch confirmed typing/ability/base-stat data -- not just
+recalled/search-synthesized guesses -- for every Champions-exclusive Mega
+introduced in M-B:
 
-1. It needs the full legal species list for the current regulation. Get this
-   from a roster page (e.g. StrataDex's Pokedex guide, Serebii's ranked
-   battle regulation page, or in-game) and pass it as an input file.
-2. It queries PokeAPI per species for types, base stats, and abilities, and
-   writes/overwrites the corresponding `references/pokemon/<slug>.yaml`.
-3. Mega Evolution data (especially for Champions-exclusive Megas that don't
-   exist in mainline games) isn't in PokeAPI. Cross-check those against a
-   current wiki/guide site and fill in the `mega:` block by hand, or extend
-   the script if a good structured source turns up.
+- `staraptor.yaml`, `scolipede.yaml`, `scrafty.yaml`, `malamar.yaml`,
+  `barbaracle.yaml`, `dragalge.yaml`, `falinks.yaml`, `eelektross.yaml`,
+  `pyroar.yaml` -- full `mega:` block (types, ability, base_stats) confirmed
+  via PokeAPI.
+- `raichu.yaml` -- both Mega Raichu X and Mega Raichu Y confirmed via
+  PokeAPI, under `mega.x` / `mega.y` (this species has two Mega Stones, so
+  it doesn't fit the single-mega schema every other file uses).
+- `blaziken.yaml`, `mawile.yaml`, `metagross.yaml`, `sceptile.yaml`,
+  `swampert.yaml` -- mainline-returning Megas; PokeAPI data cross-checked
+  against and matched this session's prior recall exactly.
+
+This pass only filled in Mega data for the species explicitly flagged as
+having previously-unconfirmed Megas. Plenty of *other* legal species also
+have Megas (e.g. Meowstic, Hawlucha, Crabominable, Drampa, Scovillain,
+Glimmora, and all the classic mainline Megas like Charizard/Gengar/etc.) --
+their files still have `mega: null` even though PokeAPI likely has that data
+too (`<slug>-mega` resolves for most of them). Filling those in was out of
+scope for this pass but would be a straightforward follow-up with the same
+method.
 
 ## Data quality flags to know about
 
@@ -40,14 +58,37 @@ Every file has a `data_confidence` field explaining how its data was
 sourced. A few specific things to double check before trusting a file for a
 close competitive call:
 
-- Any `mega:` block containing `types: null`, `ability: null`, or
-  `base_stats: null` has that specific field unconfirmed — read `mega.note`
-  for what's actually missing and why. Champions-exclusive Megas (Staraptor,
-  Scolipede, Scrafty, Malamar, Barbaracle, Dragalge, Falinks, Raichu X/Y)
-  have all three fields null; Eelektross and Pyroar have a confirmed
-  `ability` but null `types`/`base_stats`.
-- `pyroar.yaml` — Pyroar has a male/female base-stat split in mainline games;
-  this file uses one commonly-cited baseline, not a verified per-gender
-  split.
-- `raichu.yaml` — assumes standard (Kantonian) Raichu, not Alolan Raichu.
-  Confirm which form actually receives the M-B Mega Stones.
+- `pyroar.yaml` -- Pyroar has a documented male/female base-stat split in
+  mainline games, but PokeAPI only exposes a male variety (no
+  `pyroar-female` entry), so this file's base stats are male-only. Its Mega
+  data, ability, and typing are all confirmed via PokeAPI.
+- `eelektross.yaml` -- Mega Eelektross's ability, `Eelevate`, is confirmed
+  by name via PokeAPI but this session couldn't confirm its exact in-battle
+  effect from any source.
+- `raichu.yaml` -- assumes standard (Kantonian) Raichu; the two Mega Stones
+  were seen paired with this form in research, but which Raichu form (this
+  one vs. `raichu-alola.yaml`) Pokemon Champions actually grants the Mega
+  Stones to was not confirmed against a primary/official source.
+- Any file whose competitive `notes` field still reads
+  `TODO: add competitive notes (...)` hasn't had hand-written competitive
+  commentary added yet -- its base stats/types/abilities are still live
+  PokeAPI data and reliable, just without the coaching-relevant color
+  commentary the M-B-new species and Megas above have.
+
+## Refreshing this data
+
+Run `scripts/fetch_pokemon_data.py` (in the `refresh-references` skill,
+`agents/claude/pokemon-champions-coach/skills/refresh-references/scripts/`)
+from an environment with normal internet access to refresh base
+stats/types/abilities for any species, or add new ones:
+
+```
+python3 fetch_pokemon_data.py --species-file <list-of-pokeapi-slugs> --regulation <id>
+```
+
+It's safe to re-run over existing files -- it only refreshes base-form
+fields and won't touch a file's hand-written `mega`/`notes` unless you pass
+`--overwrite`. Mega Evolution data for species not covered above still needs
+either a `<slug>-mega` PokeAPI lookup (works for most classic mainline
+Megas and, as of this pass, Champions-exclusive ones too) or a wiki/guide
+cross-check, filled in by hand.

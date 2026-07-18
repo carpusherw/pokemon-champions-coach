@@ -1,0 +1,20 @@
+name: Overqwil
+national_dex_number: 904
+types: [Dark, Poison]
+base_stats: {hp: 85, atk: 115, def: 95, spa: 65, spd: 65, spe: 85}
+abilities:
+  - name: Poison Point
+    hidden: false
+  - name: Swift Swim
+    hidden: false
+  - name: Intimidate
+    hidden: true
+mega: null  # TODO: fill in if this species has a Mega Evolution
+added_in_regulation: M-B
+legal_in_regulations: [M-B]
+notes: >
+  Evolution of Hisuian Qwilfish (via the move Barb Barrage), not base
+  (Water/Poison) Qwilfish -- Dark/Poison typing and hidden Intimidate make
+  it a solid physical wallbreaker/pivot. No Mega Evolution.
+data_confidence: >
+  Base stats/types/abilities fetched live from PokeAPI (https://pokeapi.co/api/v2) by fetch_pokemon_data.py. Mega Evolution data (if any) and competitive notes are NOT from PokeAPI and should be verified/updated by hand each season.

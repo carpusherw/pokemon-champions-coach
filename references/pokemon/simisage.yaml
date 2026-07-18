@@ -1,0 +1,16 @@
+name: Simisage
+national_dex_number: 512
+types: [Grass]
+base_stats: {hp: 75, atk: 98, def: 63, spa: 98, spd: 63, spe: 101}
+abilities:
+  - name: Gluttony
+    hidden: false
+  - name: Overgrow
+    hidden: true
+mega: null  # TODO: fill in if this species has a Mega Evolution
+added_in_regulation: M-B
+legal_in_regulations: [M-B]
+notes: >
+  TODO: add competitive notes (role, speed-control relevance, etc).
+data_confidence: >
+  Base stats/types/abilities fetched live from PokeAPI (https://pokeapi.co/api/v2) by fetch_pokemon_data.py. Mega Evolution data (if any) and competitive notes are NOT from PokeAPI and should be verified/updated by hand each season.

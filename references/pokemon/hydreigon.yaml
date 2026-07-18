@@ -1,0 +1,14 @@
+name: Hydreigon
+national_dex_number: 635
+types: [Dark, Dragon]
+base_stats: {hp: 92, atk: 105, def: 90, spa: 125, spd: 90, spe: 98}
+abilities:
+  - name: Levitate
+    hidden: false
+mega: null  # TODO: fill in if this species has a Mega Evolution
+added_in_regulation: M-B
+legal_in_regulations: [M-B]
+notes: >
+  TODO: add competitive notes (role, speed-control relevance, etc).
+data_confidence: >
+  Base stats/types/abilities fetched live from PokeAPI (https://pokeapi.co/api/v2) by fetch_pokemon_data.py. Mega Evolution data (if any) and competitive notes are NOT from PokeAPI and should be verified/updated by hand each season.

@@ -1,0 +1,17 @@
+name: Palafin
+national_dex_number: 10256
+types: [Water]
+base_stats: {hp: 100, atk: 160, def: 97, spa: 106, spd: 87, spe: 100}
+abilities:
+  - name: Zero To Hero
+    hidden: false
+mega: null  # TODO: fill in if this species has a Mega Evolution
+added_in_regulation: M-B
+legal_in_regulations: [M-B]
+notes: >
+  Stats shown are Hero Form. Palafin starts battles in a much weaker Zero
+  Form (base stat total 210) and permanently transforms to Hero Form the
+  first time it switches out -- Zero Form is not a separate legal/recruit
+  entry, so this file only covers the form that actually matters in battle.
+data_confidence: >
+  Base stats/types/abilities fetched live from PokeAPI (https://pokeapi.co/api/v2) by fetch_pokemon_data.py. Mega Evolution data (if any) and competitive notes are NOT from PokeAPI and should be verified/updated by hand each season.

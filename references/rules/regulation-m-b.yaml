@@ -75,21 +75,23 @@ legality:
     - "Paradox Pokemon"
     - "Treasures of Ruin"
     - "Restricted/transfer-only species not yet added to the game"
-  approx_legal_species_count: "224-228 (source estimates vary depending on whether regional forms are counted separately)"
+  approx_legal_species_count: "228 base species per community tallies; references/pokemon/ holds 232 files because it also splits out battle-relevant variants (regional forms, Rotom appliances, Lycanroc time forms, Meowstic/Basculegion gender, Paldean Tauros breeds) that some tallies fold into a single count."
   full_roster_reference: >
-    An exhaustive, verified species-by-species list was not obtainable in
-    this session (see references/pokemon/README.md for why, and how to
-    complete it). references/pokemon/ currently holds a curated subset:
-    every M-B-new species/Mega plus common meta staples, not the full 224+.
+    An exhaustive, verified species-by-species list was fetched this session
+    (Game8's "Regulation M-B Complete Roster" page, cross-checked against
+    Serebii's recruit/ranked roster pages) and references/pokemon/ now
+    covers the full legal roster with live PokeAPI stats/types/abilities —
+    see references/pokemon/README.md for coverage details and remaining
+    data-quality caveats.
 
 new_in_this_regulation:
   new_species_count: 22
-  # Partial list — search results converged on these, but did not confirm
-  # all 22 names. Cross-check against StrataDex's "m-b-new-pokemon" guide
-  # or in-game Pokedex filter when doing a full refresh.
-  new_species_partial_list:
+  # Confirmed complete via a direct fetch of Serebii's regulation M-B ranked
+  # battle page ("Newly Useable Pokemon" table) on 2026-07-18.
+  new_species_list:
     - Vileplume
     - Qwilfish
+    - Overqwil
     - Sceptile
     - Blaziken
     - Swampert
@@ -105,6 +107,8 @@ new_in_this_regulation:
     - Barbaracle
     - Dragalge
     - Grimmsnarl
+    - Falinks
+    - Houndstone
     - Gholdengo
     - Annihilape
   new_mega_evolutions:
@@ -133,9 +137,10 @@ new_in_this_regulation:
       - name: Eelevate
         exclusive_to: Mega Eelektross
         effect: >
-          Grants Ground immunity and protection from Spikes/Toxic
-          Spikes/Sticky Web like Levitate, plus: every KO this Pokemon
-          scores raises its highest stat by 1 stage.
+          Not confirmed by this session. PokeAPI (which supplied confirmed
+          typing/stats for every Mega listed here) only exposes the
+          ability's name, not its effect text -- verify in-game before
+          relying on it for coaching calls.
       - name: Fire Mane
         exclusive_to: Mega Pyroar
         effect: "Not fully detailed in available sources — verify in-game before relying on it for coaching calls."
