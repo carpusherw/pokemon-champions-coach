@@ -51,7 +51,9 @@ def fetch_json(url, retries=3, backoff=2.0):
             with urllib.request.urlopen(req, timeout=20) as resp:
                 return json.loads(resp.read().decode("utf-8"))
         except urllib.error.HTTPError as e:
-            if e.code == 404:
+            code = e.code
+            e.close()
+            if code == 404:
                 return None
             last_err = e
         except urllib.error.URLError as e:

@@ -21,9 +21,10 @@ added_in_regulation: M-A or earlier (base) / M-B (Mega)
 legal_in_regulations: [M-B]  # earliest confirmed regulation only; may be legal earlier too
 notes: >
   Only known ability is Levitate (base form), giving it a free Ground
-  immunity even before Mega Evolving -- Mega Eelektross loses that
-  immunity when it swaps to Eelevate, so watch for Ground-type attacks
-  once it transforms. See mega.note for what's confirmed vs not.
+  immunity even before Mega Evolving. Whether Mega Eelektross's Eelevate
+  preserves that Ground immunity is unconfirmed -- don't assume either way
+  (that it keeps or loses the immunity) until Eelevate's effect is verified
+  in-game. See mega.note for what's confirmed vs not.
 data_confidence: >
   Base stats/types/abilities fetched live from PokeAPI
   (https://pokeapi.co/api/v2) by fetch_pokemon_data.py on 2026-07-18. Mega
