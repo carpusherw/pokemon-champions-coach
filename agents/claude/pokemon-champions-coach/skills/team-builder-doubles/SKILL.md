@@ -1,5 +1,5 @@
 ---
-name: team-builder
+name: team-builder-doubles
 description: >
   Builds a Pokemon Champions battle team of 6 for the doubles/VGC-style
   ranked ladder from whatever starting point the user actually has: a
