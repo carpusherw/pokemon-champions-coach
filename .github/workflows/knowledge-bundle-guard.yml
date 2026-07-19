@@ -1,0 +1,21 @@
+name: Knowledge bundle guard
+
+on:
+  pull_request:
+    branches: [main]
+
+jobs:
+  bundle-guard:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install PyYAML
+        run: pip install pyyaml
+
+      - name: Check Gemini knowledge bundle is up to date
+        run: python3 agents/gemini/pokemon-champions-coach/scripts/build_knowledge_bundle.py --check
