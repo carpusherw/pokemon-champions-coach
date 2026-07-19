@@ -1,0 +1,22 @@
+[
+  {"query": "ok so in champions reg m-b, i've got a scarfed dragapult and they sent out a garchomp mega, who goes first if i click draco meteor", "should_trigger": true},
+  {"query": "does fake out from my grimmsnarl actually flinch a +1 landorus before it gets to move, or is landorus just too fast for that to matter", "should_trigger": true},
+  {"query": "if i set trick room turn 1 with my hatterene, does my 29 speed musharna now move before their timid dragapult that same turn or does trick room only kick in next turn", "should_trigger": true},
+  {"query": "quien ataca primero, mi kingambit con sucker punch o su corviknight que uso u-turn ese mismo turno", "should_trigger": true},
+  {"query": "im deciding between choice scarf and life orb on my iron valiant, and honestly the whole decision comes down to whether i can outrun the flutter mane / raging bolt duo people are running right now", "should_trigger": true},
+  {"query": "board state: my whimsicott (prankster) tailwind, their incineroar intimidates in, my garganacl uses curse, their kingambit uses sucker punch on my garganacl -- what's the actual order all four of those resolve in", "should_trigger": true},
+  {"query": "my raichu just got paralyzed, does that drop it below their modest-natured, no item hydreigon or am i still faster", "should_trigger": true},
+  {"query": "whats the speed tier i need on my houndstone to beat the common max speed dragapult and skeledirge builds people are bringing to worlds this year", "should_trigger": true},
+  {"query": "if both my whimsicott and their grimmsnarl have prankster and are both trying to taunt each other same turn, who's taunt actually goes through", "should_trigger": true},
+  {"query": "not sure if i should ev my scovillain for bulk or speed -- can it actually beat basculegion to the punch if its running max speed adamant, or is that a lost cause no matter what", "should_trigger": true},
+  {"query": "whats actually banned or excluded from regulation m-b right now, i keep seeing conflicting stuff online about box legendaries", "should_trigger": false},
+  {"query": "can you help me put together a solid 6 mon core for m-b ranked doubles, i like bulky offense and already have kingambit and garganacl locked in", "should_trigger": false},
+  {"query": "whats a good held item for my corviknight, its just supposed to be a physical wall that pivots with u-turn", "should_trigger": false},
+  {"query": "does intimidate stack if i switch in two intimidate users back to back or does it just apply once per switch-in", "should_trigger": false},
+  {"query": "will my adamant max attack garchomp OHKO a defensive corviknight with earthquake, corviknight is running like 252 hp / 252 def", "should_trigger": false},
+  {"query": "trying to put together a trick room team for m-b, whats a good slow bulky attacker to pair with hatterene and porygon2 as the setters", "should_trigger": false},
+  {"query": "is mega raichu y actually any good competitively or is it just a meme pick right now", "should_trigger": false},
+  {"query": "whats regenerator do exactly, i keep seeing it on toxapex and dragalge sets and im not sure what it actually heals", "should_trigger": false},
+  {"query": "my friend says gholdengo is basically unkillable to status, can you explain why good as gold works like that", "should_trigger": false},
+  {"query": "can you just give me a quick rundown of the item clause and species clause rules for building a legal m-b team", "should_trigger": false}
+]

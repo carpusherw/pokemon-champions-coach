@@ -1,3 +1,14 @@
 __pycache__/
 *.pyc
 .DS_Store
+
+# skill-creator eval scratch workspaces (test-run outputs, draft eval sets) --
+# not part of the shipped plugin, don't belong in the repo.
+*-workspace/
+
+# skill-creator's trigger-eval harness (scripts/run_eval.py) writes temporary
+# command-file stubs matching this exact pattern into .claude/commands/ while
+# testing skill descriptions -- scratch, not real project settings. Scoped
+# narrowly (not a blanket /.claude/ ignore) so real settings/hooks/commands
+# checked in under .claude/ later don't get silently swallowed.
+/.claude/commands/*-skill-*.md

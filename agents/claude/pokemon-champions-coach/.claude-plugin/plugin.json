@@ -1,7 +1,7 @@
 {
   "name": "pokemon-champions-coach",
   "displayName": "Pokemon Champions Coach",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Keeps Pokemon Champions season rules and Pokemon reference data up to date, and coaches speed/move-order decisions during battles based on the current competitive meta.",
   "author": {
     "name": "carpusherw"
