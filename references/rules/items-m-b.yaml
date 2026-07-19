@@ -73,9 +73,8 @@ confirmed_not_yet_available:
   # like Life Orb/Sitrus Berry return a live page with usage stats).
   - item: "Choice Specs"
     note: >
-      This is the item the user asked about directly: still not in the
-      game as of 2026-07-19, despite being a mainline VGC/Showdown staple.
-      Don't recommend it in coaching answers.
+      Still not in the game as of 2026-07-19, despite being a mainline
+      VGC/Showdown staple. Don't recommend it in coaching answers.
   - item: "Choice Band"
     note: "Same launch-era gap as Choice Specs; Choice Scarf is the only Choice item currently implemented."
   - item: "Assault Vest"

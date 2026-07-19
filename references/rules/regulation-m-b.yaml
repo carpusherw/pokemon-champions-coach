@@ -93,7 +93,7 @@ held_items:
   # confirmed not yet available (e.g. Choice Specs, Choice Band, Assault
   # Vest), and still unconfirmed.
   no_full_mainline_item_pool: true
-  reference_file: items-m-b.yaml
+  reference_file: references/rules/items-m-b.yaml
 
 new_in_this_regulation:
   new_species_count: 22
