@@ -40,11 +40,16 @@ too: weather, terrain, Trick Room, Tailwind, any Speed-altering hazards
 If the user gives you a full team sheet or battle log, work from that. If
 they instead reference a team by name ("does my Trick Room team beat
 this", "using the rain-core team I saved"), look in `saved-teams/`
-(`team-recorder` writes these) for a matching `<slug>.yaml` — fuzzy-match
-the name against the slugs there, the same way `team-recorder`'s own
-loading step does, rather than treating what the user said as a literal
-filename — and read it back instead of asking them to redescribe six
-Pokemon that are already on file. If they only give you a partial
+(`team-recorder` writes these, best-effort, when a persistent local
+filesystem is available) for a matching `<slug>.yaml` — fuzzy-match the
+name against the slugs there, the same way `team-recorder`'s own loading
+step does, rather than treating what the user said as a literal filename —
+and read it back instead of asking them to redescribe six Pokemon that are
+already on file. If no matching file exists, that doesn't mean the user
+never saved the team — this environment may just not have that file (e.g.
+a different device, or an ephemeral session) — so ask them to paste back
+the team card `team-recorder` gave them instead of assuming from scratch.
+If they only give you a partial
 picture ("I have a Scarf Raichu, what beats it?"), that's fine — reason
 about it explicitly as a range of cases rather than silently assuming the
 gaps. Don't ask a battery of clarifying questions before giving any answer;

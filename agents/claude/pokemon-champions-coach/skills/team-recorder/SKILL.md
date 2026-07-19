@@ -25,9 +25,19 @@ description: >
 
 This skill exists because a finished team otherwise has to be rebuilt or
 re-typed every time it comes up in a new session or against a new matchup.
-It turns "here's my team" (however it's given) into a small file under
-`saved-teams/` that any later session -- this skill, `move-order-coach`, or
-the user themselves -- can read back instead of starting over.
+It turns "here's my team" (however it's given) into a **team card**: a
+compact, copy-pasteable block the user can carry into any later session
+themselves, on any device. It also best-effort writes that same card to
+`saved-teams/<slug>.yaml` when a persistent local filesystem happens to be
+available, but the pasted card -- not the file -- is the mechanism that's
+guaranteed to work, because nothing about it depends on this exact
+environment still existing later. A user running the Claude Code CLI
+against their own machine, with a project directory that sticks around
+between sessions, gets the file as a convenience on top; a user on Claude
+Code web/mobile with an ephemeral container, switching devices, or using
+the plugin fresh somewhere else gets nothing durable from the file at
+all -- for them, the card in the reply *is* the save. Don't let the file
+write become load-bearing in how this skill is explained to the user.
 
 ## Step 1: Get the team from whatever source is given
 
@@ -68,18 +78,13 @@ and the active regulation's `references/rules/regulation-<id>.yaml` the
 same way the team-builder skills do, and flag (don't block on) anything
 that looks illegal or stale.
 
-## Step 3: Write the team file
+## Step 3: Produce the team card, then best-effort save it locally
 
-Create `saved-teams/` at the repo root if it doesn't exist yet. Save to
-`saved-teams/<slug>.yaml`, where `<slug>` is a short kebab-case name --
-use one the user gives, or propose one from the team's theme (e.g.
-`trick-room-torkoal`) and let them adjust it. If a file with that slug
-already exists and this is meant to be the same team updated (not a new
-one), overwrite it and say so; if it's ambiguous whether this is an update
-or a new team, ask.
-
-Fields to include, leaving any genuinely unknown one out rather than
-inventing a value:
+`<slug>` is a short kebab-case name for the team -- use one the user
+gives, or propose one from the team's theme (e.g. `trick-room-torkoal`)
+and let them adjust it. Always show the card as a fenced YAML block in
+your reply, with the fields below, leaving any genuinely unknown one out
+rather than inventing a value:
 
 ```yaml
 name: <slug>
@@ -100,23 +105,41 @@ saved_from: team-builder | screenshot | pasted-text
 saved_on: <ISO 8601 date, YYYY-MM-DD>
 ```
 
+Then also try to write the same content to `saved-teams/<slug>.yaml`
+(creating the directory if it doesn't exist). Treat this purely as a
+convenience for the case where it happens to help: if a file with that
+slug already exists and this is meant to be the same team updated, overwrite
+it and say so; if it's ambiguous whether this is an update or a new team,
+ask. If the write fails, or the environment looks like it won't persist to
+a later session (an ephemeral/remote sandbox, no obvious project
+directory), don't treat that as an error worth dwelling on -- the card
+above is already the real deliverable regardless of whether the file
+sticks.
+
 ## Step 4: Confirm and explain reuse
 
-Tell the user the file path it was saved to, and how to use it again:
-reference the team by its slug/name in a later session (this skill can
-load it back by reading the file) or hand it directly to
-`move-order-coach` for a specific matchup instead of re-describing the
-team from scratch. If any field was left uncertain or missing in Step 2,
-repeat that here so it doesn't get silently trusted later.
+Lead with the portable path: copy the card block above and paste it back
+at the start of a new session, or hand it directly to `move-order-coach`
+for a specific matchup, instead of re-describing the team from scratch --
+this works no matter what device or environment the user is on next time.
+Mention the `saved-teams/<slug>.yaml` file too if the write succeeded, but
+as a bonus on top, not as something the user should rely on alone --
+they still may want to hang onto the card themselves (notes app, a gist,
+a message to themselves) if they're not sure this exact environment will
+be there next session. If any field was left uncertain or missing in Step
+2, repeat that here so it doesn't get silently trusted later.
 
 ## Loading a saved team
 
 When the user references a team by name/slug ("my rain team", "the one I
-saved as trick-room-torkoal") instead of pasting a new one, look for
+saved as trick-room-torkoal") instead of pasting a new one, first check
 `saved-teams/<slug>.yaml` (fuzzy-match the name if the exact slug isn't
 given) and read it back instead of asking the user to redescribe the team.
-If no matching file exists, say so rather than guessing which team they
-mean.
+If no matching file exists, that doesn't necessarily mean the team was
+never saved -- it may just mean this environment never had (or no longer
+has) that file. Say so, and ask the user to paste back the team card they
+were given when they saved it; only treat the team as genuinely gone if
+they don't have that either.
 
 ## Listing saved teams
 
@@ -124,8 +147,10 @@ When the user asks what they have saved ("what teams do I have saved",
 "list my saved teams") instead of naming one, read every file in
 `saved-teams/` and summarize each as slug, `format` (if set), and `intent`
 (if set) in a short list rather than dumping the full YAML for each one.
-If `saved-teams/` doesn't exist yet or is empty, say so plainly instead of
-implying there's nothing to save teams with.
+If `saved-teams/` doesn't exist or is empty, say so plainly, but note that
+this only reflects what's been saved to *this* environment's filesystem --
+it's not proof the user has no team cards saved elsewhere (their own
+notes, a previous session's reply) if they're not on a persistent setup.
 
 ## Language handling
 
