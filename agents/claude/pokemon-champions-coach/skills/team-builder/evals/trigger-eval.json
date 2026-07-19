@@ -9,6 +9,8 @@
   {"query": "does this team actually have a plan for trick room or am i just hoping to outspeed everything", "should_trigger": true},
   {"query": "what's missing from my team right now, i feel like i lose to sun teams every time", "should_trigger": true},
   {"query": "i want to build a team around double fake out, what pokemon actually make that work this regulation", "should_trigger": true},
+  {"query": "can you help me build a singles OU team around garchomp for m-b", "should_trigger": false},
+  {"query": "i want to build a stall team for the singles ladder, whats a good wish passer to start with", "should_trigger": false},
   {"query": "whats a good held item for my corviknight, its just supposed to be a physical wall that pivots with u-turn", "should_trigger": false},
   {"query": "does intimidate stack if i switch in two intimidate users back to back or does it just apply once per switch-in", "should_trigger": false},
   {"query": "will my adamant max attack garchomp OHKO a defensive corviknight with earthquake, corviknight is running like 252 hp / 252 def", "should_trigger": false},

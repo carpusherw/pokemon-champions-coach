@@ -1,26 +1,35 @@
 ---
 name: team-builder
 description: >
-  Builds a Pokemon Champions battle team of 6 from whatever starting point the
-  user actually has: a specific Pokemon or small combo they want to use ("I
-  want to build around Kingambit"), a loose idea or tactic ("I like the idea
-  of a min-Speed team", "I want to abuse Fake Out + redirection"), or a named
-  strategy/archetype ("build me a Trick Room team", "put together a Tailwind
-  hyper offense team", "I want a Sun team"). Also use it when the user already
-  has a partial team (1-5 Pokemon locked in) and wants help finishing it,
-  fixing a hole, or picking the last slot(s), and when they ask general
+  Builds a Pokemon Champions battle team of 6 for the doubles/VGC-style
+  ranked ladder from whatever starting point the user actually has: a
+  specific Pokemon or small combo they want to use ("I want to build around
+  Kingambit"), a loose idea or tactic ("I like the idea of a min-Speed team",
+  "I want to abuse Fake Out + redirection"), or a named strategy/archetype
+  ("build me a Trick Room team", "put together a Tailwind hyper offense
+  team", "I want a Sun team"). Also use it when the user already has a
+  partial team (1-5 Pokemon locked in) and wants help finishing it, fixing a
+  hole, or picking the last slot(s), and when they ask general
   teambuilding-process questions like "what's missing from this team" or "does
-  this team have a plan for Trick Room". Do NOT use this for a single
-  Pokemon's moveset/item/EV question in isolation ("what item should my
-  Corviknight hold") -- that's a set-optimization question, not team
-  construction, unless it's explicitly in service of finishing or fixing a
-  6-Pokemon team. Draws on references/rules and references/pokemon for the
-  current regulation's legal roster and stats, plus this skill's own
-  reference/archetypes.md for known archetype skeletons, instead of guessing
-  either from scratch.
+  this team have a plan for Trick Room". Do NOT use this for the singles
+  ranked ladder (sometimes called Champions OU or BSS) -- use
+  `singles-team-builder` instead, since singles needs a genuinely different
+  team structure (hazards, pivoting, checks/counters) rather than just fewer
+  Pokemon on the field. Do NOT use this for a single Pokemon's moveset/item/EV
+  question in isolation ("what item should my Corviknight hold") -- that's a
+  set-optimization question, not team construction, unless it's explicitly in
+  service of finishing or fixing a 6-Pokemon team. Draws on references/rules
+  and references/pokemon for the current regulation's legal roster and
+  stats, plus this skill's own reference/archetypes.md for known archetype
+  skeletons, instead of guessing either from scratch.
 ---
 
 # Build a team
+
+Scope: the doubles/VGC-style ranked ladder. For the singles ladder, use
+`singles-team-builder` instead — the two formats need genuinely different
+team structures, not just a smaller battle party, so don't reuse this
+skill's archetypes or steps there.
 
 This follows the same process top VGC/Pokemon Champions players actually
 use: every team starts from a stated **intent**, gets built out into a

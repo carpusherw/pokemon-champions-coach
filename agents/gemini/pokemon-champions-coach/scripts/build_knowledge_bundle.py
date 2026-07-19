@@ -40,6 +40,11 @@ ARCHETYPES_SOURCE = os.path.join(
     "agents", "claude", "pokemon-champions-coach", "skills", "team-builder",
     "reference", "archetypes.md",
 )
+SINGLES_ARCHETYPES_SOURCE = os.path.join(
+    REPO_ROOT,
+    "agents", "claude", "pokemon-champions-coach", "skills", "singles-team-builder",
+    "reference", "archetypes.md",
+)
 DEFAULT_OUTPUT_DIR = os.path.join(os.path.dirname(__file__), "..", "knowledge-bundle")
 
 BUNDLE_HEADER = """\
@@ -231,6 +236,12 @@ def build_archetypes():
     return BUNDLE_HEADER + body
 
 
+def build_singles_archetypes():
+    with open(SINGLES_ARCHETYPES_SOURCE) as f:
+        body = f.read()
+    return BUNDLE_HEADER + body
+
+
 def write_bundle(output_dir):
     os.makedirs(output_dir, exist_ok=True)
     files = {
@@ -238,6 +249,7 @@ def write_bundle(output_dir):
         "speed-mechanics.md": build_speed_mechanics(),
         "pokemon-dex.md": build_pokemon_dex(),
         "archetypes.md": build_archetypes(),
+        "singles-archetypes.md": build_singles_archetypes(),
     }
     for name, content in files.items():
         with open(os.path.join(output_dir, name), "w") as f:
