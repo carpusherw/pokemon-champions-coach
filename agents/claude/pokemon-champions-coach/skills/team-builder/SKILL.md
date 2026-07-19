@@ -60,7 +60,8 @@ place worth pausing to confirm rather than plowing ahead.
 If the user already has a partial team (1-5 Pokemon locked), the intent is
 implicit in what they've already picked — infer the shared theme from those
 Pokemon's roles/types/abilities, state what you inferred so they can correct
-it if you're off, then skip to Step 2.
+it if you're off, then still run Step 1 (checking the already-locked Pokemon
+against it too, not just species picked later) before continuing to Step 2.
 
 ## Step 1: Confirm legality before picking anything
 
@@ -125,9 +126,10 @@ usually 3-5 Pokemon, not all 6. At each addition, check:
   opponent not disrupting the one setter, etc.)? A flashier but fragile
   plan is often worse than a slightly duller, more reliable one.
 - **Role compression** — with only 6 slots (and only 4 brought to an actual
-  battle), a piece that does two or three jobs at once (e.g. a hazard/pivot
-  Pokemon that's also a speed-control answer) is worth more than a piece
-  that does only one job as well as two separate specialists would.
+  battle), a piece that does two or three jobs at once (e.g. a
+  redirection/pivot Pokemon that's also a speed-control answer) is worth
+  more than a piece that does only one job as well as two separate
+  specialists would.
 
 ## Step 4: State the team's speed-control plan explicitly
 

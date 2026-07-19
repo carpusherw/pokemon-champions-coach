@@ -1,15 +1,15 @@
 # Archetype skeletons
 
-# Sourced from general VGC/Pokemon Champions teambuilding methodology (the
-# "idea -> core -> mode" framework popularized by VGC Guide/Wolfe
-# Glick/Aaron Traylor/Aaron Zheng, plus widely-repeated Trick Room and
-# weather-team guides from PokeStats, Smogon, and VGC-focused sites) via web
-# search on 2026-07-19. These are stable structural patterns that predate
-# and outlive any single regulation set -- treat the roles/order below as
-# solid, and always re-check which specific species fill each role against
-# the *current* regulation's legal roster in references/pokemon/ rather than
-# assuming a classic example (e.g. a specific mainline Trick Room setter)
-# is actually legal in Pokemon Champions right now.
+<!-- Sourced from general VGC/Pokemon Champions teambuilding methodology (the
+"idea -> core -> mode" framework popularized by VGC Guide/Wolfe
+Glick/Aaron Traylor/Aaron Zheng, plus widely-repeated Trick Room and
+weather-team guides from PokeStats, Smogon, and VGC-focused sites) via web
+search on 2026-07-19. These are stable structural patterns that predate
+and outlive any single regulation set -- treat the roles/order below as
+solid, and always re-check which specific species fill each role against
+the *current* regulation's legal roster in references/pokemon/ rather than
+assuming a classic example (e.g. a specific mainline Trick Room setter)
+is actually legal in Pokemon Champions right now. -->
 
 Each entry below is a skeleton of roles, roughly in priority order for what
 to lock in first when building that archetype from scratch. These aren't
