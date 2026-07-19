@@ -51,13 +51,13 @@ Skills included:
 Gemini Web/mobile has no plugin system — the only extensibility point is a
 Gem (one instructions blob + up to 10 uploaded knowledge files, set up by
 hand in Gem Manager, then usable on both Gemini Web and the mobile apps).
-See `agents/gemini/pokemon-champions-coach/README.md` for setup steps.
+See [`agents/gemini/pokemon-champions-coach/README.md`](agents/gemini/pokemon-champions-coach/README.md) for setup steps.
 
 `move-order-coach`, `team-builder-doubles` (doubles/VGC-style format only), and
 `team-builder-singles` are ported, and a degraded, draft-only `skill-retro`
 — Gems can't read this repo live or call the GitHub API, so
 `refresh-references` stays Claude-only, and `skill-retro` on Gemini can
-draft an issue but can't file one. See that folder's README for the full
+draft an issue but can't file one. See [that folder's README](agents/gemini/pokemon-champions-coach/README.md) for the full
 capability matrix and how the two agents stay in sync.
 
 ## Adding another agent
