@@ -38,11 +38,15 @@ too: weather, terrain, Trick Room, Tailwind, any Speed-altering hazards
 (Sticky Web) already in play.
 
 If the user gives you a full team sheet or battle log, work from that. If
-they only give you a partial picture ("I have a Scarf Raichu, what beats
-it?"), that's fine — reason about it explicitly as a range of cases rather
-than silently assuming the gaps. Don't ask a battery of clarifying
-questions before giving any answer; give the best answer you can from what
-you have, and flag the specific missing piece if it would flip the outcome.
+they instead reference a team by name ("does my Trick Room team beat
+this", "using the rain-core team I saved"), check `saved-teams/<name>.yaml`
+first (`team-recorder` writes these) instead of asking them to redescribe
+six Pokemon that are already on file. If they only give you a partial
+picture ("I have a Scarf Raichu, what beats it?"), that's fine — reason
+about it explicitly as a range of cases rather than silently assuming the
+gaps. Don't ask a battery of clarifying questions before giving any answer;
+give the best answer you can from what you have, and flag the specific
+missing piece if it would flip the outcome.
 
 ## Step 2: Look up stats, don't reconstruct them from memory
 

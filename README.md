@@ -16,6 +16,9 @@ references/                     Agent-agnostic data, shared by every agent's ski
 └── pokemon/
     └── <species-slug>.yaml     One file per legal Pokemon: types, stats, abilities, movepool, Mega data
 
+saved-teams/                    User-saved teams (git-ignored), written/read by team-recorder
+└── <slug>.yaml                 One file per saved team: species, sets, intent, in-game team ID
+
 agents/
 ├── claude/
 │   └── pokemon-champions-coach/    Claude Code plugin (see below)
@@ -44,6 +47,7 @@ Skills included:
 - **move-order-coach** — Given a board state (both sides' Pokemon, moves, items, field conditions), works out the speed order and move-resolution order for the turn, using the current regulation's legal roster and reference data instead of re-deriving stats from scratch.
 - **team-builder-doubles** — Builds a battle team of 6 for the doubles/VGC-style ladder from a starting Pokemon, a loose idea/tactic, or a named strategy (Trick Room, Tailwind, weather, balance), following the idea → core → mode process top VGC/Champions players use, then threat-checks the result against the current regulation's meta.
 - **team-builder-singles** — The same teambuilding discipline, adapted for the singles ranked ladder (Champions OU/BSS): win condition, offensive/defensive cores, checks and counters, and the mandatory hazard/momentum checklist (Hyper Offense, Balance, Stall, Bulky Offense/VoltTurn), instead of reusing doubles-shaped archetypes.
+- **team-recorder** — Saves a finished team to `saved-teams/` so it can be reloaded in a later session instead of rebuilt from scratch. Works standalone (a team-builder run isn't required): give it a screenshot of the in-game team screen, a pasted team sheet, or a plain description. Both team-builder skills hand off to it, and `move-order-coach` reads saved teams back by name.
 - **skill-retro** — Turns concrete failures in this plugin's own coaching skills into GitHub issues, after showing the user the draft and getting a go-ahead.
 
 ## Gemini Gem

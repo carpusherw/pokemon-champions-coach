@@ -1,0 +1,17 @@
+[
+  {"query": "can you save this team so i dont have to redescribe it next time", "should_trigger": true},
+  {"query": "[pasted screenshot of in-game team roster screen] can you log this team for me", "should_trigger": true},
+  {"query": "remember this as my trick room team: torkoal, hatterene, kingambit, garganacl, incineroar, farigiraf", "should_trigger": true},
+  {"query": "load up the rain-core team i saved last week", "should_trigger": true},
+  {"query": "i changed grimmsnarl's item to mental herb, can you update the saved version", "should_trigger": true},
+  {"query": "what teams do i have saved right now", "should_trigger": true},
+  {"query": "here's a screenshot of my team's stats screen, can you write this down somewhere so i can reuse it", "should_trigger": true},
+  {"query": "export this team so i can bring it up again for a different matchup tomorrow", "should_trigger": true},
+  {"query": "help me build a team around kingambit for m-b doubles", "should_trigger": false},
+  {"query": "what's missing from my team right now, i feel like i lose to sun teams every time", "should_trigger": false},
+  {"query": "scarfed dragapult vs mega garchomp, who goes first if i click draco meteor", "should_trigger": false},
+  {"query": "whats a good held item for my corviknight if its just supposed to pivot with u-turn", "should_trigger": false},
+  {"query": "log this as a skill issue, the move order calc was wrong earlier", "should_trigger": false},
+  {"query": "m-c just dropped, can you refresh the regulation data and legal roster", "should_trigger": false},
+  {"query": "is mega raichu y actually any good competitively or just a meme pick", "should_trigger": false}
+]
