@@ -39,9 +39,12 @@ too: weather, terrain, Trick Room, Tailwind, any Speed-altering hazards
 
 If the user gives you a full team sheet or battle log, work from that. If
 they instead reference a team by name ("does my Trick Room team beat
-this", "using the rain-core team I saved"), check `saved-teams/<name>.yaml`
-first (`team-recorder` writes these) instead of asking them to redescribe
-six Pokemon that are already on file. If they only give you a partial
+this", "using the rain-core team I saved"), look in `saved-teams/`
+(`team-recorder` writes these) for a matching `<slug>.yaml` — fuzzy-match
+the name against the slugs there, the same way `team-recorder`'s own
+loading step does, rather than treating what the user said as a literal
+filename — and read it back instead of asking them to redescribe six
+Pokemon that are already on file. If they only give you a partial
 picture ("I have a Scarf Raichu, what beats it?"), that's fine — reason
 about it explicitly as a range of cases rather than silently assuming the
 gaps. Don't ask a battery of clarifying questions before giving any answer;

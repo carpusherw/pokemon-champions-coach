@@ -97,7 +97,7 @@ pokemon:
     notes: <anything uncertain or worth flagging>
   # ... up to 6
 saved_from: team-builder | screenshot | pasted-text
-saved_on: <date>
+saved_on: <ISO 8601 date, YYYY-MM-DD>
 ```
 
 ## Step 4: Confirm and explain reuse
@@ -117,6 +117,15 @@ saved as trick-room-torkoal") instead of pasting a new one, look for
 given) and read it back instead of asking the user to redescribe the team.
 If no matching file exists, say so rather than guessing which team they
 mean.
+
+## Listing saved teams
+
+When the user asks what they have saved ("what teams do I have saved",
+"list my saved teams") instead of naming one, read every file in
+`saved-teams/` and summarize each as slug, `format` (if set), and `intent`
+(if set) in a short list rather than dumping the full YAML for each one.
+If `saved-teams/` doesn't exist yet or is empty, say so plainly instead of
+implying there's nothing to save teams with.
 
 ## Language handling
 
