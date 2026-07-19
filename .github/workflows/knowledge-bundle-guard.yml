@@ -19,3 +19,6 @@ jobs:
 
       - name: Check Gemini knowledge bundle is up to date
         run: python3 agents/gemini/pokemon-champions-coach/scripts/build_knowledge_bundle.py --check
+
+      - name: Check every Claude skill has a recorded Gemini decision
+        run: python3 .github/scripts/check_gemini_parity.py

@@ -52,11 +52,12 @@ Gem (one instructions blob + up to 10 uploaded knowledge files, set up by
 hand in Gem Manager, then usable on both Gemini Web and the mobile apps).
 See `agents/gemini/pokemon-champions-coach/README.md` for setup steps.
 
-Only `move-order-coach` and a degraded, draft-only `skill-retro` are
-ported — Gems can't read this repo live or call the GitHub API, so
-`refresh-references` stays Claude-only, and `skill-retro` on Gemini can
-draft an issue but can't file one. See that folder's README for the full
-capability matrix and how the two agents stay in sync.
+`move-order-coach` and `team-builder` (doubles/VGC-style format only) are
+ported, and a degraded, draft-only `skill-retro` — Gems can't read this repo
+live or call the GitHub API, so `refresh-references` stays Claude-only, and
+`skill-retro` on Gemini can draft an issue but can't file one. See that
+folder's README for the full capability matrix and how the two agents stay
+in sync.
 
 ## Adding another agent
 
