@@ -42,6 +42,7 @@ Skills included:
 
 - **refresh-references** — Looks up the current regulation set's rules and legal Pokemon, and refreshes `references/`. Run this at the start of each new season (Pokemon Champions rotates regulation sets periodically), or whenever the references look stale.
 - **move-order-coach** — Given a board state (both sides' Pokemon, moves, items, field conditions), works out the speed order and move-resolution order for the turn, using the current regulation's legal roster and reference data instead of re-deriving stats from scratch.
+- **team-builder** — Builds a battle team of 6 from a starting Pokemon, a loose idea/tactic, or a named strategy (Trick Room, Tailwind, weather, balance), following the idea → core → mode process top VGC/Champions players use, then threat-checks the result against the current regulation's meta.
 - **skill-retro** — Turns concrete failures in this plugin's own coaching skills into GitHub issues, after showing the user the draft and getting a go-ahead.
 
 ## Gemini Gem
@@ -51,11 +52,12 @@ Gem (one instructions blob + up to 10 uploaded knowledge files, set up by
 hand in Gem Manager, then usable on both Gemini Web and the mobile apps).
 See `agents/gemini/pokemon-champions-coach/README.md` for setup steps.
 
-Only `move-order-coach` and a degraded, draft-only `skill-retro` are
-ported — Gems can't read this repo live or call the GitHub API, so
-`refresh-references` stays Claude-only, and `skill-retro` on Gemini can
-draft an issue but can't file one. See that folder's README for the full
-capability matrix and how the two agents stay in sync.
+`move-order-coach` and `team-builder` (doubles/VGC-style format only) are
+ported, and a degraded, draft-only `skill-retro` — Gems can't read this repo
+live or call the GitHub API, so `refresh-references` stays Claude-only, and
+`skill-retro` on Gemini can draft an issue but can't file one. See that
+folder's README for the full capability matrix and how the two agents stay
+in sync.
 
 ## Adding another agent
 
