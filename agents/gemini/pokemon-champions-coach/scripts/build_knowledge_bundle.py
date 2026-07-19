@@ -37,7 +37,7 @@ SPEED_MECHANICS_SOURCE = os.path.join(
 )
 ARCHETYPES_SOURCE = os.path.join(
     REPO_ROOT,
-    "agents", "claude", "pokemon-champions-coach", "skills", "team-builder",
+    "agents", "claude", "pokemon-champions-coach", "skills", "team-builder-doubles",
     "reference", "archetypes.md",
 )
 SINGLES_ARCHETYPES_SOURCE = os.path.join(

@@ -47,7 +47,7 @@ repo -- both are one-way, human-driven steps:
    step can't silently get skipped.
 3. In Gem Manager, remove the 5 old Knowledge files and upload the new
    ones (there's no Gems API to automate this upload).
-4. If `agents/claude/.../move-order-coach/SKILL.md`, `.../team-builder/SKILL.md`,
+4. If `agents/claude/.../move-order-coach/SKILL.md`, `.../team-builder-doubles/SKILL.md`,
    `.../team-builder-singles/SKILL.md`, or `.../skill-retro/SKILL.md` changed
    in a way that affects behavior (not just data), re-read it and hand-update
    `gem-instructions.md` too -- that file is a judgment-based condensation,
@@ -64,7 +64,7 @@ repo -- both are one-way, human-driven steps:
 | Skill | Claude Code plugin | Gemini Gem |
 |---|---|---|
 | `move-order-coach` | Full — reads `references/` live | Full — reads the pre-built knowledge bundle instead of live files; otherwise same reasoning |
-| `team-builder` | Full, doubles/VGC-style format only — reads `references/` live, threat-checks via WebSearch | Full, same doubles-only scope — reads the knowledge bundle (including `archetypes.md`) instead of live files; the meta threat-check step uses Google Search grounding if enabled for the Gem, otherwise it says plainly that step is skipped rather than guessing |
+| `team-builder-doubles` | Full, doubles/VGC-style format only — reads `references/` live, threat-checks via WebSearch | Full, same doubles-only scope — reads the knowledge bundle (including `archetypes.md`) instead of live files; the meta threat-check step uses Google Search grounding if enabled for the Gem, otherwise it says plainly that step is skipped rather than guessing |
 | `team-builder-singles` | Full, singles ladder only — reads `references/` live, threat-checks via WebSearch against singles usage/viability sources | Full, same singles-only scope — reads the knowledge bundle (including `singles-archetypes.md`) instead of live files; the meta threat-check step uses Google Search grounding if enabled for the Gem, otherwise it says plainly that step is skipped rather than guessing |
 | `refresh-references` | Full — researches and writes back to `references/` | **Not ported.** Gems can't fetch-and-write repo files; stays a Claude-only maintenance task |
 | `skill-retro` | Full — files/comments on GitHub issues after user go-ahead | **Draft-only.** Gems have no external API access, so it drafts the title/body/label and best-effort-checks for duplicates via Search, but the user must relay the draft to Claude or GitHub's UI to actually file it — it never claims to have filed anything |

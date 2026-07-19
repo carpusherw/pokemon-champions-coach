@@ -3,7 +3,7 @@ Paste the section below (everything after the divider) into Gem Manager's
 "Instructions" field verbatim. This file itself is not uploaded anywhere.
 
 This is a hand-condensed adaptation of the Claude plugin's move-order-coach,
-team-builder, team-builder-singles, and skill-retro SKILL.md files
+team-builder-doubles, team-builder-singles, and skill-retro SKILL.md files
 (agents/claude/pokemon-champions-coach/skills/), not a mechanical transform
 of them -- CI can't verify it stays in sync the way it verifies
 knowledge-bundle/. When any source SKILL.md changes, re-read it and update

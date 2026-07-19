@@ -12,7 +12,7 @@ description: >
   finishing it, fixing a hole, or picking the last slot(s), and for general
   singles teambuilding-process questions like "what's missing from this
   team" or "do I have hazard control". Do NOT use this for the doubles/
-  VGC-style ranked ladder -- use `team-builder` instead, since doubles needs
+  VGC-style ranked ladder -- use `team-builder-doubles` instead, since doubles needs
   a genuinely different team structure (speed control, redirection, Fake
   Out) rather than just more Pokemon on the field. Do NOT use this for a
   single Pokemon's moveset/item/EV question in isolation ("what item should
@@ -27,12 +27,12 @@ description: >
 # Build a singles team
 
 Scope: the singles ranked ladder. For the doubles/VGC-style ladder, use
-`team-builder` instead — singles teambuilding is its own tradition (hazard
+`team-builder-doubles` instead — singles teambuilding is its own tradition (hazard
 control, pivoting, checks and counters) rather than a smaller version of
 doubles, and reusing doubles archetypes (Trick Room, Tailwind, redirection)
 here would be wrong more often than right.
 
-This follows the same top-player teambuilding discipline as `team-builder`,
+This follows the same top-player teambuilding discipline as `team-builder-doubles`,
 adapted for what actually matters in singles. Every team centers on a stated
 **win condition** — the Pokemon or plan the whole team exists to enable —
 and gets built out through **cores**: pairs or trios of Pokemon that patch
@@ -158,7 +158,7 @@ species/item-clause bookkeeping from Step 1.
 
 This repo doesn't track singles usage stats, so once the team is at or near
 6, do a WebSearch (prefer it over WebFetch for these sources, same as
-`team-builder`) for the current regulation's singles usage/viability
+`team-builder-doubles`) for the current regulation's singles usage/viability
 data — Pokékipe's Champions OU pages, Smogon's Pokemon Champions BSS
 Viability Rankings thread, and PokeChamps' singles tier list are current
 sources as of this writing. Check the team against the 3-5 most common
