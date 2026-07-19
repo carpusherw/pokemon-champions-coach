@@ -16,3 +16,7 @@ notes: >
   Pokemon.com post or in-game patch notes) when precision matters, e.g. for
   tournament rules-lawyering -- turn-timer numbers in particular are still
   flagged as source-inconsistent in references/rules/regulation-m-b.yaml.
+  A 2026-07-19 follow-up added references/rules/items-m-b.yaml: held items
+  are also a still-growing live-service pool (not the full mainline set),
+  and several competitive staples -- Choice Specs and Choice Band chief
+  among them -- are confirmed not yet implemented as of that check.

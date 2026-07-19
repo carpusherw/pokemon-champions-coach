@@ -84,6 +84,17 @@ legality:
     see references/pokemon/README.md for coverage details and remaining
     data-quality caveats.
 
+held_items:
+  # Same "not the full mainline set yet" situation as the Pokemon roster
+  # above, but for held items: Pokemon Champions launched with a
+  # stripped-down item pool and has been adding items live-service style
+  # since. See references/rules/items-m-b.yaml for the
+  # checked-as-of-2026-07-19 breakdown of what's confirmed available,
+  # confirmed not yet available (e.g. Choice Specs, Choice Band, Assault
+  # Vest), and still unconfirmed.
+  no_full_mainline_item_pool: true
+  reference_file: items-m-b.yaml
+
 new_in_this_regulation:
   new_species_count: 22
   # Confirmed complete via a direct fetch of Serebii's regulation M-B ranked
