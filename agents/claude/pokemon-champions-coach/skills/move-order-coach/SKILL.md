@@ -62,6 +62,14 @@ regulation-checked.
   isn't useful advice. If references look stale, say so and suggest running
   the refresh-references skill, but still answer the actual question with
   what you have.
+- Same check applies to items: before treating a held item as in play
+  (either one the user stated, or a hypothetical like "what if it's Choice
+  Specs"), check `held_items.reference_file` (e.g.
+  `references/rules/items-m-b.yaml`) for the current regulation. Some
+  mainline VGC/Showdown staples aren't actually implemented in Pokemon
+  Champions yet (Choice Specs and Choice Band as of the last check) — flag
+  that instead of computing a speed/damage line for an item that can't
+  actually be held in-game.
 
 ## Step 3: Work out priority, then Speed, in that order
 

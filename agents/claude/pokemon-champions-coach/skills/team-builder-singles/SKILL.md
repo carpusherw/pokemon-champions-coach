@@ -83,6 +83,13 @@ tier like "Champions OU" on a Pokemon Showdown-style simulator, that's a
 tier-specific bans) layered on top of the base roster — ask which one they
 mean rather than assuming, since it changes what's actually "legal."
 
+Item legality has the same gap as the species roster: the regulation's
+`held_items.reference_file` (e.g. `references/rules/items-m-b.yaml`) tracks
+which held items actually exist in Pokemon Champions yet, separately from
+the item clause's "no duplicates" rule. Don't recommend a mainline
+VGC/Showdown staple (Choice Specs and Choice Band are the current known
+gaps) without checking it's actually in that list first.
+
 ## Step 2: Work the win condition into a first Pokemon or two
 
 - **From a Pokemon**: read `references/pokemon/<species>.yaml` for stats,

@@ -1,0 +1,128 @@
+# Pokemon Champions — Held Item Availability (Regulation M-B)
+#
+# Like the Pokemon roster (see references/pokemon/README.md), Pokemon
+# Champions' held item pool is a live-service work in progress, not the
+# full mainline VGC/Showdown item list. This file tracks which
+# competitively-relevant items are and aren't confirmed available so
+# coaching skills don't recommend an item the game doesn't actually have.
+#
+# Sources (via web search + direct fetch on 2026-07-19):
+#   - Serebii.net "Pokemon Champions - Items" page (direct fetch)
+#   - PokeBase.app item usage pages (direct fetch; a 404 on an item's own
+#     page was treated as "not implemented," a 200 with real usage stats
+#     as "implemented" -- see caveats)
+#   - GAMES.GG "Pokemon Champions Item List: What's Missing and Why It
+#     Matters"
+#   - A Light_88 (X/Twitter) item-pool roundup citing @ElChicoEevee
+#   - ChampsDex "Choice Band, Specs & Scarf" guide (conflicts with the
+#     above on Choice Specs/Band -- see caveats)
+
+id: M-B
+last_checked: "2026-07-19"
+
+summary: >
+  Pokemon Champions launched (2026-04-07) with a deliberately stripped-down
+  held item pool compared to mainline VGC, and has been adding items via
+  live-service updates since -- the same "not the full roster yet" pattern
+  as the Pokemon species list (see references/pokemon/README.md). As of
+  this check, several longstanding competitive staples -- most notably
+  Choice Specs -- are still not implemented. Don't assume an item exists
+  just because it's a mainline VGC/Showdown staple; check this file (or
+  verify in-game) first.
+
+confirmed_available:
+  # Directly observed (Serebii's item list and/or a live PokeBase.app item
+  # page returning real usage data) as of 2026-07-19.
+  singles_and_doubles:
+    - Choice Scarf
+    - "Life Orb (added post-launch -- NOT present at the 2026-04-07 launch)"
+    - Leftovers
+    - Focus Sash
+    - Focus Band
+    - Sitrus Berry
+    - Expert Belt
+    - Muscle Band
+    - Bright Powder
+    - Iron Ball
+    - King's Rock
+    - Quick Claw
+    - Scope Lens
+    - Wide Lens
+    - Zoom Lens
+    - Wise Glasses
+    - Metronome
+    - Shell Bell
+    - Shed Shell
+    - Light Ball
+    - Light Clay
+    - Mental Herb
+    - White Herb
+    - Damp Rock
+    - Heat Rock
+    - Icy Rock
+    - Smooth Rock
+  type_boosting_items: >
+    Charcoal, Mystic Water, Magnet, Miracle Seed, Never-Melt Ice, Black
+    Belt, Poison Barb, Soft Sand, Sharp Beak, Twisted Spoon, Silver Powder,
+    Hard Stone, Spell Tag, Dragon Fang, Black Glasses, Metal Coat, Fairy
+    Feather, Big Root -- all confirmed present on Serebii's item list.
+
+confirmed_not_yet_available:
+  # Notably absent as of this check -- multiple independent sources agree,
+  # and each item's own PokeBase.app page 404s (whereas implemented items
+  # like Life Orb/Sitrus Berry return a live page with usage stats).
+  - item: "Choice Specs"
+    note: >
+      Still not in the game as of 2026-07-19, despite being a mainline
+      VGC/Showdown staple. Don't recommend it in coaching answers.
+  - item: "Choice Band"
+    note: "Same launch-era gap as Choice Specs; Choice Scarf is the only Choice item currently implemented."
+  - item: "Assault Vest"
+    note: "Confirmed absent at launch (2026-04-07); no source found confirming it has since been added."
+
+unconfirmed_this_pass:
+  # Other modern competitive items where sources actively conflicted, or no
+  # dedicated availability page could be found either way this pass. Treat
+  # as "verify in-game," not as confirmed available or confirmed missing.
+  - Eviolite
+  - "Heavy-Duty Boots"
+  - "Weakness Policy"
+  - "Booster Energy"
+  - "Rocky Helmet"
+  - "Safety Goggles"
+  - "Covert Cloak"
+  - "Clear Amulet"
+  - "Loaded Dice"
+  - "Mirror Herb"
+  - "Punching Glove"
+  - "Room Service"
+  - "Ability Shield"
+  - "Terrain Seeds (Electric Seed, Grassy Seed, Misty Seed, Psychic Seed)"
+
+caveats:
+  - >
+    One source (ChampsDex's "Choice Band, Specs & Scarf" guide) treats all
+    three Choice items as already implemented and discusses competitive
+    usage for each. This directly conflicts with Serebii's item list, the
+    Light_88/ElChicoEevee item-pool roundup, GAMES.GG's missing-items
+    article, and this session's own PokeBase.app checks (choice-specs and
+    choice-band both 404 while choice-scarf has a live usage page). The
+    weight of independent evidence favors "still not available," but that
+    guide reads as a generic mainline-VGC-style writeup rather than
+    Champions-specific reporting -- flagged here in case it's right and
+    everything else is stale.
+  - >
+    PokeBase.app's item pages appear to be usage-stat pages (each shows a
+    count of teams recorded using that item), not a full item dex -- so a
+    404 there is decent evidence an item isn't in the game, but isn't
+    airtight; a real-but-rarely-used item could plausibly have no page
+    yet. Entries under confirmed_not_yet_available have textual
+    corroboration beyond the 404 (see Sources above); entries under
+    unconfirmed_this_pass are just a 404 (or absence from a list) without
+    that corroboration, which is why they're kept separate rather than
+    called "missing."
+  - >
+    Re-check before a close tournament-prep call, and especially the next
+    time the refresh-references skill runs a regulation refresh -- item
+    pool changes are exactly the kind of thing that can move between
+    regulation sets, the same way the Pokemon roster does.

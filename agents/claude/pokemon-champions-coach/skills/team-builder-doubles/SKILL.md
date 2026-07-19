@@ -89,6 +89,11 @@ constrain every legal team:
   isn't legal no matter how good it looks on paper.
 - `legality.currently_excluded_categories` and the regulation's roster —
   don't build around a species that isn't legal yet or got rotated out.
+- `held_items.reference_file` (e.g. `references/rules/items-m-b.yaml`) —
+  the held item pool has the same "not the full mainline set yet" gap as
+  the species roster. Don't recommend a mainline VGC/Showdown staple
+  (Choice Specs and Choice Band are the current known gaps) without
+  checking it's actually implemented first.
 
 If references look stale (regulation looks old, a species you'd expect to
 see is missing), say so and suggest `refresh-references`, but keep working
