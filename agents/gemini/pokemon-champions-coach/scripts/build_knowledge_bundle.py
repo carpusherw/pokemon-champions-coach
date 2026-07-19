@@ -40,15 +40,22 @@ ARCHETYPES_SOURCE = os.path.join(
     "agents", "claude", "pokemon-champions-coach", "skills", "team-builder",
     "reference", "archetypes.md",
 )
+SINGLES_ARCHETYPES_SOURCE = os.path.join(
+    REPO_ROOT,
+    "agents", "claude", "pokemon-champions-coach", "skills", "team-builder-singles",
+    "reference", "archetypes.md",
+)
 DEFAULT_OUTPUT_DIR = os.path.join(os.path.dirname(__file__), "..", "knowledge-bundle")
 
 BUNDLE_HEADER = """\
 <!--
-Compiled by agents/gemini/pokemon-champions-coach/scripts/build_knowledge_bundle.py
-from the canonical data in references/. Do not hand-edit this file -- edit the
-source (references/, or agents/claude/.../speed-mechanics.md) and re-run the
-build script instead, or your changes will be overwritten and CI's
-knowledge-bundle-guard will flag the file as stale anyway.
+Compiled by agents/gemini/pokemon-champions-coach/scripts/build_knowledge_bundle.py.
+Do not hand-edit this file -- most bundle files come from references/, but
+this one may instead be a copy of a skill's own reference/*.md file (see
+SPEED_MECHANICS_SOURCE, ARCHETYPES_SOURCE, and SINGLES_ARCHETYPES_SOURCE in
+build_knowledge_bundle.py for exactly which). Edit the actual source and
+re-run the build script instead, or your changes will be overwritten and
+CI's knowledge-bundle-guard will flag the file as stale anyway.
 -->
 
 """
@@ -231,6 +238,12 @@ def build_archetypes():
     return BUNDLE_HEADER + body
 
 
+def build_singles_archetypes():
+    with open(SINGLES_ARCHETYPES_SOURCE) as f:
+        body = f.read()
+    return BUNDLE_HEADER + body
+
+
 def write_bundle(output_dir):
     os.makedirs(output_dir, exist_ok=True)
     files = {
@@ -238,6 +251,7 @@ def write_bundle(output_dir):
         "speed-mechanics.md": build_speed_mechanics(),
         "pokemon-dex.md": build_pokemon_dex(),
         "archetypes.md": build_archetypes(),
+        "singles-archetypes.md": build_singles_archetypes(),
     }
     for name, content in files.items():
         with open(os.path.join(output_dir, name), "w") as f:

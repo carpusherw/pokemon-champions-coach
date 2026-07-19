@@ -1,0 +1,22 @@
+[
+  {"query": "can you help me build a singles OU team around garchomp for m-b", "should_trigger": true},
+  {"query": "i want to build a stall team for the singles ladder, whats a good wish passer to start with", "should_trigger": true},
+  {"query": "trying to put together a volt-turn team, who are good u-turn and volt switch users right now", "should_trigger": true},
+  {"query": "help me build a hyper offense team for champions ou", "should_trigger": true},
+  {"query": "i've got corviknight, hippowdon, and gholdengo locked in for singles, what should my last three be", "should_trigger": true},
+  {"query": "does my singles team actually have hazard control or am i just going to get worn down", "should_trigger": true},
+  {"query": "quiero armar un equipo de stall para el formato singles, que buen phazer me recomiendas", "should_trigger": true},
+  {"query": "whats missing from this bss team, i keep losing to stuff i cant switch into", "should_trigger": true},
+  {"query": "i want to build a balance team around a mimikyu breaker for the singles ladder", "should_trigger": true},
+  {"query": "can you help me put together a solid 6 mon core for m-b ranked doubles, i like bulky offense and already have kingambit and garganacl locked in", "should_trigger": false},
+  {"query": "trying to put together a trick room team for m-b, whats a good slow bulky attacker to pair with hatterene and porygon2 as the setters", "should_trigger": false},
+  {"query": "help me put together a tailwind hyper offense team for regulation m-b", "should_trigger": false},
+  {"query": "whats a good held item for my corviknight, its just supposed to be a physical wall that pivots with u-turn", "should_trigger": false},
+  {"query": "will my adamant max attack garchomp OHKO a defensive corviknight with earthquake, corviknight is running like 252 hp / 252 def", "should_trigger": false},
+  {"query": "ok so in champions reg m-b, i've got a scarfed dragapult and they sent out a garchomp mega, who goes first if i click draco meteor", "should_trigger": false},
+  {"query": "whats actually banned or excluded from regulation m-b right now, i keep seeing conflicting stuff online about box legendaries", "should_trigger": false},
+  {"query": "m-c just dropped, can you refresh the regulation data and legal roster", "should_trigger": false},
+  {"query": "log this as a skill issue, the move order calc was wrong earlier", "should_trigger": false},
+  {"query": "is mega raichu y actually any good competitively or is it just a meme pick right now", "should_trigger": false},
+  {"query": "should i run choice scarf or life orb on my iron valiant", "should_trigger": false}
+]
