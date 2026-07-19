@@ -42,7 +42,7 @@ ARCHETYPES_SOURCE = os.path.join(
 )
 SINGLES_ARCHETYPES_SOURCE = os.path.join(
     REPO_ROOT,
-    "agents", "claude", "pokemon-champions-coach", "skills", "singles-team-builder",
+    "agents", "claude", "pokemon-champions-coach", "skills", "team-builder-singles",
     "reference", "archetypes.md",
 )
 DEFAULT_OUTPUT_DIR = os.path.join(os.path.dirname(__file__), "..", "knowledge-bundle")

@@ -1,5 +1,5 @@
 ---
-name: singles-team-builder
+name: team-builder-singles
 description: >
   Builds a Pokemon Champions battle team of 6 for the singles ranked ladder
   (sometimes called Champions OU or BSS/Battle Stadium Singles by the

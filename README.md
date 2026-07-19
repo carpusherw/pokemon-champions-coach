@@ -43,7 +43,7 @@ Skills included:
 - **refresh-references** — Looks up the current regulation set's rules and legal Pokemon, and refreshes `references/`. Run this at the start of each new season (Pokemon Champions rotates regulation sets periodically), or whenever the references look stale.
 - **move-order-coach** — Given a board state (both sides' Pokemon, moves, items, field conditions), works out the speed order and move-resolution order for the turn, using the current regulation's legal roster and reference data instead of re-deriving stats from scratch.
 - **team-builder** — Builds a battle team of 6 for the doubles/VGC-style ladder from a starting Pokemon, a loose idea/tactic, or a named strategy (Trick Room, Tailwind, weather, balance), following the idea → core → mode process top VGC/Champions players use, then threat-checks the result against the current regulation's meta.
-- **singles-team-builder** — The same teambuilding discipline, adapted for the singles ranked ladder (Champions OU/BSS): win condition, offensive/defensive cores, checks and counters, and the mandatory hazard/momentum checklist (Hyper Offense, Balance, Stall, Bulky Offense/VoltTurn), instead of reusing doubles-shaped archetypes.
+- **team-builder-singles** — The same teambuilding discipline, adapted for the singles ranked ladder (Champions OU/BSS): win condition, offensive/defensive cores, checks and counters, and the mandatory hazard/momentum checklist (Hyper Offense, Balance, Stall, Bulky Offense/VoltTurn), instead of reusing doubles-shaped archetypes.
 - **skill-retro** — Turns concrete failures in this plugin's own coaching skills into GitHub issues, after showing the user the draft and getting a go-ahead.
 
 ## Gemini Gem
@@ -54,7 +54,7 @@ hand in Gem Manager, then usable on both Gemini Web and the mobile apps).
 See `agents/gemini/pokemon-champions-coach/README.md` for setup steps.
 
 `move-order-coach`, `team-builder` (doubles/VGC-style format only), and
-`singles-team-builder` are ported, and a degraded, draft-only `skill-retro`
+`team-builder-singles` are ported, and a degraded, draft-only `skill-retro`
 — Gems can't read this repo live or call the GitHub API, so
 `refresh-references` stays Claude-only, and `skill-retro` on Gemini can
 draft an issue but can't file one. See that folder's README for the full

@@ -13,7 +13,7 @@ description: >
   teambuilding-process questions like "what's missing from this team" or "does
   this team have a plan for Trick Room". Do NOT use this for the singles
   ranked ladder (sometimes called Champions OU or BSS) -- use
-  `singles-team-builder` instead, since singles needs a genuinely different
+  `team-builder-singles` instead, since singles needs a genuinely different
   team structure (hazards, pivoting, checks/counters) rather than just fewer
   Pokemon on the field. Do NOT use this for a single Pokemon's moveset/item/EV
   question in isolation ("what item should my Corviknight hold") -- that's a
@@ -27,7 +27,7 @@ description: >
 # Build a team
 
 Scope: the doubles/VGC-style ranked ladder. For the singles ladder, use
-`singles-team-builder` instead — the two formats need genuinely different
+`team-builder-singles` instead — the two formats need genuinely different
 team structures, not just a smaller battle party, so don't reuse this
 skill's archetypes or steps there.
 
