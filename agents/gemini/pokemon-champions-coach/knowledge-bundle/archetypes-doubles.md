@@ -2,8 +2,8 @@
 Compiled by agents/gemini/pokemon-champions-coach/scripts/build_knowledge_bundle.py.
 Do not hand-edit this file -- most bundle files come from references/, but
 this one may instead be a copy of a skill's own reference/*.md file (see
-SPEED_MECHANICS_SOURCE, ARCHETYPES_SOURCE, and SINGLES_ARCHETYPES_SOURCE in
-build_knowledge_bundle.py for exactly which). Edit the actual source and
+SPEED_MECHANICS_SOURCE, ARCHETYPES_DOUBLES_SOURCE, and ARCHETYPES_SINGLES_SOURCE
+in build_knowledge_bundle.py for exactly which). Edit the actual source and
 re-run the build script instead, or your changes will be overwritten and
 CI's knowledge-bundle-guard will flag the file as stale anyway.
 -->

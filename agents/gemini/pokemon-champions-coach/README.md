@@ -42,8 +42,8 @@ repo -- both are one-way, human-driven steps:
    today (`refresh-references` skill, Claude-only).
 2. Run `python3 agents/gemini/pokemon-champions-coach/scripts/build_knowledge_bundle.py`
    and commit the result. CI (`knowledge-bundle-guard.yml`) fails any PR
-   that changes `references/`, `speed-mechanics.md`, `archetypes.md`, or
-   `singles-archetypes.md` without also regenerating this bundle, so this
+   that changes `references/`, `speed-mechanics.md`, `archetypes-doubles.md`,
+   or `archetypes-singles.md` without also regenerating this bundle, so this
    step can't silently get skipped.
 3. In Gem Manager, remove the 5 old Knowledge files and upload the new
    ones (there's no Gems API to automate this upload).
@@ -64,8 +64,8 @@ repo -- both are one-way, human-driven steps:
 | Skill | Claude Code plugin | Gemini Gem |
 |---|---|---|
 | `move-order-coach` | Full — reads `references/` live | Full — reads the pre-built knowledge bundle instead of live files; otherwise same reasoning |
-| `team-builder-doubles` | Full, doubles/VGC-style format only — reads `references/` live, threat-checks via WebSearch | Full, same doubles-only scope — reads the knowledge bundle (including `archetypes.md`) instead of live files; the meta threat-check step uses Google Search grounding if enabled for the Gem, otherwise it says plainly that step is skipped rather than guessing |
-| `team-builder-singles` | Full, singles ladder only — reads `references/` live, threat-checks via WebSearch against singles usage/viability sources | Full, same singles-only scope — reads the knowledge bundle (including `singles-archetypes.md`) instead of live files; the meta threat-check step uses Google Search grounding if enabled for the Gem, otherwise it says plainly that step is skipped rather than guessing |
+| `team-builder-doubles` | Full, doubles/VGC-style format only — reads `references/` live, threat-checks via WebSearch | Full, same doubles-only scope — reads the knowledge bundle (including `archetypes-doubles.md`) instead of live files; the meta threat-check step uses Google Search grounding if enabled for the Gem, otherwise it says plainly that step is skipped rather than guessing |
+| `team-builder-singles` | Full, singles ladder only — reads `references/` live, threat-checks via WebSearch against singles usage/viability sources | Full, same singles-only scope — reads the knowledge bundle (including `archetypes-singles.md`) instead of live files; the meta threat-check step uses Google Search grounding if enabled for the Gem, otherwise it says plainly that step is skipped rather than guessing |
 | `refresh-references` | Full — researches and writes back to `references/` | **Not ported.** Gems can't fetch-and-write repo files; stays a Claude-only maintenance task |
 | `skill-retro` | Full — files/comments on GitHub issues after user go-ahead | **Draft-only.** Gems have no external API access, so it drafts the title/body/label and best-effort-checks for duplicates via Search, but the user must relay the draft to Claude or GitHub's UI to actually file it — it never claims to have filed anything |
 

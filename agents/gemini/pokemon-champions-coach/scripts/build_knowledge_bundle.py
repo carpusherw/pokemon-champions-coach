@@ -35,12 +35,12 @@ SPEED_MECHANICS_SOURCE = os.path.join(
     "agents", "claude", "pokemon-champions-coach", "skills", "move-order-coach",
     "reference", "speed-mechanics.md",
 )
-ARCHETYPES_SOURCE = os.path.join(
+ARCHETYPES_DOUBLES_SOURCE = os.path.join(
     REPO_ROOT,
     "agents", "claude", "pokemon-champions-coach", "skills", "team-builder-doubles",
     "reference", "archetypes.md",
 )
-SINGLES_ARCHETYPES_SOURCE = os.path.join(
+ARCHETYPES_SINGLES_SOURCE = os.path.join(
     REPO_ROOT,
     "agents", "claude", "pokemon-champions-coach", "skills", "team-builder-singles",
     "reference", "archetypes.md",
@@ -52,8 +52,8 @@ BUNDLE_HEADER = """\
 Compiled by agents/gemini/pokemon-champions-coach/scripts/build_knowledge_bundle.py.
 Do not hand-edit this file -- most bundle files come from references/, but
 this one may instead be a copy of a skill's own reference/*.md file (see
-SPEED_MECHANICS_SOURCE, ARCHETYPES_SOURCE, and SINGLES_ARCHETYPES_SOURCE in
-build_knowledge_bundle.py for exactly which). Edit the actual source and
+SPEED_MECHANICS_SOURCE, ARCHETYPES_DOUBLES_SOURCE, and ARCHETYPES_SINGLES_SOURCE
+in build_knowledge_bundle.py for exactly which). Edit the actual source and
 re-run the build script instead, or your changes will be overwritten and
 CI's knowledge-bundle-guard will flag the file as stale anyway.
 -->
@@ -232,14 +232,14 @@ def build_speed_mechanics():
     return BUNDLE_HEADER + body
 
 
-def build_archetypes():
-    with open(ARCHETYPES_SOURCE) as f:
+def build_archetypes_doubles():
+    with open(ARCHETYPES_DOUBLES_SOURCE) as f:
         body = f.read()
     return BUNDLE_HEADER + body
 
 
-def build_singles_archetypes():
-    with open(SINGLES_ARCHETYPES_SOURCE) as f:
+def build_archetypes_singles():
+    with open(ARCHETYPES_SINGLES_SOURCE) as f:
         body = f.read()
     return BUNDLE_HEADER + body
 
@@ -250,8 +250,8 @@ def write_bundle(output_dir):
         "season-and-rules.md": build_season_and_rules(),
         "speed-mechanics.md": build_speed_mechanics(),
         "pokemon-dex.md": build_pokemon_dex(),
-        "archetypes.md": build_archetypes(),
-        "singles-archetypes.md": build_singles_archetypes(),
+        "archetypes-doubles.md": build_archetypes_doubles(),
+        "archetypes-singles.md": build_archetypes_singles(),
     }
     for name, content in files.items():
         with open(os.path.join(output_dir, name), "w") as f:
