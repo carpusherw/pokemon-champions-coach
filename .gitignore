@@ -5,3 +5,8 @@ __pycache__/
 # skill-creator eval scratch workspaces (test-run outputs, draft eval sets) --
 # not part of the shipped plugin, don't belong in the repo.
 *-workspace/
+
+# skill-creator's trigger-eval harness (scripts/run_eval.py) writes temporary
+# command-file stubs here while testing skill descriptions -- scratch, not
+# real project settings.
+/.claude/
