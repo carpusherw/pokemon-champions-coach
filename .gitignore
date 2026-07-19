@@ -7,6 +7,8 @@ __pycache__/
 *-workspace/
 
 # skill-creator's trigger-eval harness (scripts/run_eval.py) writes temporary
-# command-file stubs here while testing skill descriptions -- scratch, not
-# real project settings.
-/.claude/
+# command-file stubs matching this exact pattern into .claude/commands/ while
+# testing skill descriptions -- scratch, not real project settings. Scoped
+# narrowly (not a blanket /.claude/ ignore) so real settings/hooks/commands
+# checked in under .claude/ later don't get silently swallowed.
+/.claude/commands/*-skill-*.md
