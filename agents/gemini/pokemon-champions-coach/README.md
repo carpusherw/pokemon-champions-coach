@@ -48,11 +48,11 @@ repo -- both are one-way, human-driven steps:
 3. In Gem Manager, remove the 5 old Knowledge files and upload the new
    ones (there's no Gems API to automate this upload).
 4. If `agents/claude/.../move-order-coach/SKILL.md`, `.../team-builder-doubles/SKILL.md`,
-   `.../team-builder-singles/SKILL.md`, or `.../skill-retro/SKILL.md` changed
-   in a way that affects behavior (not just data), re-read it and hand-update
-   `gem-instructions.md` too -- that file is a judgment-based condensation,
-   not something CI can diff-check for correctness the way it checks the
-   knowledge bundle.
+   `.../team-builder-singles/SKILL.md`, `.../team-recorder/SKILL.md`, or
+   `.../skill-retro/SKILL.md` changed in a way that affects behavior (not
+   just data), re-read it and hand-update `gem-instructions.md` too -- that
+   file is a judgment-based condensation, not something CI can diff-check
+   for correctness the way it checks the knowledge bundle.
 5. If a **new** Claude skill gets added under `agents/claude/.../skills/`,
    add a row for it to the capability matrix below (even if the decision is
    "not ported, here's why") -- CI (`knowledge-bundle-guard.yml`) fails a PR
@@ -67,7 +67,7 @@ repo -- both are one-way, human-driven steps:
 | `team-builder-doubles` | Full, doubles/VGC-style format only — reads `references/` live, threat-checks via WebSearch | Full, same doubles-only scope — reads the knowledge bundle (including `archetypes-doubles.md`) instead of live files; the meta threat-check step uses Google Search grounding if enabled for the Gem, otherwise it says plainly that step is skipped rather than guessing |
 | `team-builder-singles` | Full, singles ladder only — reads `references/` live, threat-checks via WebSearch against singles usage/viability sources | Full, same singles-only scope — reads the knowledge bundle (including `archetypes-singles.md`) instead of live files; the meta threat-check step uses Google Search grounding if enabled for the Gem, otherwise it says plainly that step is skipped rather than guessing |
 | `refresh-references` | Full — researches and writes back to `references/` | **Not ported.** Gems can't fetch-and-write repo files; stays a Claude-only maintenance task |
-| `team-recorder` | Full — reads screenshots/text and writes to `saved-teams/` | **Not ported.** Same write-back limitation as `refresh-references`; a Gem can still read a pasted screenshot and state the team back in chat, but has nowhere durable to save it for a later session |
+| `team-recorder` | Full — reads screenshots/text, prints a portable team card, and best-effort caches it to `saved-teams/` | **Card-only.** Same write-back limitation as `refresh-references` (no file system at all), but the Claude plugin's own card mechanism — the thing that's supposed to work even when nothing persists — applies just as well here: the Gem reads screenshots/text and prints the same team card in chat; the user carries it forward themselves (paste it into a later chat) instead of it being recalled from a file. No `saved-teams/` cache, so no "list what I've saved" and no loading a team by name alone — the user must supply the card each time |
 | `skill-retro` | Full — files/comments on GitHub issues after user go-ahead | **Draft-only.** Gems have no external API access, so it drafts the title/body/label and best-effort-checks for duplicates via Search, but the user must relay the draft to Claude or GitHub's UI to actually file it — it never claims to have filed anything |
 
 ## Known limitations
