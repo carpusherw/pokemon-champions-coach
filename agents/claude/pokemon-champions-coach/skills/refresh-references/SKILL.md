@@ -138,9 +138,14 @@ For each newly-legal or newly-changed species:
    punctuation like `U-turn`/`Will-O-Wisp` correctly, unlike naive
    title-casing). This is mainline-game data, not confirmed against the
    live Champions client -- same caveat as `moves` above, and the script
-   appends that caveat to `data_confidence` automatically. New species
-   should get a `learnset: null  # TODO...` placeholder if you don't run
-   the backfill script for them yet, matching the `mega`/`moves` pattern.
+   appends that caveat to `data_confidence` automatically. Unlike
+   `mega`/`moves`, a species doesn't need a `learnset: null` placeholder if
+   you're not backfilling it this pass -- just leave the key out entirely;
+   `backfill_learnset.py` inserts it fresh (right after `moves:`) whenever
+   it's actually run for that species. Adding the placeholder to every
+   species up front was tried once and reverted, because it made even a
+   single-species PR's diff touch all 232 files and blew past the review
+   tooling's 100-file limit.
 
 If PokeAPI (or any outbound network call) is blocked in your current
 environment -- check by trying one fetch early, don't discover it 20 calls
