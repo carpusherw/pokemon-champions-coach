@@ -11,9 +11,116 @@ abilities:
     hidden: true
 mega: null  # TODO: fill in if this species has a Mega Evolution
 moves: null  # TODO: curate competitive movepool (moves actually run in Reg M-B sets)
+learnset:
+  - Attract
+  - Beat Up
+  - Bite
+  - Body Slam
+  - Burning Jealousy
+  - Captivate
+  - Comeuppance
+  - Confide
+  - Counter
+  - Crunch
+  - Curse
+  - Dark Pulse
+  - Destiny Bond
+  - Detect
+  - Double Team
+  - Double-Edge
+  - Dream Eater
+  - Embargo
+  - Ember
+  - Endeavor
+  - Endure
+  - Facade
+  - Feint
+  - Feint Attack
+  - Fire Blast
+  - Fire Fang
+  - Fire Spin
+  - Flame Charge
+  - Flamethrower
+  - Flare Blitz
+  - Foul Play
+  - Frustration
+  - Giga Impact
+  - Headbutt
+  - Heat Wave
+  - Helping Hand
+  - Hidden Power
+  - Howl
+  - Hyper Beam
+  - Hyper Voice
+  - Incinerate
+  - Inferno
+  - Iron Tail
+  - Laser Focus
+  - Lash Out
+  - Leer
+  - Mimic
+  - Mud Shot
+  - Mud-Slap
+  - Nasty Plot
+  - Natural Gift
+  - Nightmare
+  - Odor Sleuth
+  - Overheat
+  - Pain Split
+  - Payback
+  - Protect
+  - Psychic Fangs
+  - Rain Dance
+  - Rest
+  - Retaliate
+  - Return
+  - Reversal
+  - Roar
+  - Rock Smash
+  - Role Play
+  - Round
+  - Scary Face
+  - Scorching Sands
+  - Secret Power
+  - Shadow Ball
+  - Sleep Talk
+  - Sludge Bomb
+  - Smog
+  - Snarl
+  - Snatch
+  - Snore
+  - Solar Beam
+  - Spite
+  - Strength
+  - Substitute
+  - Sucker Punch
+  - Sunny Day
+  - Super Fang
+  - Swagger
+  - Swift
+  - Take Down
+  - Taunt
+  - Temper Flare
+  - Tera Blast
+  - Thief
+  - Throat Chop
+  - Thunder Fang
+  - Torment
+  - Toxic
+  - Trailblaze
+  - Uproar
+  - Will-O-Wisp
 added_in_regulation: M-B
 legal_in_regulations: [M-B]
 notes: >
   TODO: add competitive notes (role, speed-control relevance, etc).
 data_confidence: >
   Base stats/types/abilities fetched live from PokeAPI (https://pokeapi.co/api/v2) by fetch_pokemon_data.py. Mega Evolution data (if any) and competitive notes are NOT from PokeAPI and should be verified/updated by hand each season.
+
+  Full `learnset` (98 moves) fetched from PokeAPI's mainline movepool for
+  pokemon/houndoom (level-up + TM/HM + egg + tutor moves combined) by
+  backfill_learnset.py. This is NOT confirmed against the live Pokemon
+  Champions client -- Champions has already been shown to diverge from
+  mainline itemization (see items-m-b.yaml), so some listed moves may not
+  actually be learnable in Champions. Treat as a candidate pool, not a
+  guarantee.

@@ -1,7 +1,7 @@
 {
   "name": "pokemon-champions-coach",
   "displayName": "Pokemon Champions Coach",
-  "version": "0.7.1",
+  "version": "0.7.2",
   "description": "Keeps Pokemon Champions season rules and Pokemon reference data up to date, coaches speed/move-order decisions during battles, builds doubles and singles teams from a Pokemon, idea, or strategy, and saves/reloads finished teams across sessions.",
   "author": {
     "name": "carpusherw"

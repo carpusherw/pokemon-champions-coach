@@ -9,9 +9,113 @@ abilities:
     hidden: true
 mega: null  # TODO: fill in if this species has a Mega Evolution
 moves: null  # TODO: curate competitive movepool (moves actually run in Reg M-B sets)
+learnset:
+  - Agility
+  - Aqua Tail
+  - Attract
+  - Aurora Beam
+  - Aurora Veil
+  - Avalanche
+  - Baby-Doll Eyes
+  - Baton Pass
+  - Blizzard
+  - Body Slam
+  - Calm Mind
+  - Charm
+  - Chilling Water
+  - Confide
+  - Confuse Ray
+  - Covet
+  - Dark Pulse
+  - Dazzling Gleam
+  - Dig
+  - Disable
+  - Disarming Voice
+  - Double Team
+  - Double-Edge
+  - Draining Kiss
+  - Dream Eater
+  - Encore
+  - Endure
+  - Energy Ball
+  - Extrasensory
+  - Facade
+  - Fake Tears
+  - Flail
+  - Foul Play
+  - Freeze-Dry
+  - Frost Breath
+  - Frustration
+  - Giga Impact
+  - Grudge
+  - Hail
+  - Headbutt
+  - Heal Bell
+  - Helping Hand
+  - Hex
+  - Hidden Power
+  - Howl
+  - Hyper Beam
+  - Hypnosis
+  - Ice Beam
+  - Ice Fang
+  - Ice Shard
+  - Icicle Spear
+  - Icy Wind
+  - Imprison
+  - Iron Tail
+  - Laser Focus
+  - Mist
+  - Misty Terrain
+  - Moonblast
+  - Nasty Plot
+  - Pain Split
+  - Payback
+  - Play Rough
+  - Powder Snow
+  - Power Swap
+  - Protect
+  - Psych Up
+  - Psyshock
+  - Rain Dance
+  - Reflect
+  - Rest
+  - Return
+  - Roar
+  - Role Play
+  - Round
+  - Safeguard
+  - Sheer Cold
+  - Sleep Talk
+  - Snore
+  - Snowscape
+  - Solar Beam
+  - Spite
+  - Stored Power
+  - Substitute
+  - Swagger
+  - Swift
+  - Tackle
+  - Tail Slap
+  - Tail Whip
+  - Take Down
+  - Tera Blast
+  - Toxic
+  - Triple Axel
+  - Weather Ball
+  - Wonder Room
+  - Zen Headbutt
 added_in_regulation: M-B
 legal_in_regulations: [M-B]
 notes: >
   TODO: add competitive notes (role, speed-control relevance, etc).
 data_confidence: >
   Base stats/types/abilities fetched live from PokeAPI (https://pokeapi.co/api/v2) by fetch_pokemon_data.py. Mega Evolution data (if any) and competitive notes are NOT from PokeAPI and should be verified/updated by hand each season.
+
+  Full `learnset` (95 moves) fetched from PokeAPI's mainline movepool for
+  pokemon/ninetales-alola (level-up + TM/HM + egg + tutor moves combined) by
+  backfill_learnset.py. This is NOT confirmed against the live Pokemon
+  Champions client -- Champions has already been shown to diverge from
+  mainline itemization (see items-m-b.yaml), so some listed moves may not
+  actually be learnable in Champions. Treat as a candidate pool, not a
+  guarantee.

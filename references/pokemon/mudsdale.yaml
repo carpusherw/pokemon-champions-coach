@@ -11,9 +11,81 @@ abilities:
     hidden: true
 mega: null  # TODO: fill in if this species has a Mega Evolution
 moves: null  # TODO: curate competitive movepool (moves actually run in Reg M-B sets)
+learnset:
+  - Attract
+  - Bide
+  - Body Press
+  - Body Slam
+  - Bulldoze
+  - Close Combat
+  - Confide
+  - Counter
+  - Curse
+  - Double Kick
+  - Double Team
+  - Double-Edge
+  - Earth Power
+  - Earthquake
+  - Endeavor
+  - Endure
+  - Facade
+  - Fissure
+  - Focus Blast
+  - Frustration
+  - Giga Impact
+  - Heavy Slam
+  - Hidden Power
+  - High Horsepower
+  - Hyper Beam
+  - Iron Defense
+  - Iron Head
+  - Lash Out
+  - Low Kick
+  - Low Sweep
+  - Mega Kick
+  - Mud Shot
+  - Mud Sport
+  - Mud-Slap
+  - Payback
+  - Protect
+  - Rest
+  - Return
+  - Revenge
+  - Roar
+  - Rock Slide
+  - Rock Smash
+  - Rock Tomb
+  - Rototiller
+  - Round
+  - Sand Tomb
+  - Sandstorm
+  - Scary Face
+  - Sleep Talk
+  - Smack Down
+  - Snore
+  - Stealth Rock
+  - Stomp
+  - Stomping Tantrum
+  - Stone Edge
+  - Strength
+  - Substitute
+  - Sunny Day
+  - Superpower
+  - Swagger
+  - Take Down
+  - Tera Blast
+  - Toxic
 added_in_regulation: M-B
 legal_in_regulations: [M-B]
 notes: >
   TODO: add competitive notes (role, speed-control relevance, etc).
 data_confidence: >
   Base stats/types/abilities fetched live from PokeAPI (https://pokeapi.co/api/v2) by fetch_pokemon_data.py. Mega Evolution data (if any) and competitive notes are NOT from PokeAPI and should be verified/updated by hand each season.
+
+  Full `learnset` (63 moves) fetched from PokeAPI's mainline movepool for
+  pokemon/mudsdale (level-up + TM/HM + egg + tutor moves combined) by
+  backfill_learnset.py. This is NOT confirmed against the live Pokemon
+  Champions client -- Champions has already been shown to diverge from
+  mainline itemization (see items-m-b.yaml), so some listed moves may not
+  actually be learnable in Champions. Treat as a candidate pool, not a
+  guarantee.

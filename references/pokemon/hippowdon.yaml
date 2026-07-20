@@ -9,9 +9,92 @@ abilities:
     hidden: true
 mega: null  # TODO: fill in if this species has a Mega Evolution
 moves: null  # TODO: curate competitive movepool (moves actually run in Reg M-B sets)
+learnset:
+  - Amnesia
+  - Attract
+  - Bite
+  - Body Press
+  - Body Slam
+  - Bulldoze
+  - Captivate
+  - Confide
+  - Crunch
+  - Curse
+  - Dig
+  - Double Team
+  - Double-Edge
+  - Earth Power
+  - Earthquake
+  - Endure
+  - Facade
+  - Fire Fang
+  - Fissure
+  - Frustration
+  - Giga Impact
+  - Hard Press
+  - Headbutt
+  - Heavy Slam
+  - Helping Hand
+  - Hidden Power
+  - High Horsepower
+  - Hyper Beam
+  - Hyper Voice
+  - Ice Fang
+  - Iron Head
+  - Iron Tail
+  - Mud Bomb
+  - Mud Shot
+  - Mud-Slap
+  - Muddy Water
+  - Natural Gift
+  - Protect
+  - Rest
+  - Return
+  - Revenge
+  - Roar
+  - Rock Slide
+  - Rock Smash
+  - Rock Tomb
+  - Round
+  - Sand Attack
+  - Sand Tomb
+  - Sandstorm
+  - Scorching Sands
+  - Secret Power
+  - Slack Off
+  - Sleep Talk
+  - Snore
+  - Spit Up
+  - Stealth Rock
+  - Stockpile
+  - Stomping Tantrum
+  - Stone Edge
+  - Strength
+  - Substitute
+  - Sunny Day
+  - Superpower
+  - Swagger
+  - Swallow
+  - Tackle
+  - Take Down
+  - Tera Blast
+  - Thunder Fang
+  - Toxic
+  - Water Pulse
+  - Weather Ball
+  - Whirlwind
+  - Yawn
 added_in_regulation: M-B
 legal_in_regulations: [M-B]
 notes: >
   TODO: add competitive notes (role, speed-control relevance, etc).
 data_confidence: >
   Base stats/types/abilities fetched live from PokeAPI (https://pokeapi.co/api/v2) by fetch_pokemon_data.py. Mega Evolution data (if any) and competitive notes are NOT from PokeAPI and should be verified/updated by hand each season.
+
+  Full `learnset` (74 moves) fetched from PokeAPI's mainline movepool for
+  pokemon/hippowdon (level-up + TM/HM + egg + tutor moves combined) by
+  backfill_learnset.py. This is NOT confirmed against the live Pokemon
+  Champions client -- Champions has already been shown to diverge from
+  mainline itemization (see items-m-b.yaml), so some listed moves may not
+  actually be learnable in Champions. Treat as a candidate pool, not a
+  guarantee.

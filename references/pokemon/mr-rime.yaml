@@ -11,9 +11,119 @@ abilities:
     hidden: true
 mega: null  # TODO: fill in if this species has a Mega Evolution
 moves: null  # TODO: curate competitive movepool (moves actually run in Reg M-B sets)
+learnset:
+  - After You
+  - Ally Switch
+  - Attract
+  - Avalanche
+  - Baton Pass
+  - Blizzard
+  - Block
+  - Body Slam
+  - Brick Break
+  - Calm Mind
+  - Charm
+  - Chilling Water
+  - Confuse Ray
+  - Confusion
+  - Copycat
+  - Dazzling Gleam
+  - Double Kick
+  - Drain Punch
+  - Encore
+  - Endure
+  - Energy Ball
+  - Expanding Force
+  - Facade
+  - Fake Out
+  - Fake Tears
+  - Fling
+  - Focus Blast
+  - Foul Play
+  - Freeze-Dry
+  - Frost Breath
+  - Future Sight
+  - Giga Impact
+  - Grass Knot
+  - Guard Swap
+  - Hail
+  - Haze
+  - Helping Hand
+  - Hyper Beam
+  - Hypnosis
+  - Ice Beam
+  - Ice Punch
+  - Ice Shard
+  - Ice Spinner
+  - Icicle Spear
+  - Icy Wind
+  - Iron Defense
+  - Light Screen
+  - Magic Room
+  - Mega Kick
+  - Mega Punch
+  - Metronome
+  - Mimic
+  - Mirror Coat
+  - Misty Terrain
+  - Nasty Plot
+  - Payback
+  - Pound
+  - Power Split
+  - Power Swap
+  - Protect
+  - Psybeam
+  - Psychic
+  - Psychic Terrain
+  - Psyshock
+  - Rain Dance
+  - Rapid Spin
+  - Recycle
+  - Reflect
+  - Rest
+  - Role Play
+  - Round
+  - Safeguard
+  - Screech
+  - Shadow Ball
+  - Sheer Cold
+  - Skill Swap
+  - Slack Off
+  - Sleep Talk
+  - Snore
+  - Snowscape
+  - Solar Beam
+  - Stomping Tantrum
+  - Stored Power
+  - Substitute
+  - Sucker Punch
+  - Sunny Day
+  - Swagger
+  - Taunt
+  - Teeter Dance
+  - Thief
+  - Thunder
+  - Thunder Wave
+  - Thunderbolt
+  - Tickle
+  - Torment
+  - Trick
+  - Trick Room
+  - Triple Axel
+  - Uproar
+  - Wonder Room
+  - Zen Headbutt
 added_in_regulation: M-B
 legal_in_regulations: [M-B]
 notes: >
   TODO: add competitive notes (role, speed-control relevance, etc).
 data_confidence: >
   Base stats/types/abilities fetched live from PokeAPI (https://pokeapi.co/api/v2) by fetch_pokemon_data.py. Mega Evolution data (if any) and competitive notes are NOT from PokeAPI and should be verified/updated by hand each season.
+
+  Full `learnset` (101 moves) fetched from PokeAPI's mainline movepool for
+  pokemon/mr-rime (level-up + TM/HM + egg + tutor moves combined) by
+  backfill_learnset.py. This is NOT confirmed against the live Pokemon
+  Champions client -- Champions has already been shown to diverge from
+  mainline itemization (see items-m-b.yaml), so some listed moves may not
+  actually be learnable in Champions. Treat as a candidate pool, not a
+  guarantee.

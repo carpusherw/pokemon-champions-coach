@@ -9,9 +9,144 @@ abilities:
     hidden: true
 mega: null  # TODO: fill in if this species has a Mega Evolution
 moves: null  # TODO: curate competitive movepool (moves actually run in Reg M-B sets)
+learnset:
+  - Acrobatics
+  - Aerial Ace
+  - Agility
+  - Attract
+  - Aura Sphere
+  - Blast Burn
+  - Blaze Kick
+  - Body Slam
+  - Brick Break
+  - Bulk Up
+  - Bulldoze
+  - Burning Jealousy
+  - Calm Mind
+  - Captivate
+  - Close Combat
+  - Coaching
+  - Confide
+  - Counter
+  - Covet
+  - Cut
+  - Dig
+  - Double Kick
+  - Double Team
+  - Double-Edge
+  - Drain Punch
+  - Dual Chop
+  - Earthquake
+  - Ember
+  - Encore
+  - Endeavor
+  - Endure
+  - Facade
+  - Fake Out
+  - Fake Tears
+  - Feint
+  - Fire Blast
+  - Fire Pledge
+  - Fire Punch
+  - Fire Spin
+  - Flame Charge
+  - Flame Wheel
+  - Flamethrower
+  - Flare Blitz
+  - Fling
+  - Focus Blast
+  - Focus Energy
+  - Focus Punch
+  - Frustration
+  - Fury Swipes
+  - Giga Impact
+  - Grass Knot
+  - Gunk Shot
+  - Headbutt
+  - Heat Wave
+  - Helping Hand
+  - Hidden Power
+  - Hone Claws
+  - Hyper Beam
+  - Incinerate
+  - Iron Tail
+  - Knock Off
+  - Laser Focus
+  - Lash Out
+  - Leer
+  - Low Kick
+  - Low Sweep
+  - Mach Punch
+  - Metronome
+  - Mud-Slap
+  - Nasty Plot
+  - Natural Gift
+  - Overheat
+  - Poison Jab
+  - Power-Up Punch
+  - Protect
+  - Psych Up
+  - Punishment
+  - Raging Fury
+  - Rest
+  - Retaliate
+  - Return
+  - Reversal
+  - Roar
+  - Rock Climb
+  - Rock Slide
+  - Rock Smash
+  - Rock Tomb
+  - Role Play
+  - Rollout
+  - Round
+  - Scary Face
+  - Scorching Sands
+  - Scratch
+  - Secret Power
+  - Shadow Claw
+  - Slack Off
+  - Sleep Talk
+  - Smack Down
+  - Snore
+  - Solar Beam
+  - Stealth Rock
+  - Stone Edge
+  - Strength
+  - Substitute
+  - Sunny Day
+  - Swagger
+  - Swift
+  - Switcheroo
+  - Swords Dance
+  - Tackle
+  - Take Down
+  - Taunt
+  - Temper Flare
+  - Tera Blast
+  - Thief
+  - Throat Chop
+  - Thunder Punch
+  - Torment
+  - Toxic
+  - U-turn
+  - Upper Hand
+  - Uproar
+  - Vacuum Wave
+  - Will-O-Wisp
+  - Work Up
+  - Zen Headbutt
 added_in_regulation: M-B
 legal_in_regulations: [M-B]
 notes: >
   TODO: add competitive notes (role, speed-control relevance, etc).
 data_confidence: >
   Base stats/types/abilities fetched live from PokeAPI (https://pokeapi.co/api/v2) by fetch_pokemon_data.py. Mega Evolution data (if any) and competitive notes are NOT from PokeAPI and should be verified/updated by hand each season.
+
+  Full `learnset` (126 moves) fetched from PokeAPI's mainline movepool for
+  pokemon/infernape (level-up + TM/HM + egg + tutor moves combined) by
+  backfill_learnset.py. This is NOT confirmed against the live Pokemon
+  Champions client -- Champions has already been shown to diverge from
+  mainline itemization (see items-m-b.yaml), so some listed moves may not
+  actually be learnable in Champions. Treat as a candidate pool, not a
+  guarantee.

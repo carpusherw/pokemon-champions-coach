@@ -7,6 +7,81 @@ abilities:
     hidden: false
 mega: null  # TODO: fill in if this species has a Mega Evolution
 moves: [Aura Wheel, Parting Shot, Rain Dance, Protect]
+learnset:
+  - Agility
+  - Assurance
+  - Attract
+  - Aura Wheel
+  - Baton Pass
+  - Bite
+  - Brick Break
+  - Bullet Seed
+  - Charge
+  - Charge Beam
+  - Crunch
+  - Dark Pulse
+  - Double-Edge
+  - Eerie Impulse
+  - Electric Terrain
+  - Electro Ball
+  - Electroweb
+  - Endeavor
+  - Endure
+  - Facade
+  - Fake Out
+  - Fake Tears
+  - Fire Fang
+  - Flatter
+  - Fling
+  - Foul Play
+  - Ice Fang
+  - Knock Off
+  - Lash Out
+  - Leer
+  - Nasty Plot
+  - Outrage
+  - Parting Shot
+  - Payback
+  - Power Trip
+  - Protect
+  - Psychic Fangs
+  - Quash
+  - Quick Attack
+  - Rapid Spin
+  - Rest
+  - Revenge
+  - Reversal
+  - Rising Voltage
+  - Round
+  - Scary Face
+  - Seed Bomb
+  - Sleep Talk
+  - Snarl
+  - Snore
+  - Spark
+  - Spite
+  - Stomping Tantrum
+  - Substitute
+  - Super Fang
+  - Swagger
+  - Swift
+  - Tail Whip
+  - Take Down
+  - Taunt
+  - Tera Blast
+  - Thief
+  - Thrash
+  - Thunder
+  - Thunder Fang
+  - Thunder Punch
+  - Thunder Shock
+  - Thunder Wave
+  - Thunderbolt
+  - Tickle
+  - Torment
+  - Uproar
+  - Volt Switch
+  - Wild Charge
 added_in_regulation: M-B
 legal_in_regulations: [M-B]
 notes: >
@@ -24,3 +99,11 @@ data_confidence: >
   Pokemon Champions client, which has already been shown to diverge from
   mainline in places (see items-m-b.yaml re: Choice items). Re-verify before
   relying on it for a real draft/build decision.
+
+  Full `learnset` (74 moves) fetched from PokeAPI's mainline movepool for
+  pokemon/morpeko-full-belly (level-up + TM/HM + egg + tutor moves combined)
+  by backfill_learnset.py. This is NOT confirmed against the live Pokemon
+  Champions client -- Champions has already been shown to diverge from
+  mainline itemization (see items-m-b.yaml), so some listed moves may not
+  actually be learnable in Champions. Treat as a candidate pool, not a
+  guarantee.

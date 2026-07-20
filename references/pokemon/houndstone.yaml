@@ -9,6 +9,57 @@ abilities:
     hidden: true
 mega: null  # TODO: fill in if this species has a Mega Evolution
 moves: [Last Respects, Poltergeist, Body Press, Protect]
+learnset:
+  - Bite
+  - Body Press
+  - Bulldoze
+  - Charm
+  - Confuse Ray
+  - Crunch
+  - Dig
+  - Double-Edge
+  - Endeavor
+  - Endure
+  - Facade
+  - Fire Fang
+  - Giga Impact
+  - Growl
+  - Headbutt
+  - Helping Hand
+  - Hex
+  - Hyper Beam
+  - Ice Fang
+  - Last Respects
+  - Lick
+  - Mud Shot
+  - Mud-Slap
+  - Night Shade
+  - Pain Split
+  - Phantom Force
+  - Play Rough
+  - Poltergeist
+  - Protect
+  - Psychic Fangs
+  - Rain Dance
+  - Rest
+  - Roar
+  - Sandstorm
+  - Scary Face
+  - Shadow Ball
+  - Sleep Talk
+  - Snarl
+  - Stomping Tantrum
+  - Substitute
+  - Sunny Day
+  - Tackle
+  - Tail Whip
+  - Take Down
+  - Tera Blast
+  - Thief
+  - Thunder Fang
+  - Trick
+  - Uproar
+  - Will-O-Wisp
 added_in_regulation: M-B
 legal_in_regulations: [M-B]
 notes: >
@@ -25,3 +76,11 @@ data_confidence: >
   Pokemon Champions client, which has already been shown to diverge from
   mainline in places (see items-m-b.yaml re: Choice items). Re-verify before
   relying on it for a real draft/build decision.
+
+  Full `learnset` (50 moves) fetched from PokeAPI's mainline movepool for
+  pokemon/houndstone (level-up + TM/HM + egg + tutor moves combined) by
+  backfill_learnset.py. This is NOT confirmed against the live Pokemon
+  Champions client -- Champions has already been shown to diverge from
+  mainline itemization (see items-m-b.yaml), so some listed moves may not
+  actually be learnable in Champions. Treat as a candidate pool, not a
+  guarantee.

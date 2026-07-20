@@ -9,9 +9,136 @@ abilities:
     hidden: true
 mega: null  # TODO: fill in if this species has a Mega Evolution
 moves: null  # TODO: curate competitive movepool (moves actually run in Reg M-B sets)
+learnset:
+  - Acupressure
+  - Aerial Ace
+  - Agility
+  - Attract
+  - Aura Sphere
+  - Axe Kick
+  - Baton Pass
+  - Bide
+  - Blaze Kick
+  - Body Slam
+  - Brick Break
+  - Bulk Up
+  - Bullet Punch
+  - Calm Mind
+  - Captivate
+  - Close Combat
+  - Coaching
+  - Confide
+  - Confusion
+  - Counter
+  - Detect
+  - Double Team
+  - Double-Edge
+  - Drain Punch
+  - Dream Eater
+  - Dynamic Punch
+  - Endure
+  - Energy Ball
+  - Expanding Force
+  - Facade
+  - Fake Out
+  - Feint
+  - Fire Punch
+  - Flash
+  - Fling
+  - Focus Blast
+  - Focus Punch
+  - Force Palm
+  - Frustration
+  - Giga Impact
+  - Grass Knot
+  - Gravity
+  - Guard Swap
+  - Headbutt
+  - Helping Hand
+  - Hidden Power
+  - High Jump Kick
+  - Hyper Beam
+  - Ice Punch
+  - Imprison
+  - Laser Focus
+  - Light Screen
+  - Low Kick
+  - Low Sweep
+  - Magic Coat
+  - Meditate
+  - Mega Kick
+  - Mega Punch
+  - Metronome
+  - Mimic
+  - Mind Reader
+  - Mud-Slap
+  - Natural Gift
+  - Night Shade
+  - Pain Split
+  - Poison Jab
+  - Pound
+  - Power Swap
+  - Power Trick
+  - Power-Up Punch
+  - Protect
+  - Psybeam
+  - Psych Up
+  - Psychic
+  - Psychic Terrain
+  - Psycho Cut
+  - Psyshock
+  - Quick Guard
+  - Rain Dance
+  - Recover
+  - Recycle
+  - Reflect
+  - Rest
+  - Retaliate
+  - Return
+  - Reversal
+  - Rock Slide
+  - Rock Smash
+  - Rock Tomb
+  - Role Play
+  - Round
+  - Secret Power
+  - Seismic Toss
+  - Shadow Ball
+  - Signal Beam
+  - Skill Swap
+  - Sleep Talk
+  - Snore
+  - Stored Power
+  - Strength
+  - Substitute
+  - Sunny Day
+  - Swagger
+  - Swift
+  - Take Down
+  - Taunt
+  - Telekinesis
+  - Tera Blast
+  - Thief
+  - Thunder Punch
+  - Toxic
+  - Trailblaze
+  - Trick
+  - Trick Room
+  - Upper Hand
+  - Vacuum Wave
+  - Work Up
+  - Zen Headbutt
 added_in_regulation: M-B
 legal_in_regulations: [M-B]
 notes: >
   TODO: add competitive notes (role, speed-control relevance, etc).
 data_confidence: >
   Base stats/types/abilities fetched live from PokeAPI (https://pokeapi.co/api/v2) by fetch_pokemon_data.py. Mega Evolution data (if any) and competitive notes are NOT from PokeAPI and should be verified/updated by hand each season.
+
+  Full `learnset` (118 moves) fetched from PokeAPI's mainline movepool for
+  pokemon/medicham (level-up + TM/HM + egg + tutor moves combined) by
+  backfill_learnset.py. This is NOT confirmed against the live Pokemon
+  Champions client -- Champions has already been shown to diverge from
+  mainline itemization (see items-m-b.yaml), so some listed moves may not
+  actually be learnable in Champions. Treat as a candidate pool, not a
+  guarantee.

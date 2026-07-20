@@ -11,9 +11,127 @@ abilities:
     hidden: true
 mega: null  # TODO: fill in if this species has a Mega Evolution
 moves: null  # TODO: curate competitive movepool (moves actually run in Reg M-B sets)
+learnset:
+  - Assurance
+  - Attract
+  - Bide
+  - Body Slam
+  - Brick Break
+  - Brutal Swing
+  - Bulk Up
+  - Bulldoze
+  - Bullet Punch
+  - Captivate
+  - Close Combat
+  - Coaching
+  - Confide
+  - Counter
+  - Cross Chop
+  - Cross Poison
+  - Curse
+  - Darkest Lariat
+  - Detect
+  - Dig
+  - Double Hit
+  - Double Team
+  - Double-Edge
+  - Drain Punch
+  - Dual Chop
+  - Dynamic Punch
+  - Earthquake
+  - Encore
+  - Endure
+  - Facade
+  - Fire Blast
+  - Fire Punch
+  - Fissure
+  - Flamethrower
+  - Fling
+  - Focus Blast
+  - Focus Energy
+  - Focus Punch
+  - Foresight
+  - Frustration
+  - Giga Impact
+  - Headbutt
+  - Heavy Slam
+  - Helping Hand
+  - Hidden Power
+  - High Horsepower
+  - Hyper Beam
+  - Ice Punch
+  - Incinerate
+  - Karate Chop
+  - Knock Off
+  - Leer
+  - Light Screen
+  - Low Kick
+  - Low Sweep
+  - Mach Punch
+  - Mega Kick
+  - Mega Punch
+  - Metronome
+  - Mimic
+  - Mud-Slap
+  - Natural Gift
+  - Payback
+  - Poison Jab
+  - Power-Up Punch
+  - Protect
+  - Quick Guard
+  - Rage
+  - Rain Dance
+  - Rest
+  - Retaliate
+  - Return
+  - Revenge
+  - Reversal
+  - Rock Blast
+  - Rock Climb
+  - Rock Slide
+  - Rock Smash
+  - Rock Tomb
+  - Role Play
+  - Round
+  - Scary Face
+  - Secret Power
+  - Seismic Toss
+  - Skull Bash
+  - Sleep Talk
+  - Smack Down
+  - Snore
+  - Stomping Tantrum
+  - Stone Edge
+  - Storm Throw
+  - Strength
+  - Submission
+  - Substitute
+  - Sunny Day
+  - Superpower
+  - Swagger
+  - Tackle
+  - Take Down
+  - Thief
+  - Throat Chop
+  - Thunder Punch
+  - Tickle
+  - Toxic
+  - Vacuum Wave
+  - Vital Throw
+  - Wake-Up Slap
+  - Wide Guard
+  - Work Up
 added_in_regulation: M-B
 legal_in_regulations: [M-B]
 notes: >
   TODO: add competitive notes (role, speed-control relevance, etc).
 data_confidence: >
   Base stats/types/abilities fetched live from PokeAPI (https://pokeapi.co/api/v2) by fetch_pokemon_data.py. Mega Evolution data (if any) and competitive notes are NOT from PokeAPI and should be verified/updated by hand each season.
+
+  Full `learnset` (109 moves) fetched from PokeAPI's mainline movepool for
+  pokemon/machamp (level-up + TM/HM + egg + tutor moves combined) by
+  backfill_learnset.py. This is NOT confirmed against the live Pokemon
+  Champions client -- Champions has already been shown to diverge from
+  mainline itemization (see items-m-b.yaml), so some listed moves may not
+  actually be learnable in Champions. Treat as a candidate pool, not a
+  guarantee.

@@ -11,6 +11,78 @@ abilities:
     hidden: true
 mega: null  # TODO: fill in if this species has a Mega Evolution
 moves: [Trick Room, Psychic, Yawn, Protect]
+learnset:
+  - After You
+  - Ally Switch
+  - Amnesia
+  - Attract
+  - Calm Mind
+  - Charge Beam
+  - Confide
+  - Dazzling Gleam
+  - Defense Curl
+  - Double Team
+  - Dream Eater
+  - Endure
+  - Energy Ball
+  - Expanding Force
+  - Facade
+  - Flash
+  - Frustration
+  - Future Sight
+  - Giga Impact
+  - Gravity
+  - Guard Swap
+  - Gyro Ball
+  - Heal Bell
+  - Helping Hand
+  - Hidden Power
+  - Hyper Beam
+  - Hypnosis
+  - Imprison
+  - Light Screen
+  - Lucky Chant
+  - Magic Coat
+  - Misty Explosion
+  - Moonblast
+  - Moonlight
+  - Pain Split
+  - Power Swap
+  - Protect
+  - Psybeam
+  - Psych Up
+  - Psychic
+  - Psychic Terrain
+  - Psyshock
+  - Rain Dance
+  - Reflect
+  - Rest
+  - Return
+  - Rock Slide
+  - Rock Tomb
+  - Round
+  - Safeguard
+  - Secret Power
+  - Shadow Ball
+  - Shock Wave
+  - Signal Beam
+  - Skill Swap
+  - Sleep Talk
+  - Snore
+  - Stored Power
+  - Substitute
+  - Swagger
+  - Swift
+  - Telekinesis
+  - Thunder Wave
+  - Torment
+  - Toxic
+  - Trick
+  - Trick Room
+  - Wonder Room
+  - Worry Seed
+  - Yawn
+  - Zen Headbutt
 added_in_regulation: M-B
 legal_in_regulations: [M-B]
 notes: >
@@ -27,3 +99,11 @@ data_confidence: >
   Pokemon Champions client, which has already been shown to diverge from
   mainline in places (see items-m-b.yaml re: Choice items). Re-verify before
   relying on it for a real draft/build decision.
+
+  Full `learnset` (71 moves) fetched from PokeAPI's mainline movepool for
+  pokemon/musharna (level-up + TM/HM + egg + tutor moves combined) by
+  backfill_learnset.py. This is NOT confirmed against the live Pokemon
+  Champions client -- Champions has already been shown to diverge from
+  mainline itemization (see items-m-b.yaml), so some listed moves may not
+  actually be learnable in Champions. Treat as a candidate pool, not a
+  guarantee.
