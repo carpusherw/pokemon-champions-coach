@@ -11,9 +11,118 @@ abilities:
     hidden: true
 mega: null  # TODO: fill in if this species has a Mega Evolution
 moves: null  # TODO: curate competitive movepool (moves actually run in Reg M-B sets)
+learnset:
+  - Ally Switch
+  - Astonish
+  - Attract
+  - Block
+  - Branch Poke
+  - Brutal Swing
+  - Bulldoze
+  - Burning Jealousy
+  - Calm Mind
+  - Confide
+  - Confuse Ray
+  - Curse
+  - Cut
+  - Dark Pulse
+  - Destiny Bond
+  - Dig
+  - Disable
+  - Double Team
+  - Drain Punch
+  - Dream Eater
+  - Earthquake
+  - Endure
+  - Energy Ball
+  - Facade
+  - Feint Attack
+  - Focus Blast
+  - Forest’s Curse
+  - Foul Play
+  - Frustration
+  - Giga Drain
+  - Giga Impact
+  - Grass Knot
+  - Grassy Glide
+  - Grassy Terrain
+  - Growth
+  - Haze
+  - Hex
+  - Hidden Power
+  - Hone Claws
+  - Horn Leech
+  - Hyper Beam
+  - Imprison
+  - Ingrain
+  - Knock Off
+  - Lash Out
+  - Leaf Storm
+  - Leech Seed
+  - Magic Coat
+  - Magical Leaf
+  - Nature Power
+  - Night Shade
+  - Pain Split
+  - Phantom Force
+  - Poison Jab
+  - Poltergeist
+  - Power-Up Punch
+  - Protect
+  - Psych Up
+  - Psychic
+  - Psychic Noise
+  - Rain Dance
+  - Reflect
+  - Rest
+  - Return
+  - Rock Slide
+  - Rock Smash
+  - Role Play
+  - Round
+  - Safeguard
+  - Scary Face
+  - Secret Power
+  - Seed Bomb
+  - Shadow Ball
+  - Shadow Claw
+  - Shadow Punch
+  - Skill Swap
+  - Skitter Smack
+  - Sleep Talk
+  - Snore
+  - Solar Beam
+  - Spite
+  - Strength
+  - Substitute
+  - Sucker Punch
+  - Sunny Day
+  - Swagger
+  - Tackle
+  - Take Down
+  - Telekinesis
+  - Tera Blast
+  - Thief
+  - Toxic
+  - Trailblaze
+  - Trick
+  - Trick Room
+  - Venom Drench
+  - Will-O-Wisp
+  - Wood Hammer
+  - Worry Seed
+  - X-Scissor
 added_in_regulation: M-B
 legal_in_regulations: [M-B]
 notes: >
   TODO: add competitive notes (role, speed-control relevance, etc).
 data_confidence: >
   Base stats/types/abilities fetched live from PokeAPI (https://pokeapi.co/api/v2) by fetch_pokemon_data.py. Mega Evolution data (if any) and competitive notes are NOT from PokeAPI and should be verified/updated by hand each season.
+
+  Full `learnset` (100 moves) fetched from PokeAPI's mainline movepool for
+  pokemon/trevenant (level-up + TM/HM + egg + tutor moves combined) by
+  backfill_learnset.py. This is NOT confirmed against the live Pokemon
+  Champions client -- Champions has already been shown to diverge from
+  mainline itemization (see items-m-b.yaml), so some listed moves may not
+  actually be learnable in Champions. Treat as a candidate pool, not a
+  guarantee.

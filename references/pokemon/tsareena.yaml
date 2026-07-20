@@ -11,9 +11,96 @@ abilities:
     hidden: true
 mega: null  # TODO: fill in if this species has a Mega Evolution
 moves: null  # TODO: curate competitive movepool (moves actually run in Reg M-B sets)
+learnset:
+  - Acrobatics
+  - Acupressure
+  - Aromatherapy
+  - Aromatic Mist
+  - Attract
+  - Bounce
+  - Bullet Seed
+  - Captivate
+  - Charm
+  - Confide
+  - Covet
+  - Dazzling Gleam
+  - Double Slap
+  - Double Team
+  - Draining Kiss
+  - Endeavor
+  - Endure
+  - Energy Ball
+  - Facade
+  - Flail
+  - Fling
+  - Frustration
+  - Giga Drain
+  - Giga Impact
+  - Grass Knot
+  - Grassy Glide
+  - Grassy Terrain
+  - Helping Hand
+  - Hidden Power
+  - High Jump Kick
+  - Hyper Beam
+  - Knock Off
+  - Laser Focus
+  - Leaf Storm
+  - Light Screen
+  - Low Kick
+  - Low Sweep
+  - Magical Leaf
+  - Mega Kick
+  - Nature Power
+  - Payback
+  - Petal Blizzard
+  - Play Nice
+  - Play Rough
+  - Power Whip
+  - Protect
+  - Punishment
+  - Rapid Spin
+  - Razor Leaf
+  - Reflect
+  - Rest
+  - Return
+  - Round
+  - Safeguard
+  - Seed Bomb
+  - Sleep Talk
+  - Snore
+  - Solar Beam
+  - Solar Blade
+  - Splash
+  - Stomp
+  - Substitute
+  - Sunny Day
+  - Swagger
+  - Sweet Scent
+  - Swift
+  - Synthesis
+  - Take Down
+  - Taunt
+  - Teeter Dance
+  - Tera Blast
+  - Toxic
+  - Trailblaze
+  - Triple Axel
+  - Trop Kick
+  - U-turn
+  - Worry Seed
+  - Zen Headbutt
 added_in_regulation: M-B
 legal_in_regulations: [M-B]
 notes: >
   TODO: add competitive notes (role, speed-control relevance, etc).
 data_confidence: >
   Base stats/types/abilities fetched live from PokeAPI (https://pokeapi.co/api/v2) by fetch_pokemon_data.py. Mega Evolution data (if any) and competitive notes are NOT from PokeAPI and should be verified/updated by hand each season.
+
+  Full `learnset` (78 moves) fetched from PokeAPI's mainline movepool for
+  pokemon/tsareena (level-up + TM/HM + egg + tutor moves combined) by
+  backfill_learnset.py. This is NOT confirmed against the live Pokemon
+  Champions client -- Champions has already been shown to diverge from
+  mainline itemization (see items-m-b.yaml), so some listed moves may not
+  actually be learnable in Champions. Treat as a candidate pool, not a
+  guarantee.

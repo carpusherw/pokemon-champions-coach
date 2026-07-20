@@ -11,9 +11,155 @@ abilities:
     hidden: true
 mega: null  # TODO: fill in if this species has a Mega Evolution
 moves: null  # TODO: curate competitive movepool (moves actually run in Reg M-B sets)
+learnset:
+  - Aerial Ace
+  - After You
+  - Amnesia
+  - Aqua Tail
+  - Attract
+  - Avalanche
+  - Belch
+  - Belly Drum
+  - Bide
+  - Blizzard
+  - Block
+  - Body Press
+  - Body Slam
+  - Brick Break
+  - Brine
+  - Bubble Beam
+  - Bulldoze
+  - Calm Mind
+  - Captivate
+  - Chilling Water
+  - Confide
+  - Confusion
+  - Counter
+  - Curse
+  - Dig
+  - Disable
+  - Dive
+  - Double Team
+  - Double-Edge
+  - Drain Punch
+  - Dream Eater
+  - Dynamic Punch
+  - Earthquake
+  - Echoed Voice
+  - Endure
+  - Expanding Force
+  - Facade
+  - Fire Blast
+  - Fissure
+  - Flamethrower
+  - Flash
+  - Fling
+  - Focus Blast
+  - Focus Punch
+  - Foul Play
+  - Frustration
+  - Fury Cutter
+  - Future Sight
+  - Giga Impact
+  - Grass Knot
+  - Growl
+  - Hail
+  - Headbutt
+  - Heal Pulse
+  - Helping Hand
+  - Hidden Power
+  - Hydro Pump
+  - Hyper Beam
+  - Ice Beam
+  - Ice Punch
+  - Icy Wind
+  - Imprison
+  - Incinerate
+  - Iron Defense
+  - Iron Tail
+  - Light Screen
+  - Liquidation
+  - Magic Coat
+  - Mega Kick
+  - Mega Punch
+  - Metronome
+  - Mimic
+  - Mud Shot
+  - Mud-Slap
+  - Muddy Water
+  - Nasty Plot
+  - Natural Gift
+  - Nightmare
+  - Pay Day
+  - Protect
+  - Psybeam
+  - Psych Up
+  - Psychic
+  - Psychic Noise
+  - Psychic Terrain
+  - Psyshock
+  - Psywave
+  - Rage
+  - Rain Dance
+  - Razor Shell
+  - Recycle
+  - Reflect
+  - Rest
+  - Return
+  - Rock Smash
+  - Round
+  - Safeguard
+  - Scald
+  - Secret Power
+  - Seismic Toss
+  - Shadow Ball
+  - Signal Beam
+  - Skill Swap
+  - Skull Bash
+  - Slack Off
+  - Sleep Talk
+  - Snore
+  - Snowscape
+  - Stomp
+  - Stored Power
+  - Strength
+  - Submission
+  - Substitute
+  - Sunny Day
+  - Surf
+  - Swagger
+  - Swift
+  - Tackle
+  - Take Down
+  - Telekinesis
+  - Teleport
+  - Tera Blast
+  - Thunder Wave
+  - Toxic
+  - Tri Attack
+  - Trick
+  - Trick Room
+  - Water Gun
+  - Water Pulse
+  - Waterfall
+  - Weather Ball
+  - Whirlpool
+  - Withdraw
+  - Wonder Room
+  - Yawn
+  - Zap Cannon
+  - Zen Headbutt
 added_in_regulation: M-B
 legal_in_regulations: [M-B]
 notes: >
   TODO: add competitive notes (role, speed-control relevance, etc).
 data_confidence: >
   Base stats/types/abilities fetched live from PokeAPI (https://pokeapi.co/api/v2) by fetch_pokemon_data.py. Mega Evolution data (if any) and competitive notes are NOT from PokeAPI and should be verified/updated by hand each season.
+
+  Full `learnset` (137 moves) fetched from PokeAPI's mainline movepool for
+  pokemon/slowbro (level-up + TM/HM + egg + tutor moves combined) by
+  backfill_learnset.py. This is NOT confirmed against the live Pokemon
+  Champions client -- Champions has already been shown to diverge from
+  mainline itemization (see items-m-b.yaml), so some listed moves may not
+  actually be learnable in Champions. Treat as a candidate pool, not a
+  guarantee.
