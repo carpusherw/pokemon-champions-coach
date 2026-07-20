@@ -9,9 +9,137 @@ abilities:
     hidden: true
 mega: null  # TODO: fill in if this species has a Mega Evolution
 moves: null  # TODO: curate competitive movepool (moves actually run in Reg M-B sets)
+learnset:
+  - Aerial Ace
+  - Agility
+  - Ancient Power
+  - Aqua Jet
+  - Aqua Tail
+  - Attract
+  - Avalanche
+  - Bite
+  - Blizzard
+  - Block
+  - Body Slam
+  - Breaking Swipe
+  - Brick Break
+  - Brutal Swing
+  - Bulldoze
+  - Captivate
+  - Chilling Water
+  - Chip Away
+  - Confide
+  - Counter
+  - Crunch
+  - Curse
+  - Cut
+  - Detect
+  - Dig
+  - Dive
+  - Double Team
+  - Double-Edge
+  - Dragon Claw
+  - Dragon Dance
+  - Dragon Pulse
+  - Dragon Tail
+  - Dynamic Punch
+  - Earthquake
+  - Endeavor
+  - Endure
+  - Facade
+  - Fake Tears
+  - Flail
+  - Flatter
+  - Fling
+  - Flip Turn
+  - Focus Blast
+  - Focus Punch
+  - Frustration
+  - Fury Cutter
+  - Giga Impact
+  - Hail
+  - Headbutt
+  - Helping Hand
+  - Hidden Power
+  - Hone Claws
+  - Hydro Cannon
+  - Hydro Pump
+  - Hyper Beam
+  - Ice Beam
+  - Ice Fang
+  - Ice Punch
+  - Icy Wind
+  - Iron Tail
+  - Lash Out
+  - Leer
+  - Liquidation
+  - Low Kick
+  - Mega Kick
+  - Mega Punch
+  - Metal Claw
+  - Mimic
+  - Mud Shot
+  - Mud-Slap
+  - Muddy Water
+  - Natural Gift
+  - Outrage
+  - Power-Up Punch
+  - Protect
+  - Psychic Fangs
+  - Rage
+  - Rain Dance
+  - Rest
+  - Return
+  - Roar
+  - Rock Climb
+  - Rock Slide
+  - Rock Smash
+  - Rock Tomb
+  - Round
+  - Scald
+  - Scale Shot
+  - Scary Face
+  - Scratch
+  - Screech
+  - Secret Power
+  - Seismic Toss
+  - Shadow Claw
+  - Slash
+  - Sleep Talk
+  - Snarl
+  - Snore
+  - Spite
+  - Stomping Tantrum
+  - Strength
+  - Substitute
+  - Superpower
+  - Surf
+  - Swagger
+  - Swords Dance
+  - Take Down
+  - Tera Blast
+  - Thief
+  - Thrash
+  - Toxic
+  - Trailblaze
+  - Uproar
+  - Water Gun
+  - Water Pledge
+  - Water Pulse
+  - Waterfall
+  - Whirlpool
+  - Work Up
 added_in_regulation: M-B
 legal_in_regulations: [M-B]
 notes: >
   TODO: add competitive notes (role, speed-control relevance, etc).
 data_confidence: >
   Base stats/types/abilities fetched live from PokeAPI (https://pokeapi.co/api/v2) by fetch_pokemon_data.py. Mega Evolution data (if any) and competitive notes are NOT from PokeAPI and should be verified/updated by hand each season.
+
+  Full `learnset` (119 moves) fetched from PokeAPI's mainline movepool for
+  pokemon/feraligatr (level-up + TM/HM + egg + tutor moves combined) by
+  backfill_learnset.py. This is NOT confirmed against the live Pokemon
+  Champions client -- Champions has already been shown to diverge from
+  mainline itemization (see items-m-b.yaml), so some listed moves may not
+  actually be learnable in Champions. Treat as a candidate pool, not a
+  guarantee.

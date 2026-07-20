@@ -21,6 +21,80 @@ mega:
     special wall (Sp. Def 123 -> 163, Sp. Atk 97 -> 132) at the same
     already-low Speed (44).
 moves: [Sludge Bomb, Draco Meteor, Toxic Spikes, Protect]
+learnset:
+  - Acid
+  - Acid Spray
+  - Aqua Tail
+  - Attract
+  - Bounce
+  - Bubble
+  - Camouflage
+  - Chilling Water
+  - Confide
+  - Dive
+  - Double Team
+  - Draco Meteor
+  - Dragon Pulse
+  - Dragon Tail
+  - Endure
+  - Facade
+  - Feint Attack
+  - Flip Turn
+  - Focus Blast
+  - Frustration
+  - Giga Impact
+  - Gunk Shot
+  - Hail
+  - Haze
+  - Hidden Power
+  - Hydro Pump
+  - Hyper Beam
+  - Icy Wind
+  - Iron Tail
+  - Liquidation
+  - Mud Shot
+  - Mud-Slap
+  - Muddy Water
+  - Outrage
+  - Play Rough
+  - Poison Tail
+  - Protect
+  - Rain Dance
+  - Rest
+  - Return
+  - Round
+  - Scald
+  - Scale Shot
+  - Scary Face
+  - Secret Power
+  - Shadow Ball
+  - Shock Wave
+  - Sleep Talk
+  - Sludge Bomb
+  - Sludge Wave
+  - Smokescreen
+  - Snore
+  - Snowscape
+  - Spite
+  - Substitute
+  - Surf
+  - Swagger
+  - Tackle
+  - Tail Whip
+  - Take Down
+  - Tera Blast
+  - Thief
+  - Thunder
+  - Thunderbolt
+  - Toxic
+  - Toxic Spikes
+  - Twister
+  - Venom Drench
+  - Venoshock
+  - Water Gun
+  - Water Pulse
+  - Waterfall
+  - Whirlpool
 added_in_regulation: M-A or earlier (base) / M-B (Mega)
 legal_in_regulations: [M-B]  # earliest confirmed regulation only; may be legal earlier too
 notes: >
@@ -43,3 +117,11 @@ data_confidence: >
   Pokemon Champions client, which has already been shown to diverge from
   mainline in places (see items-m-b.yaml re: Choice items). Re-verify before
   relying on it for a real draft/build decision.
+
+  Full `learnset` (73 moves) fetched from PokeAPI's mainline movepool for
+  pokemon/dragalge (level-up + TM/HM + egg + tutor moves combined) by
+  backfill_learnset.py. This is NOT confirmed against the live Pokemon
+  Champions client -- Champions has already been shown to diverge from
+  mainline itemization (see items-m-b.yaml), so some listed moves may not
+  actually be learnable in Champions. Treat as a candidate pool, not a
+  guarantee.

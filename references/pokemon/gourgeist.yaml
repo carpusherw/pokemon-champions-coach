@@ -11,6 +11,89 @@ abilities:
     hidden: true
 mega: null  # TODO: fill in if this species has a Mega Evolution
 moves: [Trick-or-Treat, Seed Bomb, Will-O-Wisp, Protect]
+learnset:
+  - Ally Switch
+  - Astonish
+  - Attract
+  - Brutal Swing
+  - Bullet Seed
+  - Charge Beam
+  - Confide
+  - Confuse Ray
+  - Curse
+  - Dark Pulse
+  - Destiny Bond
+  - Disable
+  - Double Team
+  - Dream Eater
+  - Endure
+  - Energy Ball
+  - Explosion
+  - Facade
+  - Fire Blast
+  - Flame Charge
+  - Flamethrower
+  - Flash
+  - Focus Blast
+  - Foul Play
+  - Frustration
+  - Giga Drain
+  - Giga Impact
+  - Grass Knot
+  - Grassy Glide
+  - Gyro Ball
+  - Hex
+  - Hidden Power
+  - Hyper Beam
+  - Hypnosis
+  - Imprison
+  - Incinerate
+  - Leech Seed
+  - Light Screen
+  - Magic Coat
+  - Moonblast
+  - Mystical Fire
+  - Nasty Plot
+  - Nature Power
+  - Pain Split
+  - Phantom Force
+  - Poltergeist
+  - Power Whip
+  - Protect
+  - Psychic
+  - Razor Leaf
+  - Rest
+  - Return
+  - Rock Slide
+  - Rock Smash
+  - Role Play
+  - Round
+  - Safeguard
+  - Scary Face
+  - Secret Power
+  - Seed Bomb
+  - Self-Destruct
+  - Shadow Ball
+  - Shadow Sneak
+  - Skill Swap
+  - Skitter Smack
+  - Sleep Talk
+  - Sludge Bomb
+  - Snore
+  - Solar Beam
+  - Spite
+  - Substitute
+  - Sunny Day
+  - Swagger
+  - Synthesis
+  - Telekinesis
+  - Thief
+  - Toxic
+  - Trick
+  - Trick Room
+  - Trick-or-Treat
+  - Will-O-Wisp
+  - Worry Seed
 added_in_regulation: M-B
 legal_in_regulations: [M-B]
 notes: >
@@ -28,3 +111,11 @@ data_confidence: >
   Pokemon Champions client, which has already been shown to diverge from
   mainline in places (see items-m-b.yaml re: Choice items). Re-verify before
   relying on it for a real draft/build decision.
+
+  Full `learnset` (82 moves) fetched from PokeAPI's mainline movepool for
+  pokemon/gourgeist-average (level-up + TM/HM + egg + tutor moves combined) by
+  backfill_learnset.py. This is NOT confirmed against the live Pokemon
+  Champions client -- Champions has already been shown to diverge from
+  mainline itemization (see items-m-b.yaml), so some listed moves may not
+  actually be learnable in Champions. Treat as a candidate pool, not a
+  guarantee.
