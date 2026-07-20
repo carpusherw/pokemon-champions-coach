@@ -15,11 +15,16 @@ PokeAPI's mainline list (consistent with Champions already being known to
 diverge from mainline itemization -- see references/rules/items-m-b.yaml),
 so treat this field as a reliable candidate pool, not a guarantee.
 
-Requires that the target file already has a `learnset:` line (added by a
-one-time schema pass across all species files -- see references/pokemon
-README.md). This script only ever replaces that one field in place and
-appends a caveat paragraph to `data_confidence`; every other field in the
-file is left untouched byte-for-byte.
+Inserts a `learnset:` field right after `moves:` if the target file doesn't
+have one yet, or replaces it in place if it does (e.g. a `learnset: null`
+placeholder, or a re-run to refresh an already-populated one). Either way
+it also appends a caveat paragraph to `data_confidence`; every other field
+in the file is left untouched byte-for-byte. Species not yet covered by a
+batch simply have no `learnset` key at all (rather than every file getting
+a `learnset: null` placeholder up front) -- unlike `mega`/`moves`, doing
+that placeholder pass across all 232 files in one commit was tried and
+reverted, because it made even a single batch's PR touch all 232 files at
+once, over the review tooling's 100-file limit (see PR #16 discussion).
 
 Move display names (spelling/punctuation like "U-turn", "Will-O-Wisp") come
 from move_names.json in this directory, a cache of PokeAPI's official
@@ -155,8 +160,16 @@ def splice_learnset(path, moves, api_slug):
             replaced = True
             continue
         out.append(line)
+        if not replaced and line.startswith("moves:"):
+            # No pre-existing `learnset:` placeholder (species not yet
+            # covered by a batch) -- insert it fresh right after `moves:`,
+            # in the same spot the schema pass would have put it.
+            out.append("learnset:")
+            for mv in moves:
+                out.append(f"  - {mv}")
+            replaced = True
     if not replaced:
-        raise RuntimeError(f"no 'learnset:' line in {path} -- run the schema-placeholder pass first")
+        raise RuntimeError(f"no 'moves:' or 'learnset:' line in {path} -- not a species reference file?")
 
     text = "\n".join(out)
 

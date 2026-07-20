@@ -101,10 +101,18 @@ each file's `data_confidence` repeats this caveat. Move names use PokeAPI's
 official English display spelling/punctuation (e.g. `U-turn`,
 `Will-O-Wisp`), not naive title-casing.
 
-**Current coverage: 47 of 232 species** (batch 1). The backfill is being
-rolled out in ~46-47-species batches, one PR per batch, to stay under the
-review-tooling file-count limit -- see `backfill_learnset.py`'s docstring
-for how to run a batch.
+Unlike `mega`/`moves`, a species not yet covered has **no `learnset` key at
+all** rather than a `learnset: null` placeholder -- adding that placeholder
+to all 232 files in one pass was tried first, but it meant even a
+single-batch PR touched all 232 files and blew past the review tooling's
+100-file limit. Each batch instead adds the key straight to real content
+for just that batch's species.
+
+**Current coverage: 50 of 232 species** (batch 1, alphabetical
+`abomasnow`..`crabominable`, plus `garchomp`/`palafin`/`pyroar` picked up
+early as spot-checks). The remaining backfill is being rolled out in
+~46-47-species batches, one PR per batch -- see `backfill_learnset.py`'s
+docstring for how to run a batch.
 
 ## Data quality flags to know about
 

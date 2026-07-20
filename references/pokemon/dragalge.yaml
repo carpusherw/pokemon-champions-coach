@@ -21,7 +21,6 @@ mega:
     special wall (Sp. Def 123 -> 163, Sp. Atk 97 -> 132) at the same
     already-low Speed (44).
 moves: [Sludge Bomb, Draco Meteor, Toxic Spikes, Protect]
-learnset: null  # TODO: backfill full learnset (see refresh-references skill)
 added_in_regulation: M-A or earlier (base) / M-B (Mega)
 legal_in_regulations: [M-B]  # earliest confirmed regulation only; may be legal earlier too
 notes: >

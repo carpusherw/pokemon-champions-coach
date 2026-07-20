@@ -21,7 +21,6 @@ mega:
     Evolves in -- while every stat except Speed rises substantially
     (Atk 90->130, Def 115->135, SpD 115->135).
 moves: [Knock Off, Drain Punch, Fake Out, Protect]
-learnset: null  # TODO: backfill full learnset (see refresh-references skill)
 added_in_regulation: M-A or earlier (base) / M-B (Mega)
 legal_in_regulations: [M-B]  # earliest confirmed regulation only; may be legal earlier too
 notes: >
