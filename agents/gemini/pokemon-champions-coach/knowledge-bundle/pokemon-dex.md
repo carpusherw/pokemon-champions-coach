@@ -73,7 +73,7 @@ CI's knowledge-bundle-guard will flag the file as stale anyway.
 - Base stats: HP 90, Atk 75, Def 85, SpA 115, SpD 90, Spe 55
 - Abilities: Static, Plus (hidden)
 - Common moves: Dragon Pulse, Protect, Thunderbolt, Parabolic Charge
-- Notes: Played as Mega Ampharos (Mold Breaker ignores abilities like Water Absorb/Levitate); Dragon Pulse is the primary STAB with Thunderbolt as secondary coverage.
+- Notes: Played as Mega Ampharos (Electric/Dragon, Mold Breaker ignores abilities like Water Absorb/Levitate); Dragon Pulse and Thunderbolt are its dual STAB moves, with Mold Breaker letting Thunderbolt hit Levitate users.
 
 ## Annihilape (#979)
 - Types: Fighting/Ghost
@@ -308,7 +308,7 @@ CI's knowledge-bundle-guard will flag the file as stale anyway.
 - Base stats: HP 71, Atk 73, Def 88, SpA 120, SpD 89, Spe 59
 - Abilities: Mega Launcher
 - Common moves: Aura Sphere, Dark Pulse, Water Pulse, Protect
-- Notes: Mega Launcher boosts all of its pulse moves (Water Pulse, Aura Sphere, Dark Pulse) by 1.5x, giving it strong special coverage despite a mediocre 120 Sp. Atk.
+- Notes: Mega Launcher boosts all of its pulse moves (Water Pulse, Aura Sphere, Dark Pulse) by 1.5x; its 120 Sp. Atk is solid, but low Speed (59) keeps it from threatening fast teams without speed-control support.
 
 ## Clefable (#36)
 - Types: Fairy
@@ -329,7 +329,7 @@ CI's knowledge-bundle-guard will flag the file as stale anyway.
 - Base stats: HP 105, Atk 140, Def 95, SpA 55, SpD 65, Spe 45
 - Abilities: Guts, Sheer Force, Iron Fist (hidden)
 - Common moves: Mach Punch, Drain Punch, Thunder Punch, Detect
-- Notes: Guts (commonly paired with a self-inflicted Flame Orb burn) raises its Attack while the burn's damage-halving still applies to its physical moves; Mach Punch gives it priority alongside Drain Punch's recovery.
+- Notes: Guts (commonly paired with a self-inflicted Flame Orb burn) raises its Attack by 1.5x and negates the burn's usual physical-damage halving -- it takes the extra HP chip each turn but deals full damage; Mach Punch gives it priority alongside Drain Punch's recovery.
 
 ## Corviknight (#823)
 - Types: Flying/Steel

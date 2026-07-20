@@ -10,9 +10,9 @@ moves: [Aura Sphere, Dark Pulse, Water Pulse, Protect]
 added_in_regulation: M-B
 legal_in_regulations: [M-B]
 notes: >
-  Mega Launcher boosts all of its pulse moves (Water Pulse, Aura Sphere, Dark
-  Pulse) by 1.5x, giving it strong special coverage despite a mediocre 120 Sp.
-  Atk.
+  Mega Launcher boosts all of its pulse moves (Water Pulse, Aura Sphere,
+  Dark Pulse) by 1.5x; its 120 Sp. Atk is solid, but low Speed (59) keeps
+  it from threatening fast teams without speed-control support.
 data_confidence: >
   Base stats/types/abilities fetched live from PokeAPI (https://pokeapi.co/api/v2) by fetch_pokemon_data.py. Mega Evolution data (if any) and competitive notes are NOT from PokeAPI and should be verified/updated by hand each season.
 

@@ -12,9 +12,9 @@ moves: [Dragon Pulse, Protect, Thunderbolt, Parabolic Charge]
 added_in_regulation: M-B
 legal_in_regulations: [M-B]
 notes: >
-  Played as Mega Ampharos (Mold Breaker ignores abilities like Water
-  Absorb/Levitate); Dragon Pulse is the primary STAB with Thunderbolt as
-  secondary coverage.
+  Played as Mega Ampharos (Electric/Dragon, Mold Breaker ignores abilities
+  like Water Absorb/Levitate); Dragon Pulse and Thunderbolt are its dual
+  STAB moves, with Mold Breaker letting Thunderbolt hit Levitate users.
 data_confidence: >
   Base stats/types/abilities fetched live from PokeAPI (https://pokeapi.co/api/v2) by fetch_pokemon_data.py. Mega Evolution data (if any) and competitive notes are NOT from PokeAPI and should be verified/updated by hand each season.
 
