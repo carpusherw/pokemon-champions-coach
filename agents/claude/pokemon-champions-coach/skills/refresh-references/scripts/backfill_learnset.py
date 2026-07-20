@@ -189,8 +189,9 @@ def splice_learnset(path, moves, api_slug):
     text = "\n".join(out)
 
     if CAVEAT_MARKER not in text:
+        move_word = "move" if len(moves) == 1 else "moves"
         paragraph = (
-            f"Full `learnset` ({len(moves)} moves) fetched from PokeAPI's mainline "
+            f"Full `learnset` ({len(moves)} {move_word}) fetched from PokeAPI's mainline "
             f"movepool for pokemon/{api_slug} (level-up + TM/HM + egg + tutor moves "
             "combined) by backfill_learnset.py. This is NOT confirmed against the "
             "live Pokemon Champions client -- Champions has already been shown to "

@@ -18,7 +18,7 @@ notes: >
 data_confidence: >
   Base stats/types/abilities fetched live from PokeAPI (https://pokeapi.co/api/v2) by fetch_pokemon_data.py. Mega Evolution data (if any) and competitive notes are NOT from PokeAPI and should be verified/updated by hand each season.
 
-  Full `learnset` (1 moves) fetched from PokeAPI's mainline movepool for
+  Full `learnset` (1 move) fetched from PokeAPI's mainline movepool for
   pokemon/ditto (level-up + TM/HM + egg + tutor moves combined) by
   backfill_learnset.py. This is NOT confirmed against the live Pokemon
   Champions client -- Champions has already been shown to diverge from

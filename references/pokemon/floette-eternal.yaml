@@ -92,3 +92,11 @@ data_confidence: >
   mainline itemization (see items-m-b.yaml), so some listed moves may not
   actually be learnable in Champions. Treat as a candidate pool, not a
   guarantee.
+
+  Extra caveat specific to this form: Eternal Flower Floette (AZ's Floette)
+  has never been officially distributed in any mainline game -- it exists
+  in the game data but was never made legally obtainable there. Its
+  PokeAPI learnset (including its signature move, Light of Ruin) comes from
+  datamined/unreleased event data, not a validated official release, so if
+  Champions has independently balanced this form, its actual learnset could
+  diverge from this list more than the typical case above.
