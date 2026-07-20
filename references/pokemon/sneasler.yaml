@@ -11,9 +11,90 @@ abilities:
     hidden: true
 mega: null  # TODO: fill in if this species has a Mega Evolution
 moves: null  # TODO: curate competitive movepool (moves actually run in Reg M-B sets)
+learnset:
+  - Acid Spray
+  - Acrobatics
+  - Aerial Ace
+  - Agility
+  - Brick Break
+  - Bulk Up
+  - Calm Mind
+  - Close Combat
+  - Coaching
+  - Counter
+  - Dig
+  - Dire Claw
+  - Double Hit
+  - Endure
+  - Facade
+  - Fake Out
+  - False Swipe
+  - Feint
+  - Fire Punch
+  - Fling
+  - Focus Blast
+  - Focus Punch
+  - Giga Impact
+  - Grass Knot
+  - Gunk Shot
+  - Hone Claws
+  - Hyper Beam
+  - Lash Out
+  - Leer
+  - Low Kick
+  - Low Sweep
+  - Metal Claw
+  - Nasty Plot
+  - Night Slash
+  - Poison Jab
+  - Poison Tail
+  - Protect
+  - Quick Attack
+  - Quick Guard
+  - Rain Dance
+  - Rest
+  - Reversal
+  - Rock Slide
+  - Rock Smash
+  - Rock Tomb
+  - Scratch
+  - Screech
+  - Shadow Ball
+  - Shadow Claw
+  - Slash
+  - Sleep Talk
+  - Sludge Bomb
+  - Sludge Wave
+  - Spite
+  - Substitute
+  - Sunny Day
+  - Swift
+  - Switcheroo
+  - Swords Dance
+  - Take Down
+  - Taunt
+  - Tera Blast
+  - Thief
+  - Throat Chop
+  - Toxic
+  - Toxic Spikes
+  - Trailblaze
+  - U-turn
+  - Upper Hand
+  - Vacuum Wave
+  - Venoshock
+  - X-Scissor
 added_in_regulation: M-B
 legal_in_regulations: [M-B]
 notes: >
   TODO: add competitive notes (role, speed-control relevance, etc).
 data_confidence: >
   Base stats/types/abilities fetched live from PokeAPI (https://pokeapi.co/api/v2) by fetch_pokemon_data.py. Mega Evolution data (if any) and competitive notes are NOT from PokeAPI and should be verified/updated by hand each season.
+
+  Full `learnset` (72 moves) fetched from PokeAPI's mainline movepool for
+  pokemon/sneasler (level-up + TM/HM + egg + tutor moves combined) by
+  backfill_learnset.py. This is NOT confirmed against the live Pokemon
+  Champions client -- Champions has already been shown to diverge from
+  mainline itemization (see items-m-b.yaml), so some listed moves may not
+  actually be learnable in Champions. Treat as a candidate pool, not a
+  guarantee.

@@ -11,9 +11,129 @@ abilities:
     hidden: true
 mega: null  # TODO: fill in if this species has a Mega Evolution
 moves: null  # TODO: curate competitive movepool (moves actually run in Reg M-B sets)
+learnset:
+  - Acid
+  - Acid Spray
+  - Amnesia
+  - Attract
+  - Avalanche
+  - Belch
+  - Belly Drum
+  - Blizzard
+  - Block
+  - Body Press
+  - Body Slam
+  - Brick Break
+  - Brine
+  - Brutal Swing
+  - Bulldoze
+  - Calm Mind
+  - Chilling Water
+  - Confusion
+  - Curse
+  - Dig
+  - Disable
+  - Dive
+  - Double-Edge
+  - Drain Punch
+  - Earthquake
+  - Endure
+  - Expanding Force
+  - Facade
+  - Fire Blast
+  - Flamethrower
+  - Fling
+  - Focus Blast
+  - Foul Play
+  - Future Sight
+  - Giga Impact
+  - Grass Knot
+  - Growl
+  - Gunk Shot
+  - Hail
+  - Haze
+  - Headbutt
+  - Heal Pulse
+  - Helping Hand
+  - Hydro Pump
+  - Hyper Beam
+  - Ice Beam
+  - Ice Fang
+  - Ice Punch
+  - Icy Wind
+  - Imprison
+  - Iron Defense
+  - Iron Tail
+  - Light Screen
+  - Liquidation
+  - Mega Kick
+  - Mega Punch
+  - Metronome
+  - Mud Shot
+  - Muddy Water
+  - Nasty Plot
+  - Pay Day
+  - Poison Jab
+  - Power Gem
+  - Protect
+  - Psybeam
+  - Psych Up
+  - Psychic
+  - Psychic Terrain
+  - Psyshock
+  - Rain Dance
+  - Razor Shell
+  - Rest
+  - Rock Blast
+  - Round
+  - Safeguard
+  - Sandstorm
+  - Scald
+  - Scary Face
+  - Shadow Ball
+  - Shell Side Arm
+  - Skill Swap
+  - Slack Off
+  - Sleep Talk
+  - Sludge Bomb
+  - Sludge Wave
+  - Smack Down
+  - Snore
+  - Snowscape
+  - Stored Power
+  - Substitute
+  - Sunny Day
+  - Surf
+  - Swift
+  - Tackle
+  - Take Down
+  - Tera Blast
+  - Thunder Wave
+  - Toxic
+  - Toxic Spikes
+  - Tri Attack
+  - Trick
+  - Trick Room
+  - Venoshock
+  - Water Pulse
+  - Waterfall
+  - Weather Ball
+  - Whirlpool
+  - Withdraw
+  - Wonder Room
+  - Yawn
+  - Zen Headbutt
 added_in_regulation: M-B
 legal_in_regulations: [M-B]
 notes: >
   TODO: add competitive notes (role, speed-control relevance, etc).
 data_confidence: >
   Base stats/types/abilities fetched live from PokeAPI (https://pokeapi.co/api/v2) by fetch_pokemon_data.py. Mega Evolution data (if any) and competitive notes are NOT from PokeAPI and should be verified/updated by hand each season.
+
+  Full `learnset` (111 moves) fetched from PokeAPI's mainline movepool for
+  pokemon/slowbro-galar (level-up + TM/HM + egg + tutor moves combined) by
+  backfill_learnset.py. This is NOT confirmed against the live Pokemon
+  Champions client -- Champions has already been shown to diverge from
+  mainline itemization (see items-m-b.yaml), so some listed moves may not
+  actually be learnable in Champions. Treat as a candidate pool, not a
+  guarantee.

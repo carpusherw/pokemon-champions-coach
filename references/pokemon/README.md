@@ -108,12 +108,13 @@ single-batch PR touched all 232 files and blew past the review tooling's
 100-file limit. Each batch instead adds the key straight to real content
 for just that batch's species.
 
-**Current coverage: 186 of 232 species** (batch 1: alphabetical
-`abomasnow`..`crabominable` plus `garchomp`/`palafin`/`pyroar` picked up
-early as spot-checks; batch 2: `decidueye-hisui`..`hawlucha`; batch 3:
-`heliolisk`..`oranguru`; batch 4: `orthworm`..`skeledirge`). The remaining
-backfill is being rolled out in ~44-46-species batches, one PR per batch --
-see `backfill_learnset.py`'s docstring for how to run a batch.
+**Current coverage: 232 of 232 species (complete).** Rolled out across 5
+PRs in ~44-47-species batches (see `backfill_learnset.py`'s docstring for
+how to run the backfill again for any species). Batch boundaries,
+alphabetical: batch 1 `abomasnow`..`crabominable` (plus
+`garchomp`/`palafin`/`pyroar` picked up early as spot-checks), batch 2
+`decidueye-hisui`..`hawlucha`, batch 3 `heliolisk`..`oranguru`, batch 4
+`orthworm`..`skeledirge`, batch 5 `slowbro-galar`..`zoroark`.
 
 ## Data quality flags to know about
 

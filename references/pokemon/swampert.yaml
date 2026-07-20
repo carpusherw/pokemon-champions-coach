@@ -18,6 +18,123 @@ mega:
     slow bulky attacker into a rain sweeper. Confirmed via PokeAPI
     (pokemon/swampert-mega) on 2026-07-18.
 moves: [Earthquake, Waterfall, Ice Punch, Protect]
+learnset:
+  - Amnesia
+  - Ancient Power
+  - Aqua Tail
+  - Attract
+  - Avalanche
+  - Bide
+  - Bite
+  - Blizzard
+  - Body Press
+  - Body Slam
+  - Brick Break
+  - Bulk Up
+  - Bulldoze
+  - Captivate
+  - Chilling Water
+  - Confide
+  - Counter
+  - Curse
+  - Darkest Lariat
+  - Defense Curl
+  - Dig
+  - Dive
+  - Double Team
+  - Double-Edge
+  - Dynamic Punch
+  - Earth Power
+  - Earthquake
+  - Echoed Voice
+  - Endeavor
+  - Endure
+  - Facade
+  - Fling
+  - Flip Turn
+  - Focus Blast
+  - Focus Punch
+  - Foresight
+  - Frustration
+  - Giga Impact
+  - Growl
+  - Hail
+  - Hammer Arm
+  - Hard Press
+  - Headbutt
+  - Helping Hand
+  - Hidden Power
+  - High Horsepower
+  - Hydro Cannon
+  - Hydro Pump
+  - Hyper Beam
+  - Ice Beam
+  - Ice Punch
+  - Icy Wind
+  - Iron Tail
+  - Knock Off
+  - Liquidation
+  - Low Kick
+  - Mega Kick
+  - Mega Punch
+  - Mimic
+  - Mirror Coat
+  - Mud Bomb
+  - Mud Shot
+  - Mud Sport
+  - Mud-Slap
+  - Muddy Water
+  - Natural Gift
+  - Outrage
+  - Poison Jab
+  - Power-Up Punch
+  - Protect
+  - Rain Dance
+  - Rest
+  - Return
+  - Roar
+  - Rock Climb
+  - Rock Slide
+  - Rock Smash
+  - Rock Throw
+  - Rock Tomb
+  - Rollout
+  - Round
+  - Sand Tomb
+  - Scald
+  - Scary Face
+  - Screech
+  - Secret Power
+  - Seismic Toss
+  - Sleep Talk
+  - Sludge
+  - Sludge Wave
+  - Smack Down
+  - Snore
+  - Stealth Rock
+  - Stomp
+  - Stomping Tantrum
+  - Stone Edge
+  - Strength
+  - Substitute
+  - Superpower
+  - Supersonic
+  - Surf
+  - Swagger
+  - Tackle
+  - Take Down
+  - Tera Blast
+  - Toxic
+  - Uproar
+  - Water Gun
+  - Water Pledge
+  - Water Pulse
+  - Waterfall
+  - Weather Ball
+  - Whirlpool
+  - Wide Guard
+  - Work Up
+  - Yawn
 added_in_regulation: M-A (base) / M-B (Mega)
 legal_in_regulations: [M-B]  # earliest confirmed regulation only; may be legal earlier too
 notes: >
@@ -36,3 +153,11 @@ data_confidence: >
   Pokemon Champions client, which has already been shown to diverge from
   mainline in places (see items-m-b.yaml re: Choice items). Re-verify before
   relying on it for a real draft/build decision.
+
+  Full `learnset` (116 moves) fetched from PokeAPI's mainline movepool for
+  pokemon/swampert (level-up + TM/HM + egg + tutor moves combined) by
+  backfill_learnset.py. This is NOT confirmed against the live Pokemon
+  Champions client -- Champions has already been shown to diverge from
+  mainline itemization (see items-m-b.yaml), so some listed moves may not
+  actually be learnable in Champions. Treat as a candidate pool, not a
+  guarantee.

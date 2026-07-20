@@ -11,9 +11,77 @@ abilities:
     hidden: true
 mega: null  # TODO: fill in if this species has a Mega Evolution
 moves: null  # TODO: curate competitive movepool (moves actually run in Reg M-B sets)
+learnset:
+  - Aqua Jet
+  - Body Press
+  - Body Slam
+  - Bulk Up
+  - Bulldoze
+  - Chilling Water
+  - Close Combat
+  - Curse
+  - Dig
+  - Double Kick
+  - Double-Edge
+  - Drill Run
+  - Earthquake
+  - Endeavor
+  - Endure
+  - Facade
+  - Giga Impact
+  - Headbutt
+  - High Horsepower
+  - Hydro Pump
+  - Hyper Beam
+  - Iron Head
+  - Iron Tail
+  - Lash Out
+  - Liquidation
+  - Megahorn
+  - Outrage
+  - Protect
+  - Raging Bull
+  - Rain Dance
+  - Rest
+  - Reversal
+  - Rock Slide
+  - Rock Tomb
+  - Round
+  - Sandstorm
+  - Scary Face
+  - Sleep Talk
+  - Smart Strike
+  - Snore
+  - Stomping Tantrum
+  - Stone Edge
+  - Substitute
+  - Surf
+  - Swagger
+  - Tackle
+  - Tail Whip
+  - Take Down
+  - Tera Blast
+  - Thief
+  - Thrash
+  - Trailblaze
+  - Uproar
+  - Water Pulse
+  - Wave Crash
+  - Whirlpool
+  - Wild Charge
+  - Work Up
+  - Zen Headbutt
 added_in_regulation: M-B
 legal_in_regulations: [M-B]
 notes: >
   TODO: add competitive notes (role, speed-control relevance, etc).
 data_confidence: >
   Base stats/types/abilities fetched live from PokeAPI (https://pokeapi.co/api/v2) by fetch_pokemon_data.py. Mega Evolution data (if any) and competitive notes are NOT from PokeAPI and should be verified/updated by hand each season.
+
+  Full `learnset` (59 moves) fetched from PokeAPI's mainline movepool for
+  pokemon/tauros-paldea-aqua-breed (level-up + TM/HM + egg + tutor moves
+  combined) by backfill_learnset.py. This is NOT confirmed against the live
+  Pokemon Champions client -- Champions has already been shown to diverge from
+  mainline itemization (see items-m-b.yaml), so some listed moves may not
+  actually be learnable in Champions. Treat as a candidate pool, not a
+  guarantee.
