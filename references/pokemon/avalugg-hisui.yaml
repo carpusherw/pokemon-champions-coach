@@ -11,6 +11,68 @@ abilities:
     hidden: true
 mega: null  # TODO: fill in if this species has a Mega Evolution
 moves: [Rock Slide, Body Press, Mountain Gale, Wide Guard]
+learnset:
+  - Ancient Power
+  - Aurora Veil
+  - Avalanche
+  - Bite
+  - Blizzard
+  - Body Press
+  - Body Slam
+  - Bulldoze
+  - Chilling Water
+  - Crunch
+  - Curse
+  - Dig
+  - Double-Edge
+  - Earth Power
+  - Earthquake
+  - Endure
+  - Facade
+  - Flash Cannon
+  - Giga Impact
+  - Gyro Ball
+  - Hard Press
+  - Harden
+  - Heavy Slam
+  - High Horsepower
+  - Hyper Beam
+  - Ice Ball
+  - Ice Beam
+  - Ice Fang
+  - Ice Shard
+  - Ice Spinner
+  - Icicle Spear
+  - Icy Wind
+  - Iron Defense
+  - Iron Head
+  - Meteor Beam
+  - Mirror Coat
+  - Mountain Gale
+  - Powder Snow
+  - Power Shift
+  - Protect
+  - Rain Dance
+  - Rapid Spin
+  - Recover
+  - Rest
+  - Rock Blast
+  - Rock Slide
+  - Rock Smash
+  - Rock Tomb
+  - Sandstorm
+  - Scary Face
+  - Sleep Talk
+  - Snowscape
+  - Stealth Rock
+  - Stomping Tantrum
+  - Stone Edge
+  - Substitute
+  - Tackle
+  - Take Down
+  - Tera Blast
+  - Water Pulse
+  - Wide Guard
 added_in_regulation: M-B
 legal_in_regulations: [M-B]
 notes: >
@@ -25,3 +87,11 @@ data_confidence: >
   search this session -- real Champions-specific competitive data, not
   recalled mainline VGC knowledge. Cross-check before a high-stakes
   build/draft decision, as usage stats shift across seasons/regulations.
+
+  Full `learnset` (61 moves) fetched from PokeAPI's mainline movepool for
+  pokemon/avalugg-hisui (level-up + TM/HM + egg + tutor moves combined) by
+  backfill_learnset.py. This is NOT confirmed against the live Pokemon
+  Champions client -- Champions has already been shown to diverge from
+  mainline itemization (see items-m-b.yaml), so some listed moves may not
+  actually be learnable in Champions. Treat as a candidate pool, not a
+  guarantee.

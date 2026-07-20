@@ -11,6 +11,68 @@ abilities:
     hidden: true
 mega: null  # TODO: fill in if this species has a Mega Evolution
 moves: [Leech Seed, Apple Acid, Protect, Body Press]
+learnset:
+  - Amnesia
+  - Apple Acid
+  - Astonish
+  - Attract
+  - Body Press
+  - Body Slam
+  - Bulldoze
+  - Bullet Seed
+  - Curse
+  - Draco Meteor
+  - Dragon Pulse
+  - Dragon Tail
+  - Earthquake
+  - Endure
+  - Energy Ball
+  - Facade
+  - Giga Drain
+  - Giga Impact
+  - Grass Knot
+  - Grassy Glide
+  - Grassy Terrain
+  - Growth
+  - Gyro Ball
+  - Headbutt
+  - Heavy Slam
+  - Helping Hand
+  - High Horsepower
+  - Hyper Beam
+  - Iron Defense
+  - Iron Head
+  - Leaf Storm
+  - Leech Seed
+  - Light Screen
+  - Magical Leaf
+  - Outrage
+  - Payback
+  - Pounce
+  - Protect
+  - Rain Dance
+  - Recover
+  - Recycle
+  - Reflect
+  - Rest
+  - Round
+  - Safeguard
+  - Seed Bomb
+  - Sleep Talk
+  - Snore
+  - Solar Beam
+  - Stomp
+  - Stomping Tantrum
+  - Substitute
+  - Sucker Punch
+  - Sunny Day
+  - Superpower
+  - Sweet Scent
+  - Take Down
+  - Tera Blast
+  - Trailblaze
+  - Withdraw
+  - Zen Headbutt
 added_in_regulation: M-B
 legal_in_regulations: [M-B]
 notes: >
@@ -25,3 +87,11 @@ data_confidence: >
   search this session -- real Champions-specific competitive data, not
   recalled mainline VGC knowledge. Cross-check before a high-stakes
   build/draft decision, as usage stats shift across seasons/regulations.
+
+  Full `learnset` (61 moves) fetched from PokeAPI's mainline movepool for
+  pokemon/appletun (level-up + TM/HM + egg + tutor moves combined) by
+  backfill_learnset.py. This is NOT confirmed against the live Pokemon
+  Champions client -- Champions has already been shown to diverge from
+  mainline itemization (see items-m-b.yaml), so some listed moves may not
+  actually be learnable in Champions. Treat as a candidate pool, not a
+  guarantee.

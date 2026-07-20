@@ -78,6 +78,42 @@ batch at a time -- there was no attempt to guess movepools for species that
 haven't had a real competitive research pass yet, the same policy already
 applied to `notes`.
 
+## Learnset field
+
+Each file also has a `learnset` field: the full list of moves this species
+can learn (level-up/TM/egg/tutor combined), as opposed to `moves`'
+curated "what does it actually run" subset. This is the "what *could* this
+Pokemon learn" answer that `moves`' own doc comment above explicitly says
+isn't its job.
+
+`learnset` is sourced from PokeAPI's per-species `/pokemon/{slug}` moves
+list (via `backfill_learnset.py` in the refresh-references skill), which is
+a **mainline-game learnset**, not confirmed against the live Pokemon
+Champions client. A spot-check against gamewith.jp's Champions-specific
+per-species move page for Garchomp (a real, game-sourced move list, just
+not exhaustively scraped for all 232 species due to the volume involved)
+showed Champions' actual learnable-move list is a *subset* of PokeAPI's
+mainline list -- consistent with Champions already being known to diverge
+from mainline itemization (see `references/rules/items-m-b.yaml` re: Choice
+items not being implemented). Treat `learnset` as a reliable candidate
+pool, not a guarantee that every listed move is obtainable in Champions;
+each file's `data_confidence` repeats this caveat. Move names use PokeAPI's
+official English display spelling/punctuation (e.g. `U-turn`,
+`Will-O-Wisp`), not naive title-casing.
+
+Unlike `mega`/`moves`, a species not yet covered has **no `learnset` key at
+all** rather than a `learnset: null` placeholder -- adding that placeholder
+to all 232 files in one pass was tried first, but it meant even a
+single-batch PR touched all 232 files and blew past the review tooling's
+100-file limit. Each batch instead adds the key straight to real content
+for just that batch's species.
+
+**Current coverage: 50 of 232 species** (batch 1, alphabetical
+`abomasnow`..`crabominable`, plus `garchomp`/`palafin`/`pyroar` picked up
+early as spot-checks). The remaining backfill is being rolled out in
+~46-47-species batches, one PR per batch -- see `backfill_learnset.py`'s
+docstring for how to run a batch.
+
 ## Data quality flags to know about
 
 Every file has a `data_confidence` field explaining how its data was

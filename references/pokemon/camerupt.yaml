@@ -11,6 +11,105 @@ abilities:
     hidden: true
 mega: null  # TODO: fill in if this species has a Mega Evolution
 moves: [Earth Power, Protect, Heat Wave, Ancient Power]
+learnset:
+  - After You
+  - Amnesia
+  - Ancient Power
+  - Attract
+  - Body Press
+  - Body Slam
+  - Bulldoze
+  - Burning Jealousy
+  - Captivate
+  - Charm
+  - Confide
+  - Curse
+  - Defense Curl
+  - Dig
+  - Double Team
+  - Double-Edge
+  - Earth Power
+  - Earthquake
+  - Echoed Voice
+  - Ember
+  - Endeavor
+  - Endure
+  - Eruption
+  - Explosion
+  - Facade
+  - Fire Blast
+  - Fire Spin
+  - Fissure
+  - Flame Burst
+  - Flame Charge
+  - Flame Wheel
+  - Flamethrower
+  - Flare Blitz
+  - Flash Cannon
+  - Focus Energy
+  - Frustration
+  - Giga Impact
+  - Growl
+  - Growth
+  - Headbutt
+  - Heat Crash
+  - Heat Wave
+  - Heavy Slam
+  - Helping Hand
+  - Hidden Power
+  - High Horsepower
+  - Howl
+  - Hyper Beam
+  - Incinerate
+  - Iron Head
+  - Lash Out
+  - Lava Plume
+  - Magnitude
+  - Mimic
+  - Mud Shot
+  - Mud-Slap
+  - Natural Gift
+  - Nature Power
+  - Overheat
+  - Protect
+  - Rain Dance
+  - Rest
+  - Return
+  - Roar
+  - Rock Polish
+  - Rock Slide
+  - Rock Smash
+  - Rock Tomb
+  - Rollout
+  - Round
+  - Sandstorm
+  - Scary Face
+  - Scorching Sands
+  - Secret Power
+  - Self-Destruct
+  - Sleep Talk
+  - Smack Down
+  - Snore
+  - Solar Beam
+  - Spit Up
+  - Stealth Rock
+  - Stockpile
+  - Stomping Tantrum
+  - Stone Edge
+  - Strength
+  - Substitute
+  - Sunny Day
+  - Swagger
+  - Swallow
+  - Tackle
+  - Take Down
+  - Temper Flare
+  - Tera Blast
+  - Toxic
+  - Trailblaze
+  - Will-O-Wisp
+  - Yawn
+  - Zen Headbutt
 added_in_regulation: M-B
 legal_in_regulations: [M-B]
 notes: >
@@ -25,3 +124,11 @@ data_confidence: >
   search this session -- real Champions-specific competitive data, not
   recalled mainline VGC knowledge. Cross-check before a high-stakes
   build/draft decision, as usage stats shift across seasons/regulations.
+
+  Full `learnset` (98 moves) fetched from PokeAPI's mainline movepool for
+  pokemon/camerupt (level-up + TM/HM + egg + tutor moves combined) by
+  backfill_learnset.py. This is NOT confirmed against the live Pokemon
+  Champions client -- Champions has already been shown to diverge from
+  mainline itemization (see items-m-b.yaml), so some listed moves may not
+  actually be learnable in Champions. Treat as a candidate pool, not a
+  guarantee.

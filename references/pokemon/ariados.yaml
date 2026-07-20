@@ -11,6 +11,94 @@ abilities:
     hidden: true
 mega: null  # TODO: fill in if this species has a Mega Evolution
 moves: [Rage Powder, Protect, String Shot, Knock Off]
+learnset:
+  - Absorb
+  - Acid Spray
+  - Agility
+  - Assurance
+  - Attract
+  - Baton Pass
+  - Body Slam
+  - Bounce
+  - Bug Bite
+  - Bug Buzz
+  - Captivate
+  - Confide
+  - Constrict
+  - Cross Poison
+  - Curse
+  - Dig
+  - Disable
+  - Double Team
+  - Double-Edge
+  - Electroweb
+  - Endure
+  - Facade
+  - Fell Stinger
+  - First Impression
+  - Flash
+  - Focus Energy
+  - Foul Play
+  - Frustration
+  - Fury Swipes
+  - Giga Drain
+  - Giga Impact
+  - Hex
+  - Hidden Power
+  - Hone Claws
+  - Hyper Beam
+  - Infestation
+  - Knock Off
+  - Leech Life
+  - Lunge
+  - Megahorn
+  - Mimic
+  - Natural Gift
+  - Night Shade
+  - Night Slash
+  - Pin Missile
+  - Poison Jab
+  - Poison Sting
+  - Pounce
+  - Protect
+  - Psychic
+  - Rage Powder
+  - Rest
+  - Return
+  - Round
+  - Scary Face
+  - Screech
+  - Secret Power
+  - Shadow Sneak
+  - Signal Beam
+  - Skitter Smack
+  - Sleep Talk
+  - Sludge Bomb
+  - Sludge Wave
+  - Smart Strike
+  - Snore
+  - Solar Beam
+  - Spider Web
+  - Spite
+  - Sticky Web
+  - Stomping Tantrum
+  - String Shot
+  - Struggle Bug
+  - Substitute
+  - Sucker Punch
+  - Sunny Day
+  - Swagger
+  - Swords Dance
+  - Tera Blast
+  - Thief
+  - Throat Chop
+  - Toxic
+  - Toxic Spikes
+  - Toxic Thread
+  - Trailblaze
+  - Venom Drench
+  - Venoshock
+  - X-Scissor
 added_in_regulation: M-B
 legal_in_regulations: [M-B]
 notes: >
@@ -24,3 +112,11 @@ data_confidence: >
   search this session -- real Champions-specific competitive data, not
   recalled mainline VGC knowledge. Cross-check before a high-stakes
   build/draft decision, as usage stats shift across seasons/regulations.
+
+  Full `learnset` (87 moves) fetched from PokeAPI's mainline movepool for
+  pokemon/ariados (level-up + TM/HM + egg + tutor moves combined) by
+  backfill_learnset.py. This is NOT confirmed against the live Pokemon
+  Champions client -- Champions has already been shown to diverge from
+  mainline itemization (see items-m-b.yaml), so some listed moves may not
+  actually be learnable in Champions. Treat as a candidate pool, not a
+  guarantee.

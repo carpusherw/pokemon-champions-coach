@@ -9,6 +9,69 @@ abilities:
     hidden: true
 mega: null  # TODO: fill in if this species has a Mega Evolution
 moves: [Psychic, Trick Room, Heat Wave, Protect]
+learnset:
+  - Acid Spray
+  - Ally Switch
+  - Armor Cannon
+  - Astonish
+  - Aura Sphere
+  - Burn Up
+  - Calm Mind
+  - Clear Smog
+  - Confuse Ray
+  - Dark Pulse
+  - Destiny Bond
+  - Disable
+  - Dragon Pulse
+  - Ember
+  - Endure
+  - Energy Ball
+  - Expanding Force
+  - Facade
+  - Fire Blast
+  - Fire Spin
+  - Flame Charge
+  - Flamethrower
+  - Flare Blitz
+  - Flash Cannon
+  - Fling
+  - Focus Blast
+  - Heat Wave
+  - Helping Hand
+  - Hyper Beam
+  - Incinerate
+  - Iron Defense
+  - Lava Plume
+  - Leer
+  - Light Screen
+  - Meteor Beam
+  - Mystical Fire
+  - Night Shade
+  - Overheat
+  - Protect
+  - Psybeam
+  - Psych Up
+  - Psychic
+  - Psychic Terrain
+  - Psyshock
+  - Reflect
+  - Rest
+  - Scorching Sands
+  - Shadow Ball
+  - Sleep Talk
+  - Solar Beam
+  - Spite
+  - Stored Power
+  - Substitute
+  - Sunny Day
+  - Take Down
+  - Taunt
+  - Tera Blast
+  - Trick
+  - Trick Room
+  - Weather Ball
+  - Wide Guard
+  - Will-O-Wisp
 added_in_regulation: M-B
 legal_in_regulations: [M-B]
 notes: >
@@ -22,3 +85,11 @@ data_confidence: >
   search this session -- real Champions-specific competitive data, not
   recalled mainline VGC knowledge. Cross-check before a high-stakes
   build/draft decision, as usage stats shift across seasons/regulations.
+
+  Full `learnset` (62 moves) fetched from PokeAPI's mainline movepool for
+  pokemon/armarouge (level-up + TM/HM + egg + tutor moves combined) by
+  backfill_learnset.py. This is NOT confirmed against the live Pokemon
+  Champions client -- Champions has already been shown to diverge from
+  mainline itemization (see items-m-b.yaml), so some listed moves may not
+  actually be learnable in Champions. Treat as a candidate pool, not a
+  guarantee.

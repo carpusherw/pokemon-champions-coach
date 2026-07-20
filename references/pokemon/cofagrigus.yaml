@@ -7,6 +7,89 @@ abilities:
     hidden: false
 mega: null  # TODO: fill in if this species has a Mega Evolution
 moves: [Trick Room, Shadow Ball, Body Press, Protect]
+learnset:
+  - After You
+  - Ally Switch
+  - Astonish
+  - Attract
+  - Block
+  - Body Press
+  - Calm Mind
+  - Confide
+  - Confuse Ray
+  - Crafty Shield
+  - Curse
+  - Dark Pulse
+  - Destiny Bond
+  - Disable
+  - Double Team
+  - Dream Eater
+  - Embargo
+  - Endure
+  - Energy Ball
+  - Facade
+  - Fake Tears
+  - Flash
+  - Frustration
+  - Giga Drain
+  - Giga Impact
+  - Grass Knot
+  - Grudge
+  - Guard Split
+  - Guard Swap
+  - Haze
+  - Hex
+  - Hidden Power
+  - Hyper Beam
+  - Imprison
+  - Infestation
+  - Iron Defense
+  - Knock Off
+  - Magic Coat
+  - Mean Look
+  - Memento
+  - Nasty Plot
+  - Night Shade
+  - Ominous Wind
+  - Pain Split
+  - Payback
+  - Phantom Force
+  - Poltergeist
+  - Power Split
+  - Power Swap
+  - Protect
+  - Psych Up
+  - Psychic
+  - Rain Dance
+  - Rest
+  - Return
+  - Revenge
+  - Role Play
+  - Round
+  - Safeguard
+  - Scary Face
+  - Secret Power
+  - Self-Destruct
+  - Shadow Ball
+  - Shadow Claw
+  - Shadow Punch
+  - Shock Wave
+  - Skill Swap
+  - Sleep Talk
+  - Snatch
+  - Snore
+  - Spite
+  - Substitute
+  - Swagger
+  - Telekinesis
+  - Thief
+  - Toxic
+  - Toxic Spikes
+  - Trick
+  - Trick Room
+  - Will-O-Wisp
+  - Wonder Room
+  - Zen Headbutt
 added_in_regulation: M-B
 legal_in_regulations: [M-B]
 notes: >
@@ -21,3 +104,11 @@ data_confidence: >
   search this session -- real Champions-specific competitive data, not
   recalled mainline VGC knowledge. Cross-check before a high-stakes
   build/draft decision, as usage stats shift across seasons/regulations.
+
+  Full `learnset` (82 moves) fetched from PokeAPI's mainline movepool for
+  pokemon/cofagrigus (level-up + TM/HM + egg + tutor moves combined) by
+  backfill_learnset.py. This is NOT confirmed against the live Pokemon
+  Champions client -- Champions has already been shown to diverge from
+  mainline itemization (see items-m-b.yaml), so some listed moves may not
+  actually be learnable in Champions. Treat as a candidate pool, not a
+  guarantee.

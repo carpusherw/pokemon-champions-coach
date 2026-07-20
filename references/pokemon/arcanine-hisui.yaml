@@ -11,6 +11,82 @@ abilities:
     hidden: true
 mega: null  # TODO: fill in if this species has a Mega Evolution
 moves: [Rock Slide, Flare Blitz, Protect, Extreme Speed]
+learnset:
+  - Aerial Ace
+  - Agility
+  - Bite
+  - Body Slam
+  - Bulldoze
+  - Burn Up
+  - Close Combat
+  - Covet
+  - Crunch
+  - Dig
+  - Double-Edge
+  - Dragon Pulse
+  - Ember
+  - Endure
+  - Extreme Speed
+  - Facade
+  - Fire Blast
+  - Fire Fang
+  - Fire Spin
+  - Flame Charge
+  - Flame Wheel
+  - Flamethrower
+  - Flare Blitz
+  - Giga Impact
+  - Head Smash
+  - Heat Crash
+  - Heat Wave
+  - Helping Hand
+  - Howl
+  - Hyper Beam
+  - Hyper Voice
+  - Iron Head
+  - Iron Tail
+  - Leer
+  - Morning Sun
+  - Outrage
+  - Overheat
+  - Play Rough
+  - Power Gem
+  - Protect
+  - Psychic Fangs
+  - Raging Fury
+  - Rest
+  - Retaliate
+  - Reversal
+  - Roar
+  - Rock Blast
+  - Rock Slide
+  - Rock Smash
+  - Rock Throw
+  - Rock Tomb
+  - Round
+  - Sandstorm
+  - Scary Face
+  - Scorching Sands
+  - Sleep Talk
+  - Smack Down
+  - Smart Strike
+  - Snarl
+  - Snore
+  - Solar Beam
+  - Stealth Rock
+  - Stone Edge
+  - Substitute
+  - Sunny Day
+  - Swift
+  - Tackle
+  - Take Down
+  - Temper Flare
+  - Tera Blast
+  - Thief
+  - Thrash
+  - Thunder Fang
+  - Wild Charge
+  - Will-O-Wisp
 added_in_regulation: M-B
 legal_in_regulations: [M-B]
 notes: >
@@ -25,3 +101,11 @@ data_confidence: >
   search this session -- real Champions-specific competitive data, not
   recalled mainline VGC knowledge. Cross-check before a high-stakes
   build/draft decision, as usage stats shift across seasons/regulations.
+
+  Full `learnset` (75 moves) fetched from PokeAPI's mainline movepool for
+  pokemon/arcanine-hisui (level-up + TM/HM + egg + tutor moves combined) by
+  backfill_learnset.py. This is NOT confirmed against the live Pokemon
+  Champions client -- Champions has already been shown to diverge from
+  mainline itemization (see items-m-b.yaml), so some listed moves may not
+  actually be learnable in Champions. Treat as a candidate pool, not a
+  guarantee.

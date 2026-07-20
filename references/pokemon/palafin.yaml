@@ -7,6 +7,73 @@ abilities:
     hidden: false
 mega: null  # TODO: fill in if this species has a Mega Evolution
 moves: [Wave Crash, Flip Turn, Ice Punch, Bulk Up]
+learnset:
+  - Acrobatics
+  - Agility
+  - Aqua Jet
+  - Aqua Tail
+  - Astonish
+  - Aura Sphere
+  - Blizzard
+  - Body Slam
+  - Boomburst
+  - Bounce
+  - Bulk Up
+  - Charm
+  - Chilling Water
+  - Close Combat
+  - Counter
+  - Disarming Voice
+  - Dive
+  - Double Hit
+  - Drain Punch
+  - Draining Kiss
+  - Encore
+  - Endeavor
+  - Endure
+  - Facade
+  - Fling
+  - Flip Turn
+  - Focus Blast
+  - Focus Energy
+  - Focus Punch
+  - Giga Impact
+  - Grass Knot
+  - Hard Press
+  - Haze
+  - Helping Hand
+  - Hydro Pump
+  - Hyper Beam
+  - Hyper Voice
+  - Ice Beam
+  - Ice Punch
+  - Icy Wind
+  - Iron Head
+  - Jet Punch
+  - Liquidation
+  - Mist
+  - Outrage
+  - Protect
+  - Psych Up
+  - Rain Dance
+  - Rest
+  - Reversal
+  - Sleep Talk
+  - Substitute
+  - Supersonic
+  - Surf
+  - Swift
+  - Take Down
+  - Taunt
+  - Tera Blast
+  - Throat Chop
+  - Tickle
+  - Water Gun
+  - Water Pulse
+  - Waterfall
+  - Wave Crash
+  - Whirlpool
+  - Zen Headbutt
 added_in_regulation: M-B
 legal_in_regulations: [M-B]
 notes: >
@@ -24,3 +91,11 @@ data_confidence: >
   Pokemon Champions client, which has already been shown to diverge from
   mainline in places (see items-m-b.yaml re: Choice items). Re-verify before
   relying on it for a real draft/build decision.
+
+  Full `learnset` (66 moves) fetched from PokeAPI's mainline movepool for
+  pokemon/palafin-zero (level-up + TM/HM + egg + tutor moves combined) by
+  backfill_learnset.py. This is NOT confirmed against the live Pokemon
+  Champions client -- Champions has already been shown to diverge from
+  mainline itemization (see items-m-b.yaml), so some listed moves may not
+  actually be learnable in Champions. Treat as a candidate pool, not a
+  guarantee.

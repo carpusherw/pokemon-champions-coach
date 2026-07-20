@@ -7,6 +7,74 @@ abilities:
     hidden: false
 mega: null  # TODO: fill in if this species has a Mega Evolution
 moves: [King's Shield, Shadow Ball, Shadow Sneak, Iron Head, Toxic]
+learnset:
+  - Aerial Ace
+  - After You
+  - Air Slash
+  - Attract
+  - Autotomize
+  - Block
+  - Brick Break
+  - Brutal Swing
+  - Close Combat
+  - Confide
+  - Cut
+  - Destiny Bond
+  - Double Hit
+  - Double Team
+  - Endure
+  - Facade
+  - False Swipe
+  - Flash Cannon
+  - Frustration
+  - Fury Cutter
+  - Giga Impact
+  - Gyro Ball
+  - Head Smash
+  - Hidden Power
+  - Hyper Beam
+  - Iron Defense
+  - Iron Head
+  - King’s Shield
+  - Laser Focus
+  - Magnet Rise
+  - Metal Sound
+  - Night Slash
+  - Poltergeist
+  - Power Trick
+  - Protect
+  - Psycho Cut
+  - Pursuit
+  - Rain Dance
+  - Reflect
+  - Rest
+  - Retaliate
+  - Return
+  - Reversal
+  - Rock Slide
+  - Rock Smash
+  - Round
+  - Sacred Sword
+  - Screech
+  - Secret Power
+  - Shadow Ball
+  - Shadow Claw
+  - Shadow Sneak
+  - Shock Wave
+  - Slash
+  - Sleep Talk
+  - Snore
+  - Solar Blade
+  - Spite
+  - Steel Beam
+  - Substitute
+  - Sunny Day
+  - Swagger
+  - Swords Dance
+  - Tackle
+  - Toxic
+  - Wide Guard
+  - Zen Headbutt
 added_in_regulation: M-B
 legal_in_regulations: [M-B]
 notes: >
@@ -24,3 +92,11 @@ data_confidence: >
   Pokemon Champions client, which has already been shown to diverge from
   mainline in places (see items-m-b.yaml re: Choice items). Re-verify before
   relying on it for a real draft/build decision.
+
+  Full `learnset` (67 moves) fetched from PokeAPI's mainline movepool for
+  pokemon/aegislash-shield (level-up + TM/HM + egg + tutor moves combined) by
+  backfill_learnset.py. This is NOT confirmed against the live Pokemon
+  Champions client -- Champions has already been shown to diverge from
+  mainline itemization (see items-m-b.yaml), so some listed moves may not
+  actually be learnable in Champions. Treat as a candidate pool, not a
+  guarantee.

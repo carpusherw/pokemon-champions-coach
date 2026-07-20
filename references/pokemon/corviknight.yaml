@@ -11,9 +11,87 @@ abilities:
     hidden: true
 mega: null  # TODO: fill in if this species has a Mega Evolution
 moves: null  # TODO: curate competitive movepool (moves actually run in Reg M-B sets)
+learnset:
+  - Aerial Ace
+  - Agility
+  - Air Cutter
+  - Air Slash
+  - Assurance
+  - Attract
+  - Body Press
+  - Body Slam
+  - Brave Bird
+  - Bulk Up
+  - Curse
+  - Defog
+  - Double-Edge
+  - Drill Peck
+  - Dual Wingbeat
+  - Endure
+  - Facade
+  - Fake Tears
+  - Feather Dance
+  - Flash Cannon
+  - Fly
+  - Focus Energy
+  - Fury Attack
+  - Giga Impact
+  - Heavy Slam
+  - Hone Claws
+  - Hurricane
+  - Hyper Beam
+  - Iron Defense
+  - Iron Head
+  - Leer
+  - Light Screen
+  - Metal Claw
+  - Metal Sound
+  - Nasty Plot
+  - Payback
+  - Peck
+  - Pluck
+  - Power Trip
+  - Protect
+  - Rain Dance
+  - Reflect
+  - Rest
+  - Retaliate
+  - Revenge
+  - Reversal
+  - Rock Smash
+  - Roost
+  - Round
+  - Sand Attack
+  - Scary Face
+  - Screech
+  - Sky Attack
+  - Sleep Talk
+  - Snore
+  - Spite
+  - Steel Beam
+  - Steel Wing
+  - Substitute
+  - Sunny Day
+  - Swagger
+  - Swift
+  - Tailwind
+  - Take Down
+  - Taunt
+  - Tera Blast
+  - Thief
+  - U-turn
+  - Work Up
 added_in_regulation: M-B
 legal_in_regulations: [M-B]
 notes: >
   TODO: add competitive notes (role, speed-control relevance, etc).
 data_confidence: >
   Base stats/types/abilities fetched live from PokeAPI (https://pokeapi.co/api/v2) by fetch_pokemon_data.py. Mega Evolution data (if any) and competitive notes are NOT from PokeAPI and should be verified/updated by hand each season.
+
+  Full `learnset` (69 moves) fetched from PokeAPI's mainline movepool for
+  pokemon/corviknight (level-up + TM/HM + egg + tutor moves combined) by
+  backfill_learnset.py. This is NOT confirmed against the live Pokemon
+  Champions client -- Champions has already been shown to diverge from
+  mainline itemization (see items-m-b.yaml), so some listed moves may not
+  actually be learnable in Champions. Treat as a candidate pool, not a
+  guarantee.

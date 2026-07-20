@@ -11,6 +11,52 @@ abilities:
     hidden: true
 mega: null  # TODO: fill in if this species has a Mega Evolution
 moves: [Parabolic Charge, Protect, Soak, Thunderbolt]
+learnset:
+  - Acid Spray
+  - Charge
+  - Charge Beam
+  - Chilling Water
+  - Confuse Ray
+  - Discharge
+  - Eerie Impulse
+  - Electric Terrain
+  - Electro Ball
+  - Electroweb
+  - Endure
+  - Flail
+  - Giga Impact
+  - Hyper Beam
+  - Hyper Voice
+  - Light Screen
+  - Mud Shot
+  - Mud-Slap
+  - Muddy Water
+  - Parabolic Charge
+  - Protect
+  - Rain Dance
+  - Reflect
+  - Rest
+  - Slack Off
+  - Sleep Talk
+  - Soak
+  - Spark
+  - Substitute
+  - Sucker Punch
+  - Supercell Slam
+  - Swift
+  - Tackle
+  - Tera Blast
+  - Thunder
+  - Thunder Shock
+  - Thunder Wave
+  - Thunderbolt
+  - Toxic
+  - Volt Switch
+  - Water Gun
+  - Water Pulse
+  - Weather Ball
+  - Wild Charge
+  - Zap Cannon
 added_in_regulation: M-B
 legal_in_regulations: [M-B]
 notes: >
@@ -25,3 +71,11 @@ data_confidence: >
   search this session -- real Champions-specific competitive data, not
   recalled mainline VGC knowledge. Cross-check before a high-stakes
   build/draft decision, as usage stats shift across seasons/regulations.
+
+  Full `learnset` (45 moves) fetched from PokeAPI's mainline movepool for
+  pokemon/bellibolt (level-up + TM/HM + egg + tutor moves combined) by
+  backfill_learnset.py. This is NOT confirmed against the live Pokemon
+  Champions client -- Champions has already been shown to diverge from
+  mainline itemization (see items-m-b.yaml), so some listed moves may not
+  actually be learnable in Champions. Treat as a candidate pool, not a
+  guarantee.

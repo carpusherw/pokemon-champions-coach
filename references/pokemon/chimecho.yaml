@@ -7,6 +7,115 @@ abilities:
     hidden: false
 mega: null  # TODO: fill in if this species has a Mega Evolution
 moves: [Trick Room, Psychic, Protect, Helping Hand]
+learnset:
+  - Ally Switch
+  - Astonish
+  - Attract
+  - Baton Pass
+  - Bind
+  - Boomburst
+  - Calm Mind
+  - Captivate
+  - Charge Beam
+  - Charm
+  - Confide
+  - Confusion
+  - Cosmic Power
+  - Crafty Shield
+  - Curse
+  - Dazzling Gleam
+  - Defense Curl
+  - Defog
+  - Disable
+  - Disarming Voice
+  - Double Team
+  - Double-Edge
+  - Draining Kiss
+  - Dream Eater
+  - Echoed Voice
+  - Encore
+  - Endure
+  - Energy Ball
+  - Entrainment
+  - Expanding Force
+  - Extrasensory
+  - Facade
+  - Fake Tears
+  - Flash
+  - Flash Cannon
+  - Frustration
+  - Future Sight
+  - Grass Knot
+  - Gravity
+  - Growl
+  - Heal Bell
+  - Heal Pulse
+  - Healing Wish
+  - Helping Hand
+  - Hidden Power
+  - Hyper Voice
+  - Hypnosis
+  - Icy Wind
+  - Imprison
+  - Knock Off
+  - Laser Focus
+  - Last Resort
+  - Light Screen
+  - Magic Coat
+  - Metal Sound
+  - Mimic
+  - Natural Gift
+  - Nightmare
+  - Ominous Wind
+  - Perish Song
+  - Protect
+  - Psybeam
+  - Psych Up
+  - Psychic
+  - Psychic Noise
+  - Psyshock
+  - Psywave
+  - Rain Dance
+  - Recover
+  - Recycle
+  - Reflect
+  - Rest
+  - Return
+  - Rollout
+  - Round
+  - Safeguard
+  - Screech
+  - Secret Power
+  - Self-Destruct
+  - Shadow Ball
+  - Shock Wave
+  - Signal Beam
+  - Skill Swap
+  - Sleep Talk
+  - Snarl
+  - Snatch
+  - Snore
+  - Stored Power
+  - Substitute
+  - Sunny Day
+  - Swagger
+  - Swift
+  - Synchronoise
+  - Tackle
+  - Take Down
+  - Taunt
+  - Telekinesis
+  - Tera Blast
+  - Thunder Wave
+  - Torment
+  - Toxic
+  - Trick
+  - Trick Room
+  - Uproar
+  - Wish
+  - Wrap
+  - Yawn
+  - Zen Headbutt
 added_in_regulation: M-B
 legal_in_regulations: [M-B]
 notes: >
@@ -22,3 +131,11 @@ data_confidence: >
   search this session -- real Champions-specific competitive data, not
   recalled mainline VGC knowledge. Cross-check before a high-stakes
   build/draft decision, as usage stats shift across seasons/regulations.
+
+  Full `learnset` (108 moves) fetched from PokeAPI's mainline movepool for
+  pokemon/chimecho (level-up + TM/HM + egg + tutor moves combined) by
+  backfill_learnset.py. This is NOT confirmed against the live Pokemon
+  Champions client -- Champions has already been shown to diverge from
+  mainline itemization (see items-m-b.yaml), so some listed moves may not
+  actually be learnable in Champions. Treat as a candidate pool, not a
+  guarantee.

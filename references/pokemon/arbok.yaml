@@ -11,6 +11,110 @@ abilities:
     hidden: true
 mega: null  # TODO: fill in if this species has a Mega Evolution
 moves: [Gunk Shot, Protect, Psychic Fangs, Sucker Punch]
+learnset:
+  - Acid
+  - Acid Spray
+  - Aqua Tail
+  - Attract
+  - Beat Up
+  - Belch
+  - Bide
+  - Bind
+  - Bite
+  - Body Slam
+  - Breaking Swipe
+  - Brutal Swing
+  - Bulldoze
+  - Captivate
+  - Coil
+  - Confide
+  - Crunch
+  - Curse
+  - Dark Pulse
+  - Dig
+  - Double Team
+  - Double-Edge
+  - Dragon Tail
+  - Earthquake
+  - Endure
+  - Facade
+  - Fire Fang
+  - Fissure
+  - Frustration
+  - Gastro Acid
+  - Giga Drain
+  - Giga Impact
+  - Glare
+  - Gunk Shot
+  - Haze
+  - Headbutt
+  - Hidden Power
+  - Hyper Beam
+  - Ice Fang
+  - Infestation
+  - Iron Tail
+  - Knock Off
+  - Lash Out
+  - Leech Life
+  - Leer
+  - Mega Drain
+  - Mimic
+  - Mud Bomb
+  - Mud Shot
+  - Mud-Slap
+  - Natural Gift
+  - Pain Split
+  - Payback
+  - Poison Fang
+  - Poison Jab
+  - Poison Sting
+  - Poison Tail
+  - Protect
+  - Psychic Fangs
+  - Rage
+  - Rain Dance
+  - Refresh
+  - Rest
+  - Return
+  - Rock Slide
+  - Rock Tomb
+  - Round
+  - Scale Shot
+  - Scary Face
+  - Screech
+  - Secret Power
+  - Seed Bomb
+  - Skitter Smack
+  - Skull Bash
+  - Slam
+  - Sleep Talk
+  - Sludge Bomb
+  - Sludge Wave
+  - Snarl
+  - Snatch
+  - Snore
+  - Spit Up
+  - Spite
+  - Stockpile
+  - Stomping Tantrum
+  - Strength
+  - Substitute
+  - Sucker Punch
+  - Sunny Day
+  - Swagger
+  - Swallow
+  - Switcheroo
+  - Take Down
+  - Tera Blast
+  - Thief
+  - Throat Chop
+  - Thunder Fang
+  - Torment
+  - Toxic
+  - Toxic Spikes
+  - Trailblaze
+  - Venoshock
+  - Wrap
 added_in_regulation: M-B
 legal_in_regulations: [M-B]
 notes: >
@@ -24,3 +128,11 @@ data_confidence: >
   search this session -- real Champions-specific competitive data, not
   recalled mainline VGC knowledge. Cross-check before a high-stakes
   build/draft decision, as usage stats shift across seasons/regulations.
+
+  Full `learnset` (103 moves) fetched from PokeAPI's mainline movepool for
+  pokemon/arbok (level-up + TM/HM + egg + tutor moves combined) by
+  backfill_learnset.py. This is NOT confirmed against the live Pokemon
+  Champions client -- Champions has already been shown to diverge from
+  mainline itemization (see items-m-b.yaml), so some listed moves may not
+  actually be learnable in Champions. Treat as a candidate pool, not a
+  guarantee.

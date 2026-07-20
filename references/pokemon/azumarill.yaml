@@ -11,6 +11,114 @@ abilities:
     hidden: true
 mega: null  # TODO: fill in if this species has a Mega Evolution
 moves: [Aqua Jet, Play Rough, Protect, Belly Drum]
+learnset:
+  - Alluring Voice
+  - Amnesia
+  - Aqua Jet
+  - Aqua Ring
+  - Aqua Tail
+  - Attract
+  - Belly Drum
+  - Blizzard
+  - Body Slam
+  - Bounce
+  - Brick Break
+  - Brutal Swing
+  - Bubble
+  - Bubble Beam
+  - Bulldoze
+  - Captivate
+  - Charm
+  - Chilling Water
+  - Confide
+  - Copycat
+  - Covet
+  - Curse
+  - Defense Curl
+  - Dig
+  - Disarming Voice
+  - Dive
+  - Double Team
+  - Double-Edge
+  - Draining Kiss
+  - Dynamic Punch
+  - Encore
+  - Endure
+  - Facade
+  - Fake Tears
+  - Fling
+  - Focus Blast
+  - Focus Punch
+  - Frustration
+  - Future Sight
+  - Giga Impact
+  - Grass Knot
+  - Hail
+  - Headbutt
+  - Helping Hand
+  - Hidden Power
+  - Hydro Pump
+  - Hyper Beam
+  - Hyper Voice
+  - Ice Beam
+  - Ice Punch
+  - Ice Spinner
+  - Icy Wind
+  - Iron Tail
+  - Knock Off
+  - Light Screen
+  - Liquidation
+  - Mega Kick
+  - Mega Punch
+  - Metronome
+  - Mimic
+  - Misty Explosion
+  - Misty Terrain
+  - Mud Shot
+  - Mud-Slap
+  - Muddy Water
+  - Natural Gift
+  - Perish Song
+  - Play Rough
+  - Power-Up Punch
+  - Protect
+  - Rain Dance
+  - Rest
+  - Return
+  - Rock Smash
+  - Rollout
+  - Round
+  - Scald
+  - Secret Power
+  - Seismic Toss
+  - Sing
+  - Slam
+  - Sleep Talk
+  - Snore
+  - Snowscape
+  - Soak
+  - Splash
+  - Steel Roller
+  - Strength
+  - Substitute
+  - Superpower
+  - Surf
+  - Swagger
+  - Swift
+  - Tackle
+  - Tail Whip
+  - Take Down
+  - Tera Blast
+  - Tickle
+  - Toxic
+  - Trailblaze
+  - Uproar
+  - Water Gun
+  - Water Pulse
+  - Water Sport
+  - Waterfall
+  - Whirlpool
+  - Work Up
 added_in_regulation: M-B
 legal_in_regulations: [M-B]
 notes: >
@@ -24,3 +132,11 @@ data_confidence: >
   search this session -- real Champions-specific competitive data, not
   recalled mainline VGC knowledge. Cross-check before a high-stakes
   build/draft decision, as usage stats shift across seasons/regulations.
+
+  Full `learnset` (107 moves) fetched from PokeAPI's mainline movepool for
+  pokemon/azumarill (level-up + TM/HM + egg + tutor moves combined) by
+  backfill_learnset.py. This is NOT confirmed against the live Pokemon
+  Champions client -- Champions has already been shown to diverge from
+  mainline itemization (see items-m-b.yaml), so some listed moves may not
+  actually be learnable in Champions. Treat as a candidate pool, not a
+  guarantee.

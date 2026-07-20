@@ -11,6 +11,105 @@ abilities:
     hidden: true
 mega: null  # TODO: fill in if this species has a Mega Evolution
 moves: [Rock Slide, Tailwind, Protect, Dual Wingbeat]
+learnset:
+  - Aerial Ace
+  - Agility
+  - Air Cutter
+  - Ancient Power
+  - Aqua Tail
+  - Assurance
+  - Attract
+  - Bide
+  - Bite
+  - Brutal Swing
+  - Bulldoze
+  - Captivate
+  - Confide
+  - Crunch
+  - Curse
+  - Defog
+  - Detect
+  - Double Team
+  - Double-Edge
+  - Dragon Breath
+  - Dragon Claw
+  - Dragon Dance
+  - Dragon Pulse
+  - Dragon Rage
+  - Dual Wingbeat
+  - Earth Power
+  - Earthquake
+  - Endure
+  - Facade
+  - Fire Blast
+  - Fire Fang
+  - Flamethrower
+  - Fly
+  - Foresight
+  - Frustration
+  - Giga Impact
+  - Headbutt
+  - Heat Wave
+  - Hidden Power
+  - Hone Claws
+  - Hurricane
+  - Hyper Beam
+  - Ice Fang
+  - Incinerate
+  - Iron Head
+  - Iron Tail
+  - Laser Focus
+  - Meteor Beam
+  - Mimic
+  - Natural Gift
+  - Ominous Wind
+  - Payback
+  - Protect
+  - Psychic Fangs
+  - Pursuit
+  - Rage
+  - Rain Dance
+  - Razor Wind
+  - Reflect
+  - Rest
+  - Return
+  - Roar
+  - Rock Blast
+  - Rock Polish
+  - Rock Slide
+  - Rock Smash
+  - Rock Throw
+  - Rock Tomb
+  - Roost
+  - Round
+  - Sandstorm
+  - Scary Face
+  - Secret Power
+  - Sky Attack
+  - Sky Drop
+  - Sleep Talk
+  - Smack Down
+  - Snore
+  - Stealth Rock
+  - Steel Wing
+  - Stone Edge
+  - Strength
+  - Substitute
+  - Sunny Day
+  - Supersonic
+  - Swagger
+  - Swift
+  - Tailwind
+  - Take Down
+  - Taunt
+  - Thief
+  - Thunder Fang
+  - Torment
+  - Toxic
+  - Twister
+  - Whirlwind
+  - Wide Guard
+  - Wing Attack
 added_in_regulation: M-B
 legal_in_regulations: [M-B]
 notes: >
@@ -24,3 +123,11 @@ data_confidence: >
   search this session -- real Champions-specific competitive data, not
   recalled mainline VGC knowledge. Cross-check before a high-stakes
   build/draft decision, as usage stats shift across seasons/regulations.
+
+  Full `learnset` (98 moves) fetched from PokeAPI's mainline movepool for
+  pokemon/aerodactyl (level-up + TM/HM + egg + tutor moves combined) by
+  backfill_learnset.py. This is NOT confirmed against the live Pokemon
+  Champions client -- Champions has already been shown to diverge from
+  mainline itemization (see items-m-b.yaml), so some listed moves may not
+  actually be learnable in Champions. Treat as a candidate pool, not a
+  guarantee.

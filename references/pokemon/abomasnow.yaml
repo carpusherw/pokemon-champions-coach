@@ -9,6 +9,105 @@ abilities:
     hidden: true
 mega: null  # TODO: fill in if this species has a Mega Evolution
 moves: [Blizzard, Protect, Aurora Veil, Earth Power]
+learnset:
+  - Attract
+  - Aurora Veil
+  - Avalanche
+  - Blizzard
+  - Block
+  - Body Press
+  - Body Slam
+  - Brick Break
+  - Bulldoze
+  - Bullet Seed
+  - Captivate
+  - Chilling Water
+  - Confide
+  - Curse
+  - Double Team
+  - Double-Edge
+  - Earth Power
+  - Earthquake
+  - Endure
+  - Energy Ball
+  - Facade
+  - Flash
+  - Fling
+  - Focus Blast
+  - Focus Punch
+  - Frost Breath
+  - Frustration
+  - Giga Drain
+  - Giga Impact
+  - Grass Knot
+  - Grass Whistle
+  - Grassy Glide
+  - Growth
+  - Hail
+  - Hard Press
+  - Headbutt
+  - Helping Hand
+  - Hidden Power
+  - Hyper Beam
+  - Ice Beam
+  - Ice Hammer
+  - Ice Punch
+  - Ice Shard
+  - Ice Spinner
+  - Icicle Crash
+  - Icicle Spear
+  - Icy Wind
+  - Ingrain
+  - Iron Tail
+  - Leaf Storm
+  - Leafage
+  - Leech Seed
+  - Leer
+  - Light Screen
+  - Low Kick
+  - Magical Leaf
+  - Mega Kick
+  - Mega Punch
+  - Mist
+  - Mud-Slap
+  - Natural Gift
+  - Outrage
+  - Powder Snow
+  - Protect
+  - Rain Dance
+  - Razor Leaf
+  - Rest
+  - Return
+  - Rock Climb
+  - Rock Slide
+  - Rock Smash
+  - Rock Tomb
+  - Role Play
+  - Round
+  - Safeguard
+  - Scary Face
+  - Secret Power
+  - Seed Bomb
+  - Shadow Ball
+  - Sheer Cold
+  - Sleep Talk
+  - Snore
+  - Snowscape
+  - Solar Beam
+  - Stomping Tantrum
+  - Strength
+  - Substitute
+  - Swagger
+  - Swords Dance
+  - Synthesis
+  - Take Down
+  - Tera Blast
+  - Toxic
+  - Trailblaze
+  - Water Pulse
+  - Weather Ball
+  - Wood Hammer
+  - Worry Seed
 added_in_regulation: M-B
 legal_in_regulations: [M-B]
 notes: >
@@ -23,3 +122,11 @@ data_confidence: >
   search this session -- real Champions-specific competitive data, not
   recalled mainline VGC knowledge. Cross-check before a high-stakes
   build/draft decision, as usage stats shift across seasons/regulations.
+
+  Full `learnset` (98 moves) fetched from PokeAPI's mainline movepool for
+  pokemon/abomasnow (level-up + TM/HM + egg + tutor moves combined) by
+  backfill_learnset.py. This is NOT confirmed against the live Pokemon
+  Champions client -- Champions has already been shown to diverge from
+  mainline itemization (see items-m-b.yaml), so some listed moves may not
+  actually be learnable in Champions. Treat as a candidate pool, not a
+  guarantee.

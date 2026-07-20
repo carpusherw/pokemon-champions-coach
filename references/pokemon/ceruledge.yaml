@@ -9,6 +9,69 @@ abilities:
     hidden: true
 mega: null  # TODO: fill in if this species has a Mega Evolution
 moves: [Bitter Blade, Protect, Shadow Sneak, Bulk Up]
+learnset:
+  - Ally Switch
+  - Astonish
+  - Bitter Blade
+  - Brick Break
+  - Bulk Up
+  - Burn Up
+  - Clear Smog
+  - Close Combat
+  - Confuse Ray
+  - Curse
+  - Destiny Bond
+  - Disable
+  - Dragon Claw
+  - Ember
+  - Endure
+  - Facade
+  - False Swipe
+  - Fire Blast
+  - Fire Spin
+  - Flame Charge
+  - Flamethrower
+  - Flare Blitz
+  - Fling
+  - Giga Impact
+  - Heat Wave
+  - Helping Hand
+  - Hex
+  - Incinerate
+  - Iron Defense
+  - Iron Head
+  - Lava Plume
+  - Leer
+  - Light Screen
+  - Night Shade
+  - Night Slash
+  - Overheat
+  - Phantom Force
+  - Poison Jab
+  - Poltergeist
+  - Protect
+  - Psych Up
+  - Psycho Cut
+  - Quick Guard
+  - Reflect
+  - Rest
+  - Shadow Ball
+  - Shadow Claw
+  - Shadow Sneak
+  - Sleep Talk
+  - Solar Blade
+  - Spite
+  - Stored Power
+  - Substitute
+  - Sunny Day
+  - Swords Dance
+  - Take Down
+  - Taunt
+  - Tera Blast
+  - Throat Chop
+  - Vacuum Wave
+  - Will-O-Wisp
+  - X-Scissor
 added_in_regulation: M-B
 legal_in_regulations: [M-B]
 notes: >
@@ -23,3 +86,11 @@ data_confidence: >
   search this session -- real Champions-specific competitive data, not
   recalled mainline VGC knowledge. Cross-check before a high-stakes
   build/draft decision, as usage stats shift across seasons/regulations.
+
+  Full `learnset` (62 moves) fetched from PokeAPI's mainline movepool for
+  pokemon/ceruledge (level-up + TM/HM + egg + tutor moves combined) by
+  backfill_learnset.py. This is NOT confirmed against the live Pokemon
+  Champions client -- Champions has already been shown to diverge from
+  mainline itemization (see items-m-b.yaml), so some listed moves may not
+  actually be learnable in Champions. Treat as a candidate pool, not a
+  guarantee.
