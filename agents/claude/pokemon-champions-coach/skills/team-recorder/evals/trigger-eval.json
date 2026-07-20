@@ -13,5 +13,7 @@
   {"query": "whats a good held item for my corviknight if its just supposed to pivot with u-turn", "should_trigger": false},
   {"query": "log this as a skill issue, the move order calc was wrong earlier", "should_trigger": false},
   {"query": "m-c just dropped, can you refresh the regulation data and legal roster", "should_trigger": false},
-  {"query": "is mega raichu y actually any good competitively or just a meme pick", "should_trigger": false}
+  {"query": "is mega raichu y actually any good competitively or just a meme pick", "should_trigger": false},
+  {"query": "[pasted screenshot of in-game team roster screen] who goes first, my pikachu or their raichu", "should_trigger": false},
+  {"query": "[pasted screenshot of in-game team stats screen] does trick room flip the order here", "should_trigger": false}
 ]

@@ -18,7 +18,13 @@ description: >
   conversation (e.g. "load my Trick Room team", "what did I save as
   rain-core"). Do NOT use this for building a team from an idea or a
   starting Pokemon -- that's `team-builder-doubles`/`team-builder-singles`;
-  this skill only records/loads a team that's already decided.
+  this skill only records/loads a team that's already decided. Do NOT
+  trigger just because screenshots of a team were pasted alongside an
+  in-battle or move-order question with no request to save/keep/remember
+  anything -- that's `move-order-coach`'s job to read directly (it reuses
+  this skill's screenshot-extraction steps itself, without invoking a
+  save), and offering to save mid-answer there is enough; this skill
+  doesn't need to fire on its own for that case.
 ---
 
 # Save and reload a team
