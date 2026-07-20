@@ -52,6 +52,32 @@ too (`<slug>-mega` resolves for most of them). Filling those in was out of
 scope for this pass but would be a straightforward follow-up with the same
 method.
 
+## Moves field
+
+Each file has a `moves` field, but it is **not** a full learnset (mainline
+Pokemon can legally learn dozens to 100+ moves via level-up/TM/egg/tutor --
+that's PokeAPI's job, or Showdown's, not this repo's). It's a curated list
+of the handful of moves (typically 4-6) the species actually runs in
+competitive Reg M-B play, e.g. `moves: [Flare Blitz, Close Combat, Swords
+Dance, Protect]` for Blaziken. The intent is to answer "what does this
+Pokemon actually do in a real set" for coaching purposes, not "what could
+this Pokemon theoretically learn."
+
+This also means a reverse lookup ("what can run Flamethrower?") doesn't
+need its own index -- since these are read by an agent rather than queried
+by a program, `grep -l "Flamethrower" references/pokemon/*.yaml` across 232
+small files answers that directly.
+
+**Current coverage: 29 of 232 species** (the ones that already had
+hand-written competitive `notes` from the M-B-new-species/Champions-Mega
+research pass -- see each file's `data_confidence` for exactly what's
+curated vs recalled). Every other file has `moves: null` with a TODO
+comment. Filling those in is a straightforward follow-up with the same
+method described in the refresh-references skill, one regulation-relevant
+batch at a time -- there was no attempt to guess movepools for species that
+haven't had a real competitive research pass yet, the same policy already
+applied to `notes`.
+
 ## Data quality flags to know about
 
 Every file has a `data_confidence` field explaining how its data was

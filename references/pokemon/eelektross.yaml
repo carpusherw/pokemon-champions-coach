@@ -17,6 +17,7 @@ mega:
     a Champions-original ability, Eelevate. This session could not confirm
     Eelevate's exact in-battle effect from any source -- verify in-game
     before relying on it for a coaching call.
+moves: [Wild Charge, Flamethrower, Knock Off, Coil]
 added_in_regulation: M-A or earlier (base) / M-B (Mega)
 legal_in_regulations: [M-B]  # earliest confirmed regulation only; may be legal earlier too
 notes: >
@@ -32,3 +33,11 @@ data_confidence: >
   eelektross-mega entry this same pass -- higher confidence than a pure
   recall/search-synthesis pass for the numbers, but Eelevate's actual
   in-battle effect remains unconfirmed by this session.
+
+  `moves` is a curated list of moves this species commonly runs in mainline
+  competitive (VGC-style) play, sourced from this session's training-data
+  knowledge of established sets -- NOT fetched from PokeAPI (which has no
+  concept of a curated competitive subset) and NOT confirmed against the live
+  Pokemon Champions client, which has already been shown to diverge from
+  mainline in places (see items-m-b.yaml re: Choice items). Re-verify before
+  relying on it for a real draft/build decision.

@@ -10,7 +10,7 @@ CI's knowledge-bundle-guard will flag the file as stale anyway.
 
 # Pokemon dex
 
-232 species legal in the current regulation (M-B). One entry per species: dex number, types, base stats, abilities, Mega Evolution data (if any), and hand-written competitive notes. Species no longer legal in the current regulation are omitted -- see the main repo's references/pokemon/ for full history.
+232 species legal in the current regulation (M-B). One entry per species: dex number, types, base stats, abilities, Mega Evolution data (if any), a curated competitive movepool (if any -- a handful of moves this species actually runs, not its full learnset), and hand-written competitive notes. Species no longer legal in the current regulation are omitted -- see the main repo's references/pokemon/ for full history.
 
 ## Abomasnow (#460)
 - Types: Grass/Ice
@@ -26,6 +26,7 @@ CI's knowledge-bundle-guard will flag the file as stale anyway.
 - Types: Steel/Ghost
 - Base stats: HP 60, Atk 50, Def 140, SpA 50, SpD 140, Spe 60
 - Abilities: Stance Change
+- Common moves: King's Shield, Shadow Ball, Shadow Sneak, Iron Head, Toxic
 - Notes: Stats shown are Shield Forme (the resting/default form). Stance Change swaps it to all-offense Blade Forme (atk/spa 150, def/spd 50) on any attacking move, and back to Shield Forme on King's Shield -- this is an in-battle transformation, not a separate recruit/catch.
 
 ## Aerodactyl (#142)
@@ -62,6 +63,7 @@ CI's knowledge-bundle-guard will flag the file as stale anyway.
 - Types: Fighting/Ghost
 - Base stats: HP 110, Atk 115, Def 80, SpA 50, SpD 90, Spe 90
 - Abilities: Vital Spirit, Inner Focus, Defiant (hidden)
+- Common moves: Rage Fist, Drain Punch, Bulk Up, Protect
 - Notes: Bulky physical attacker; Rage Fist (signature move) gets stronger the more times it has been hit, and Ghost typing gives it a Rage Fist immunity loophole against Normal/Fighting moves that would otherwise stop the counter from building. No Mega Evolution.
 
 ## Appletun (#842)
@@ -145,6 +147,7 @@ CI's knowledge-bundle-guard will flag the file as stale anyway.
 - Abilities: Tough Claws, Sniper, Pickpocket (hidden)
   - Mega: Types Rock/Fighting; HP 72, Atk 140, Def 130, SpA 64, SpD 106, Spe 88; Ability Tough Claws -- Confirmed via PokeAPI (pokemon/barbaracle-mega, id 10310) on 2026-07-18: secondary type changes from Water to Fighting (Rock/Fighting overall), keeps Tough Claws (which already boosted its contact moves pre-Mega), and gains across the board -- notably Attack (105 -> 140) and Speed (68 -> 88).
 
+- Common moves: Shell Smash, Liquidation, Stone Edge, Aqua Jet
 - Notes: Base Tough Claws already boosts its contact moves; slow-ish (68) physical attacker pre-Mega. Mega Evolution is Champions-exclusive (new in Regulation M-B) and swaps its Water typing for Fighting -- see mega.note.
 
 ## Basculegion Female (#10248)
@@ -188,6 +191,7 @@ CI's knowledge-bundle-guard will flag the file as stale anyway.
 - Abilities: Blaze, Speed Boost (hidden)
   - Mega: Types Fire/Fighting; HP 80, Atk 160, Def 80, SpA 130, SpD 80, Spe 100; Ability Speed Boost -- Mainline-returning Mega, historically banned to Ubers in mainline formats due to Speed Boost + huge Attack -- likely to be a top-tier threat here too. Confirmed via PokeAPI (pokemon/blaziken-mega) on 2026-07-18.
 
+- Common moves: Flare Blitz, Close Combat, Swords Dance, Protect
 - Notes: Even unmega'd, its Hidden Ability Speed Boost lets it ramp Speed every turn it's active.
 
 ## Camerupt (#323)
@@ -291,6 +295,7 @@ CI's knowledge-bundle-guard will flag the file as stale anyway.
 - Abilities: Poison Point, Poison Touch, Adaptability (hidden)
   - Mega: Types Poison/Dragon; HP 65, Atk 85, Def 105, SpA 132, SpD 163, Spe 44; Ability Regenerator -- Confirmed via PokeAPI (pokemon/dragalge-mega, id 10311) on 2026-07-18: keeps Poison/Dragon typing, trades its abilities for Regenerator (heals ~1/3 max HP on switch-out), and becomes an even more extreme special wall (Sp. Def 123 -> 163, Sp. Atk 97 -> 132) at the same already-low Speed (44).
 
+- Common moves: Sludge Bomb, Draco Meteor, Toxic Spikes, Protect
 - Notes: Very slow (44) special wall with Adaptability (STAB moves hit for 2x instead of 1.5x) as a regular ability option pre-Mega. Mega Evolution is Champions-exclusive (new in Regulation M-B) and adds Regenerator-backed switch-in value -- see mega.note.
 
 ## Dragapult (#887)
@@ -314,6 +319,7 @@ CI's knowledge-bundle-guard will flag the file as stale anyway.
 - Abilities: Levitate
   - Mega: Types Electric; HP 85, Atk 145, Def 80, SpA 135, SpD 90, Spe 80; Ability Eelevate -- Confirmed via PokeAPI (pokemon/eelektross-mega, id 10313) on 2026-07-18: stays pure Electric, gains a large mixed-attacker stat boost (Atk 115->145, Sp. Atk 105->135, Speed 50->80), and trades Levitate for a Champions-original ability, Eelevate. This session could not confirm Eelevate's exact in-battle effect from any source -- verify in-game before relying on it for a coaching call.
 
+- Common moves: Wild Charge, Flamethrower, Knock Off, Coil
 - Notes: Only known ability is Levitate (base form), giving it a free Ground immunity even before Mega Evolving. Whether Mega Eelektross's Eelevate preserves that Ground immunity is unconfirmed -- don't assume either way (that it keeps or loses the immunity) until Eelevate's effect is verified in-game. See mega.note for what's confirmed vs not.
 
 ## Emboar (#500)
@@ -352,6 +358,7 @@ CI's knowledge-bundle-guard will flag the file as stale anyway.
 - Abilities: Battle Armor, Defiant (hidden)
   - Mega: Types Fighting; HP 65, Atk 135, Def 135, SpA 70, SpD 65, Spe 100; Ability Defiant -- Confirmed via PokeAPI (pokemon/falinks-mega, id 10312) on 2026-07-18: stays pure Fighting, and its (previously hidden-only) Defiant becomes the standard ability -- +2 Attack any time an opponent lowers one of its stats, making it a hard punish for Intimidate switch-ins and other stat-drop effects. Attack, Defense, and Speed all rise substantially.
 
+- Common moves: No Retreat, Close Combat, Rock Slide, Iron Head
 - Notes: Battle Armor prevents critical hits against it pre-Mega -- its only regular ability, no alternates. Mega Evolution is Champions-exclusive (new in Regulation M-B) and switches it to Defiant -- see mega.note.
 
 ## Farigiraf (#981)
@@ -433,6 +440,7 @@ CI's knowledge-bundle-guard will flag the file as stale anyway.
 - Types: Steel/Ghost
 - Base stats: HP 87, Atk 60, Def 95, SpA 133, SpD 91, Spe 84
 - Abilities: Good As Gold
+- Common moves: Make It Rain, Shadow Ball, Nasty Plot, Protect
 - Notes: Good As Gold blocks nearly all status moves targeted at it (it still can't dodge field-affecting or self-targeted status effects, but incoming status moves from opponents fail). Strong special attacker at a solid 84 Speed. No Mega Evolution.
 
 ## Glaceon (#471)
@@ -474,6 +482,7 @@ CI's knowledge-bundle-guard will flag the file as stale anyway.
 - Types: Ghost/Grass
 - Base stats: HP 65, Atk 90, Def 122, SpA 58, SpD 75, Spe 84
 - Abilities: Pickup, Frisk, Insomnia (hidden)
+- Common moves: Trick-or-Treat, Seed Bomb, Will-O-Wisp, Protect
 - Notes: Stats shown are Average size, the only size form Pokemon Champions' roster lists separately (mainline games also have Small/Large/Super sizes with real speed/bulk trade-offs, but those aren't broken out as distinct legal entries here).
 
 ## Greninja (#658)
@@ -485,6 +494,7 @@ CI's knowledge-bundle-guard will flag the file as stale anyway.
 - Types: Dark/Fairy
 - Base stats: HP 95, Atk 120, Def 65, SpA 95, SpD 75, Spe 60
 - Abilities: Prankster, Frisk, Pickpocket (hidden)
+- Common moves: Spirit Break, Fake Out, Light Screen, Reflect, Thunder Wave
 - Notes: Prankster gives its status/setup moves (Light Screen, Reflect, Taunt, Thunder Wave) +1 priority -- a key speed-control piece to watch for when calling turn order, since Prankster moves go before most Pokemon regardless of raw Speed. No Mega Evolution.
 
 ## Gyarados (#130)
@@ -526,6 +536,7 @@ CI's knowledge-bundle-guard will flag the file as stale anyway.
 - Types: Ghost
 - Base stats: HP 72, Atk 101, Def 100, SpA 50, SpD 97, Spe 68
 - Abilities: Sand Rush, Fluffy (hidden)
+- Common moves: Last Respects, Poltergeist, Body Press, Protect
 - Notes: Evolution of Greavard; pure Ghost typing with no relevant weaknesses to exploit besides Ghost/Dark. Hidden ability Fluffy halves contact-move damage but doubles Fire damage taken. No Mega Evolution.
 
 ## Hydrapple (#1019)
@@ -634,6 +645,7 @@ CI's knowledge-bundle-guard will flag the file as stale anyway.
 - Abilities: Contrary, Suction Cups, Infiltrator (hidden)
   - Mega: Types Dark/Psychic; HP 86, Atk 102, Def 88, SpA 98, SpD 120, Spe 88; Ability Contrary -- Confirmed via PokeAPI (pokemon/malamar-mega, id 10309) on 2026-07-18: keeps Dark/Psychic typing and Contrary, with a big jump in Sp. Atk (68 -> 98), Sp. Def (75 -> 120), and Speed (73 -> 88) over the base form -- turns its already-notable Contrary (regular ability) set into a much scarier stat-up sweeper once Mega Evolved.
 
+- Common moves: Superpower, Psycho Cut, Knock Off, Protect
 - Notes: Contrary (regular ability) flips all its own stat changes -- e.g. Superpower raises its stats instead of lowering them. Mega Evolution is Champions-exclusive (new in Regulation M-B) and keeps Contrary -- see mega.note.
 
 ## Mamoswine (#473)
@@ -650,6 +662,7 @@ CI's knowledge-bundle-guard will flag the file as stale anyway.
 - Types: Normal
 - Base stats: HP 74, Atk 75, Def 70, SpA 65, SpD 75, Spe 111
 - Abilities: Friend Guard, Cheek Pouch, Technician (hidden)
+- Common moves: Population Bomb, Tidy Up, Encore, Protect
 - Notes: Family of Four is the default form; Family of Three is purely cosmetic (identical stats/type/ability) and isn't broken out as a separate file.
 
 ## Mawile (#303)
@@ -658,6 +671,7 @@ CI's knowledge-bundle-guard will flag the file as stale anyway.
 - Abilities: Hyper Cutter, Intimidate, Sheer Force (hidden)
   - Mega: Types Steel/Fairy; HP 50, Atk 105, Def 125, SpA 55, SpD 95, Spe 50; Ability Huge Power -- Mainline-returning Mega. Huge Power doubles Attack (effectively ~210 Atk), one of the hardest physical hitters in the game despite mediocre Speed. Confirmed via PokeAPI (pokemon/mawile-mega) on 2026-07-18.
 
+- Common moves: Play Rough, Sucker Punch, Iron Head, Protect
 - Notes: Low Speed even Mega'd (50 base) -- almost always moves in the back half of a turn; plan around Trick Room or just accept it as a slow wallbreaker.
 
 ## Medicham (#308)
@@ -691,6 +705,7 @@ CI's knowledge-bundle-guard will flag the file as stale anyway.
 - Abilities: Clear Body, Light Metal (hidden)
   - Mega: Types Steel/Psychic; HP 80, Atk 145, Def 150, SpA 105, SpD 110, Spe 110; Ability Tough Claws -- Mainline-returning Mega. Tough Claws boosts contact moves (Meteor Mash, Zen Headbutt, Bullet Punch) by 30%; Speed jumps from 70 to 110, a meaningful speed-tier change to track. Confirmed via PokeAPI (pokemon/metagross-mega) on 2026-07-18.
 
+- Common moves: Meteor Mash, Zen Headbutt, Bullet Punch, Protect
 - Notes: Watch the pre-Mega vs post-Mega Speed gap (70 -> 110) carefully when calling turn order -- it moves in a completely different speed tier once evolved.
 
 ## Milotic (#350)
@@ -702,12 +717,14 @@ CI's knowledge-bundle-guard will flag the file as stale anyway.
 - Types: Ghost/Fairy
 - Base stats: HP 55, Atk 90, Def 80, SpA 50, SpD 105, Spe 96
 - Abilities: Disguise
+- Common moves: Play Rough, Shadow Sneak, Swords Dance, Trick Room
 - Notes: Stats shown are Disguised Form. Disguise breaks (Busted Form) after absorbing one hit -- same stats, but the defensive Disguise ability is spent for the rest of the battle. This is an in-battle state change, not a separate recruit/catch.
 
 ## Morpeko (#877)
 - Types: Electric/Dark
 - Base stats: HP 58, Atk 95, Def 58, SpA 70, SpD 58, Spe 97
 - Abilities: Hunger Switch
+- Common moves: Aura Wheel, Parting Shot, Rain Dance, Protect
 - Notes: Stats shown are Full Belly Mode (the resting/default form). Hunger Switch flips it to Hangry Mode (same stats, different move: Aura Wheel becomes Dark-type) at the end of every turn -- an automatic in-battle toggle, not a separate recruit/catch.
 
 ## Mr Rime (#866)
@@ -724,6 +741,7 @@ CI's knowledge-bundle-guard will flag the file as stale anyway.
 - Types: Psychic
 - Base stats: HP 116, Atk 55, Def 85, SpA 107, SpD 95, Spe 29
 - Abilities: Forewarn, Synchronize, Telepathy (hidden)
+- Common moves: Trick Room, Psychic, Yawn, Protect
 - Notes: Very slow (29 base Speed) special bulk/support piece; almost always moves last barring Trick Room, priority, or a Speed-lowering effect on faster foes. No Mega Evolution.
 
 ## Ninetales Alola (#10104)
@@ -755,12 +773,14 @@ CI's knowledge-bundle-guard will flag the file as stale anyway.
 - Types: Dark/Poison
 - Base stats: HP 85, Atk 115, Def 95, SpA 65, SpD 65, Spe 85
 - Abilities: Poison Point, Swift Swim, Intimidate (hidden)
+- Common moves: Barb Barrage, Crunch, Sucker Punch, Protect
 - Notes: Evolution of Hisuian Qwilfish (via the move Barb Barrage), not base (Water/Poison) Qwilfish -- Dark/Poison typing and hidden Intimidate make it a solid physical wallbreaker/pivot. No Mega Evolution.
 
 ## Palafin (#10256)
 - Types: Water
 - Base stats: HP 100, Atk 160, Def 97, SpA 106, SpD 87, Spe 100
 - Abilities: Zero To Hero
+- Common moves: Wave Crash, Flip Turn, Ice Punch, Bulk Up
 - Notes: Stats shown are Hero Form. Palafin starts battles in a much weaker Zero Form (base stat total 210) and permanently transforms to Hero Form the first time it switches out -- Zero Form is not a separate legal/recruit entry, so this file only covers the form that actually matters in battle.
 
 ## Pangoro (#675)
@@ -814,6 +834,7 @@ CI's knowledge-bundle-guard will flag the file as stale anyway.
 - Abilities: Rivalry, Unnerve, Moxie (hidden)
   - Mega: Types Fire/Normal; HP 86, Atk 88, Def 92, SpA 129, SpD 86, Spe 126; Ability Fire Mane -- Confirmed via PokeAPI (pokemon/pyroar-mega, id 10295) on 2026-07-18: keeps base Pyroar's Fire/Normal typing, gains Fire Mane (exact in-battle effect not otherwise confirmed by this session -- verify in-game before relying on it for a coaching call) and becomes a much faster special attacker (Speed 106 -> 126, Sp. Atk 109 -> 129).
 
+- Common moves: Hyper Voice, Flamethrower, Will-O-Wisp, Protect
 - Notes: Base-form stats are for the male form (PokeAPI's default/only fetchable variety for this species -- unlike Basculegion/Meowstic, Pyroar's documented male/female base-stat split, roughly trading Attack for a bit of Speed on the female side, isn't exposed as a separate PokeAPI entry). Re-verify against an in-game or wiki source if the female split matters for a specific team-building call.
 
 ## Quaquaval (#914)
@@ -825,6 +846,7 @@ CI's knowledge-bundle-guard will flag the file as stale anyway.
 - Types: Water/Poison
 - Base stats: HP 65, Atk 95, Def 85, SpA 55, SpD 55, Spe 85
 - Abilities: Poison Point, Swift Swim, Intimidate (hidden)
+- Common moves: Liquidation, Poison Jab, Taunt, Destiny Bond
 - Notes: Fast physical poker with Intimidate as hidden ability; the Hisuian Qwilfish/Overqwil line is a separate evolution family from this base (Water/Poison) Qwilfish -- see overqwil.yaml. No Mega Evolution.
 
 ## Raichu Alola (#10100)
@@ -838,6 +860,7 @@ CI's knowledge-bundle-guard will flag the file as stale anyway.
 - Abilities: Static, Lightning Rod (hidden)
   - Mega (X): Types Electric; HP 60, Atk 135, Def 95, SpA 90, SpD 95, Spe 110; Ability Electric Surge
   - Mega (Y): Types Electric; HP 60, Atk 100, Def 55, SpA 160, SpD 80, Spe 130; Ability No Guard
+- Common moves: Thunderbolt, Volt Switch, Focus Blast, Encore
 - Notes: This entry assumes standard (Kantonian) Raichu, not Alolan Raichu (Electric/Psychic, Surge Surfer) -- see raichu-alola.yaml for that form, which was independently confirmed to be a separately legal species this session but was not confirmed to receive its own Mega Stone (only base Raichu was seen paired with the Mega X/Y items in this session's research).
 
 ## Rampardos (#409)
@@ -926,6 +949,7 @@ CI's knowledge-bundle-guard will flag the file as stale anyway.
 - Abilities: Overgrow, Unburden (hidden)
   - Mega: Types Grass/Dragon; HP 70, Atk 110, Def 75, SpA 145, SpD 85, Spe 145; Ability Lightning Rod -- Mainline-returning Mega (previously ORAS-exclusive). Extremely fast special attacker once Mega Evolved; Lightning Rod gives it an Electric-move redirect/immunity utility. Confirmed via PokeAPI (pokemon/sceptile-mega) on 2026-07-18.
 
+- Common moves: Leaf Storm, Dragon Pulse, Focus Blast, Protect
 - Notes: One of the fastest special threats in the format after Mega Evolving; 4x weak to Ice as Grass/Dragon.
 
 ## Scizor (#212)
@@ -939,6 +963,7 @@ CI's knowledge-bundle-guard will flag the file as stale anyway.
 - Abilities: Poison Point, Swarm, Speed Boost (hidden)
   - Mega: Types Bug/Poison; HP 60, Atk 140, Def 149, SpA 75, SpD 99, Spe 62; Ability Shell Armor -- Confirmed via PokeAPI (pokemon/scolipede-mega, id 10307) on 2026-07-18: keeps Bug/Poison typing, trades its Speed Boost ramping for Shell Armor (blocks critical hits entirely) and gives up a huge chunk of Speed (112 -> 62) for much higher physical bulk (Def 89 -> 149) and Attack (100 -> 140) -- a bulky attacker rather than the base form's speedy sweeper.
 
+- Common moves: First Impression, Megahorn, Poison Jab, Protect
 - Notes: Already fast (112) with Hidden Ability Speed Boost for further ramping pre-Mega; a real threat to out-speed most of the format even unevolved, but Mega Evolving flips it into a slow bulky attacker instead -- see mega.note.
 
 ## Scovillain (#952)
@@ -952,6 +977,7 @@ CI's knowledge-bundle-guard will flag the file as stale anyway.
 - Abilities: Shed Skin, Moxie, Intimidate (hidden)
   - Mega: Types Dark/Fighting; HP 65, Atk 130, Def 135, SpA 55, SpD 135, Spe 68; Ability Intimidate -- Confirmed via PokeAPI (pokemon/scrafty-mega, id 10308) on 2026-07-18: keeps Dark/Fighting typing, ability becomes (regular, non-hidden) Intimidate -- lowers the incoming switch-in's Attack the moment it Mega Evolves in -- while every stat except Speed rises substantially (Atk 90->130, Def 115->135, SpD 115->135).
 
+- Common moves: Knock Off, Drain Punch, Fake Out, Protect
 - Notes: Slow (58) but very physically/specially bulky on both sides even before Mega Evolving; base-form Moxie ramps Attack on KOs, though Mega Scrafty trades that away for Intimidate -- see mega.note.
 
 ## Serperior (#497)
@@ -1040,6 +1066,7 @@ CI's knowledge-bundle-guard will flag the file as stale anyway.
 - Abilities: Intimidate, Reckless (hidden)
   - Mega: Types Fighting/Flying; HP 85, Atk 140, Def 100, SpA 60, SpD 90, Spe 110; Ability Contrary -- Confirmed via PokeAPI (pokemon/staraptor-mega, id 10306) on 2026-07-18: type changes from Normal/Flying to Fighting/Flying, and it swaps Intimidate/Reckless for Contrary, which reverses every stat change applied to it -- a debuff (e.g. an opposing Intimidate, or a self-used Close Combat's Def/SpD drop) becomes a buff instead.
 
+- Common moves: Brave Bird, Close Combat, U-turn, Protect
 - Notes: Base form is already fast (100) with Intimidate; Reckless boosts recoil moves like Brave Bird. Mega Evolution is Champions-exclusive (new in Regulation M-B) -- see mega.note.
 
 ## Starmie (#121)
@@ -1068,6 +1095,7 @@ CI's knowledge-bundle-guard will flag the file as stale anyway.
 - Abilities: Torrent, Damp (hidden)
   - Mega: Types Water/Ground; HP 100, Atk 150, Def 110, SpA 95, SpD 110, Spe 70; Ability Swift Swim -- Mainline-returning Mega. Swift Swim doubles Speed in Rain, turning a slow bulky attacker into a rain sweeper. Confirmed via PokeAPI (pokemon/swampert-mega) on 2026-07-18.
 
+- Common moves: Earthquake, Waterfall, Ice Punch, Protect
 - Notes: Classic bulky Water/Ground physical wall-breaker; pairs with Rain setters when Mega Evolved.
 
 ## Sylveon (#700)
@@ -1189,6 +1217,7 @@ CI's knowledge-bundle-guard will flag the file as stale anyway.
 - Types: Grass/Poison
 - Base stats: HP 75, Atk 80, Def 85, SpA 110, SpD 90, Spe 50
 - Abilities: Chlorophyll, Effect Spore (hidden)
+- Common moves: Sleep Powder, Sludge Bomb, Giga Drain, Strength Sap
 - Notes: Bulky special attacker/status spreader; slow, leans on Sleep Powder/Stun Spore support and Sun synergy via Chlorophyll. No Mega Evolution.
 
 ## Vivillon (#666)

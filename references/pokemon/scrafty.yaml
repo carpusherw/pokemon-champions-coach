@@ -20,6 +20,7 @@ mega:
     Intimidate -- lowers the incoming switch-in's Attack the moment it Mega
     Evolves in -- while every stat except Speed rises substantially
     (Atk 90->130, Def 115->135, SpD 115->135).
+moves: [Knock Off, Drain Punch, Fake Out, Protect]
 added_in_regulation: M-A or earlier (base) / M-B (Mega)
 legal_in_regulations: [M-B]  # earliest confirmed regulation only; may be legal earlier too
 notes: >
@@ -34,3 +35,11 @@ data_confidence: >
   Intimidate-like on-switch-in Attack drop) -- higher confidence than a pure
   recall/search-synthesis pass, but still not primary-source-verified
   against an official Pokemon Champions patch note.
+
+  `moves` is a curated list of moves this species commonly runs in mainline
+  competitive (VGC-style) play, sourced from this session's training-data
+  knowledge of established sets -- NOT fetched from PokeAPI (which has no
+  concept of a curated competitive subset) and NOT confirmed against the live
+  Pokemon Champions client, which has already been shown to diverge from
+  mainline in places (see items-m-b.yaml re: Choice items). Re-verify before
+  relying on it for a real draft/build decision.

@@ -17,6 +17,7 @@ mega:
     Mainline-returning Mega. Swift Swim doubles Speed in Rain, turning a
     slow bulky attacker into a rain sweeper. Confirmed via PokeAPI
     (pokemon/swampert-mega) on 2026-07-18.
+moves: [Earthquake, Waterfall, Ice Punch, Protect]
 added_in_regulation: M-A (base) / M-B (Mega)
 legal_in_regulations: [M-B]  # earliest confirmed regulation only; may be legal earlier too
 notes: >
@@ -27,3 +28,11 @@ data_confidence: >
   (https://pokeapi.co/api/v2) by fetch_pokemon_data.py on 2026-07-18. Mega
   Evolution data cross-checked live against PokeAPI's swampert-mega entry
   the same pass and matches this session's prior recall exactly.
+
+  `moves` is a curated list of moves this species commonly runs in mainline
+  competitive (VGC-style) play, sourced from this session's training-data
+  knowledge of established sets -- NOT fetched from PokeAPI (which has no
+  concept of a curated competitive subset) and NOT confirmed against the live
+  Pokemon Champions client, which has already been shown to diverge from
+  mainline in places (see items-m-b.yaml re: Choice items). Re-verify before
+  relying on it for a real draft/build decision.

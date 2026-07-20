@@ -10,6 +10,7 @@ abilities:
   - name: Shell Armor
     hidden: true
 mega: null  # TODO: fill in if this species has a Mega Evolution
+moves: null  # TODO: curate competitive movepool (moves actually run in Reg M-B sets)
 added_in_regulation: M-B
 legal_in_regulations: [M-B]
 notes: >
