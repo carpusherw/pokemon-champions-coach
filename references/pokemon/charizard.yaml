@@ -8,10 +8,19 @@ abilities:
   - name: Solar Power
     hidden: true
 mega: null  # TODO: fill in if this species has a Mega Evolution
-moves: null  # TODO: curate competitive movepool (moves actually run in Reg M-B sets)
+moves: [Flare Blitz, Dragon Claw, Dragon Dance, Heat Wave, Solar Beam, Protect]
 added_in_regulation: M-B
 legal_in_regulations: [M-B]
 notes: >
-  TODO: add competitive notes (role, speed-control relevance, etc).
+  Plays as either Mega Charizard X (Tough Claws, physical Dragon Dance sweeper
+  with Dragon Claw/Flare Blitz) or Mega Charizard Y (Drought, special sun
+  attacker with Heat Wave/Solar Beam) -- very different sets depending which
+  Mega Stone it's given.
 data_confidence: >
   Base stats/types/abilities fetched live from PokeAPI (https://pokeapi.co/api/v2) by fetch_pokemon_data.py. Mega Evolution data (if any) and competitive notes are NOT from PokeAPI and should be verified/updated by hand each season.
+
+  `moves`/`notes` sourced from Pikalytics' Pokemon Champions VGC usage stats
+  (championspreview/championstournaments/regulation-specific pages) via web
+  search this session -- real Champions-specific competitive data, not
+  recalled mainline VGC knowledge. Cross-check before a high-stakes
+  build/draft decision, as usage stats shift across seasons/regulations.

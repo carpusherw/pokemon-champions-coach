@@ -10,10 +10,18 @@ abilities:
   - name: Sturdy
     hidden: true
 mega: null  # TODO: fill in if this species has a Mega Evolution
-moves: null  # TODO: curate competitive movepool (moves actually run in Reg M-B sets)
+moves: [Rock Slide, Body Press, Mountain Gale, Wide Guard]
 added_in_regulation: M-B
 legal_in_regulations: [M-B]
 notes: >
-  TODO: add competitive notes (role, speed-control relevance, etc).
+  Rock/Steel typing (vs. base Avalugg's pure Ice) gives it very different
+  resistances; Mountain Gale (its signature move) has a 30% flinch chance, and
+  Wide Guard protects the team from spread moves.
 data_confidence: >
   Base stats/types/abilities fetched live from PokeAPI (https://pokeapi.co/api/v2) by fetch_pokemon_data.py. Mega Evolution data (if any) and competitive notes are NOT from PokeAPI and should be verified/updated by hand each season.
+
+  `moves`/`notes` sourced from Pikalytics' Pokemon Champions VGC usage stats
+  (championspreview/championstournaments/regulation-specific pages) via web
+  search this session -- real Champions-specific competitive data, not
+  recalled mainline VGC knowledge. Cross-check before a high-stakes
+  build/draft decision, as usage stats shift across seasons/regulations.
