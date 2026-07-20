@@ -6,6 +6,7 @@ abilities:
   - name: Stance Change
     hidden: false
 mega: null  # TODO: fill in if this species has a Mega Evolution
+moves: [King's Shield, Shadow Ball, Shadow Sneak, Iron Head, Toxic]
 added_in_regulation: M-B
 legal_in_regulations: [M-B]
 notes: >
@@ -15,3 +16,11 @@ notes: >
   in-battle transformation, not a separate recruit/catch.
 data_confidence: >
   Base stats/types/abilities fetched live from PokeAPI (https://pokeapi.co/api/v2) by fetch_pokemon_data.py. Mega Evolution data (if any) and competitive notes are NOT from PokeAPI and should be verified/updated by hand each season.
+
+  `moves` is a curated list of moves this species commonly runs in mainline
+  competitive (VGC-style) play, sourced from this session's training-data
+  knowledge of established sets -- NOT fetched from PokeAPI (which has no
+  concept of a curated competitive subset) and NOT confirmed against the live
+  Pokemon Champions client, which has already been shown to diverge from
+  mainline in places (see items-m-b.yaml re: Choice items). Re-verify before
+  relying on it for a real draft/build decision.

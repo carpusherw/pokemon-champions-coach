@@ -19,6 +19,7 @@ mega:
     Mainline-returning Mega. Huge Power doubles Attack (effectively ~210
     Atk), one of the hardest physical hitters in the game despite mediocre
     Speed. Confirmed via PokeAPI (pokemon/mawile-mega) on 2026-07-18.
+moves: [Play Rough, Sucker Punch, Iron Head, Protect]
 added_in_regulation: M-A (base) / M-B (Mega)
 legal_in_regulations: [M-B]  # earliest confirmed regulation only; may be legal earlier too
 notes: >
@@ -29,3 +30,11 @@ data_confidence: >
   (https://pokeapi.co/api/v2) by fetch_pokemon_data.py on 2026-07-18. Mega
   Evolution data cross-checked live against PokeAPI's mawile-mega entry the
   same pass and matches this session's prior recall exactly.
+
+  `moves` is a curated list of moves this species commonly runs in mainline
+  competitive (VGC-style) play, sourced from this session's training-data
+  knowledge of established sets -- NOT fetched from PokeAPI (which has no
+  concept of a curated competitive subset) and NOT confirmed against the live
+  Pokemon Champions client, which has already been shown to diverge from
+  mainline in places (see items-m-b.yaml re: Choice items). Re-verify before
+  relying on it for a real draft/build decision.

@@ -111,6 +111,25 @@ For each newly-legal or newly-changed species:
    Speed tier, priority-move access, Prankster/other speed-control
    abilities, Trick Room relevance, anything a human player would want
    flagged fast mid-draft or mid-battle.
+4. Fill in the `moves:` field with a **curated competitive movepool**, not
+   a full learnset: 4-6 moves this species actually runs in Reg M-B sets
+   (its real-world VGC-style moveset), e.g.
+   `moves: [Flare Blitz, Close Combat, Swords Dance, Protect]`. Leave it
+   `null` with the standard TODO comment if you don't have a confident,
+   sourced answer -- don't guess. Two things to know about this field:
+   - PokeAPI's per-species `moves` list is the full mainline learnset
+     (every level-up/TM/egg/tutor move, often 60+ entries) -- that's the
+     wrong shape for this field and shouldn't be dumped in wholesale. If
+     you use PokeAPI's data at all, treat it as a candidate pool to narrow
+     down by hand/research, not the field's contents.
+   - Don't assume a species' move *access* is identical to its mainline
+     self just because stats/types/abilities matched -- Pokemon Champions
+     has already been confirmed to diverge from mainline itemization (see
+     `references/rules/items-m-b.yaml`: Choice Band/Specs aren't
+     implemented as of M-B), so a moveset carried over from mainline/VGC
+     knowledge is a reasonable starting point but should be flagged as
+     such in `data_confidence`, the same way Mega data gets a confidence
+     note when it's recall-only.
 
 If PokeAPI (or any outbound network call) is blocked in your current
 environment -- check by trying one fetch early, don't discover it 20 calls

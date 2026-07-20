@@ -27,6 +27,7 @@ mega:
     special attacker whose ability (No Guard) makes all of its own and its
     target's moves bypass accuracy/evasion checks -- useful for otherwise
     unreliable moves like Thunder or Zap Cannon.
+moves: [Thunderbolt, Volt Switch, Focus Blast, Encore]
 added_in_regulation: M-A or earlier (base) / M-B (both Megas)
 legal_in_regulations: [M-B]  # earliest confirmed regulation only; may be legal earlier too
 notes: >
@@ -45,3 +46,11 @@ data_confidence: >
   verified against an official Pokemon Champions patch note, including
   which specific Raichu form (Kantonian vs Alolan) the games actually grant
   the Mega Stones to.
+
+  `moves` is a curated list of moves this species commonly runs in mainline
+  competitive (VGC-style) play, sourced from this session's training-data
+  knowledge of established sets -- NOT fetched from PokeAPI (which has no
+  concept of a curated competitive subset) and NOT confirmed against the live
+  Pokemon Champions client, which has already been shown to diverge from
+  mainline in places (see items-m-b.yaml re: Choice items). Re-verify before
+  relying on it for a real draft/build decision.

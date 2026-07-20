@@ -204,8 +204,10 @@ def build_pokemon_dex():
     lines.append(
         f"{len(entries)} species legal in the current regulation ({current_regulation}). "
         "One entry per species: dex number, types, base stats, abilities, Mega "
-        "Evolution data (if any), and hand-written competitive notes. Species no "
-        "longer legal in the current regulation are omitted -- see the main repo's "
+        "Evolution data (if any), a curated competitive movepool (if any -- a "
+        "handful of moves this species actually runs, not its full learnset), "
+        "and hand-written competitive notes. Species no longer legal in the "
+        "current regulation are omitted -- see the main repo's "
         "references/pokemon/ for full history."
     )
     lines.append("")
@@ -218,6 +220,9 @@ def build_pokemon_dex():
         mega_text = fmt_mega(data.get("mega"))
         if mega_text:
             lines.append(mega_text)
+        moves = data.get("moves")
+        if moves:
+            lines.append(f"- Common moves: {', '.join(moves)}")
         notes = (data.get("notes") or "").strip()
         if notes and not notes.startswith("TODO"):
             lines.append(f"- Notes: {notes}")

@@ -20,6 +20,7 @@ mega:
     keeps Tough Claws (which already boosted its contact moves pre-Mega),
     and gains across the board -- notably Attack (105 -> 140) and Speed
     (68 -> 88).
+moves: [Shell Smash, Liquidation, Stone Edge, Aqua Jet]
 added_in_regulation: M-A or earlier (base) / M-B (Mega)
 legal_in_regulations: [M-B]  # earliest confirmed regulation only; may be legal earlier too
 notes: >
@@ -34,3 +35,11 @@ data_confidence: >
   Rock/Fighting retype + Tough Claws) -- higher confidence than a pure
   recall/search-synthesis pass, but still not primary-source-verified
   against an official Pokemon Champions patch note.
+
+  `moves` is a curated list of moves this species commonly runs in mainline
+  competitive (VGC-style) play, sourced from this session's training-data
+  knowledge of established sets -- NOT fetched from PokeAPI (which has no
+  concept of a curated competitive subset) and NOT confirmed against the live
+  Pokemon Champions client, which has already been shown to diverge from
+  mainline in places (see items-m-b.yaml re: Choice items). Re-verify before
+  relying on it for a real draft/build decision.
