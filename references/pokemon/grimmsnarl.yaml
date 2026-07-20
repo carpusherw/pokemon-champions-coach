@@ -11,6 +11,82 @@ abilities:
     hidden: true
 mega: null  # TODO: fill in if this species has a Mega Evolution
 moves: [Spirit Break, Fake Out, Light Screen, Reflect, Thunder Wave]
+learnset:
+  - Assurance
+  - Attract
+  - Bite
+  - Body Press
+  - Body Slam
+  - Brick Break
+  - Bulk Up
+  - Burning Jealousy
+  - Chilling Water
+  - Confide
+  - Crunch
+  - Dark Pulse
+  - Darkest Lariat
+  - Dazzling Gleam
+  - Drain Punch
+  - Draining Kiss
+  - Endure
+  - Facade
+  - Fake Out
+  - Fake Tears
+  - False Surrender
+  - Fire Punch
+  - Flatter
+  - Fling
+  - Focus Blast
+  - Focus Energy
+  - Focus Punch
+  - Foul Play
+  - Giga Impact
+  - Hammer Arm
+  - Hyper Beam
+  - Ice Punch
+  - Imprison
+  - Lash Out
+  - Leech Life
+  - Light Screen
+  - Low Kick
+  - Low Sweep
+  - Mega Kick
+  - Mega Punch
+  - Metronome
+  - Misty Terrain
+  - Nasty Plot
+  - Play Rough
+  - Power Swap
+  - Power Whip
+  - Power-Up Punch
+  - Protect
+  - Reflect
+  - Rest
+  - Retaliate
+  - Revenge
+  - Round
+  - Scary Face
+  - Shadow Claw
+  - Sleep Talk
+  - Snore
+  - Spirit Break
+  - Stomping Tantrum
+  - Substitute
+  - Sucker Punch
+  - Superpower
+  - Swagger
+  - Take Down
+  - Taunt
+  - Tera Blast
+  - Thief
+  - Throat Chop
+  - Thunder Punch
+  - Thunder Wave
+  - Torment
+  - Trailblaze
+  - Trick
+  - Uproar
+  - Wonder Room
 added_in_regulation: M-B
 legal_in_regulations: [M-B]
 notes: >
@@ -28,3 +104,11 @@ data_confidence: >
   Pokemon Champions client, which has already been shown to diverge from
   mainline in places (see items-m-b.yaml re: Choice items). Re-verify before
   relying on it for a real draft/build decision.
+
+  Full `learnset` (75 moves) fetched from PokeAPI's mainline movepool for
+  pokemon/grimmsnarl (level-up + TM/HM + egg + tutor moves combined) by
+  backfill_learnset.py. This is NOT confirmed against the live Pokemon
+  Champions client -- Champions has already been shown to diverge from
+  mainline itemization (see items-m-b.yaml), so some listed moves may not
+  actually be learnable in Champions. Treat as a candidate pool, not a
+  guarantee.

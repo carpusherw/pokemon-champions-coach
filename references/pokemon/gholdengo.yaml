@@ -7,6 +7,52 @@ abilities:
     hidden: false
 mega: null  # TODO: fill in if this species has a Mega Evolution
 moves: [Make It Rain, Shadow Ball, Nasty Plot, Protect]
+learnset:
+  - Astonish
+  - Charge Beam
+  - Confuse Ray
+  - Dazzling Gleam
+  - Electro Ball
+  - Endure
+  - Flash Cannon
+  - Fling
+  - Focus Blast
+  - Focus Punch
+  - Giga Impact
+  - Heavy Slam
+  - Hex
+  - Hyper Beam
+  - Iron Head
+  - Light Screen
+  - Low Kick
+  - Low Sweep
+  - Make It Rain
+  - Memento
+  - Metal Sound
+  - Nasty Plot
+  - Night Shade
+  - Poltergeist
+  - Power Gem
+  - Protect
+  - Psychic
+  - Psyshock
+  - Recover
+  - Reflect
+  - Rest
+  - Sandstorm
+  - Shadow Ball
+  - Sleep Talk
+  - Steel Beam
+  - Substitute
+  - Tackle
+  - Take Down
+  - Tera Blast
+  - Thief
+  - Thunder
+  - Thunder Punch
+  - Thunder Wave
+  - Thunderbolt
+  - Trick
 added_in_regulation: M-B
 legal_in_regulations: [M-B]
 notes: >
@@ -24,3 +70,11 @@ data_confidence: >
   Pokemon Champions client, which has already been shown to diverge from
   mainline in places (see items-m-b.yaml re: Choice items). Re-verify before
   relying on it for a real draft/build decision.
+
+  Full `learnset` (45 moves) fetched from PokeAPI's mainline movepool for
+  pokemon/gholdengo (level-up + TM/HM + egg + tutor moves combined) by
+  backfill_learnset.py. This is NOT confirmed against the live Pokemon
+  Champions client -- Champions has already been shown to diverge from
+  mainline itemization (see items-m-b.yaml), so some listed moves may not
+  actually be learnable in Champions. Treat as a candidate pool, not a
+  guarantee.

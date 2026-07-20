@@ -9,9 +9,125 @@ abilities:
     hidden: true
 mega: null  # TODO: fill in if this species has a Mega Evolution
 moves: null  # TODO: curate competitive movepool (moves actually run in Reg M-B sets)
+learnset:
+  - Arm Thrust
+  - Assurance
+  - Attract
+  - Blast Burn
+  - Block
+  - Body Press
+  - Body Slam
+  - Brick Break
+  - Bulk Up
+  - Bulldoze
+  - Burn Up
+  - Close Combat
+  - Coaching
+  - Confide
+  - Covet
+  - Curse
+  - Defense Curl
+  - Dig
+  - Double Team
+  - Double-Edge
+  - Drain Punch
+  - Earthquake
+  - Echoed Voice
+  - Ember
+  - Endeavor
+  - Endure
+  - Facade
+  - Fire Blast
+  - Fire Pledge
+  - Fire Punch
+  - Fire Spin
+  - Flame Charge
+  - Flamethrower
+  - Flare Blitz
+  - Fling
+  - Focus Blast
+  - Focus Energy
+  - Focus Punch
+  - Frustration
+  - Giga Impact
+  - Grass Knot
+  - Gyro Ball
+  - Hammer Arm
+  - Hard Press
+  - Head Smash
+  - Heat Crash
+  - Heat Wave
+  - Heavy Slam
+  - Helping Hand
+  - Hidden Power
+  - High Horsepower
+  - Hyper Beam
+  - Incinerate
+  - Iron Head
+  - Iron Tail
+  - Knock Off
+  - Low Kick
+  - Low Sweep
+  - Mud-Slap
+  - Odor Sleuth
+  - Overheat
+  - Poison Jab
+  - Power-Up Punch
+  - Protect
+  - Rest
+  - Return
+  - Reversal
+  - Roar
+  - Rock Slide
+  - Rock Smash
+  - Rock Tomb
+  - Rollout
+  - Round
+  - Scald
+  - Scary Face
+  - Scorching Sands
+  - Secret Power
+  - Sleep Talk
+  - Smack Down
+  - Smog
+  - Snore
+  - Solar Beam
+  - Solar Blade
+  - Stomping Tantrum
+  - Stone Edge
+  - Storm Throw
+  - Strength
+  - Substitute
+  - Sucker Punch
+  - Sunny Day
+  - Superpower
+  - Swagger
+  - Tackle
+  - Tail Whip
+  - Take Down
+  - Taunt
+  - Temper Flare
+  - Tera Blast
+  - Thrash
+  - Thunder Punch
+  - Toxic
+  - Trailblaze
+  - Wild Charge
+  - Will-O-Wisp
+  - Work Up
+  - Yawn
+  - Zen Headbutt
 added_in_regulation: M-B
 legal_in_regulations: [M-B]
 notes: >
   TODO: add competitive notes (role, speed-control relevance, etc).
 data_confidence: >
   Base stats/types/abilities fetched live from PokeAPI (https://pokeapi.co/api/v2) by fetch_pokemon_data.py. Mega Evolution data (if any) and competitive notes are NOT from PokeAPI and should be verified/updated by hand each season.
+
+  Full `learnset` (107 moves) fetched from PokeAPI's mainline movepool for
+  pokemon/emboar (level-up + TM/HM + egg + tutor moves combined) by
+  backfill_learnset.py. This is NOT confirmed against the live Pokemon
+  Champions client -- Champions has already been shown to diverge from
+  mainline itemization (see items-m-b.yaml), so some listed moves may not
+  actually be learnable in Champions. Treat as a candidate pool, not a
+  guarantee.

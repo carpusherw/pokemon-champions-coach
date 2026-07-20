@@ -9,9 +9,121 @@ abilities:
     hidden: true
 mega: null  # TODO: fill in if this species has a Mega Evolution
 moves: null  # TODO: curate competitive movepool (moves actually run in Reg M-B sets)
+learnset:
+  - Aqua Tail
+  - Attract
+  - Avalanche
+  - Bide
+  - Bind
+  - Bite
+  - Blizzard
+  - Body Slam
+  - Bounce
+  - Brine
+  - Brutal Swing
+  - Bubble Beam
+  - Bulldoze
+  - Captivate
+  - Chilling Water
+  - Confide
+  - Crunch
+  - Curse
+  - Dark Pulse
+  - Dive
+  - Double Team
+  - Double-Edge
+  - Dragon Breath
+  - Dragon Cheer
+  - Dragon Dance
+  - Dragon Pulse
+  - Dragon Rage
+  - Dragon Rush
+  - Dragon Tail
+  - Earthquake
+  - Endeavor
+  - Endure
+  - Facade
+  - Fire Blast
+  - Flail
+  - Flamethrower
+  - Focus Energy
+  - Frustration
+  - Giga Impact
+  - Hail
+  - Headbutt
+  - Helping Hand
+  - Hidden Power
+  - Hurricane
+  - Hydro Pump
+  - Hyper Beam
+  - Ice Beam
+  - Ice Fang
+  - Icy Wind
+  - Incinerate
+  - Iron Head
+  - Iron Tail
+  - Lash Out
+  - Leer
+  - Mimic
+  - Muddy Water
+  - Natural Gift
+  - Outrage
+  - Payback
+  - Power Whip
+  - Protect
+  - Rage
+  - Rain Dance
+  - Reflect
+  - Rest
+  - Return
+  - Roar
+  - Rock Smash
+  - Round
+  - Sandstorm
+  - Scald
+  - Scale Shot
+  - Scary Face
+  - Secret Power
+  - Skull Bash
+  - Sleep Talk
+  - Snore
+  - Spite
+  - Splash
+  - Stone Edge
+  - Strength
+  - Substitute
+  - Sunny Day
+  - Surf
+  - Swagger
+  - Tackle
+  - Take Down
+  - Taunt
+  - Temper Flare
+  - Tera Blast
+  - Thrash
+  - Thunder
+  - Thunder Wave
+  - Thunderbolt
+  - Torment
+  - Toxic
+  - Twister
+  - Uproar
+  - Water Gun
+  - Water Pulse
+  - Waterfall
+  - Whirlpool
+  - Zap Cannon
 added_in_regulation: M-B
 legal_in_regulations: [M-B]
 notes: >
   TODO: add competitive notes (role, speed-control relevance, etc).
 data_confidence: >
   Base stats/types/abilities fetched live from PokeAPI (https://pokeapi.co/api/v2) by fetch_pokemon_data.py. Mega Evolution data (if any) and competitive notes are NOT from PokeAPI and should be verified/updated by hand each season.
+
+  Full `learnset` (103 moves) fetched from PokeAPI's mainline movepool for
+  pokemon/gyarados (level-up + TM/HM + egg + tutor moves combined) by
+  backfill_learnset.py. This is NOT confirmed against the live Pokemon
+  Champions client -- Champions has already been shown to diverge from
+  mainline itemization (see items-m-b.yaml), so some listed moves may not
+  actually be learnable in Champions. Treat as a candidate pool, not a
+  guarantee.

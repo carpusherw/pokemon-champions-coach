@@ -19,6 +19,64 @@ mega:
     its stats, making it a hard punish for Intimidate switch-ins and other
     stat-drop effects. Attack, Defense, and Speed all rise substantially.
 moves: [No Retreat, Close Combat, Rock Slide, Iron Head]
+learnset:
+  - Agility
+  - Assurance
+  - Beat Up
+  - Body Press
+  - Body Slam
+  - Brick Break
+  - Bulk Up
+  - Close Combat
+  - Coaching
+  - Counter
+  - Endeavor
+  - Endure
+  - Facade
+  - False Swipe
+  - First Impression
+  - Focus Blast
+  - Focus Energy
+  - Giga Impact
+  - Headbutt
+  - Helping Hand
+  - High Horsepower
+  - Hyper Beam
+  - Iron Defense
+  - Iron Head
+  - Knock Off
+  - Lunge
+  - Megahorn
+  - No Retreat
+  - Payback
+  - Poison Jab
+  - Protect
+  - Psych Up
+  - Rain Dance
+  - Rest
+  - Retaliate
+  - Revenge
+  - Reversal
+  - Rock Slide
+  - Rock Smash
+  - Rock Tomb
+  - Round
+  - Screech
+  - Sleep Talk
+  - Smart Strike
+  - Snore
+  - Substitute
+  - Sunny Day
+  - Superpower
+  - Swords Dance
+  - Tackle
+  - Take Down
+  - Tera Blast
+  - Throat Chop
+  - Trailblaze
+  - Upper Hand
+  - Uproar
+  - Zen Headbutt
 added_in_regulation: M-A or earlier (base) / M-B (Mega)
 legal_in_regulations: [M-B]  # earliest confirmed regulation only; may be legal earlier too
 notes: >
@@ -40,3 +98,11 @@ data_confidence: >
   Pokemon Champions client, which has already been shown to diverge from
   mainline in places (see items-m-b.yaml re: Choice items). Re-verify before
   relying on it for a real draft/build decision.
+
+  Full `learnset` (57 moves) fetched from PokeAPI's mainline movepool for
+  pokemon/falinks (level-up + TM/HM + egg + tutor moves combined) by
+  backfill_learnset.py. This is NOT confirmed against the live Pokemon
+  Champions client -- Champions has already been shown to diverge from
+  mainline itemization (see items-m-b.yaml), so some listed moves may not
+  actually be learnable in Champions. Treat as a candidate pool, not a
+  guarantee.

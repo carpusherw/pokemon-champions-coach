@@ -11,9 +11,130 @@ abilities:
     hidden: true
 mega: null  # TODO: fill in if this species has a Mega Evolution
 moves: null  # TODO: curate competitive movepool (moves actually run in Reg M-B sets)
+learnset:
+  - Acrobatics
+  - Aerial Ace
+  - Agility
+  - Aqua Tail
+  - Assurance
+  - Attract
+  - Baton Pass
+  - Breaking Swipe
+  - Brick Break
+  - Brutal Swing
+  - Bug Bite
+  - Bulldoze
+  - Captivate
+  - Confide
+  - Counter
+  - Crabhammer
+  - Cross Poison
+  - Crunch
+  - Cut
+  - Dark Pulse
+  - Defog
+  - Dig
+  - Double Team
+  - Double-Edge
+  - Dual Wingbeat
+  - Earth Power
+  - Earthquake
+  - Endure
+  - Facade
+  - False Swipe
+  - Feint
+  - Feint Attack
+  - Fire Fang
+  - Fling
+  - Frustration
+  - Fury Cutter
+  - Giga Impact
+  - Guillotine
+  - Gunk Shot
+  - Harden
+  - Headbutt
+  - Hidden Power
+  - High Horsepower
+  - Hone Claws
+  - Hyper Beam
+  - Ice Fang
+  - Iron Tail
+  - Knock Off
+  - Lunge
+  - Metal Claw
+  - Mud Bomb
+  - Mud Shot
+  - Mud-Slap
+  - Natural Gift
+  - Night Slash
+  - Payback
+  - Pin Missile
+  - Poison Jab
+  - Poison Sting
+  - Poison Tail
+  - Power Whip
+  - Protect
+  - Psychic Fangs
+  - Quick Attack
+  - Rain Dance
+  - Rest
+  - Return
+  - Rock Polish
+  - Rock Slide
+  - Rock Smash
+  - Rock Tomb
+  - Roost
+  - Round
+  - Sand Attack
+  - Sand Tomb
+  - Sandstorm
+  - Scale Shot
+  - Scary Face
+  - Screech
+  - Secret Power
+  - Skitter Smack
+  - Sky Attack
+  - Sky Uppercut
+  - Slash
+  - Sleep Talk
+  - Sludge Bomb
+  - Snore
+  - Spikes
+  - Stealth Rock
+  - Steel Wing
+  - Stone Edge
+  - Strength
+  - Struggle Bug
+  - Substitute
+  - Sunny Day
+  - Swagger
+  - Swift
+  - Swords Dance
+  - Tailwind
+  - Take Down
+  - Taunt
+  - Tera Blast
+  - Thief
+  - Throat Chop
+  - Thunder Fang
+  - Torment
+  - Toxic
+  - Toxic Spikes
+  - U-turn
+  - Venoshock
+  - Wing Attack
+  - X-Scissor
 added_in_regulation: M-B
 legal_in_regulations: [M-B]
 notes: >
   TODO: add competitive notes (role, speed-control relevance, etc).
 data_confidence: >
   Base stats/types/abilities fetched live from PokeAPI (https://pokeapi.co/api/v2) by fetch_pokemon_data.py. Mega Evolution data (if any) and competitive notes are NOT from PokeAPI and should be verified/updated by hand each season.
+
+  Full `learnset` (112 moves) fetched from PokeAPI's mainline movepool for
+  pokemon/gliscor (level-up + TM/HM + egg + tutor moves combined) by
+  backfill_learnset.py. This is NOT confirmed against the live Pokemon
+  Champions client -- Champions has already been shown to diverge from
+  mainline itemization (see items-m-b.yaml), so some listed moves may not
+  actually be learnable in Champions. Treat as a candidate pool, not a
+  guarantee.

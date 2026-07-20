@@ -18,6 +18,104 @@ mega:
     Eelevate's exact in-battle effect from any source -- verify in-game
     before relying on it for a coaching call.
 moves: [Wild Charge, Flamethrower, Knock Off, Coil]
+learnset:
+  - Acid
+  - Acid Spray
+  - Acrobatics
+  - Aqua Tail
+  - Attract
+  - Bind
+  - Body Press
+  - Body Slam
+  - Bounce
+  - Brick Break
+  - Bulk Up
+  - Bulldoze
+  - Charge
+  - Charge Beam
+  - Close Combat
+  - Coil
+  - Confide
+  - Confuse Ray
+  - Crunch
+  - Crush Claw
+  - Cut
+  - Discharge
+  - Double Team
+  - Dragon Claw
+  - Dragon Pulse
+  - Dragon Tail
+  - Drain Punch
+  - Eerie Impulse
+  - Electric Terrain
+  - Electro Ball
+  - Electroweb
+  - Endure
+  - Facade
+  - Fire Punch
+  - Flamethrower
+  - Flash
+  - Flash Cannon
+  - Focus Punch
+  - Frustration
+  - Gastro Acid
+  - Giga Drain
+  - Giga Impact
+  - Grass Knot
+  - Headbutt
+  - Heavy Slam
+  - Hex
+  - Hidden Power
+  - Hone Claws
+  - Hyper Beam
+  - Ion Deluge
+  - Iron Tail
+  - Knock Off
+  - Light Screen
+  - Liquidation
+  - Lunge
+  - Magnet Rise
+  - Outrage
+  - Power-Up Punch
+  - Protect
+  - Rain Dance
+  - Rest
+  - Return
+  - Roar
+  - Rock Slide
+  - Rock Smash
+  - Rock Tomb
+  - Round
+  - Scary Face
+  - Secret Power
+  - Shock Wave
+  - Signal Beam
+  - Sleep Talk
+  - Snore
+  - Stomping Tantrum
+  - Strength
+  - Substitute
+  - Sunny Day
+  - Super Fang
+  - Supercell Slam
+  - Superpower
+  - Swagger
+  - Swift
+  - Take Down
+  - Tera Blast
+  - Thrash
+  - Throat Chop
+  - Thunder
+  - Thunder Fang
+  - Thunder Punch
+  - Thunder Wave
+  - Thunderbolt
+  - Toxic
+  - U-turn
+  - Volt Switch
+  - Wild Charge
+  - Zap Cannon
+  - Zen Headbutt
 added_in_regulation: M-A or earlier (base) / M-B (Mega)
 legal_in_regulations: [M-B]  # earliest confirmed regulation only; may be legal earlier too
 notes: >
@@ -41,3 +139,11 @@ data_confidence: >
   Pokemon Champions client, which has already been shown to diverge from
   mainline in places (see items-m-b.yaml re: Choice items). Re-verify before
   relying on it for a real draft/build decision.
+
+  Full `learnset` (97 moves) fetched from PokeAPI's mainline movepool for
+  pokemon/eelektross (level-up + TM/HM + egg + tutor moves combined) by
+  backfill_learnset.py. This is NOT confirmed against the live Pokemon
+  Champions client -- Champions has already been shown to diverge from
+  mainline itemization (see items-m-b.yaml), so some listed moves may not
+  actually be learnable in Champions. Treat as a candidate pool, not a
+  guarantee.

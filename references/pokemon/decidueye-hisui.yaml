@@ -9,9 +9,100 @@ abilities:
     hidden: true
 mega: null  # TODO: fill in if this species has a Mega Evolution
 moves: null  # TODO: curate competitive movepool (moves actually run in Reg M-B sets)
+learnset:
+  - Aerial Ace
+  - Air Cutter
+  - Air Slash
+  - Aura Sphere
+  - Baton Pass
+  - Brave Bird
+  - Brick Break
+  - Bulk Up
+  - Bullet Seed
+  - Close Combat
+  - Coaching
+  - Confuse Ray
+  - Defog
+  - Double Team
+  - Dual Wingbeat
+  - Endure
+  - Energy Ball
+  - Facade
+  - False Swipe
+  - Feather Dance
+  - Focus Blast
+  - Focus Energy
+  - Focus Punch
+  - Frenzy Plant
+  - Giga Drain
+  - Giga Impact
+  - Grass Knot
+  - Grass Pledge
+  - Grassy Glide
+  - Grassy Terrain
+  - Growl
+  - Gust
+  - Haze
+  - Helping Hand
+  - Hyper Beam
+  - Knock Off
+  - Leaf Blade
+  - Leaf Storm
+  - Leafage
+  - Light Screen
+  - Low Kick
+  - Low Sweep
+  - Magical Leaf
+  - Nasty Plot
+  - Night Shade
+  - Peck
+  - Pluck
+  - Protect
+  - Psycho Cut
+  - Rain Dance
+  - Razor Leaf
+  - Rest
+  - Reversal
+  - Rock Smash
+  - Rock Tomb
+  - Roost
+  - Round
+  - Scary Face
+  - Seed Bomb
+  - Shadow Claw
+  - Shadow Sneak
+  - Sleep Talk
+  - Smack Down
+  - Snore
+  - Solar Beam
+  - Spikes
+  - Steel Wing
+  - Substitute
+  - Sucker Punch
+  - Sunny Day
+  - Swift
+  - Swords Dance
+  - Synthesis
+  - Tackle
+  - Tailwind
+  - Take Down
+  - Taunt
+  - Tera Blast
+  - Trailblaze
+  - Triple Arrows
+  - U-turn
+  - Upper Hand
 added_in_regulation: M-B
 legal_in_regulations: [M-B]
 notes: >
   TODO: add competitive notes (role, speed-control relevance, etc).
 data_confidence: >
   Base stats/types/abilities fetched live from PokeAPI (https://pokeapi.co/api/v2) by fetch_pokemon_data.py. Mega Evolution data (if any) and competitive notes are NOT from PokeAPI and should be verified/updated by hand each season.
+
+  Full `learnset` (82 moves) fetched from PokeAPI's mainline movepool for
+  pokemon/decidueye-hisui (level-up + TM/HM + egg + tutor moves combined) by
+  backfill_learnset.py. This is NOT confirmed against the live Pokemon
+  Champions client -- Champions has already been shown to diverge from
+  mainline itemization (see items-m-b.yaml), so some listed moves may not
+  actually be learnable in Champions. Treat as a candidate pool, not a
+  guarantee.

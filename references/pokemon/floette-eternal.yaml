@@ -9,9 +9,94 @@ abilities:
     hidden: true
 mega: null  # TODO: fill in if this species has a Mega Evolution
 moves: null  # TODO: curate competitive movepool (moves actually run in Reg M-B sets)
+learnset:
+  - After You
+  - Alluring Voice
+  - Ally Switch
+  - Aromatherapy
+  - Attract
+  - Baton Pass
+  - Calm Mind
+  - Charm
+  - Chilling Water
+  - Confide
+  - Copycat
+  - Covet
+  - Dazzling Gleam
+  - Double Team
+  - Draining Kiss
+  - Echoed Voice
+  - Endeavor
+  - Endure
+  - Energy Ball
+  - Facade
+  - Fairy Wind
+  - Flash
+  - Frustration
+  - Giga Drain
+  - Grass Knot
+  - Grassy Terrain
+  - Heal Bell
+  - Helping Hand
+  - Hidden Power
+  - Hyper Beam
+  - Light Screen
+  - Light of Ruin
+  - Lucky Chant
+  - Magic Coat
+  - Magical Leaf
+  - Misty Terrain
+  - Moonblast
+  - Nature Power
+  - Petal Blizzard
+  - Petal Dance
+  - Pollen Puff
+  - Protect
+  - Psychic
+  - Rain Dance
+  - Razor Leaf
+  - Rest
+  - Return
+  - Round
+  - Safeguard
+  - Secret Power
+  - Seed Bomb
+  - Skill Swap
+  - Sleep Talk
+  - Snore
+  - Solar Beam
+  - Stored Power
+  - Substitute
+  - Sunny Day
+  - Swagger
+  - Synthesis
+  - Tackle
+  - Tearful Look
+  - Toxic
+  - Trailblaze
+  - Trick
+  - Vine Whip
+  - Wish
+  - Worry Seed
 added_in_regulation: M-B
 legal_in_regulations: [M-B]
 notes: >
   TODO: add competitive notes (role, speed-control relevance, etc).
 data_confidence: >
   Base stats/types/abilities fetched live from PokeAPI (https://pokeapi.co/api/v2) by fetch_pokemon_data.py. Mega Evolution data (if any) and competitive notes are NOT from PokeAPI and should be verified/updated by hand each season.
+
+  Full `learnset` (68 moves) fetched from PokeAPI's mainline movepool for
+  pokemon/floette-eternal (level-up + TM/HM + egg + tutor moves combined) by
+  backfill_learnset.py. This is NOT confirmed against the live Pokemon
+  Champions client -- Champions has already been shown to diverge from
+  mainline itemization (see items-m-b.yaml), so some listed moves may not
+  actually be learnable in Champions. Treat as a candidate pool, not a
+  guarantee.
+
+  Extra caveat specific to this form: Eternal Flower Floette (AZ's Floette)
+  has never been officially distributed in any mainline game -- it exists
+  in the game data but was never made legally obtainable there. Its
+  PokeAPI learnset (including its signature move, Light of Ruin) comes from
+  datamined/unreleased event data, not a validated official release, so if
+  Champions has independently balanced this form, its actual learnset could
+  diverge from this list more than the typical case above.
