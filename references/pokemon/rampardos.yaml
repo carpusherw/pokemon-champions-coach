@@ -9,9 +9,124 @@ abilities:
     hidden: true
 mega: null  # TODO: fill in if this species has a Mega Evolution
 moves: null  # TODO: curate competitive movepool (moves actually run in Reg M-B sets)
+learnset:
+  - Ancient Power
+  - Assurance
+  - Attract
+  - Avalanche
+  - Bite
+  - Blizzard
+  - Body Press
+  - Body Slam
+  - Breaking Swipe
+  - Brick Break
+  - Bulldoze
+  - Captivate
+  - Chip Away
+  - Confide
+  - Crunch
+  - Curse
+  - Cut
+  - Dig
+  - Double Team
+  - Double-Edge
+  - Dragon Cheer
+  - Dragon Claw
+  - Dragon Pulse
+  - Dragon Tail
+  - Earth Power
+  - Earthquake
+  - Endeavor
+  - Endure
+  - Facade
+  - Fire Blast
+  - Fire Punch
+  - Flamethrower
+  - Fling
+  - Focus Blast
+  - Focus Energy
+  - Focus Punch
+  - Frustration
+  - Giga Impact
+  - Hammer Arm
+  - Head Smash
+  - Headbutt
+  - Heavy Slam
+  - Hidden Power
+  - Hyper Beam
+  - Ice Beam
+  - Incinerate
+  - Iron Head
+  - Iron Tail
+  - Laser Focus
+  - Leer
+  - Meteor Beam
+  - Mud-Slap
+  - Natural Gift
+  - Outrage
+  - Pain Split
+  - Payback
+  - Power-Up Punch
+  - Protect
+  - Pursuit
+  - Rain Dance
+  - Rest
+  - Return
+  - Roar
+  - Rock Blast
+  - Rock Climb
+  - Rock Polish
+  - Rock Slide
+  - Rock Smash
+  - Rock Tomb
+  - Round
+  - Sandstorm
+  - Scary Face
+  - Screech
+  - Secret Power
+  - Shock Wave
+  - Slam
+  - Sleep Talk
+  - Smack Down
+  - Snore
+  - Spite
+  - Stealth Rock
+  - Stomp
+  - Stomping Tantrum
+  - Stone Edge
+  - Strength
+  - Substitute
+  - Sunny Day
+  - Supercell Slam
+  - Superpower
+  - Surf
+  - Swagger
+  - Swords Dance
+  - Tackle
+  - Take Down
+  - Tera Blast
+  - Thief
+  - Thrash
+  - Thunder
+  - Thunder Punch
+  - Thunderbolt
+  - Toxic
+  - Trailblaze
+  - Uproar
+  - Whirlpool
+  - Whirlwind
+  - Zen Headbutt
 added_in_regulation: M-B
 legal_in_regulations: [M-B]
 notes: >
   TODO: add competitive notes (role, speed-control relevance, etc).
 data_confidence: >
   Base stats/types/abilities fetched live from PokeAPI (https://pokeapi.co/api/v2) by fetch_pokemon_data.py. Mega Evolution data (if any) and competitive notes are NOT from PokeAPI and should be verified/updated by hand each season.
+
+  Full `learnset` (106 moves) fetched from PokeAPI's mainline movepool for
+  pokemon/rampardos (level-up + TM/HM + egg + tutor moves combined) by
+  backfill_learnset.py. This is NOT confirmed against the live Pokemon
+  Champions client -- Champions has already been shown to diverge from
+  mainline itemization (see items-m-b.yaml), so some listed moves may not
+  actually be learnable in Champions. Treat as a candidate pool, not a
+  guarantee.

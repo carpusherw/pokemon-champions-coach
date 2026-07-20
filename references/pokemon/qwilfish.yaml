@@ -11,6 +11,106 @@ abilities:
     hidden: true
 mega: null  # TODO: fill in if this species has a Mega Evolution
 moves: [Liquidation, Poison Jab, Taunt, Destiny Bond]
+learnset:
+  - Acid Spray
+  - Acupressure
+  - Agility
+  - Aqua Jet
+  - Aqua Tail
+  - Assurance
+  - Astonish
+  - Attract
+  - Barb Barrage
+  - Blizzard
+  - Bounce
+  - Brine
+  - Bubble
+  - Bubble Beam
+  - Captivate
+  - Chilling Water
+  - Confide
+  - Crunch
+  - Curse
+  - Defense Curl
+  - Destiny Bond
+  - Dive
+  - Double Team
+  - Double-Edge
+  - Endure
+  - Explosion
+  - Facade
+  - Fell Stinger
+  - Flail
+  - Flip Turn
+  - Frustration
+  - Giga Impact
+  - Gunk Shot
+  - Gyro Ball
+  - Hail
+  - Harden
+  - Haze
+  - Headbutt
+  - Hex
+  - Hidden Power
+  - Hydro Pump
+  - Ice Beam
+  - Icy Wind
+  - Liquidation
+  - Mimic
+  - Minimize
+  - Mud Shot
+  - Natural Gift
+  - Pain Split
+  - Payback
+  - Pin Missile
+  - Poison Jab
+  - Poison Sting
+  - Poison Tail
+  - Protect
+  - Rain Dance
+  - Rest
+  - Return
+  - Revenge
+  - Reversal
+  - Rollout
+  - Round
+  - Scald
+  - Scale Shot
+  - Scary Face
+  - Secret Power
+  - Self-Destruct
+  - Shadow Ball
+  - Shock Wave
+  - Signal Beam
+  - Sleep Talk
+  - Sludge Bomb
+  - Sludge Wave
+  - Snore
+  - Spikes
+  - Spit Up
+  - Spite
+  - Steel Roller
+  - Stockpile
+  - Substitute
+  - Supersonic
+  - Surf
+  - Swagger
+  - Swift
+  - Swords Dance
+  - Tackle
+  - Take Down
+  - Taunt
+  - Tera Blast
+  - Throat Chop
+  - Thunder Wave
+  - Toxic
+  - Toxic Spikes
+  - Venom Drench
+  - Venoshock
+  - Water Gun
+  - Water Pulse
+  - Waterfall
+  - Whirlpool
 added_in_regulation: M-B
 legal_in_regulations: [M-B]
 notes: >
@@ -27,3 +127,11 @@ data_confidence: >
   Pokemon Champions client, which has already been shown to diverge from
   mainline in places (see items-m-b.yaml re: Choice items). Re-verify before
   relying on it for a real draft/build decision.
+
+  Full `learnset` (99 moves) fetched from PokeAPI's mainline movepool for
+  pokemon/qwilfish (level-up + TM/HM + egg + tutor moves combined) by
+  backfill_learnset.py. This is NOT confirmed against the live Pokemon
+  Champions client -- Champions has already been shown to diverge from
+  mainline itemization (see items-m-b.yaml), so some listed moves may not
+  actually be learnable in Champions. Treat as a candidate pool, not a
+  guarantee.

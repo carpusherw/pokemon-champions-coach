@@ -7,9 +7,91 @@ abilities:
     hidden: false
 mega: null  # TODO: fill in if this species has a Mega Evolution
 moves: null  # TODO: curate competitive movepool (moves actually run in Reg M-B sets)
+learnset:
+  - Ally Switch
+  - Amnesia
+  - Astonish
+  - Attract
+  - Body Press
+  - Brutal Swing
+  - Bulldoze
+  - Calm Mind
+  - Confuse Ray
+  - Crafty Shield
+  - Curse
+  - Dark Pulse
+  - Destiny Bond
+  - Disable
+  - Dragon Pulse
+  - Earth Power
+  - Earthquake
+  - Endure
+  - Energy Ball
+  - Facade
+  - Fake Tears
+  - Giga Drain
+  - Giga Impact
+  - Grass Knot
+  - Guard Split
+  - Guard Swap
+  - Haze
+  - Hex
+  - Hyper Beam
+  - Imprison
+  - Iron Defense
+  - Mean Look
+  - Memento
+  - Nasty Plot
+  - Night Shade
+  - Payback
+  - Phantom Force
+  - Poltergeist
+  - Power Split
+  - Power Swap
+  - Protect
+  - Psychic
+  - Psyshock
+  - Rain Dance
+  - Rest
+  - Revenge
+  - Rock Blast
+  - Rock Slide
+  - Rock Tomb
+  - Round
+  - Safeguard
+  - Sand Tomb
+  - Sandstorm
+  - Scary Face
+  - Self-Destruct
+  - Shadow Ball
+  - Shadow Claw
+  - Shadow Punch
+  - Skill Swap
+  - Slam
+  - Sleep Talk
+  - Snore
+  - Stealth Rock
+  - Stone Edge
+  - Substitute
+  - Taunt
+  - Thief
+  - Toxic Spikes
+  - Trick
+  - Trick Room
+  - Will-O-Wisp
+  - Wonder Room
+  - Zen Headbutt
 added_in_regulation: M-B
 legal_in_regulations: [M-B]
 notes: >
   TODO: add competitive notes (role, speed-control relevance, etc).
 data_confidence: >
   Base stats/types/abilities fetched live from PokeAPI (https://pokeapi.co/api/v2) by fetch_pokemon_data.py. Mega Evolution data (if any) and competitive notes are NOT from PokeAPI and should be verified/updated by hand each season.
+
+  Full `learnset` (73 moves) fetched from PokeAPI's mainline movepool for
+  pokemon/runerigus (level-up + TM/HM + egg + tutor moves combined) by
+  backfill_learnset.py. This is NOT confirmed against the live Pokemon
+  Champions client -- Champions has already been shown to diverge from
+  mainline itemization (see items-m-b.yaml), so some listed moves may not
+  actually be learnable in Champions. Treat as a candidate pool, not a
+  guarantee.
