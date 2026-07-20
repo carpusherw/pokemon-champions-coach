@@ -8,9 +8,11 @@ description: >
   a matchup and asks things like "who moves first", "does my Scarf Landorus
   outspeed their team", "will Fake Out stop that", "what's the speed order
   this turn", "should I Trick Room here", or is generally trying to plan a
-  turn or a team around speed control. Also use it proactively when the user
-  is deciding between two sets/items/EV spreads and the deciding factor is
-  actually turn order, even if they didn't phrase it as a speed question.
+  turn or a team around speed control -- including when the board state is
+  given as screenshot(s) of the in-game team screen rather than typed out.
+  Also use it proactively when the user is deciding between two sets/items/
+  EV spreads and the deciding factor is actually turn order, even if they
+  didn't phrase it as a speed question.
   Draws on references/rules and references/pokemon for the current
   regulation's legal roster and stats instead of guessing them.
 ---
@@ -37,12 +39,35 @@ and ideally item/ability/relevant stat boosts/status. Field state matters
 too: weather, terrain, Trick Room, Tailwind, any Speed-altering hazards
 (Sticky Web) already in play.
 
+If the user pastes screenshot(s) of the in-game team screen instead of
+typing the board out, read them with the same extraction discipline
+`team-recorder` documents in its own Step 1-2 (the ability/item/moves tab
+and the stats tab with nature arrows and EV investment, localized names
+matched to canonical ones) -- don't re-derive that procedure separately
+here, it's the same screenshots either skill would be reading. Answer the
+actual move-order question first; only after that, if you ended up with a
+full team's worth of data this way, mention that `team-recorder` can save
+it so it doesn't have to be re-read from screenshots next time -- don't
+make saving a prerequisite to answering.
+
 If the user gives you a full team sheet or battle log, work from that. If
-they only give you a partial picture ("I have a Scarf Raichu, what beats
-it?"), that's fine — reason about it explicitly as a range of cases rather
-than silently assuming the gaps. Don't ask a battery of clarifying
-questions before giving any answer; give the best answer you can from what
-you have, and flag the specific missing piece if it would flip the outcome.
+they instead reference a team by name ("does my Trick Room team beat
+this", "using the rain-core team I saved"), look in `saved-teams/`
+(`team-recorder` writes these, best-effort, when a persistent local
+filesystem is available) for a matching `<slug>.yaml` — fuzzy-match the
+name against the slugs there, the same way `team-recorder`'s own loading
+step does, rather than treating what the user said as a literal filename —
+and read it back instead of asking them to redescribe six Pokemon that are
+already on file. If no matching file exists, that doesn't mean the user
+never saved the team — this environment may just not have that file (e.g.
+a different device, or an ephemeral session) — so ask them to paste back
+the team card `team-recorder` gave them instead of assuming from scratch.
+If they only give you a partial
+picture ("I have a Scarf Raichu, what beats it?"), that's fine — reason
+about it explicitly as a range of cases rather than silently assuming the
+gaps. Don't ask a battery of clarifying questions before giving any answer;
+give the best answer you can from what you have, and flag the specific
+missing piece if it would flip the outcome.
 
 ## Step 2: Look up stats, don't reconstruct them from memory
 

@@ -206,7 +206,9 @@ it, not just whether it looks good on paper). Call out explicitly:
   most natural fix would be if the user wants to iterate further.
 
 Offer to hand off to `move-order-coach` once they want to work out a
-specific matchup's turn order, rather than trying to answer that here.
+specific matchup's turn order, rather than trying to answer that here. Also
+offer `team-recorder` so the finished team can be saved and pulled back up
+in a later session instead of rebuilt from scratch each time.
 
 ## Language handling
 

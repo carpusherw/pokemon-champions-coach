@@ -18,5 +18,7 @@
   {"query": "is mega raichu y actually any good competitively or is it just a meme pick right now", "should_trigger": false},
   {"query": "whats regenerator do exactly, i keep seeing it on toxapex and dragalge sets and im not sure what it actually heals", "should_trigger": false},
   {"query": "my friend says gholdengo is basically unkillable to status, can you explain why good as gold works like that", "should_trigger": false},
-  {"query": "can you just give me a quick rundown of the item clause and species clause rules for building a legal m-b team", "should_trigger": false}
+  {"query": "can you just give me a quick rundown of the item clause and species clause rules for building a legal m-b team", "should_trigger": false},
+  {"query": "[pasted screenshot of in-game team roster and stats screens] who moves first between my raichu and their incineroar this turn", "should_trigger": true},
+  {"query": "[pasted screenshot of in-game team stats screen] does my tailwind whimsicott actually outspeed their board right now", "should_trigger": true}
 ]
