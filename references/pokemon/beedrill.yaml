@@ -9,6 +9,100 @@ abilities:
     hidden: true
 mega: null  # TODO: fill in if this species has a Mega Evolution
 moves: [Poison Jab, Protect, U-turn, Drill Run]
+learnset:
+  - Acrobatics
+  - Aerial Ace
+  - Agility
+  - Air Cutter
+  - Assurance
+  - Attract
+  - Baton Pass
+  - Bide
+  - Brick Break
+  - Brutal Swing
+  - Bug Bite
+  - Bug Buzz
+  - Captivate
+  - Confide
+  - Cross Poison
+  - Curse
+  - Cut
+  - Defog
+  - Double Hit
+  - Double Team
+  - Double-Edge
+  - Drill Run
+  - Dual Wingbeat
+  - Electroweb
+  - Endeavor
+  - Endure
+  - Facade
+  - False Swipe
+  - Fell Stinger
+  - Flash
+  - Focus Energy
+  - Frustration
+  - Fury Attack
+  - Fury Cutter
+  - Giga Drain
+  - Giga Impact
+  - Harden
+  - Headbutt
+  - Hidden Power
+  - Hyper Beam
+  - Infestation
+  - Iron Defense
+  - Knock Off
+  - Laser Focus
+  - Lunge
+  - Mega Drain
+  - Mimic
+  - Natural Gift
+  - Ominous Wind
+  - Outrage
+  - Payback
+  - Peck
+  - Pin Missile
+  - Poison Jab
+  - Poison Sting
+  - Pollen Puff
+  - Pounce
+  - Protect
+  - Pursuit
+  - Rage
+  - Reflect
+  - Rest
+  - Return
+  - Rock Smash
+  - Roost
+  - Round
+  - Screech
+  - Secret Power
+  - Silver Wind
+  - Skitter Smack
+  - Skull Bash
+  - Sleep Talk
+  - Sludge Bomb
+  - Snore
+  - Solar Beam
+  - String Shot
+  - Struggle Bug
+  - Substitute
+  - Sunny Day
+  - Swagger
+  - Sweet Scent
+  - Swift
+  - Swords Dance
+  - Tailwind
+  - Take Down
+  - Thief
+  - Throat Chop
+  - Toxic
+  - Toxic Spikes
+  - Twineedle
+  - U-turn
+  - Venoshock
+  - X-Scissor
 added_in_regulation: M-B
 legal_in_regulations: [M-B]
 notes: >
@@ -22,3 +116,11 @@ data_confidence: >
   search this session -- real Champions-specific competitive data, not
   recalled mainline VGC knowledge. Cross-check before a high-stakes
   build/draft decision, as usage stats shift across seasons/regulations.
+
+  Full `learnset` (93 moves) fetched from PokeAPI's mainline movepool for
+  pokemon/beedrill (level-up + TM/HM + egg + tutor moves combined) by
+  backfill_learnset.py. This is NOT confirmed against the live Pokemon
+  Champions client -- Champions has already been shown to diverge from
+  mainline itemization (see items-m-b.yaml), so some listed moves may not
+  actually be learnable in Champions. Treat as a candidate pool, not a
+  guarantee.

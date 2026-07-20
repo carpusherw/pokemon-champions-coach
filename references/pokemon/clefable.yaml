@@ -11,6 +11,171 @@ abilities:
     hidden: true
 mega: null  # TODO: fill in if this species has a Mega Evolution
 moves: [Follow Me, Moonblast, Protect, Helping Hand]
+learnset:
+  - After You
+  - Air Slash
+  - Alluring Voice
+  - Ally Switch
+  - Amnesia
+  - Attract
+  - Baby-Doll Eyes
+  - Baton Pass
+  - Bide
+  - Blizzard
+  - Body Slam
+  - Bounce
+  - Brick Break
+  - Bubble Beam
+  - Calm Mind
+  - Captivate
+  - Charge Beam
+  - Charm
+  - Chilling Water
+  - Confide
+  - Copycat
+  - Cosmic Power
+  - Counter
+  - Covet
+  - Curse
+  - Dazzling Gleam
+  - Defense Curl
+  - Detect
+  - Dig
+  - Disarming Voice
+  - Double Slap
+  - Double Team
+  - Double-Edge
+  - Drain Punch
+  - Draining Kiss
+  - Dream Eater
+  - Dual Wingbeat
+  - Dynamic Punch
+  - Echoed Voice
+  - Encore
+  - Endeavor
+  - Endure
+  - Facade
+  - Fairy Wind
+  - Fake Tears
+  - Fire Blast
+  - Fire Punch
+  - Flamethrower
+  - Flash
+  - Fling
+  - Focus Blast
+  - Focus Punch
+  - Follow Me
+  - Frustration
+  - Future Sight
+  - Giga Impact
+  - Grass Knot
+  - Gravity
+  - Growl
+  - Headbutt
+  - Heal Bell
+  - Heal Pulse
+  - Healing Wish
+  - Helping Hand
+  - Hidden Power
+  - Hyper Beam
+  - Hyper Voice
+  - Ice Beam
+  - Ice Punch
+  - Icy Wind
+  - Imprison
+  - Incinerate
+  - Iron Tail
+  - Knock Off
+  - Laser Focus
+  - Last Resort
+  - Life Dew
+  - Light Screen
+  - Magic Coat
+  - Magical Leaf
+  - Mega Kick
+  - Mega Punch
+  - Meteor Beam
+  - Meteor Mash
+  - Metronome
+  - Mimic
+  - Minimize
+  - Misty Explosion
+  - Misty Terrain
+  - Moonblast
+  - Moonlight
+  - Mud-Slap
+  - Mystical Fire
+  - Natural Gift
+  - Night Shade
+  - Nightmare
+  - Play Rough
+  - Pound
+  - Power-Up Punch
+  - Present
+  - Protect
+  - Psybeam
+  - Psych Up
+  - Psychic
+  - Psyshock
+  - Psywave
+  - Rage
+  - Rain Dance
+  - Recycle
+  - Reflect
+  - Rest
+  - Retaliate
+  - Return
+  - Rock Smash
+  - Role Play
+  - Rollout
+  - Round
+  - Safeguard
+  - Secret Power
+  - Seismic Toss
+  - Shadow Ball
+  - Shock Wave
+  - Signal Beam
+  - Sing
+  - Skill Swap
+  - Skull Bash
+  - Sleep Talk
+  - Snatch
+  - Snore
+  - Soft-Boiled
+  - Solar Beam
+  - Splash
+  - Spotlight
+  - Stealth Rock
+  - Stored Power
+  - Strength
+  - Submission
+  - Substitute
+  - Sunny Day
+  - Swagger
+  - Sweet Kiss
+  - Swift
+  - Tackle
+  - Take Down
+  - Telekinesis
+  - Teleport
+  - Tera Blast
+  - Thief
+  - Thunder
+  - Thunder Punch
+  - Thunder Wave
+  - Thunderbolt
+  - Tickle
+  - Toxic
+  - Tri Attack
+  - Trick
+  - Uproar
+  - Water Gun
+  - Water Pulse
+  - Wish
+  - Wonder Room
+  - Work Up
+  - Zap Cannon
+  - Zen Headbutt
 added_in_regulation: M-B
 legal_in_regulations: [M-B]
 notes: >
@@ -24,3 +189,11 @@ data_confidence: >
   search this session -- real Champions-specific competitive data, not
   recalled mainline VGC knowledge. Cross-check before a high-stakes
   build/draft decision, as usage stats shift across seasons/regulations.
+
+  Full `learnset` (164 moves) fetched from PokeAPI's mainline movepool for
+  pokemon/clefable (level-up + TM/HM + egg + tutor moves combined) by
+  backfill_learnset.py. This is NOT confirmed against the live Pokemon
+  Champions client -- Champions has already been shown to diverge from
+  mainline itemization (see items-m-b.yaml), so some listed moves may not
+  actually be learnable in Champions. Treat as a candidate pool, not a
+  guarantee.

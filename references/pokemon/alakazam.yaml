@@ -11,6 +11,119 @@ abilities:
     hidden: true
 mega: null  # TODO: fill in if this species has a Mega Evolution
 moves: [Protect, Expanding Force, Dazzling Gleam, Focus Blast]
+learnset:
+  - Ally Switch
+  - Attract
+  - Barrier
+  - Bide
+  - Body Slam
+  - Calm Mind
+  - Captivate
+  - Charge Beam
+  - Confide
+  - Confusion
+  - Counter
+  - Curse
+  - Dazzling Gleam
+  - Dig
+  - Disable
+  - Double Team
+  - Double-Edge
+  - Drain Punch
+  - Dream Eater
+  - Dynamic Punch
+  - Embargo
+  - Encore
+  - Endure
+  - Energy Ball
+  - Expanding Force
+  - Facade
+  - Fire Punch
+  - Flash
+  - Fling
+  - Focus Blast
+  - Focus Punch
+  - Foul Play
+  - Frustration
+  - Future Sight
+  - Giga Impact
+  - Grass Knot
+  - Gravity
+  - Guard Split
+  - Guard Swap
+  - Headbutt
+  - Hidden Power
+  - Hyper Beam
+  - Hypnosis
+  - Ice Punch
+  - Imprison
+  - Iron Tail
+  - Kinesis
+  - Knock Off
+  - Laser Focus
+  - Light Screen
+  - Magic Coat
+  - Magic Room
+  - Mega Kick
+  - Mega Punch
+  - Metronome
+  - Mimic
+  - Miracle Eye
+  - Nasty Plot
+  - Natural Gift
+  - Night Shade
+  - Nightmare
+  - Power Swap
+  - Protect
+  - Psybeam
+  - Psych Up
+  - Psychic
+  - Psychic Terrain
+  - Psycho Cut
+  - Psyshock
+  - Psywave
+  - Rage
+  - Rain Dance
+  - Recover
+  - Recycle
+  - Reflect
+  - Rest
+  - Return
+  - Role Play
+  - Round
+  - Safeguard
+  - Secret Power
+  - Seismic Toss
+  - Shadow Ball
+  - Shock Wave
+  - Signal Beam
+  - Skill Swap
+  - Skull Bash
+  - Sleep Talk
+  - Snatch
+  - Snore
+  - Speed Swap
+  - Stored Power
+  - Submission
+  - Substitute
+  - Sunny Day
+  - Swagger
+  - Swift
+  - Take Down
+  - Taunt
+  - Telekinesis
+  - Teleport
+  - Thief
+  - Thunder Punch
+  - Thunder Wave
+  - Torment
+  - Toxic
+  - Tri Attack
+  - Trick
+  - Trick Room
+  - Wonder Room
+  - Zap Cannon
+  - Zen Headbutt
 added_in_regulation: M-B
 legal_in_regulations: [M-B]
 notes: >
@@ -24,3 +137,11 @@ data_confidence: >
   search this session -- real Champions-specific competitive data, not
   recalled mainline VGC knowledge. Cross-check before a high-stakes
   build/draft decision, as usage stats shift across seasons/regulations.
+
+  Full `learnset` (112 moves) fetched from PokeAPI's mainline movepool for
+  pokemon/alakazam (level-up + TM/HM + egg + tutor moves combined) by
+  backfill_learnset.py. This is NOT confirmed against the live Pokemon
+  Champions client -- Champions has already been shown to diverge from
+  mainline itemization (see items-m-b.yaml), so some listed moves may not
+  actually be learnable in Champions. Treat as a candidate pool, not a
+  guarantee.

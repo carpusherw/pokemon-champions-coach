@@ -11,6 +11,115 @@ abilities:
     hidden: true
 mega: null  # TODO: fill in if this species has a Mega Evolution
 moves: [Helping Hand, Hyper Voice, Light Screen, Protect]
+learnset:
+  - After You
+  - Ally Switch
+  - Amnesia
+  - Attract
+  - Baby-Doll Eyes
+  - Bestow
+  - Blizzard
+  - Body Slam
+  - Calm Mind
+  - Charge Beam
+  - Chilling Water
+  - Confide
+  - Covet
+  - Dazzling Gleam
+  - Dig
+  - Disarming Voice
+  - Double Slap
+  - Double Team
+  - Double-Edge
+  - Drain Punch
+  - Draining Kiss
+  - Dream Eater
+  - Echoed Voice
+  - Encore
+  - Endure
+  - Entrainment
+  - Facade
+  - Fire Blast
+  - Fire Punch
+  - Flamethrower
+  - Flash
+  - Fling
+  - Focus Punch
+  - Frustration
+  - Giga Impact
+  - Grass Knot
+  - Gravity
+  - Growl
+  - Heal Bell
+  - Heal Pulse
+  - Healing Wish
+  - Helping Hand
+  - Hidden Power
+  - Hyper Beam
+  - Hyper Voice
+  - Ice Beam
+  - Ice Punch
+  - Icy Wind
+  - Incinerate
+  - Iron Tail
+  - Knock Off
+  - Laser Focus
+  - Last Resort
+  - Life Dew
+  - Light Screen
+  - Low Kick
+  - Lucky Chant
+  - Magic Coat
+  - Mega Kick
+  - Mega Punch
+  - Misty Terrain
+  - Pain Split
+  - Play Nice
+  - Pound
+  - Power-Up Punch
+  - Protect
+  - Psych Up
+  - Psychic
+  - Psyshock
+  - Rain Dance
+  - Reflect
+  - Refresh
+  - Rest
+  - Retaliate
+  - Return
+  - Role Play
+  - Round
+  - Safeguard
+  - Secret Power
+  - Shadow Ball
+  - Signal Beam
+  - Simple Beam
+  - Skill Swap
+  - Sleep Talk
+  - Snatch
+  - Snore
+  - Solar Beam
+  - Stomping Tantrum
+  - Substitute
+  - Sunny Day
+  - Surf
+  - Swagger
+  - Sweet Kiss
+  - Take Down
+  - Telekinesis
+  - Throat Chop
+  - Thunder
+  - Thunder Punch
+  - Thunder Wave
+  - Thunderbolt
+  - Toxic
+  - Trick Room
+  - Uproar
+  - Wild Charge
+  - Wish
+  - Work Up
+  - Yawn
+  - Zen Headbutt
 added_in_regulation: M-B
 legal_in_regulations: [M-B]
 notes: >
@@ -24,3 +133,11 @@ data_confidence: >
   search this session -- real Champions-specific competitive data, not
   recalled mainline VGC knowledge. Cross-check before a high-stakes
   build/draft decision, as usage stats shift across seasons/regulations.
+
+  Full `learnset` (108 moves) fetched from PokeAPI's mainline movepool for
+  pokemon/audino (level-up + TM/HM + egg + tutor moves combined) by
+  backfill_learnset.py. This is NOT confirmed against the live Pokemon
+  Champions client -- Champions has already been shown to diverge from
+  mainline itemization (see items-m-b.yaml), so some listed moves may not
+  actually be learnable in Champions. Treat as a candidate pool, not a
+  guarantee.

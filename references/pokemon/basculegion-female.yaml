@@ -11,6 +11,62 @@ abilities:
     hidden: true
 mega: null  # TODO: fill in if this species has a Mega Evolution
 moves: [Muddy Water, Protect, Shadow Ball, Ice Beam]
+learnset:
+  - Agility
+  - Aqua Jet
+  - Bite
+  - Blizzard
+  - Chilling Water
+  - Confuse Ray
+  - Crunch
+  - Double-Edge
+  - Endeavor
+  - Endure
+  - Facade
+  - Flail
+  - Flip Turn
+  - Giga Impact
+  - Head Smash
+  - Headbutt
+  - Hex
+  - Hydro Pump
+  - Hyper Beam
+  - Ice Beam
+  - Ice Fang
+  - Icy Wind
+  - Last Respects
+  - Liquidation
+  - Mud Shot
+  - Muddy Water
+  - Night Shade
+  - Outrage
+  - Pain Split
+  - Phantom Force
+  - Protect
+  - Psychic Fangs
+  - Rain Dance
+  - Rest
+  - Scale Shot
+  - Scary Face
+  - Shadow Ball
+  - Sleep Talk
+  - Snowscape
+  - Soak
+  - Spite
+  - Substitute
+  - Surf
+  - Tackle
+  - Tail Whip
+  - Take Down
+  - Tera Blast
+  - Thrash
+  - Uproar
+  - Water Gun
+  - Water Pulse
+  - Waterfall
+  - Wave Crash
+  - Whirlpool
+  - Zen Headbutt
 added_in_regulation: M-B
 legal_in_regulations: [M-B]
 notes: >
@@ -25,3 +81,11 @@ data_confidence: >
   search this session -- real Champions-specific competitive data, not
   recalled mainline VGC knowledge. Cross-check before a high-stakes
   build/draft decision, as usage stats shift across seasons/regulations.
+
+  Full `learnset` (55 moves) fetched from PokeAPI's mainline movepool for
+  pokemon/basculegion-female (level-up + TM/HM + egg + tutor moves combined)
+  by backfill_learnset.py. This is NOT confirmed against the live Pokemon
+  Champions client -- Champions has already been shown to diverge from
+  mainline itemization (see items-m-b.yaml), so some listed moves may not
+  actually be learnable in Champions. Treat as a candidate pool, not a
+  guarantee.

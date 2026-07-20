@@ -9,6 +9,111 @@ abilities:
     hidden: true
 mega: null  # TODO: fill in if this species has a Mega Evolution
 moves: [Dragon Pulse, Protect, Thunderbolt, Parabolic Charge]
+learnset:
+  - After You
+  - Agility
+  - Attract
+  - Body Slam
+  - Breaking Swipe
+  - Brick Break
+  - Brutal Swing
+  - Bulldoze
+  - Captivate
+  - Charge
+  - Charge Beam
+  - Confide
+  - Confuse Ray
+  - Cotton Guard
+  - Cotton Spore
+  - Counter
+  - Curse
+  - Dazzling Gleam
+  - Defense Curl
+  - Dig
+  - Discharge
+  - Double Team
+  - Double-Edge
+  - Dragon Cheer
+  - Dragon Pulse
+  - Dragon Tail
+  - Dynamic Punch
+  - Echoed Voice
+  - Eerie Impulse
+  - Electric Terrain
+  - Electro Ball
+  - Electroweb
+  - Endeavor
+  - Endure
+  - Facade
+  - Fire Punch
+  - Flash
+  - Flatter
+  - Fling
+  - Focus Blast
+  - Focus Punch
+  - Frustration
+  - Giga Impact
+  - Growl
+  - Headbutt
+  - Heal Bell
+  - Helping Hand
+  - Hidden Power
+  - Hyper Beam
+  - Ice Punch
+  - Ion Deluge
+  - Iron Tail
+  - Laser Focus
+  - Light Screen
+  - Low Kick
+  - Magnet Rise
+  - Magnetic Flux
+  - Mega Kick
+  - Mega Punch
+  - Meteor Beam
+  - Mimic
+  - Natural Gift
+  - Outrage
+  - Parabolic Charge
+  - Power Gem
+  - Power-Up Punch
+  - Protect
+  - Rain Dance
+  - Reflect
+  - Rest
+  - Return
+  - Rising Voltage
+  - Roar
+  - Rock Climb
+  - Rock Smash
+  - Round
+  - Safeguard
+  - Screech
+  - Secret Power
+  - Seismic Toss
+  - Shock Wave
+  - Signal Beam
+  - Sleep Talk
+  - Snore
+  - Stomping Tantrum
+  - Strength
+  - Substitute
+  - Sunny Day
+  - Supercell Slam
+  - Swagger
+  - Swift
+  - Tackle
+  - Take Down
+  - Tera Blast
+  - Thunder
+  - Thunder Punch
+  - Thunder Shock
+  - Thunder Wave
+  - Thunderbolt
+  - Toxic
+  - Trailblaze
+  - Volt Switch
+  - Wild Charge
+  - Zap Cannon
 added_in_regulation: M-B
 legal_in_regulations: [M-B]
 notes: >
@@ -23,3 +128,11 @@ data_confidence: >
   search this session -- real Champions-specific competitive data, not
   recalled mainline VGC knowledge. Cross-check before a high-stakes
   build/draft decision, as usage stats shift across seasons/regulations.
+
+  Full `learnset` (104 moves) fetched from PokeAPI's mainline movepool for
+  pokemon/ampharos (level-up + TM/HM + egg + tutor moves combined) by
+  backfill_learnset.py. This is NOT confirmed against the live Pokemon
+  Champions client -- Champions has already been shown to diverge from
+  mainline itemization (see items-m-b.yaml), so some listed moves may not
+  actually be learnable in Champions. Treat as a candidate pool, not a
+  guarantee.

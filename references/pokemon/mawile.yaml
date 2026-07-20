@@ -20,6 +20,7 @@ mega:
     Atk), one of the hardest physical hitters in the game despite mediocre
     Speed. Confirmed via PokeAPI (pokemon/mawile-mega) on 2026-07-18.
 moves: [Play Rough, Sucker Punch, Iron Head, Protect]
+learnset: null  # TODO: backfill full learnset (see refresh-references skill)
 added_in_regulation: M-A (base) / M-B (Mega)
 legal_in_regulations: [M-B]  # earliest confirmed regulation only; may be legal earlier too
 notes: >

@@ -9,6 +9,78 @@ abilities:
     hidden: true
 mega: null  # TODO: fill in if this species has a Mega Evolution
 moves: [Trick Room, Moonblast, Helping Hand, Dazzling Gleam]
+learnset:
+  - After You
+  - Alluring Voice
+  - Ally Switch
+  - Aromatherapy
+  - Aromatic Mist
+  - Attract
+  - Calm Mind
+  - Charge Beam
+  - Charm
+  - Confide
+  - Covet
+  - Dazzling Gleam
+  - Disable
+  - Disarming Voice
+  - Double Team
+  - Drain Punch
+  - Draining Kiss
+  - Dream Eater
+  - Echoed Voice
+  - Encore
+  - Endeavor
+  - Endure
+  - Energy Ball
+  - Facade
+  - Fairy Wind
+  - Fake Tears
+  - Flail
+  - Flash
+  - Flash Cannon
+  - Frustration
+  - Giga Impact
+  - Gyro Ball
+  - Heal Bell
+  - Heal Pulse
+  - Helping Hand
+  - Hidden Power
+  - Hyper Beam
+  - Hypnosis
+  - Light Screen
+  - Magic Coat
+  - Metronome
+  - Misty Explosion
+  - Misty Terrain
+  - Moonblast
+  - Nasty Plot
+  - Odor Sleuth
+  - Protect
+  - Psych Up
+  - Psychic
+  - Psyshock
+  - Rain Dance
+  - Reflect
+  - Rest
+  - Return
+  - Round
+  - Secret Power
+  - Skill Swap
+  - Sleep Talk
+  - Snore
+  - Substitute
+  - Sunny Day
+  - Swagger
+  - Sweet Kiss
+  - Sweet Scent
+  - Telekinesis
+  - Thunder
+  - Thunderbolt
+  - Torment
+  - Toxic
+  - Trick Room
+  - Wish
 added_in_regulation: M-B
 legal_in_regulations: [M-B]
 notes: >
@@ -22,3 +94,11 @@ data_confidence: >
   search this session -- real Champions-specific competitive data, not
   recalled mainline VGC knowledge. Cross-check before a high-stakes
   build/draft decision, as usage stats shift across seasons/regulations.
+
+  Full `learnset` (71 moves) fetched from PokeAPI's mainline movepool for
+  pokemon/aromatisse (level-up + TM/HM + egg + tutor moves combined) by
+  backfill_learnset.py. This is NOT confirmed against the live Pokemon
+  Champions client -- Champions has already been shown to diverge from
+  mainline itemization (see items-m-b.yaml), so some listed moves may not
+  actually be learnable in Champions. Treat as a candidate pool, not a
+  guarantee.

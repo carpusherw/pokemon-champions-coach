@@ -21,6 +21,105 @@ mega:
     and gains across the board -- notably Attack (105 -> 140) and Speed
     (68 -> 88).
 moves: [Shell Smash, Liquidation, Stone Edge, Aqua Jet]
+learnset:
+  - Aerial Ace
+  - Ancient Power
+  - Assurance
+  - Attract
+  - Beat Up
+  - Blizzard
+  - Brick Break
+  - Brutal Swing
+  - Bulk Up
+  - Bulldoze
+  - Clamp
+  - Confide
+  - Cross Chop
+  - Cut
+  - Dig
+  - Dive
+  - Double Team
+  - Dragon Claw
+  - Dual Chop
+  - Earth Power
+  - Earthquake
+  - Embargo
+  - Endeavor
+  - Endure
+  - Facade
+  - False Swipe
+  - Fling
+  - Focus Blast
+  - Frustration
+  - Fury Cutter
+  - Fury Swipes
+  - Giga Impact
+  - Grass Knot
+  - Helping Hand
+  - Hidden Power
+  - Hone Claws
+  - Hyper Beam
+  - Ice Beam
+  - Icy Wind
+  - Infestation
+  - Iron Defense
+  - Laser Focus
+  - Liquidation
+  - Low Kick
+  - Meteor Beam
+  - Mud Shot
+  - Mud-Slap
+  - Muddy Water
+  - Nature Power
+  - Night Slash
+  - Payback
+  - Poison Jab
+  - Power-Up Punch
+  - Protect
+  - Rain Dance
+  - Razor Shell
+  - Rest
+  - Return
+  - Rock Blast
+  - Rock Polish
+  - Rock Slide
+  - Rock Smash
+  - Rock Tomb
+  - Round
+  - Safeguard
+  - Sand Attack
+  - Sandstorm
+  - Scald
+  - Scratch
+  - Screech
+  - Secret Power
+  - Shadow Claw
+  - Shell Smash
+  - Skull Bash
+  - Slash
+  - Sleep Talk
+  - Sludge Bomb
+  - Sludge Wave
+  - Smack Down
+  - Snore
+  - Stealth Rock
+  - Stone Edge
+  - Strength
+  - Substitute
+  - Superpower
+  - Surf
+  - Swagger
+  - Swords Dance
+  - Taunt
+  - Thief
+  - Torment
+  - Toxic
+  - Uproar
+  - Water Gun
+  - Water Pulse
+  - Whirlpool
+  - Withdraw
+  - X-Scissor
 added_in_regulation: M-A or earlier (base) / M-B (Mega)
 legal_in_regulations: [M-B]  # earliest confirmed regulation only; may be legal earlier too
 notes: >
@@ -43,3 +142,11 @@ data_confidence: >
   Pokemon Champions client, which has already been shown to diverge from
   mainline in places (see items-m-b.yaml re: Choice items). Re-verify before
   relying on it for a real draft/build decision.
+
+  Full `learnset` (98 moves) fetched from PokeAPI's mainline movepool for
+  pokemon/barbaracle (level-up + TM/HM + egg + tutor moves combined) by
+  backfill_learnset.py. This is NOT confirmed against the live Pokemon
+  Champions client -- Champions has already been shown to diverge from
+  mainline itemization (see items-m-b.yaml), so some listed moves may not
+  actually be learnable in Champions. Treat as a candidate pool, not a
+  guarantee.

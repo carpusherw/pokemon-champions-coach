@@ -11,6 +11,66 @@ abilities:
     hidden: true
 mega: null  # TODO: fill in if this species has a Mega Evolution
 moves: [Electro Shot, Flash Cannon, Protect, Dragon Pulse]
+learnset:
+  - Aura Sphere
+  - Body Press
+  - Body Slam
+  - Breaking Swipe
+  - Brick Break
+  - Dark Pulse
+  - Double-Edge
+  - Draco Meteor
+  - Dragon Cheer
+  - Dragon Claw
+  - Dragon Pulse
+  - Dragon Tail
+  - Earthquake
+  - Electro Shot
+  - Endure
+  - Facade
+  - Flash Cannon
+  - Focus Energy
+  - Foul Play
+  - Giga Impact
+  - Gyro Ball
+  - Hard Press
+  - Heavy Slam
+  - Hone Claws
+  - Hyper Beam
+  - Iron Defense
+  - Iron Head
+  - Leer
+  - Light Screen
+  - Metal Burst
+  - Metal Claw
+  - Metal Sound
+  - Meteor Beam
+  - Mirror Coat
+  - Night Slash
+  - Outrage
+  - Protect
+  - Reflect
+  - Rest
+  - Roar
+  - Rock Slide
+  - Rock Smash
+  - Rock Tomb
+  - Scary Face
+  - Slash
+  - Sleep Talk
+  - Smack Down
+  - Snarl
+  - Solar Beam
+  - Stealth Rock
+  - Steel Beam
+  - Stone Edge
+  - Substitute
+  - Swords Dance
+  - Take Down
+  - Tera Blast
+  - Thunder
+  - Thunder Wave
+  - Thunderbolt
 added_in_regulation: M-B
 legal_in_regulations: [M-B]
 notes: >
@@ -25,3 +85,11 @@ data_confidence: >
   search this session -- real Champions-specific competitive data, not
   recalled mainline VGC knowledge. Cross-check before a high-stakes
   build/draft decision, as usage stats shift across seasons/regulations.
+
+  Full `learnset` (59 moves) fetched from PokeAPI's mainline movepool for
+  pokemon/archaludon (level-up + TM/HM + egg + tutor moves combined) by
+  backfill_learnset.py. This is NOT confirmed against the live Pokemon
+  Champions client -- Champions has already been shown to diverge from
+  mainline itemization (see items-m-b.yaml), so some listed moves may not
+  actually be learnable in Champions. Treat as a candidate pool, not a
+  guarantee.

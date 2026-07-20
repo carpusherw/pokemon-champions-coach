@@ -18,6 +18,251 @@ mega:
     due to Speed Boost + huge Attack -- likely to be a top-tier threat here
     too. Confirmed via PokeAPI (pokemon/blaziken-mega) on 2026-07-18.
 moves: [Flare Blitz, Close Combat, Swords Dance, Protect]
+learnset:
+  - Acrobatics
+  - Aerial Ace
+  - Agility
+  - Assurance
+  - Attract
+  - Aura Sphere
+  - Baton Pass
+  - Blast Burn
+  - Blaze Kick
+  - Body Slam
+  - Bounce
+  - Brave Bird
+  - Brick Break
+  - Bulk Up
+  - Bulldoze
+  - Captivate
+  - Close Combat
+  - Coaching
+  - Confide
+  - Counter
+  - Crush Claw
+  - Curse
+  - Cut
+  - Defog
+  - Detect
+  - Dig
+  - Double Kick
+  - Double Team
+  - Double-Edge
+  - Dual Chop
+  - Dynamic Punch
+  - Earthquake
+  - Echoed Voice
+  - Ember
+  - Endure
+  - Facade
+  - Feather Dance
+  - Feint
+  - Fire Blast
+  - Fire Pledge
+  - Fire Punch
+  - Fire Spin
+  - Flame Charge
+  - Flamethrower
+  - Flare Blitz
+  - Fling
+  - Focus Blast
+  - Focus Energy
+  - Focus Punch
+  - Frustration
+  - Fury Cutter
+  - Giga Impact
+  - Growl
+  - Headbutt
+  - Heat Crash
+  - Heat Wave
+  - Helping Hand
+  - Hidden Power
+  - High Jump Kick
+  - Hone Claws
+  - Hyper Beam
+  - Incinerate
+  - Knock Off
+  - Laser Focus
+  - Last Resort
+  - Low Kick
+  - Low Sweep
+  - Mega Kick
+  - Mega Punch
+  - Mimic
+  - Mirror Move
+  - Mud-Slap
+  - Natural Gift
+  - Night Slash
+  - Overheat
+  - Peck
+  - Poison Jab
+  - Power-Up Punch
+  - Protect
+  - Quick Attack
+  - Rest
+  - Return
+  - Revenge
+  - Reversal
+  - Roar
+  - Rock Climb
+  - Rock Slide
+  - Rock Smash
+  - Rock Tomb
+  - Role Play
+  - Round
+  - Sand Attack
+  - Scorching Sands
+  - Scratch
+  - Secret Power
+  - Seismic Toss
+  - Shadow Claw
+  - Sky Uppercut
+  - Slash
+  - Sleep Talk
+  - Snore
+  - Solar Beam
+  - Stone Edge
+  - Strength
+  - Substitute
+  - Sunny Day
+  - Superpower
+  - Swagger
+  - Swift
+  - Swords Dance
+  - Take Down
+  - Temper Flare
+  - Tera Blast
+  - Thief
+  - Thunder Punch
+  - Toxic
+  - U-turn
+  - Upper Hand
+  - Uproar
+  - Vacuum Wave
+  - Will-O-Wisp
+  - Work Up
+  - Acrobatics
+  - Aerial Ace
+  - Agility
+  - Assurance
+  - Attract
+  - Aura Sphere
+  - Baton Pass
+  - Blast Burn
+  - Blaze Kick
+  - Body Slam
+  - Bounce
+  - Brave Bird
+  - Brick Break
+  - Bulk Up
+  - Bulldoze
+  - Captivate
+  - Close Combat
+  - Coaching
+  - Confide
+  - Counter
+  - Crush Claw
+  - Curse
+  - Cut
+  - Defog
+  - Detect
+  - Dig
+  - Double Kick
+  - Double Team
+  - Double-Edge
+  - Dual Chop
+  - Dynamic Punch
+  - Earthquake
+  - Echoed Voice
+  - Ember
+  - Endure
+  - Facade
+  - Feather Dance
+  - Feint
+  - Fire Blast
+  - Fire Pledge
+  - Fire Punch
+  - Fire Spin
+  - Flame Charge
+  - Flamethrower
+  - Flare Blitz
+  - Fling
+  - Focus Blast
+  - Focus Energy
+  - Focus Punch
+  - Frustration
+  - Fury Cutter
+  - Giga Impact
+  - Growl
+  - Headbutt
+  - Heat Crash
+  - Heat Wave
+  - Helping Hand
+  - Hidden Power
+  - High Jump Kick
+  - Hone Claws
+  - Hyper Beam
+  - Incinerate
+  - Knock Off
+  - Laser Focus
+  - Last Resort
+  - Low Kick
+  - Low Sweep
+  - Mega Kick
+  - Mega Punch
+  - Mimic
+  - Mirror Move
+  - Mud-Slap
+  - Natural Gift
+  - Night Slash
+  - Overheat
+  - Peck
+  - Poison Jab
+  - Power-Up Punch
+  - Protect
+  - Quick Attack
+  - Rest
+  - Return
+  - Revenge
+  - Reversal
+  - Roar
+  - Rock Climb
+  - Rock Slide
+  - Rock Smash
+  - Rock Tomb
+  - Role Play
+  - Round
+  - Sand Attack
+  - Scorching Sands
+  - Scratch
+  - Secret Power
+  - Seismic Toss
+  - Shadow Claw
+  - Sky Uppercut
+  - Slash
+  - Sleep Talk
+  - Snore
+  - Solar Beam
+  - Stone Edge
+  - Strength
+  - Substitute
+  - Sunny Day
+  - Superpower
+  - Swagger
+  - Swift
+  - Swords Dance
+  - Take Down
+  - Temper Flare
+  - Tera Blast
+  - Thief
+  - Thunder Punch
+  - Toxic
+  - U-turn
+  - Upper Hand
+  - Uproar
+  - Vacuum Wave
+  - Will-O-Wisp
+  - Work Up
 added_in_regulation: M-A (base) / M-B (Mega)
 legal_in_regulations: [M-B]  # earliest confirmed regulation only; may be legal earlier too
 notes: >
@@ -36,3 +281,11 @@ data_confidence: >
   Pokemon Champions client, which has already been shown to diverge from
   mainline in places (see items-m-b.yaml re: Choice items). Re-verify before
   relying on it for a real draft/build decision.
+
+  Full `learnset` (122 moves) fetched from PokeAPI's mainline movepool for
+  pokemon/blaziken (level-up + TM/HM + egg + tutor moves combined) by
+  backfill_learnset.py. This is NOT confirmed against the live Pokemon
+  Champions client -- Champions has already been shown to diverge from
+  mainline itemization (see items-m-b.yaml), so some listed moves may not
+  actually be learnable in Champions. Treat as a candidate pool, not a
+  guarantee.

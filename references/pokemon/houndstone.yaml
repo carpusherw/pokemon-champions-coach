@@ -9,6 +9,7 @@ abilities:
     hidden: true
 mega: null  # TODO: fill in if this species has a Mega Evolution
 moves: [Last Respects, Poltergeist, Body Press, Protect]
+learnset: null  # TODO: backfill full learnset (see refresh-references skill)
 added_in_regulation: M-B
 legal_in_regulations: [M-B]
 notes: >

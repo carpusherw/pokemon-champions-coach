@@ -11,6 +11,84 @@ abilities:
     hidden: true
 mega: null  # TODO: fill in if this species has a Mega Evolution
 moves: [Rage Fist, Drain Punch, Bulk Up, Protect]
+learnset:
+  - Acrobatics
+  - Assurance
+  - Body Slam
+  - Brick Break
+  - Bulk Up
+  - Bulldoze
+  - Close Combat
+  - Coaching
+  - Counter
+  - Cross Chop
+  - Curse
+  - Dig
+  - Double-Edge
+  - Drain Punch
+  - Earthquake
+  - Encore
+  - Endeavor
+  - Endure
+  - Facade
+  - Final Gambit
+  - Fire Punch
+  - Fling
+  - Focus Blast
+  - Focus Energy
+  - Focus Punch
+  - Fury Swipes
+  - Giga Impact
+  - Gunk Shot
+  - Helping Hand
+  - Hyper Beam
+  - Ice Punch
+  - Lash Out
+  - Leer
+  - Low Kick
+  - Low Sweep
+  - Metronome
+  - Night Shade
+  - Outrage
+  - Overheat
+  - Phantom Force
+  - Poison Jab
+  - Protect
+  - Rage Fist
+  - Rain Dance
+  - Rest
+  - Reversal
+  - Rock Slide
+  - Rock Tomb
+  - Scary Face
+  - Scratch
+  - Screech
+  - Seed Bomb
+  - Seismic Toss
+  - Shadow Ball
+  - Shadow Claw
+  - Shadow Punch
+  - Sleep Talk
+  - Smack Down
+  - Spite
+  - Stealth Rock
+  - Stomping Tantrum
+  - Stone Edge
+  - Substitute
+  - Sunny Day
+  - Swagger
+  - Swift
+  - Take Down
+  - Taunt
+  - Thief
+  - Thrash
+  - Throat Chop
+  - Thunder
+  - Thunder Punch
+  - Thunderbolt
+  - U-turn
+  - Uproar
+  - Vacuum Wave
 added_in_regulation: M-B
 legal_in_regulations: [M-B]
 notes: >
@@ -28,3 +106,11 @@ data_confidence: >
   Pokemon Champions client, which has already been shown to diverge from
   mainline in places (see items-m-b.yaml re: Choice items). Re-verify before
   relying on it for a real draft/build decision.
+
+  Full `learnset` (77 moves) fetched from PokeAPI's mainline movepool for
+  pokemon/annihilape (level-up + TM/HM + egg + tutor moves combined) by
+  backfill_learnset.py. This is NOT confirmed against the live Pokemon
+  Champions client -- Champions has already been shown to diverge from
+  mainline itemization (see items-m-b.yaml), so some listed moves may not
+  actually be learnable in Champions. Treat as a candidate pool, not a
+  guarantee.

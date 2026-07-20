@@ -9,6 +9,138 @@ abilities:
     hidden: true
 mega: null  # TODO: fill in if this species has a Mega Evolution
 moves: [Flare Blitz, Dragon Claw, Dragon Dance, Heat Wave, Solar Beam, Protect]
+learnset:
+  - Acrobatics
+  - Aerial Ace
+  - Air Cutter
+  - Air Slash
+  - Ancient Power
+  - Attract
+  - Beat Up
+  - Belly Drum
+  - Bide
+  - Bite
+  - Blast Burn
+  - Blaze Kick
+  - Body Slam
+  - Breaking Swipe
+  - Brick Break
+  - Brutal Swing
+  - Bulldoze
+  - Captivate
+  - Confide
+  - Counter
+  - Crunch
+  - Curse
+  - Cut
+  - Defense Curl
+  - Defog
+  - Dig
+  - Double Team
+  - Double-Edge
+  - Dragon Breath
+  - Dragon Cheer
+  - Dragon Claw
+  - Dragon Dance
+  - Dragon Pulse
+  - Dragon Rage
+  - Dragon Rush
+  - Dragon Tail
+  - Dual Wingbeat
+  - Dynamic Punch
+  - Earthquake
+  - Echoed Voice
+  - Ember
+  - Endure
+  - Facade
+  - False Swipe
+  - Fire Blast
+  - Fire Fang
+  - Fire Pledge
+  - Fire Punch
+  - Fire Spin
+  - Fissure
+  - Flame Burst
+  - Flame Charge
+  - Flamethrower
+  - Flare Blitz
+  - Fling
+  - Fly
+  - Focus Blast
+  - Focus Punch
+  - Frustration
+  - Fury Cutter
+  - Fury Swipes
+  - Giga Impact
+  - Growl
+  - Headbutt
+  - Heat Crash
+  - Heat Wave
+  - Helping Hand
+  - Hidden Power
+  - Hone Claws
+  - Hurricane
+  - Hyper Beam
+  - Incinerate
+  - Inferno
+  - Iron Tail
+  - Leer
+  - Mega Kick
+  - Mega Punch
+  - Metal Claw
+  - Mimic
+  - Mud-Slap
+  - Mystical Fire
+  - Natural Gift
+  - Ominous Wind
+  - Outrage
+  - Overheat
+  - Power-Up Punch
+  - Protect
+  - Rage
+  - Reflect
+  - Rest
+  - Return
+  - Roar
+  - Rock Slide
+  - Rock Smash
+  - Rock Tomb
+  - Roost
+  - Round
+  - Sandstorm
+  - Scale Shot
+  - Scary Face
+  - Scorching Sands
+  - Scratch
+  - Secret Power
+  - Seismic Toss
+  - Shadow Claw
+  - Skull Bash
+  - Sky Drop
+  - Slash
+  - Sleep Talk
+  - Smokescreen
+  - Snore
+  - Solar Beam
+  - Steel Wing
+  - Strength
+  - Submission
+  - Substitute
+  - Sunny Day
+  - Swagger
+  - Swift
+  - Swords Dance
+  - Tailwind
+  - Take Down
+  - Temper Flare
+  - Tera Blast
+  - Thunder Punch
+  - Toxic
+  - Twister
+  - Weather Ball
+  - Will-O-Wisp
+  - Wing Attack
+  - Work Up
 added_in_regulation: M-B
 legal_in_regulations: [M-B]
 notes: >
@@ -24,3 +156,11 @@ data_confidence: >
   search this session -- real Champions-specific competitive data, not
   recalled mainline VGC knowledge. Cross-check before a high-stakes
   build/draft decision, as usage stats shift across seasons/regulations.
+
+  Full `learnset` (131 moves) fetched from PokeAPI's mainline movepool for
+  pokemon/charizard (level-up + TM/HM + egg + tutor moves combined) by
+  backfill_learnset.py. This is NOT confirmed against the live Pokemon
+  Champions client -- Champions has already been shown to diverge from
+  mainline itemization (see items-m-b.yaml), so some listed moves may not
+  actually be learnable in Champions. Treat as a candidate pool, not a
+  guarantee.

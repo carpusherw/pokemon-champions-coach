@@ -11,6 +11,83 @@ abilities:
     hidden: true
 mega: null  # TODO: fill in if this species has a Mega Evolution
 moves: [Icicle Spear, Rock Tomb, Facade, Avalanche]
+learnset:
+  - After You
+  - Attract
+  - Aurora Veil
+  - Avalanche
+  - Bite
+  - Blizzard
+  - Block
+  - Body Press
+  - Body Slam
+  - Bulldoze
+  - Chilling Water
+  - Confide
+  - Crunch
+  - Curse
+  - Double Team
+  - Double-Edge
+  - Earthquake
+  - Endure
+  - Facade
+  - Flash
+  - Flash Cannon
+  - Frost Breath
+  - Frustration
+  - Giga Impact
+  - Gyro Ball
+  - Hail
+  - Harden
+  - Heavy Slam
+  - Hidden Power
+  - High Horsepower
+  - Hydro Pump
+  - Hyper Beam
+  - Ice Ball
+  - Ice Beam
+  - Ice Fang
+  - Ice Spinner
+  - Icicle Crash
+  - Icicle Spear
+  - Icy Wind
+  - Iron Defense
+  - Iron Head
+  - Mirror Coat
+  - Powder Snow
+  - Protect
+  - Rain Dance
+  - Rapid Spin
+  - Recover
+  - Rest
+  - Return
+  - Roar
+  - Rock Polish
+  - Rock Slide
+  - Rock Smash
+  - Rock Tomb
+  - Round
+  - Safeguard
+  - Scary Face
+  - Secret Power
+  - Sharpen
+  - Skull Bash
+  - Sleep Talk
+  - Snore
+  - Snowscape
+  - Stomping Tantrum
+  - Stone Edge
+  - Strength
+  - Substitute
+  - Superpower
+  - Surf
+  - Swagger
+  - Tackle
+  - Take Down
+  - Tera Blast
+  - Toxic
+  - Water Pulse
+  - Wide Guard
 added_in_regulation: M-B
 legal_in_regulations: [M-B]
 notes: >
@@ -25,3 +102,11 @@ data_confidence: >
   search this session -- real Champions-specific competitive data, not
   recalled mainline VGC knowledge. Cross-check before a high-stakes
   build/draft decision, as usage stats shift across seasons/regulations.
+
+  Full `learnset` (76 moves) fetched from PokeAPI's mainline movepool for
+  pokemon/avalugg (level-up + TM/HM + egg + tutor moves combined) by
+  backfill_learnset.py. This is NOT confirmed against the live Pokemon
+  Champions client -- Champions has already been shown to diverge from
+  mainline itemization (see items-m-b.yaml), so some listed moves may not
+  actually be learnable in Champions. Treat as a candidate pool, not a
+  guarantee.

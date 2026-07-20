@@ -7,6 +7,79 @@ abilities:
     hidden: false
 mega: null  # TODO: fill in if this species has a Mega Evolution
 moves: [Weather Ball, Icy Wind, Ice Beam, Protect]
+learnset:
+  - Amnesia
+  - Attract
+  - Avalanche
+  - Blizzard
+  - Body Slam
+  - Captivate
+  - Chilling Water
+  - Clear Smog
+  - Confide
+  - Cosmic Power
+  - Defense Curl
+  - Defog
+  - Disable
+  - Double Team
+  - Double-Edge
+  - Ember
+  - Endure
+  - Energy Ball
+  - Facade
+  - Fire Blast
+  - Flamethrower
+  - Flash
+  - Frustration
+  - Future Sight
+  - Guard Swap
+  - Hail
+  - Headbutt
+  - Hex
+  - Hidden Power
+  - Hurricane
+  - Hydro Pump
+  - Ice Beam
+  - Icy Wind
+  - Incinerate
+  - Last Resort
+  - Lucky Chant
+  - Mimic
+  - Natural Gift
+  - Ominous Wind
+  - Powder Snow
+  - Protect
+  - Psych Up
+  - Rain Dance
+  - Reflect Type
+  - Rest
+  - Retaliate
+  - Return
+  - Round
+  - Sandstorm
+  - Scald
+  - Secret Power
+  - Shadow Ball
+  - Shock Wave
+  - Sleep Talk
+  - Snore
+  - Snowscape
+  - Solar Beam
+  - Substitute
+  - Sunny Day
+  - Swagger
+  - Swift
+  - Tackle
+  - Tailwind
+  - Thief
+  - Thunder
+  - Thunder Wave
+  - Thunderbolt
+  - Toxic
+  - Water Gun
+  - Water Pulse
+  - Weather Ball
+  - Work Up
 added_in_regulation: M-B
 legal_in_regulations: [M-B]
 notes: >
@@ -21,3 +94,11 @@ data_confidence: >
   search this session -- real Champions-specific competitive data, not
   recalled mainline VGC knowledge. Cross-check before a high-stakes
   build/draft decision, as usage stats shift across seasons/regulations.
+
+  Full `learnset` (72 moves) fetched from PokeAPI's mainline movepool for
+  pokemon/castform (level-up + TM/HM + egg + tutor moves combined) by
+  backfill_learnset.py. This is NOT confirmed against the live Pokemon
+  Champions client -- Champions has already been shown to diverge from
+  mainline itemization (see items-m-b.yaml), so some listed moves may not
+  actually be learnable in Champions. Treat as a candidate pool, not a
+  guarantee.

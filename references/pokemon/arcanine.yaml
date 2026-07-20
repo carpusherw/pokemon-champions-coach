@@ -11,6 +11,100 @@ abilities:
     hidden: true
 mega: null  # TODO: fill in if this species has a Mega Evolution
 moves: [Flare Blitz, Will-O-Wisp, Extreme Speed, Protect]
+learnset:
+  - Aerial Ace
+  - Agility
+  - Attract
+  - Bide
+  - Bite
+  - Body Slam
+  - Bulldoze
+  - Burn Up
+  - Captivate
+  - Charm
+  - Close Combat
+  - Confide
+  - Covet
+  - Crunch
+  - Curse
+  - Dig
+  - Double Team
+  - Double-Edge
+  - Dragon Breath
+  - Dragon Pulse
+  - Dragon Rage
+  - Ember
+  - Endure
+  - Extreme Speed
+  - Facade
+  - Fire Blast
+  - Fire Fang
+  - Fire Spin
+  - Flame Charge
+  - Flame Wheel
+  - Flamethrower
+  - Flare Blitz
+  - Frustration
+  - Giga Impact
+  - Headbutt
+  - Heat Crash
+  - Heat Wave
+  - Helping Hand
+  - Hidden Power
+  - Howl
+  - Hyper Beam
+  - Hyper Voice
+  - Incinerate
+  - Iron Head
+  - Iron Tail
+  - Laser Focus
+  - Leer
+  - Mimic
+  - Morning Sun
+  - Mud-Slap
+  - Natural Gift
+  - Odor Sleuth
+  - Outrage
+  - Overheat
+  - Play Rough
+  - Protect
+  - Psychic Fangs
+  - Rage
+  - Raging Fury
+  - Reflect
+  - Rest
+  - Retaliate
+  - Return
+  - Reversal
+  - Roar
+  - Rock Climb
+  - Rock Smash
+  - Round
+  - Safeguard
+  - Scary Face
+  - Scorching Sands
+  - Secret Power
+  - Skull Bash
+  - Sleep Talk
+  - Snarl
+  - Snore
+  - Solar Beam
+  - Strength
+  - Substitute
+  - Sunny Day
+  - Superpower
+  - Swagger
+  - Swift
+  - Take Down
+  - Teleport
+  - Temper Flare
+  - Tera Blast
+  - Thief
+  - Thrash
+  - Thunder Fang
+  - Toxic
+  - Wild Charge
+  - Will-O-Wisp
 added_in_regulation: M-B
 legal_in_regulations: [M-B]
 notes: >
@@ -24,3 +118,11 @@ data_confidence: >
   search this session -- real Champions-specific competitive data, not
   recalled mainline VGC knowledge. Cross-check before a high-stakes
   build/draft decision, as usage stats shift across seasons/regulations.
+
+  Full `learnset` (93 moves) fetched from PokeAPI's mainline movepool for
+  pokemon/arcanine (level-up + TM/HM + egg + tutor moves combined) by
+  backfill_learnset.py. This is NOT confirmed against the live Pokemon
+  Champions client -- Champions has already been shown to diverge from
+  mainline itemization (see items-m-b.yaml), so some listed moves may not
+  actually be learnable in Champions. Treat as a candidate pool, not a
+  guarantee.

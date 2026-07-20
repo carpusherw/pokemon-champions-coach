@@ -9,6 +9,77 @@ abilities:
     hidden: true
 mega: null  # TODO: fill in if this species has a Mega Evolution
 moves: [Liquidation, Protect, Wide Guard, Leech Life]
+learnset:
+  - Aqua Ring
+  - Attract
+  - Bite
+  - Blizzard
+  - Body Slam
+  - Bubble
+  - Bubble Beam
+  - Bug Bite
+  - Bug Buzz
+  - Chilling Water
+  - Confide
+  - Crunch
+  - Dive
+  - Double Team
+  - Endeavor
+  - Endure
+  - Entrainment
+  - Facade
+  - Frost Breath
+  - Frustration
+  - Giga Drain
+  - Giga Impact
+  - Headbutt
+  - Hidden Power
+  - Hydro Pump
+  - Hyper Beam
+  - Ice Beam
+  - Icy Wind
+  - Infestation
+  - Iron Defense
+  - Laser Focus
+  - Leech Life
+  - Liquidation
+  - Lunge
+  - Magic Coat
+  - Magic Room
+  - Mirror Coat
+  - Poison Jab
+  - Pounce
+  - Power Split
+  - Protect
+  - Rain Dance
+  - Reflect
+  - Rest
+  - Return
+  - Round
+  - Safeguard
+  - Scald
+  - Scary Face
+  - Signal Beam
+  - Skitter Smack
+  - Sleep Talk
+  - Snore
+  - Soak
+  - Spider Web
+  - Spit Up
+  - Sticky Web
+  - Stockpile
+  - Substitute
+  - Surf
+  - Swagger
+  - Tera Blast
+  - Toxic
+  - Trailblaze
+  - Water Gun
+  - Water Pulse
+  - Waterfall
+  - Wide Guard
+  - Wonder Room
+  - X-Scissor
 added_in_regulation: M-B
 legal_in_regulations: [M-B]
 notes: >
@@ -23,3 +94,11 @@ data_confidence: >
   search this session -- real Champions-specific competitive data, not
   recalled mainline VGC knowledge. Cross-check before a high-stakes
   build/draft decision, as usage stats shift across seasons/regulations.
+
+  Full `learnset` (70 moves) fetched from PokeAPI's mainline movepool for
+  pokemon/araquanid (level-up + TM/HM + egg + tutor moves combined) by
+  backfill_learnset.py. This is NOT confirmed against the live Pokemon
+  Champions client -- Champions has already been shown to diverge from
+  mainline itemization (see items-m-b.yaml), so some listed moves may not
+  actually be learnable in Champions. Treat as a candidate pool, not a
+  guarantee.

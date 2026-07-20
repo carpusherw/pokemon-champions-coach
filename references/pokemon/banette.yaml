@@ -11,6 +11,104 @@ abilities:
     hidden: true
 mega: null  # TODO: fill in if this species has a Mega Evolution
 moves: [Poltergeist, Destiny Bond, Will-O-Wisp, Encore]
+learnset:
+  - Ally Switch
+  - Attract
+  - Body Slam
+  - Burning Jealousy
+  - Calm Mind
+  - Captivate
+  - Charge Beam
+  - Confide
+  - Confuse Ray
+  - Curse
+  - Dark Pulse
+  - Dazzling Gleam
+  - Destiny Bond
+  - Disable
+  - Double Team
+  - Double-Edge
+  - Dream Eater
+  - Embargo
+  - Encore
+  - Endure
+  - Facade
+  - Feint Attack
+  - Flash
+  - Fling
+  - Foul Play
+  - Frustration
+  - Giga Impact
+  - Grudge
+  - Gunk Shot
+  - Headbutt
+  - Helping Hand
+  - Hex
+  - Hidden Power
+  - Hyper Beam
+  - Icy Wind
+  - Imprison
+  - Infestation
+  - Knock Off
+  - Lash Out
+  - Magic Coat
+  - Magic Room
+  - Metronome
+  - Mimic
+  - Mud-Slap
+  - Nasty Plot
+  - Natural Gift
+  - Night Shade
+  - Nightmare
+  - Ominous Wind
+  - Pain Split
+  - Payback
+  - Phantom Force
+  - Poltergeist
+  - Pounce
+  - Protect
+  - Psybeam
+  - Psych Up
+  - Psychic
+  - Rain Dance
+  - Rest
+  - Return
+  - Role Play
+  - Round
+  - Scary Face
+  - Screech
+  - Secret Power
+  - Shadow Ball
+  - Shadow Claw
+  - Shadow Punch
+  - Shadow Sneak
+  - Shock Wave
+  - Skill Swap
+  - Skitter Smack
+  - Sleep Talk
+  - Snatch
+  - Snore
+  - Spite
+  - Substitute
+  - Sucker Punch
+  - Sunny Day
+  - Swagger
+  - Swords Dance
+  - Taunt
+  - Telekinesis
+  - Tera Blast
+  - Thief
+  - Throat Chop
+  - Thunder
+  - Thunder Wave
+  - Thunderbolt
+  - Torment
+  - Toxic
+  - Trailblaze
+  - Trick
+  - Trick Room
+  - Will-O-Wisp
+  - Zen Headbutt
 added_in_regulation: M-B
 legal_in_regulations: [M-B]
 notes: >
@@ -25,3 +123,11 @@ data_confidence: >
   search this session -- real Champions-specific competitive data, not
   recalled mainline VGC knowledge. Cross-check before a high-stakes
   build/draft decision, as usage stats shift across seasons/regulations.
+
+  Full `learnset` (97 moves) fetched from PokeAPI's mainline movepool for
+  pokemon/banette (level-up + TM/HM + egg + tutor moves combined) by
+  backfill_learnset.py. This is NOT confirmed against the live Pokemon
+  Champions client -- Champions has already been shown to diverge from
+  mainline itemization (see items-m-b.yaml), so some listed moves may not
+  actually be learnable in Champions. Treat as a candidate pool, not a
+  guarantee.

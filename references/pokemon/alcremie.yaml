@@ -9,6 +9,62 @@ abilities:
     hidden: true
 mega: null  # TODO: fill in if this species has a Mega Evolution
 moves: [Decorate, Dazzling Gleam, Light Screen, Protect]
+learnset:
+  - Acid Armor
+  - Alluring Voice
+  - Aromatherapy
+  - Aromatic Mist
+  - Attract
+  - Baby-Doll Eyes
+  - Calm Mind
+  - Charm
+  - Dazzling Gleam
+  - Decorate
+  - Disarming Voice
+  - Drain Punch
+  - Draining Kiss
+  - Encore
+  - Endeavor
+  - Endure
+  - Energy Ball
+  - Entrainment
+  - Facade
+  - Fake Tears
+  - Fling
+  - Giga Drain
+  - Giga Impact
+  - Helping Hand
+  - Hyper Beam
+  - Imprison
+  - Last Resort
+  - Light Screen
+  - Magic Room
+  - Magical Leaf
+  - Metronome
+  - Misty Explosion
+  - Misty Terrain
+  - Mystical Fire
+  - Pain Split
+  - Play Rough
+  - Protect
+  - Psych Up
+  - Psychic
+  - Psyshock
+  - Recover
+  - Rest
+  - Round
+  - Safeguard
+  - Sleep Talk
+  - Snore
+  - Solar Beam
+  - Stored Power
+  - Substitute
+  - Sweet Kiss
+  - Sweet Scent
+  - Tackle
+  - Tera Blast
+  - Tri Attack
+  - Wonder Room
 added_in_regulation: M-B
 legal_in_regulations: [M-B]
 notes: >
@@ -22,3 +78,11 @@ data_confidence: >
   search this session -- real Champions-specific competitive data, not
   recalled mainline VGC knowledge. Cross-check before a high-stakes
   build/draft decision, as usage stats shift across seasons/regulations.
+
+  Full `learnset` (55 moves) fetched from PokeAPI's mainline movepool for
+  pokemon/alcremie (level-up + TM/HM + egg + tutor moves combined) by
+  backfill_learnset.py. This is NOT confirmed against the live Pokemon
+  Champions client -- Champions has already been shown to diverge from
+  mainline itemization (see items-m-b.yaml), so some listed moves may not
+  actually be learnable in Champions. Treat as a candidate pool, not a
+  guarantee.

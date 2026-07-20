@@ -11,6 +11,93 @@ abilities:
     hidden: true
 mega: null  # TODO: fill in if this species has a Mega Evolution
 moves: [Mach Punch, Drain Punch, Thunder Punch, Detect]
+learnset:
+  - Attract
+  - Bide
+  - Block
+  - Body Slam
+  - Brick Break
+  - Brutal Swing
+  - Bulk Up
+  - Bulldoze
+  - Chip Away
+  - Close Combat
+  - Coaching
+  - Confide
+  - Counter
+  - Curse
+  - Defog
+  - Detect
+  - Dig
+  - Double Team
+  - Double-Edge
+  - Drain Punch
+  - Dynamic Punch
+  - Earthquake
+  - Endure
+  - Facade
+  - Fire Punch
+  - Fling
+  - Focus Blast
+  - Focus Energy
+  - Focus Punch
+  - Frustration
+  - Giga Impact
+  - Grass Knot
+  - Hammer Arm
+  - Hard Press
+  - Helping Hand
+  - Hidden Power
+  - High Horsepower
+  - Hyper Beam
+  - Ice Punch
+  - Knock Off
+  - Leer
+  - Low Kick
+  - Low Sweep
+  - Mach Punch
+  - Mega Kick
+  - Mega Punch
+  - Payback
+  - Poison Jab
+  - Pound
+  - Power-Up Punch
+  - Protect
+  - Rain Dance
+  - Rest
+  - Retaliate
+  - Return
+  - Revenge
+  - Reversal
+  - Rock Blast
+  - Rock Slide
+  - Rock Smash
+  - Rock Throw
+  - Rock Tomb
+  - Round
+  - Scary Face
+  - Secret Power
+  - Slam
+  - Sleep Talk
+  - Smack Down
+  - Snore
+  - Stomping Tantrum
+  - Stone Edge
+  - Strength
+  - Substitute
+  - Sunny Day
+  - Superpower
+  - Swagger
+  - Take Down
+  - Taunt
+  - Tera Blast
+  - Thief
+  - Thunder Punch
+  - Toxic
+  - Upper Hand
+  - Wake-Up Slap
+  - Wide Guard
+  - Work Up
 added_in_regulation: M-B
 legal_in_regulations: [M-B]
 notes: >
@@ -26,3 +113,11 @@ data_confidence: >
   search this session -- real Champions-specific competitive data, not
   recalled mainline VGC knowledge. Cross-check before a high-stakes
   build/draft decision, as usage stats shift across seasons/regulations.
+
+  Full `learnset` (86 moves) fetched from PokeAPI's mainline movepool for
+  pokemon/conkeldurr (level-up + TM/HM + egg + tutor moves combined) by
+  backfill_learnset.py. This is NOT confirmed against the live Pokemon
+  Champions client -- Champions has already been shown to diverge from
+  mainline itemization (see items-m-b.yaml), so some listed moves may not
+  actually be learnable in Champions. Treat as a candidate pool, not a
+  guarantee.

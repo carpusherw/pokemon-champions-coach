@@ -5,12 +5,16 @@ and write/update references/pokemon/<species-slug>.yaml files.
 PokeAPI has no concept of "Pokemon Champions" or Mega Evolutions added in a
 specific regulation set, so this script only ever fills in the base-form
 fields (national_dex_number, types, base_stats, abilities). It leaves an
-existing file's `mega`, `moves`, `notes`, `added_in_regulation`, and
-`legal_in_regulations` fields untouched unless --overwrite is passed, since
-those need a human or a web-search pass to get right, not an API call.
+existing file's `mega`, `moves`, `learnset`, `notes`, `added_in_regulation`,
+and `legal_in_regulations` fields untouched unless --overwrite is passed,
+since those need a human or a web-search pass to get right, not an API call.
 `moves` in particular is a curated competitive-movepool subset (not
 PokeAPI's full learnset), so it always needs hand curation -- see the
-refresh-references skill's moves-curation step.
+refresh-references skill's moves-curation step. `learnset` (the full
+learnable-movepool field) is populated separately by
+`backfill_learnset.py` in this same directory, not by this script -- this
+script only protects it from being clobbered when re-run for unrelated
+base-stat refreshes.
 
 Usage:
     # From a text file, one species name per line (e.g. names copied out of
@@ -172,7 +176,7 @@ def emit_field(key, value, indent):
 def write_yaml(path, fresh, existing, regulation, overwrite):
     preserved = {}
     if existing and not overwrite:
-        for key in ("mega", "moves", "notes", "added_in_regulation", "legal_in_regulations"):
+        for key in ("mega", "moves", "learnset", "notes", "added_in_regulation", "legal_in_regulations"):
             if key in existing:
                 preserved[key] = existing[key]
 
@@ -201,6 +205,13 @@ def write_yaml(path, fresh, existing, regulation, overwrite):
         lines.append(f"moves: [{', '.join(preserved['moves'])}]")
     else:
         lines.append("moves: null  # TODO: curate competitive movepool (moves actually run in Reg M-B sets)")
+
+    if "learnset" in preserved and preserved["learnset"] is not None:
+        lines.append("learnset:")
+        for move in preserved["learnset"]:
+            lines.append(f"  - {move}")
+    else:
+        lines.append("learnset: null  # TODO: backfill full learnset (see refresh-references skill)")
 
     added_in = preserved.get("added_in_regulation", regulation)
     lines.extend(emit_field("added_in_regulation", added_in, ""))

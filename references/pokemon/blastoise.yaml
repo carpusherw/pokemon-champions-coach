@@ -9,6 +9,128 @@ abilities:
     hidden: true
 mega: null  # TODO: fill in if this species has a Mega Evolution
 moves: [Water Spout, Dark Pulse, Fake Out, Aura Sphere]
+learnset:
+  - Aqua Jet
+  - Aqua Ring
+  - Aqua Tail
+  - Attract
+  - Aura Sphere
+  - Avalanche
+  - Bide
+  - Bite
+  - Blizzard
+  - Body Press
+  - Body Slam
+  - Brick Break
+  - Brine
+  - Bubble
+  - Bubble Beam
+  - Bulldoze
+  - Captivate
+  - Chilling Water
+  - Confide
+  - Counter
+  - Crunch
+  - Curse
+  - Dark Pulse
+  - Defense Curl
+  - Dig
+  - Dive
+  - Double Team
+  - Double-Edge
+  - Dragon Pulse
+  - Dragon Tail
+  - Dynamic Punch
+  - Earthquake
+  - Endure
+  - Facade
+  - Fake Out
+  - False Swipe
+  - Fissure
+  - Flail
+  - Flash Cannon
+  - Fling
+  - Flip Turn
+  - Focus Blast
+  - Focus Punch
+  - Frustration
+  - Giga Impact
+  - Gyro Ball
+  - Hail
+  - Haze
+  - Headbutt
+  - Helping Hand
+  - Hidden Power
+  - Hydro Cannon
+  - Hydro Pump
+  - Hyper Beam
+  - Ice Beam
+  - Ice Punch
+  - Ice Spinner
+  - Icy Wind
+  - Iron Defense
+  - Iron Head
+  - Iron Tail
+  - Life Dew
+  - Liquidation
+  - Mega Kick
+  - Mega Punch
+  - Mimic
+  - Mirror Coat
+  - Mist
+  - Mud Shot
+  - Mud-Slap
+  - Muddy Water
+  - Natural Gift
+  - Outrage
+  - Power-Up Punch
+  - Protect
+  - Rage
+  - Rain Dance
+  - Rapid Spin
+  - Reflect
+  - Rest
+  - Return
+  - Roar
+  - Rock Climb
+  - Rock Slide
+  - Rock Smash
+  - Rock Tomb
+  - Rollout
+  - Round
+  - Scald
+  - Scary Face
+  - Secret Power
+  - Seismic Toss
+  - Shell Smash
+  - Signal Beam
+  - Skull Bash
+  - Sleep Talk
+  - Smack Down
+  - Snore
+  - Strength
+  - Submission
+  - Substitute
+  - Surf
+  - Swagger
+  - Tackle
+  - Tail Whip
+  - Take Down
+  - Tera Blast
+  - Terrain Pulse
+  - Toxic
+  - Water Gun
+  - Water Pledge
+  - Water Pulse
+  - Water Spout
+  - Waterfall
+  - Wave Crash
+  - Weather Ball
+  - Whirlpool
+  - Withdraw
+  - Work Up
+  - Yawn
+  - Zen Headbutt
 added_in_regulation: M-B
 legal_in_regulations: [M-B]
 notes: >
@@ -22,3 +144,11 @@ data_confidence: >
   search this session -- real Champions-specific competitive data, not
   recalled mainline VGC knowledge. Cross-check before a high-stakes
   build/draft decision, as usage stats shift across seasons/regulations.
+
+  Full `learnset` (121 moves) fetched from PokeAPI's mainline movepool for
+  pokemon/blastoise (level-up + TM/HM + egg + tutor moves combined) by
+  backfill_learnset.py. This is NOT confirmed against the live Pokemon
+  Champions client -- Champions has already been shown to diverge from
+  mainline itemization (see items-m-b.yaml), so some listed moves may not
+  actually be learnable in Champions. Treat as a candidate pool, not a
+  guarantee.

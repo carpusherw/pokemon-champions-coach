@@ -11,6 +11,123 @@ abilities:
     hidden: true
 mega: null  # TODO: fill in if this species has a Mega Evolution
 moves: [Sucker Punch, Close Combat, Protect, Knock Off]
+learnset:
+  - Aerial Ace
+  - Air Slash
+  - Assurance
+  - Attract
+  - Baton Pass
+  - Bite
+  - Blizzard
+  - Body Slam
+  - Bounce
+  - Brutal Swing
+  - Calm Mind
+  - Captivate
+  - Charge Beam
+  - Close Combat
+  - Confide
+  - Confuse Ray
+  - Counter
+  - Curse
+  - Cut
+  - Dark Pulse
+  - Detect
+  - Double Team
+  - Double-Edge
+  - Dream Eater
+  - Echoed Voice
+  - Endure
+  - Facade
+  - False Swipe
+  - Feint
+  - Feint Attack
+  - Fire Blast
+  - Flamethrower
+  - Flash
+  - Focus Energy
+  - Foul Play
+  - Frustration
+  - Fury Cutter
+  - Future Sight
+  - Giga Impact
+  - Hail
+  - Headbutt
+  - Hex
+  - Hidden Power
+  - Hone Claws
+  - Hyper Beam
+  - Ice Beam
+  - Icy Wind
+  - Incinerate
+  - Iron Tail
+  - Knock Off
+  - Laser Focus
+  - Leer
+  - Magic Coat
+  - Me First
+  - Mean Look
+  - Megahorn
+  - Mimic
+  - Mud-Slap
+  - Natural Gift
+  - Night Slash
+  - Nightmare
+  - Payback
+  - Perish Song
+  - Phantom Force
+  - Play Rough
+  - Protect
+  - Psych Up
+  - Psycho Cut
+  - Punishment
+  - Pursuit
+  - Quick Attack
+  - Rain Dance
+  - Razor Wind
+  - Rest
+  - Retaliate
+  - Return
+  - Rock Slide
+  - Rock Smash
+  - Rock Tomb
+  - Role Play
+  - Round
+  - Sandstorm
+  - Scratch
+  - Secret Power
+  - Shadow Ball
+  - Shadow Claw
+  - Shadow Sneak
+  - Shock Wave
+  - Slash
+  - Sleep Talk
+  - Snarl
+  - Snatch
+  - Snore
+  - Spite
+  - Stone Edge
+  - Strength
+  - Substitute
+  - Sucker Punch
+  - Sunny Day
+  - Superpower
+  - Swagger
+  - Swift
+  - Swords Dance
+  - Taunt
+  - Thief
+  - Throat Chop
+  - Thunder
+  - Thunder Wave
+  - Thunderbolt
+  - Torment
+  - Toxic
+  - Trailblaze
+  - Water Pulse
+  - Will-O-Wisp
+  - X-Scissor
+  - Zen Headbutt
 added_in_regulation: M-B
 legal_in_regulations: [M-B]
 notes: >
@@ -25,3 +142,11 @@ data_confidence: >
   search this session -- real Champions-specific competitive data, not
   recalled mainline VGC knowledge. Cross-check before a high-stakes
   build/draft decision, as usage stats shift across seasons/regulations.
+
+  Full `learnset` (116 moves) fetched from PokeAPI's mainline movepool for
+  pokemon/absol (level-up + TM/HM + egg + tutor moves combined) by
+  backfill_learnset.py. This is NOT confirmed against the live Pokemon
+  Champions client -- Champions has already been shown to diverge from
+  mainline itemization (see items-m-b.yaml), so some listed moves may not
+  actually be learnable in Champions. Treat as a candidate pool, not a
+  guarantee.

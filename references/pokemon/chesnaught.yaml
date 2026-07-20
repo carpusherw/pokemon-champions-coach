@@ -9,6 +9,126 @@ abilities:
     hidden: true
 mega: null  # TODO: fill in if this species has a Mega Evolution
 moves: [Spiky Shield, Body Press, Iron Defense, Leech Seed]
+learnset:
+  - Aerial Ace
+  - Attract
+  - Belly Drum
+  - Bite
+  - Block
+  - Body Press
+  - Body Slam
+  - Brick Break
+  - Bulk Up
+  - Bulldoze
+  - Bullet Seed
+  - Close Combat
+  - Coaching
+  - Confide
+  - Crunch
+  - Curse
+  - Cut
+  - Dig
+  - Double Team
+  - Double-Edge
+  - Dragon Claw
+  - Drain Punch
+  - Dual Chop
+  - Earthquake
+  - Endeavor
+  - Endure
+  - Energy Ball
+  - Facade
+  - Feint
+  - Flash
+  - Fling
+  - Focus Blast
+  - Focus Punch
+  - Frenzy Plant
+  - Frustration
+  - Giga Drain
+  - Giga Impact
+  - Grass Knot
+  - Grass Pledge
+  - Grassy Glide
+  - Grassy Terrain
+  - Growl
+  - Growth
+  - Gyro Ball
+  - Hammer Arm
+  - Helping Hand
+  - Hidden Power
+  - High Horsepower
+  - Hone Claws
+  - Hyper Beam
+  - Iron Defense
+  - Iron Head
+  - Iron Tail
+  - Knock Off
+  - Leaf Storm
+  - Leech Seed
+  - Low Kick
+  - Low Sweep
+  - Magical Leaf
+  - Metal Claw
+  - Mud Shot
+  - Mud-Slap
+  - Nature Power
+  - Needle Arm
+  - Pain Split
+  - Payback
+  - Pin Missile
+  - Poison Jab
+  - Power-Up Punch
+  - Protect
+  - Quick Guard
+  - Rain Dance
+  - Reflect
+  - Rest
+  - Retaliate
+  - Return
+  - Reversal
+  - Roar
+  - Rock Slide
+  - Rock Smash
+  - Rock Tomb
+  - Rollout
+  - Round
+  - Scary Face
+  - Secret Power
+  - Seed Bomb
+  - Shadow Claw
+  - Sleep Talk
+  - Sludge Bomb
+  - Smack Down
+  - Snore
+  - Solar Beam
+  - Spikes
+  - Spiky Shield
+  - Steel Roller
+  - Stomping Tantrum
+  - Stone Edge
+  - Strength
+  - Substitute
+  - Sunny Day
+  - Super Fang
+  - Superpower
+  - Swagger
+  - Swift
+  - Swords Dance
+  - Synthesis
+  - Tackle
+  - Take Down
+  - Taunt
+  - Tera Blast
+  - Thunder Punch
+  - Toxic
+  - Trailblaze
+  - Vine Whip
+  - Wide Guard
+  - Wood Hammer
+  - Work Up
+  - Worry Seed
+  - Zen Headbutt
 added_in_regulation: M-B
 legal_in_regulations: [M-B]
 notes: >
@@ -25,3 +145,11 @@ data_confidence: >
   search this session -- real Champions-specific competitive data, not
   recalled mainline VGC knowledge. Cross-check before a high-stakes
   build/draft decision, as usage stats shift across seasons/regulations.
+
+  Full `learnset` (119 moves) fetched from PokeAPI's mainline movepool for
+  pokemon/chesnaught (level-up + TM/HM + egg + tutor moves combined) by
+  backfill_learnset.py. This is NOT confirmed against the live Pokemon
+  Champions client -- Champions has already been shown to diverge from
+  mainline itemization (see items-m-b.yaml), so some listed moves may not
+  actually be learnable in Champions. Treat as a candidate pool, not a
+  guarantee.

@@ -11,6 +11,82 @@ abilities:
     hidden: true
 mega: null  # TODO: fill in if this species has a Mega Evolution
 moves: [Shadow Ball, Heat Wave, Protect, Trick Room]
+learnset:
+  - Acid Armor
+  - Ally Switch
+  - Astonish
+  - Attract
+  - Burning Jealousy
+  - Calm Mind
+  - Clear Smog
+  - Confide
+  - Confuse Ray
+  - Curse
+  - Dark Pulse
+  - Double Team
+  - Dream Eater
+  - Embargo
+  - Ember
+  - Endure
+  - Energy Ball
+  - Facade
+  - Fire Blast
+  - Fire Spin
+  - Flame Burst
+  - Flame Charge
+  - Flamethrower
+  - Flare Blitz
+  - Flash
+  - Frustration
+  - Giga Impact
+  - Haze
+  - Heat Wave
+  - Hex
+  - Hidden Power
+  - Hyper Beam
+  - Imprison
+  - Incinerate
+  - Inferno
+  - Laser Focus
+  - Lash Out
+  - Memento
+  - Minimize
+  - Mystical Fire
+  - Night Shade
+  - Overheat
+  - Pain Split
+  - Payback
+  - Poltergeist
+  - Power Split
+  - Protect
+  - Psych Up
+  - Psychic
+  - Rest
+  - Return
+  - Round
+  - Safeguard
+  - Secret Power
+  - Shadow Ball
+  - Shock Wave
+  - Skitter Smack
+  - Sleep Talk
+  - Smog
+  - Snore
+  - Solar Beam
+  - Spite
+  - Substitute
+  - Sunny Day
+  - Swagger
+  - Taunt
+  - Telekinesis
+  - Temper Flare
+  - Tera Blast
+  - Thief
+  - Toxic
+  - Trailblaze
+  - Trick
+  - Trick Room
+  - Will-O-Wisp
 added_in_regulation: M-B
 legal_in_regulations: [M-B]
 notes: >
@@ -24,3 +100,11 @@ data_confidence: >
   search this session -- real Champions-specific competitive data, not
   recalled mainline VGC knowledge. Cross-check before a high-stakes
   build/draft decision, as usage stats shift across seasons/regulations.
+
+  Full `learnset` (75 moves) fetched from PokeAPI's mainline movepool for
+  pokemon/chandelure (level-up + TM/HM + egg + tutor moves combined) by
+  backfill_learnset.py. This is NOT confirmed against the live Pokemon
+  Champions client -- Champions has already been shown to diverge from
+  mainline itemization (see items-m-b.yaml), so some listed moves may not
+  actually be learnable in Champions. Treat as a candidate pool, not a
+  guarantee.

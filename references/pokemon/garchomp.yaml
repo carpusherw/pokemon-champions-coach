@@ -9,9 +9,112 @@ abilities:
     hidden: true
 mega: null  # TODO: fill in if this species has a Mega Evolution
 moves: null  # TODO: curate competitive movepool (moves actually run in Reg M-B sets)
+learnset:
+  - Aerial Ace
+  - Aqua Tail
+  - Attract
+  - Bite
+  - Body Slam
+  - Breaking Swipe
+  - Brick Break
+  - Brutal Swing
+  - Bulldoze
+  - Captivate
+  - Confide
+  - Crunch
+  - Cut
+  - Dig
+  - Double Team
+  - Double-Edge
+  - Draco Meteor
+  - Dragon Breath
+  - Dragon Cheer
+  - Dragon Claw
+  - Dragon Pulse
+  - Dragon Rage
+  - Dragon Rush
+  - Dragon Tail
+  - Dual Chop
+  - Earth Power
+  - Earthquake
+  - Endure
+  - Facade
+  - False Swipe
+  - Fire Blast
+  - Fire Fang
+  - Flamethrower
+  - Fling
+  - Frustration
+  - Fury Cutter
+  - Giga Impact
+  - Headbutt
+  - Helping Hand
+  - Hidden Power
+  - Hone Claws
+  - Hyper Beam
+  - Incinerate
+  - Iron Head
+  - Iron Tail
+  - Laser Focus
+  - Liquidation
+  - Metal Claw
+  - Mud Shot
+  - Mud-Slap
+  - Natural Gift
+  - Outrage
+  - Poison Jab
+  - Power Gem
+  - Protect
+  - Rain Dance
+  - Rest
+  - Return
+  - Roar
+  - Rock Climb
+  - Rock Slide
+  - Rock Smash
+  - Rock Tomb
+  - Round
+  - Sand Attack
+  - Sand Tomb
+  - Sandstorm
+  - Scale Shot
+  - Scary Face
+  - Scorching Sands
+  - Secret Power
+  - Shadow Claw
+  - Slash
+  - Sleep Talk
+  - Snore
+  - Spikes
+  - Stealth Rock
+  - Stomping Tantrum
+  - Stone Edge
+  - Strength
+  - Substitute
+  - Sunny Day
+  - Surf
+  - Swagger
+  - Swift
+  - Swords Dance
+  - Tackle
+  - Take Down
+  - Tera Blast
+  - Thrash
+  - Thunder Fang
+  - Toxic
+  - Twister
+  - Whirlpool
 added_in_regulation: M-B
 legal_in_regulations: [M-B]
 notes: >
   TODO: add competitive notes (role, speed-control relevance, etc).
 data_confidence: >
   Base stats/types/abilities fetched live from PokeAPI (https://pokeapi.co/api/v2) by fetch_pokemon_data.py. Mega Evolution data (if any) and competitive notes are NOT from PokeAPI and should be verified/updated by hand each season.
+
+  Full `learnset` (94 moves) fetched from PokeAPI's mainline movepool for
+  pokemon/garchomp (level-up + TM/HM + egg + tutor moves combined) by
+  backfill_learnset.py. This is NOT confirmed against the live Pokemon
+  Champions client -- Champions has already been shown to diverge from
+  mainline itemization (see items-m-b.yaml), so some listed moves may not
+  actually be learnable in Champions. Treat as a candidate pool, not a
+  guarantee.
