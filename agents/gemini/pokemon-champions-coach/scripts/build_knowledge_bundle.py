@@ -184,10 +184,10 @@ def build_season_and_rules():
     return "\n".join(lines).rstrip() + "\n"
 
 
-def build_pokemon_dex():
+def load_legal_pokemon():
+    """Return (current_regulation, entries) for all species legal in the current regulation."""
     season = load_yaml(os.path.join(REFERENCES_DIR, "current-season.yaml"))
     current_regulation = season["current_regulation"]
-
     entries = []
     for filename in sorted(os.listdir(POKEMON_DIR)):
         if not filename.endswith(".yaml"):
@@ -197,6 +197,11 @@ def build_pokemon_dex():
         if current_regulation not in legal_in:
             continue
         entries.append(data)
+    return current_regulation, entries
+
+
+def build_pokemon_dex():
+    current_regulation, entries = load_legal_pokemon()
 
     lines = [BUNDLE_HEADER.rstrip(), ""]
     lines.append("# Pokemon dex")
@@ -232,18 +237,7 @@ def build_pokemon_dex():
 
 
 def build_pokemon_learnsets():
-    season = load_yaml(os.path.join(REFERENCES_DIR, "current-season.yaml"))
-    current_regulation = season["current_regulation"]
-
-    entries = []
-    for filename in sorted(os.listdir(POKEMON_DIR)):
-        if not filename.endswith(".yaml"):
-            continue
-        data = load_yaml(os.path.join(POKEMON_DIR, filename))
-        legal_in = data.get("legal_in_regulations") or []
-        if current_regulation not in legal_in:
-            continue
-        entries.append(data)
+    current_regulation, entries = load_legal_pokemon()
 
     lines = [BUNDLE_HEADER.rstrip(), ""]
     lines.append("# Pokemon learnsets")
