@@ -210,8 +210,15 @@ def write_yaml(path, fresh, existing, regulation, overwrite):
         lines.append("learnset:")
         for move in preserved["learnset"]:
             lines.append(f"  - {move}")
-    else:
+    elif "learnset" in preserved:
+        # Preserve an existing `learnset: null` as-is rather than dropping it
+        # (shouldn't normally occur under the current no-placeholder policy,
+        # but don't silently discard it if some other tool wrote one).
         lines.append("learnset: null  # TODO: backfill full learnset (see refresh-references skill)")
+    # else: no learnset key in the existing file (or no existing file at
+    # all) -- don't fabricate one. Species not yet covered by a
+    # backfill_learnset.py batch simply have no learnset key; see
+    # references/pokemon/README.md for why.
 
     added_in = preserved.get("added_in_regulation", regulation)
     lines.extend(emit_field("added_in_regulation", added_in, ""))

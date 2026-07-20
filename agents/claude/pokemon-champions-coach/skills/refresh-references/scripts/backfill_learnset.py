@@ -150,25 +150,40 @@ def splice_learnset(path, moves, api_slug):
         text = f.read()
     lines = text.split("\n")
 
+    # Pre-scan (rather than deciding mid-loop) so replace-existing and
+    # insert-after-moves are mutually exclusive -- a single forward pass
+    # that checked each line in isolation fired the moves: insert path
+    # (nothing seen yet) *and* the learnset: replace path (reached later
+    # in the same file) for any file that already had a learnset line,
+    # doubling the output.
+    has_existing = any(line.startswith("learnset:") for line in lines)
+
     out = []
-    replaced = False
+    inserted = False
+    skipping_old_block = False
     for line in lines:
-        if line.startswith("learnset:"):
+        if skipping_old_block:
+            if line.startswith("  - "):
+                continue  # old learnset list item (block form) -- drop it
+            skipping_old_block = False  # fall through, this line is the next field
+
+        if has_existing and line.startswith("learnset:"):
             out.append("learnset:")
             for mv in moves:
                 out.append(f"  - {mv}")
-            replaced = True
+            inserted = True
+            skipping_old_block = True  # drop the old block-list items that follow, if any
             continue
         out.append(line)
-        if not replaced and line.startswith("moves:"):
-            # No pre-existing `learnset:` placeholder (species not yet
-            # covered by a batch) -- insert it fresh right after `moves:`,
-            # in the same spot the schema pass would have put it.
+        if not has_existing and not inserted and line.startswith("moves:"):
+            # No pre-existing `learnset:` field (species not yet covered by
+            # a batch) -- insert it fresh right after `moves:`, in the same
+            # spot the schema pass would have put it.
             out.append("learnset:")
             for mv in moves:
                 out.append(f"  - {mv}")
-            replaced = True
-    if not replaced:
+            inserted = True
+    if not inserted:
         raise RuntimeError(f"no 'moves:' or 'learnset:' line in {path} -- not a species reference file?")
 
     text = "\n".join(out)
