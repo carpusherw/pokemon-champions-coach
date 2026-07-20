@@ -10,10 +10,18 @@ abilities:
   - name: Stalwart
     hidden: true
 mega: null  # TODO: fill in if this species has a Mega Evolution
-moves: null  # TODO: curate competitive movepool (moves actually run in Reg M-B sets)
+moves: [Electro Shot, Flash Cannon, Protect, Dragon Pulse]
 added_in_regulation: M-B
 legal_in_regulations: [M-B]
 notes: >
-  TODO: add competitive notes (role, speed-control relevance, etc).
+  Stamina raises its Defense every time it's hit, and Electro Shot (raises Sp.
+  Atk, no charge turn in rain) is a near-universal inclusion -- one of the
+  most heavily used Pokemon in the format.
 data_confidence: >
   Base stats/types/abilities fetched live from PokeAPI (https://pokeapi.co/api/v2) by fetch_pokemon_data.py. Mega Evolution data (if any) and competitive notes are NOT from PokeAPI and should be verified/updated by hand each season.
+
+  `moves`/`notes` sourced from Pikalytics' Pokemon Champions VGC usage stats
+  (championspreview/championstournaments/regulation-specific pages) via web
+  search this session -- real Champions-specific competitive data, not
+  recalled mainline VGC knowledge. Cross-check before a high-stakes
+  build/draft decision, as usage stats shift across seasons/regulations.

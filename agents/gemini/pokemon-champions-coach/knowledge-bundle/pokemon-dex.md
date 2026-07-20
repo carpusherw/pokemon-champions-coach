@@ -16,11 +16,15 @@ CI's knowledge-bundle-guard will flag the file as stale anyway.
 - Types: Grass/Ice
 - Base stats: HP 90, Atk 92, Def 75, SpA 92, SpD 85, Spe 60
 - Abilities: Snow Warning, Soundproof (hidden)
+- Common moves: Blizzard, Protect, Aurora Veil, Earth Power
+- Notes: Snow Warning sets snow on entry, letting it spam 100%-accurate Blizzard behind self-set Aurora Veil; slow (30 Speed) mixed attacker best suited to Trick Room or snow-based speed control.
 
 ## Absol (#359)
 - Types: Dark
 - Base stats: HP 65, Atk 130, Def 60, SpA 75, SpD 60, Spe 75
 - Abilities: Pressure, Super Luck, Justified (hidden)
+- Common moves: Sucker Punch, Close Combat, Protect, Knock Off
+- Notes: Almost always played as Mega Absol (Magic Bounce reflects opposing status moves) rather than the base form; Sucker Punch plus Close Combat/Knock Off gives it strong priority and coverage.
 
 ## Aegislash (#681)
 - Types: Steel/Ghost
@@ -33,31 +37,43 @@ CI's knowledge-bundle-guard will flag the file as stale anyway.
 - Types: Rock/Flying
 - Base stats: HP 80, Atk 105, Def 65, SpA 60, SpD 75, Spe 130
 - Abilities: Rock Head, Pressure, Unnerve (hidden)
+- Common moves: Rock Slide, Tailwind, Protect, Dual Wingbeat
+- Notes: Fast (130 Speed) Rock/Flying pivot; Tailwind support plus spread Rock Slide is its main doubles role, with or without Mega Evolving.
 
 ## Aggron (#306)
 - Types: Steel/Rock
 - Base stats: HP 70, Atk 110, Def 180, SpA 60, SpD 60, Spe 50
 - Abilities: Sturdy, Rock Head, Heavy Metal (hidden)
+- Common moves: Iron Defense, Body Press, Heavy Slam, Protect
+- Notes: Played almost exclusively as Mega Aggron: Iron Defense plus Body Press turns its already-massive Defense into a strong physical attack, backed by Heavy Slam STAB.
 
 ## Alakazam (#65)
 - Types: Psychic
 - Base stats: HP 55, Atk 50, Def 45, SpA 135, SpD 95, Spe 120
 - Abilities: Synchronize, Inner Focus, Magic Guard (hidden)
+- Common moves: Protect, Expanding Force, Dazzling Gleam, Focus Blast
+- Notes: Played as Mega Alakazam (Trace); Expanding Force is the preferred Psychic- type STAB over plain Psychic in the current terrain-heavy meta.
 
 ## Alcremie (#869)
 - Types: Fairy
 - Base stats: HP 65, Atk 60, Def 75, SpA 110, SpD 121, Spe 64
 - Abilities: Sweet Veil, Aroma Veil (hidden)
+- Common moves: Decorate, Dazzling Gleam, Light Screen, Protect
+- Notes: Support Fairy-type built around its signature move Decorate, which raises an ally's Attack and Sp. Atk by two stages each turn.
 
 ## Altaria (#334)
 - Types: Dragon/Flying
 - Base stats: HP 75, Atk 70, Def 90, SpA 70, SpD 105, Spe 80
 - Abilities: Natural Cure, Cloud Nine (hidden)
+- Common moves: Protect, Hyper Voice, Tailwind, Roost
+- Notes: Played as Mega Altaria (Pixilate): Hyper Voice becomes a spread Fairy-type move, with Tailwind for speed control and Roost for recovery.
 
 ## Ampharos (#181)
 - Types: Electric
 - Base stats: HP 90, Atk 75, Def 85, SpA 115, SpD 90, Spe 55
 - Abilities: Static, Plus (hidden)
+- Common moves: Dragon Pulse, Protect, Thunderbolt, Parabolic Charge
+- Notes: Played as Mega Ampharos (Mold Breaker ignores abilities like Water Absorb/Levitate); Dragon Pulse is the primary STAB with Thunderbolt as secondary coverage.
 
 ## Annihilape (#979)
 - Types: Fighting/Ghost
@@ -70,76 +86,106 @@ CI's knowledge-bundle-guard will flag the file as stale anyway.
 - Types: Grass/Dragon
 - Base stats: HP 110, Atk 85, Def 80, SpA 100, SpD 80, Spe 30
 - Abilities: Ripen, Gluttony, Thick Fat (hidden)
+- Common moves: Leech Seed, Apple Acid, Protect, Body Press
+- Notes: Bulky Grass/Dragon wall with Thick Fat (halves Fire/Ice damage); Leech Seed plus Apple Acid (lowers the target's Defense) wears down the opposing side over time.
 
 ## Araquanid (#752)
 - Types: Water/Bug
 - Base stats: HP 68, Atk 70, Def 92, SpA 50, SpD 132, Spe 42
 - Abilities: Water Bubble, Water Absorb (hidden)
+- Common moves: Liquidation, Protect, Wide Guard, Leech Life
+- Notes: Water Bubble halves incoming Fire damage and doubles its own Water-move power; Wide Guard protects the team from spread moves while Liquidation handles damage.
 
 ## Arbok (#24)
 - Types: Poison
 - Base stats: HP 60, Atk 95, Def 69, SpA 65, SpD 79, Spe 80
 - Abilities: Intimidate, Shed Skin, Unnerve (hidden)
+- Common moves: Gunk Shot, Protect, Psychic Fangs, Sucker Punch
+- Notes: Intimidate on switch-in plus Gunk Shot/Sucker Punch gives it both defensive utility and a fast-priority finishing option.
 
 ## Arcanine Hisui (#10230)
 - Types: Fire/Rock
 - Base stats: HP 95, Atk 115, Def 80, SpA 95, SpD 80, Spe 90
 - Abilities: Intimidate, Flash Fire, Rock Head (hidden)
+- Common moves: Rock Slide, Flare Blitz, Protect, Extreme Speed
+- Notes: Rock/Fire typing (vs. base Arcanine's pure Fire) changes its defensive profile significantly; runs Rock Slide as its primary STAB alongside Flare Blitz, with Rock Head or Intimidate both seeing play.
 
 ## Arcanine (#59)
 - Types: Fire
 - Base stats: HP 90, Atk 110, Def 80, SpA 100, SpD 80, Spe 95
 - Abilities: Intimidate, Flash Fire, Justified (hidden)
+- Common moves: Flare Blitz, Will-O-Wisp, Extreme Speed, Protect
+- Notes: Intimidate support piece; Flare Blitz for damage, Will-O-Wisp to cripple physical attackers, Extreme Speed for priority.
 
 ## Archaludon (#1018)
 - Types: Steel/Dragon
 - Base stats: HP 90, Atk 105, Def 130, SpA 125, SpD 65, Spe 85
 - Abilities: Stamina, Sturdy, Stalwart (hidden)
+- Common moves: Electro Shot, Flash Cannon, Protect, Dragon Pulse
+- Notes: Stamina raises its Defense every time it's hit, and Electro Shot (raises Sp. Atk, no charge turn in rain) is a near-universal inclusion -- one of the most heavily used Pokemon in the format.
 
 ## Ariados (#168)
 - Types: Bug/Poison
 - Base stats: HP 70, Atk 90, Def 70, SpA 60, SpD 70, Spe 40
 - Abilities: Swarm, Insomnia, Sniper (hidden)
+- Common moves: Rage Powder, Protect, String Shot, Knock Off
+- Notes: Rage Powder redirects attacks to protect a setup partner; String Shot's double Speed drop is useful speed-control support despite low overall usage.
 
 ## Armarouge (#936)
 - Types: Fire/Psychic
 - Base stats: HP 85, Atk 60, Def 100, SpA 125, SpD 80, Spe 75
 - Abilities: Flash Fire, Weak Armor (hidden)
+- Common moves: Psychic, Trick Room, Heat Wave, Protect
+- Notes: Trick Room-oriented special attacker; Psychic and Heat Wave give it dual STAB spread coverage.
 
 ## Aromatisse (#683)
 - Types: Fairy
 - Base stats: HP 101, Atk 72, Def 72, SpA 99, SpD 89, Spe 29
 - Abilities: Healer, Aroma Veil (hidden)
+- Common moves: Trick Room, Moonblast, Helping Hand, Dazzling Gleam
+- Notes: Extremely slow (29 Speed) Trick Room piece; Aroma Veil protects the whole team from taunt/encore/disable-style move-locking effects.
 
 ## Audino (#531)
 - Types: Normal
 - Base stats: HP 103, Atk 60, Def 86, SpA 60, SpD 86, Spe 50
 - Abilities: Healer, Regenerator, Klutz (hidden)
+- Common moves: Helping Hand, Hyper Voice, Light Screen, Protect
+- Notes: Healer support: Helping Hand and Light Screen back up a partner attacker, with Hyper Voice for spread chip damage.
 
 ## Aurorus (#699)
 - Types: Rock/Ice
 - Base stats: HP 123, Atk 77, Def 72, SpA 99, SpD 92, Spe 58
 - Abilities: Refrigerate, Snow Warning (hidden)
+- Common moves: Blizzard, Protect, Aurora Veil, Freeze-Dry
+- Notes: Snow Warning setter like Abomasnow; Blizzard becomes 100% accurate under its own snow, with Aurora Veil for team-wide damage reduction.
 
 ## Avalugg Hisui (#10243)
 - Types: Ice/Rock
 - Base stats: HP 95, Atk 127, Def 184, SpA 34, SpD 36, Spe 38
 - Abilities: Strong Jaw, Ice Body, Sturdy (hidden)
+- Common moves: Rock Slide, Body Press, Mountain Gale, Wide Guard
+- Notes: Rock/Steel typing (vs. base Avalugg's pure Ice) gives it very different resistances; Mountain Gale (its signature move) has a 30% flinch chance, and Wide Guard protects the team from spread moves.
 
 ## Avalugg (#713)
 - Types: Ice
 - Base stats: HP 95, Atk 117, Def 184, SpA 44, SpD 46, Spe 28
 - Abilities: Own Tempo, Ice Body, Sturdy (hidden)
+- Common moves: Icicle Spear, Rock Tomb, Facade, Avalanche
+- Notes: Sturdy guarantees it survives a hit at full HP; a bulky physical wall that leans on multi-hit Icicle Spear (breaks through Substitute/Disguise) and Avalanche.
 
 ## Azumarill (#184)
 - Types: Water/Fairy
 - Base stats: HP 100, Atk 50, Def 80, SpA 60, SpD 80, Spe 50
 - Abilities: Thick Fat, Huge Power, Sap Sipper (hidden)
+- Common moves: Aqua Jet, Play Rough, Protect, Belly Drum
+- Notes: Huge Power doubles its Attack; Belly Drum plus priority Aqua Jet is the classic one-turn-setup sweep, with Play Rough for Dragon coverage.
 
 ## Banette (#354)
 - Types: Ghost
 - Base stats: HP 64, Atk 115, Def 65, SpA 83, SpD 63, Spe 65
 - Abilities: Insomnia, Frisk, Cursed Body (hidden)
+- Common moves: Poltergeist, Destiny Bond, Will-O-Wisp, Encore
+- Notes: Played as Mega Banette (Prankster gives its status moves +1 priority); Poltergeist (fails if the target has no item) plus Destiny Bond is a high- risk, high-reward suicide-sweep core.
 
 ## Barbaracle (#689)
 - Types: Rock/Water
@@ -154,36 +200,50 @@ CI's knowledge-bundle-guard will flag the file as stale anyway.
 - Types: Water/Ghost
 - Base stats: HP 120, Atk 92, Def 65, SpA 100, SpD 75, Spe 78
 - Abilities: Swift Swim, Adaptability, Mold Breaker (hidden)
+- Common moves: Muddy Water, Protect, Shadow Ball, Ice Beam
+- Notes: The female form's base stats lean special rather than physical (unlike male Basculegion's Adaptability/Aqua Jet/Wave Crash set); runs Muddy Water and Shadow Ball as special STABs instead.
 
 ## Basculegion Male (#902)
 - Types: Water/Ghost
 - Base stats: HP 120, Atk 112, Def 65, SpA 80, SpD 75, Spe 78
 - Abilities: Swift Swim, Adaptability, Mold Breaker (hidden)
+- Common moves: Last Respects, Aqua Jet, Wave Crash, Protect
+- Notes: Adaptability boosts its STAB moves to 2x instead of 1.5x; Last Respects (power scales with fainted allies) plus priority Aqua Jet gives it a strong late-game sweeping combo.
 
 ## Bastiodon (#411)
 - Types: Rock/Steel
 - Base stats: HP 60, Atk 52, Def 168, SpA 47, SpD 138, Spe 30
 - Abilities: Sturdy, Soundproof (hidden)
+- Common moves: Wide Guard, Sandstorm, Iron Defense, Body Press
+- Notes: Sturdy plus very high Defense makes it a dedicated Wide Guard/Iron Defense wall; Sandstorm boosts its comparatively weaker Special Defense.
 
 ## Beartic (#614)
 - Types: Ice
 - Base stats: HP 95, Atk 130, Def 80, SpA 70, SpD 80, Spe 50
 - Abilities: Snow Cloak, Slush Rush, Swift Swim (hidden)
+- Common moves: Protect, Icicle Crash, Close Combat, Liquidation
+- Notes: Slow (50 Speed) outside of weather; Slush Rush/Swift Swim doubles its Speed under snow/rain respectively, turning it into a fast 130-Attack wallbreaker.
 
 ## Beedrill (#15)
 - Types: Bug/Poison
 - Base stats: HP 65, Atk 90, Def 40, SpA 45, SpD 80, Spe 75
 - Abilities: Swarm, Sniper (hidden)
+- Common moves: Poison Jab, Protect, U-turn, Drill Run
+- Notes: Played as Mega Beedrill (Adaptability boosts its STAB to 2x); U-turn lets it pivot out after applying pressure, with Poison Jab as primary STAB.
 
 ## Bellibolt (#939)
 - Types: Electric
 - Base stats: HP 109, Atk 64, Def 91, SpA 103, SpD 83, Spe 45
 - Abilities: Electromorphosis, Static, Damp (hidden)
+- Common moves: Parabolic Charge, Protect, Soak, Thunderbolt
+- Notes: Electromorphosis charges up after being hit by any move; Parabolic Charge both damages and heals for half the damage dealt, giving it strong longevity.
 
 ## Blastoise (#9)
 - Types: Water
 - Base stats: HP 79, Atk 83, Def 100, SpA 85, SpD 105, Spe 78
 - Abilities: Torrent, Rain Dish (hidden)
+- Common moves: Water Spout, Dark Pulse, Fake Out, Aura Sphere
+- Notes: Played as Mega Blastoise (Mega Launcher boosts pulse moves 1.5x); Water Spout's power scales with its own remaining HP, so it hits hardest turn one.
 
 ## Blaziken (#257)
 - Types: Fire/Fighting
@@ -198,56 +258,78 @@ CI's knowledge-bundle-guard will flag the file as stale anyway.
 - Types: Fire/Ground
 - Base stats: HP 70, Atk 100, Def 70, SpA 105, SpD 75, Spe 40
 - Abilities: Magma Armor, Solid Rock, Anger Point (hidden)
+- Common moves: Earth Power, Protect, Heat Wave, Ancient Power
+- Notes: Played as Mega Camerupt (Sheer Force boosts secondary-effect moves like Earth Power/Ancient Power by 30%, removing their side effects); a pure special attacker despite a mixed base stat spread.
 
 ## Castform (#351)
 - Types: Normal
 - Base stats: HP 70, Atk 70, Def 70, SpA 70, SpD 70, Spe 70
 - Abilities: Forecast
+- Common moves: Weather Ball, Icy Wind, Ice Beam, Protect
+- Notes: Forecast changes its type to match the active weather (Fire in sun, Water in rain, Ice in snow); Weather Ball's power and type follow the same rule, making it a flexible but weather-dependent attacker.
 
 ## Ceruledge (#937)
 - Types: Fire/Ghost
 - Base stats: HP 75, Atk 125, Def 80, SpA 60, SpD 100, Spe 85
 - Abilities: Flash Fire, Weak Armor (hidden)
+- Common moves: Bitter Blade, Protect, Shadow Sneak, Bulk Up
+- Notes: Bitter Blade heals it for half the damage dealt, and Flash Fire grants immunity to (and a power boost from) incoming Fire-type moves; Shadow Sneak gives it reliable priority.
 
 ## Chandelure (#609)
 - Types: Ghost/Fire
 - Base stats: HP 60, Atk 55, Def 90, SpA 145, SpD 90, Spe 80
 - Abilities: Flash Fire, Flame Body, Infiltrator (hidden)
+- Common moves: Shadow Ball, Heat Wave, Protect, Trick Room
+- Notes: Trick Room-friendly special attacker (84 Speed) with strong dual STAB in Shadow Ball and spread Heat Wave.
 
 ## Charizard (#6)
 - Types: Fire/Flying
 - Base stats: HP 78, Atk 84, Def 78, SpA 109, SpD 85, Spe 100
 - Abilities: Blaze, Solar Power (hidden)
+- Common moves: Flare Blitz, Dragon Claw, Dragon Dance, Heat Wave, Solar Beam, Protect
+- Notes: Plays as either Mega Charizard X (Tough Claws, physical Dragon Dance sweeper with Dragon Claw/Flare Blitz) or Mega Charizard Y (Drought, special sun attacker with Heat Wave/Solar Beam) -- very different sets depending which Mega Stone it's given.
 
 ## Chesnaught (#652)
 - Types: Grass/Fighting
 - Base stats: HP 88, Atk 107, Def 122, SpA 74, SpD 75, Spe 64
 - Abilities: Overgrow, Bulletproof (hidden)
+- Common moves: Spiky Shield, Body Press, Iron Defense, Leech Seed
+- Notes: Spiky Shield punishes contact moves while Body Press turns its high Defense into direct damage. Champions has a confirmed Mega Chesnaught (Chesnaughtite) that sees near-universal use over the base form, though this file's mega: field is still unconfirmed -- verify before relying on Mega- specific stats.
 
 ## Chimecho (#358)
 - Types: Psychic
 - Base stats: HP 75, Atk 50, Def 80, SpA 95, SpD 90, Spe 65
 - Abilities: Levitate
+- Common moves: Trick Room, Psychic, Protect, Helping Hand
+- Notes: Trick Room support piece. Champions also has a confirmed Mega Chimecho (Chimechite) that leans further into the Trick Room role, though this file's mega: field is still unconfirmed -- verify before relying on Mega-specific stats.
 
 ## Clawitzer (#693)
 - Types: Water
 - Base stats: HP 71, Atk 73, Def 88, SpA 120, SpD 89, Spe 59
 - Abilities: Mega Launcher
+- Common moves: Aura Sphere, Dark Pulse, Water Pulse, Protect
+- Notes: Mega Launcher boosts all of its pulse moves (Water Pulse, Aura Sphere, Dark Pulse) by 1.5x, giving it strong special coverage despite a mediocre 120 Sp. Atk.
 
 ## Clefable (#36)
 - Types: Fairy
 - Base stats: HP 95, Atk 70, Def 73, SpA 95, SpD 90, Spe 60
 - Abilities: Cute Charm, Magic Guard, Unaware (hidden)
+- Common moves: Follow Me, Moonblast, Protect, Helping Hand
+- Notes: Unaware ignores stat changes on both sides, making it a strong answer to setup sweepers; Follow Me redirects attacks to protect a partner.
 
 ## Cofagrigus (#563)
 - Types: Ghost
 - Base stats: HP 58, Atk 50, Def 145, SpA 95, SpD 105, Spe 30
 - Abilities: Mummy
+- Common moves: Trick Room, Shadow Ball, Body Press, Protect
+- Notes: High Defense and low Speed make it a natural Trick Room setter; Mummy replaces an attacker's ability on contact, shutting down things like Intimidate immunity or Speed Boost.
 
 ## Conkeldurr (#534)
 - Types: Fighting
 - Base stats: HP 105, Atk 140, Def 95, SpA 55, SpD 65, Spe 45
 - Abilities: Guts, Sheer Force, Iron Fist (hidden)
+- Common moves: Mach Punch, Drain Punch, Thunder Punch, Detect
+- Notes: Guts (commonly paired with a self-inflicted Flame Orb burn) raises its Attack while the burn's damage-halving still applies to its physical moves; Mach Punch gives it priority alongside Drain Punch's recovery.
 
 ## Corviknight (#823)
 - Types: Flying/Steel

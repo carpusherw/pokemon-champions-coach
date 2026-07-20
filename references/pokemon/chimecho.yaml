@@ -6,10 +6,19 @@ abilities:
   - name: Levitate
     hidden: false
 mega: null  # TODO: fill in if this species has a Mega Evolution
-moves: null  # TODO: curate competitive movepool (moves actually run in Reg M-B sets)
+moves: [Trick Room, Psychic, Protect, Helping Hand]
 added_in_regulation: M-B
 legal_in_regulations: [M-B]
 notes: >
-  TODO: add competitive notes (role, speed-control relevance, etc).
+  Trick Room support piece. Champions also has a confirmed Mega Chimecho
+  (Chimechite) that leans further into the Trick Room role, though this file's
+  mega: field is still unconfirmed -- verify before relying on Mega-specific
+  stats.
 data_confidence: >
   Base stats/types/abilities fetched live from PokeAPI (https://pokeapi.co/api/v2) by fetch_pokemon_data.py. Mega Evolution data (if any) and competitive notes are NOT from PokeAPI and should be verified/updated by hand each season.
+
+  `moves`/`notes` sourced from Pikalytics' Pokemon Champions VGC usage stats
+  (championspreview/championstournaments/regulation-specific pages) via web
+  search this session -- real Champions-specific competitive data, not
+  recalled mainline VGC knowledge. Cross-check before a high-stakes
+  build/draft decision, as usage stats shift across seasons/regulations.
