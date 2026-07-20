@@ -11,6 +11,70 @@ abilities:
     hidden: true
 mega: null  # TODO: fill in if this species has a Mega Evolution
 moves: [Barb Barrage, Crunch, Sucker Punch, Protect]
+learnset:
+  - Acupressure
+  - Agility
+  - Aqua Tail
+  - Barb Barrage
+  - Bite
+  - Blizzard
+  - Brine
+  - Chilling Water
+  - Crunch
+  - Curse
+  - Dark Pulse
+  - Destiny Bond
+  - Double-Edge
+  - Endure
+  - Facade
+  - Fell Stinger
+  - Giga Impact
+  - Gunk Shot
+  - Gyro Ball
+  - Harden
+  - Haze
+  - Hydro Pump
+  - Hyper Beam
+  - Ice Beam
+  - Icy Wind
+  - Lash Out
+  - Liquidation
+  - Minimize
+  - Mud Shot
+  - Pain Split
+  - Pin Missile
+  - Poison Jab
+  - Poison Sting
+  - Poison Tail
+  - Protect
+  - Rain Dance
+  - Rest
+  - Reversal
+  - Scale Shot
+  - Scary Face
+  - Self-Destruct
+  - Shadow Ball
+  - Sleep Talk
+  - Sludge Bomb
+  - Sludge Wave
+  - Smart Strike
+  - Spikes
+  - Spit Up
+  - Spite
+  - Stockpile
+  - Substitute
+  - Surf
+  - Swords Dance
+  - Tackle
+  - Take Down
+  - Taunt
+  - Tera Blast
+  - Throat Chop
+  - Toxic
+  - Toxic Spikes
+  - Venoshock
+  - Water Pulse
+  - Waterfall
 added_in_regulation: M-B
 legal_in_regulations: [M-B]
 notes: >
@@ -27,3 +91,11 @@ data_confidence: >
   Pokemon Champions client, which has already been shown to diverge from
   mainline in places (see items-m-b.yaml re: Choice items). Re-verify before
   relying on it for a real draft/build decision.
+
+  Full `learnset` (63 moves) fetched from PokeAPI's mainline movepool for
+  pokemon/overqwil (level-up + TM/HM + egg + tutor moves combined) by
+  backfill_learnset.py. This is NOT confirmed against the live Pokemon
+  Champions client -- Champions has already been shown to diverge from
+  mainline itemization (see items-m-b.yaml), so some listed moves may not
+  actually be learnable in Champions. Treat as a candidate pool, not a
+  guarantee.

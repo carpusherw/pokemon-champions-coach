@@ -22,6 +22,78 @@ mega:
     (100 -> 140) -- a bulky attacker rather than the base form's speedy
     sweeper.
 moves: [First Impression, Megahorn, Poison Jab, Protect]
+learnset:
+  - Agility
+  - Aqua Tail
+  - Assurance
+  - Attract
+  - Baton Pass
+  - Bug Bite
+  - Bulldoze
+  - Confide
+  - Cross Poison
+  - Cut
+  - Defense Curl
+  - Dig
+  - Double Team
+  - Double-Edge
+  - Earthquake
+  - Endeavor
+  - Endure
+  - Facade
+  - Frustration
+  - Giga Impact
+  - Gyro Ball
+  - Hex
+  - Hidden Power
+  - Hyper Beam
+  - Infestation
+  - Iron Defense
+  - Iron Tail
+  - Megahorn
+  - Payback
+  - Pin Missile
+  - Poison Jab
+  - Poison Sting
+  - Poison Tail
+  - Protect
+  - Pursuit
+  - Rest
+  - Return
+  - Rock Climb
+  - Rock Slide
+  - Rock Smash
+  - Rock Tomb
+  - Rollout
+  - Round
+  - Screech
+  - Secret Power
+  - Signal Beam
+  - Skitter Smack
+  - Sleep Talk
+  - Sludge Bomb
+  - Smart Strike
+  - Snatch
+  - Snore
+  - Solar Beam
+  - Spikes
+  - Steamroller
+  - Steel Roller
+  - Stomping Tantrum
+  - Strength
+  - Struggle Bug
+  - Substitute
+  - Sunny Day
+  - Superpower
+  - Swagger
+  - Swords Dance
+  - Take Down
+  - Throat Chop
+  - Toxic
+  - Toxic Spikes
+  - Venom Drench
+  - Venoshock
+  - X-Scissor
 added_in_regulation: M-A or earlier (base) / M-B (Mega)
 legal_in_regulations: [M-B]  # earliest confirmed regulation only; may be legal earlier too
 notes: >
@@ -45,3 +117,11 @@ data_confidence: >
   Pokemon Champions client, which has already been shown to diverge from
   mainline in places (see items-m-b.yaml re: Choice items). Re-verify before
   relying on it for a real draft/build decision.
+
+  Full `learnset` (71 moves) fetched from PokeAPI's mainline movepool for
+  pokemon/scolipede (level-up + TM/HM + egg + tutor moves combined) by
+  backfill_learnset.py. This is NOT confirmed against the live Pokemon
+  Champions client -- Champions has already been shown to diverge from
+  mainline itemization (see items-m-b.yaml), so some listed moves may not
+  actually be learnable in Champions. Treat as a candidate pool, not a
+  guarantee.

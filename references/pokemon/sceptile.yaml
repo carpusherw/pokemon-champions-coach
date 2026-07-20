@@ -19,6 +19,128 @@ mega:
     Electric-move redirect/immunity utility. Confirmed via PokeAPI
     (pokemon/sceptile-mega) on 2026-07-18.
 moves: [Leaf Storm, Dragon Pulse, Focus Blast, Protect]
+learnset:
+  - Absorb
+  - Acrobatics
+  - Aerial Ace
+  - Agility
+  - Assurance
+  - Attract
+  - Body Slam
+  - Breaking Swipe
+  - Brick Break
+  - Brutal Swing
+  - Bulldoze
+  - Bullet Seed
+  - Captivate
+  - Confide
+  - Counter
+  - Cross Poison
+  - Crunch
+  - Cut
+  - Detect
+  - Dig
+  - Double Kick
+  - Double Team
+  - Double-Edge
+  - Dragon Breath
+  - Dragon Cheer
+  - Dragon Claw
+  - Dragon Dance
+  - Dragon Pulse
+  - Dragon Tail
+  - Drain Punch
+  - Dual Chop
+  - Dynamic Punch
+  - Earthquake
+  - Endeavor
+  - Endure
+  - Energy Ball
+  - Facade
+  - False Swipe
+  - Flash
+  - Fling
+  - Focus Blast
+  - Focus Punch
+  - Frenzy Plant
+  - Frustration
+  - Fury Cutter
+  - Giga Drain
+  - Giga Impact
+  - Grass Knot
+  - Grass Pledge
+  - Grassy Glide
+  - Grassy Terrain
+  - Headbutt
+  - Helping Hand
+  - Hidden Power
+  - Hone Claws
+  - Hyper Beam
+  - Iron Tail
+  - Laser Focus
+  - Leaf Blade
+  - Leaf Storm
+  - Leafage
+  - Leech Seed
+  - Leer
+  - Low Kick
+  - Low Sweep
+  - Magical Leaf
+  - Mega Drain
+  - Mega Kick
+  - Mega Punch
+  - Mimic
+  - Mud-Slap
+  - Natural Gift
+  - Nature Power
+  - Night Slash
+  - Outrage
+  - Pound
+  - Power-Up Punch
+  - Protect
+  - Pursuit
+  - Quick Attack
+  - Quick Guard
+  - Rest
+  - Return
+  - Roar
+  - Rock Climb
+  - Rock Slide
+  - Rock Smash
+  - Rock Tomb
+  - Round
+  - Safeguard
+  - Scale Shot
+  - Screech
+  - Secret Power
+  - Seed Bomb
+  - Seismic Toss
+  - Shed Tail
+  - Slam
+  - Slash
+  - Sleep Talk
+  - Snore
+  - Solar Beam
+  - Solar Blade
+  - Strength
+  - Substitute
+  - Sunny Day
+  - Swagger
+  - Swift
+  - Swords Dance
+  - Synthesis
+  - Take Down
+  - Tera Blast
+  - Thief
+  - Throat Chop
+  - Thunder Punch
+  - Toxic
+  - Trailblaze
+  - Upper Hand
+  - Vacuum Wave
+  - Work Up
+  - Worry Seed
+  - X-Scissor
 added_in_regulation: M-A (base) / M-B (Mega)
 legal_in_regulations: [M-B]  # earliest confirmed regulation only; may be legal earlier too
 notes: >
@@ -37,3 +159,11 @@ data_confidence: >
   Pokemon Champions client, which has already been shown to diverge from
   mainline in places (see items-m-b.yaml re: Choice items). Re-verify before
   relying on it for a real draft/build decision.
+
+  Full `learnset` (121 moves) fetched from PokeAPI's mainline movepool for
+  pokemon/sceptile (level-up + TM/HM + egg + tutor moves combined) by
+  backfill_learnset.py. This is NOT confirmed against the live Pokemon
+  Champions client -- Champions has already been shown to diverge from
+  mainline itemization (see items-m-b.yaml), so some listed moves may not
+  actually be learnable in Champions. Treat as a candidate pool, not a
+  guarantee.

@@ -28,6 +28,123 @@ mega:
     target's moves bypass accuracy/evasion checks -- useful for otherwise
     unreliable moves like Thunder or Zap Cannon.
 moves: [Thunderbolt, Volt Switch, Focus Blast, Encore]
+learnset:
+  - Agility
+  - Alluring Voice
+  - Attract
+  - Bide
+  - Body Slam
+  - Brick Break
+  - Brutal Swing
+  - Calm Mind
+  - Captivate
+  - Charge
+  - Charge Beam
+  - Charm
+  - Confide
+  - Counter
+  - Covet
+  - Curse
+  - Dazzling Gleam
+  - Defense Curl
+  - Detect
+  - Dig
+  - Disarming Voice
+  - Discharge
+  - Double Team
+  - Double-Edge
+  - Drain Punch
+  - Draining Kiss
+  - Dynamic Punch
+  - Echoed Voice
+  - Eerie Impulse
+  - Electric Terrain
+  - Electro Ball
+  - Electroweb
+  - Encore
+  - Endeavor
+  - Endure
+  - Facade
+  - Fake Out
+  - Fake Tears
+  - Feint
+  - Flail
+  - Flash
+  - Fling
+  - Focus Blast
+  - Focus Punch
+  - Frustration
+  - Giga Impact
+  - Grass Knot
+  - Growl
+  - Headbutt
+  - Helping Hand
+  - Hidden Power
+  - Hyper Beam
+  - Iron Tail
+  - Knock Off
+  - Laser Focus
+  - Light Screen
+  - Magnet Rise
+  - Mega Kick
+  - Mega Punch
+  - Mimic
+  - Mud-Slap
+  - Nasty Plot
+  - Natural Gift
+  - Nuzzle
+  - Pay Day
+  - Play Nice
+  - Play Rough
+  - Protect
+  - Quick Attack
+  - Rage
+  - Rain Dance
+  - Reflect
+  - Rest
+  - Return
+  - Reversal
+  - Rising Voltage
+  - Rock Smash
+  - Rollout
+  - Round
+  - Safeguard
+  - Secret Power
+  - Seismic Toss
+  - Shock Wave
+  - Signal Beam
+  - Skull Bash
+  - Slam
+  - Sleep Talk
+  - Snore
+  - Spark
+  - Speed Swap
+  - Strength
+  - Submission
+  - Substitute
+  - Surf
+  - Swagger
+  - Sweet Kiss
+  - Swift
+  - Tail Whip
+  - Take Down
+  - Tera Blast
+  - Thief
+  - Thunder
+  - Thunder Punch
+  - Thunder Shock
+  - Thunder Wave
+  - Thunderbolt
+  - Tickle
+  - Toxic
+  - Trailblaze
+  - Upper Hand
+  - Uproar
+  - Volt Switch
+  - Volt Tackle
+  - Wild Charge
+  - Wish
+  - Zap Cannon
 added_in_regulation: M-A or earlier (base) / M-B (both Megas)
 legal_in_regulations: [M-B]  # earliest confirmed regulation only; may be legal earlier too
 notes: >
@@ -54,3 +171,11 @@ data_confidence: >
   Pokemon Champions client, which has already been shown to diverge from
   mainline in places (see items-m-b.yaml re: Choice items). Re-verify before
   relying on it for a real draft/build decision.
+
+  Full `learnset` (116 moves) fetched from PokeAPI's mainline movepool for
+  pokemon/raichu (level-up + TM/HM + egg + tutor moves combined) by
+  backfill_learnset.py. This is NOT confirmed against the live Pokemon
+  Champions client -- Champions has already been shown to diverge from
+  mainline itemization (see items-m-b.yaml), so some listed moves may not
+  actually be learnable in Champions. Treat as a candidate pool, not a
+  guarantee.

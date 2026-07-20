@@ -11,9 +11,156 @@ abilities:
     hidden: true
 mega: null  # TODO: fill in if this species has a Mega Evolution
 moves: null  # TODO: curate competitive movepool (moves actually run in Reg M-B sets)
+learnset:
+  - Aerial Ace
+  - Ally Switch
+  - Astonish
+  - Attract
+  - Body Slam
+  - Brick Break
+  - Bulk Up
+  - Calm Mind
+  - Captivate
+  - Confide
+  - Confuse Ray
+  - Counter
+  - Cut
+  - Dark Pulse
+  - Dazzling Gleam
+  - Detect
+  - Dig
+  - Disable
+  - Double Team
+  - Double-Edge
+  - Drain Punch
+  - Dream Eater
+  - Dynamic Punch
+  - Embargo
+  - Encore
+  - Endure
+  - Energy Ball
+  - Facade
+  - Fake Out
+  - Feint
+  - Feint Attack
+  - Fire Punch
+  - Flash
+  - Flatter
+  - Fling
+  - Focus Punch
+  - Foresight
+  - Foul Play
+  - Frustration
+  - Fury Cutter
+  - Fury Swipes
+  - Giga Drain
+  - Giga Impact
+  - Gravity
+  - Gyro Ball
+  - Headbutt
+  - Helping Hand
+  - Hex
+  - Hidden Power
+  - Hone Claws
+  - Hyper Beam
+  - Ice Punch
+  - Icy Wind
+  - Imprison
+  - Incinerate
+  - Knock Off
+  - Lash Out
+  - Leer
+  - Light Screen
+  - Low Kick
+  - Low Sweep
+  - Magic Coat
+  - Mean Look
+  - Mega Kick
+  - Mega Punch
+  - Metal Burst
+  - Metal Claw
+  - Metronome
+  - Mimic
+  - Moonlight
+  - Mud Shot
+  - Mud-Slap
+  - Nasty Plot
+  - Natural Gift
+  - Night Shade
+  - Night Slash
+  - Nightmare
+  - Ominous Wind
+  - Pain Split
+  - Payback
+  - Phantom Force
+  - Poison Jab
+  - Poltergeist
+  - Power Gem
+  - Power-Up Punch
+  - Protect
+  - Psybeam
+  - Psych Up
+  - Psychic
+  - Punishment
+  - Quash
+  - Rain Dance
+  - Recover
+  - Reflect
+  - Rest
+  - Retaliate
+  - Return
+  - Rock Smash
+  - Rock Tomb
+  - Role Play
+  - Round
+  - Safeguard
+  - Scratch
+  - Secret Power
+  - Seismic Toss
+  - Shadow Ball
+  - Shadow Claw
+  - Shadow Punch
+  - Shadow Sneak
+  - Shock Wave
+  - Signal Beam
+  - Skill Swap
+  - Skitter Smack
+  - Sleep Talk
+  - Snarl
+  - Snatch
+  - Snore
+  - Spite
+  - Substitute
+  - Sucker Punch
+  - Sunny Day
+  - Swagger
+  - Take Down
+  - Taunt
+  - Telekinesis
+  - Tera Blast
+  - Thief
+  - Throat Chop
+  - Thunder Punch
+  - Thunder Wave
+  - Torment
+  - Toxic
+  - Trick
+  - Water Pulse
+  - Will-O-Wisp
+  - Wonder Room
+  - X-Scissor
+  - Zen Headbutt
 added_in_regulation: M-B
 legal_in_regulations: [M-B]
 notes: >
   TODO: add competitive notes (role, speed-control relevance, etc).
 data_confidence: >
   Base stats/types/abilities fetched live from PokeAPI (https://pokeapi.co/api/v2) by fetch_pokemon_data.py. Mega Evolution data (if any) and competitive notes are NOT from PokeAPI and should be verified/updated by hand each season.
+
+  Full `learnset` (138 moves) fetched from PokeAPI's mainline movepool for
+  pokemon/sableye (level-up + TM/HM + egg + tutor moves combined) by
+  backfill_learnset.py. This is NOT confirmed against the live Pokemon
+  Champions client -- Champions has already been shown to diverge from
+  mainline itemization (see items-m-b.yaml), so some listed moves may not
+  actually be learnable in Champions. Treat as a candidate pool, not a
+  guarantee.

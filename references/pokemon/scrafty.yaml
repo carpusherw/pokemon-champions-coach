@@ -21,6 +21,115 @@ mega:
     Evolves in -- while every stat except Speed rises substantially
     (Atk 90->130, Def 115->135, SpD 115->135).
 moves: [Knock Off, Drain Punch, Fake Out, Protect]
+learnset:
+  - Acid Spray
+  - Amnesia
+  - Assurance
+  - Attract
+  - Beat Up
+  - Body Slam
+  - Brick Break
+  - Bulk Up
+  - Chip Away
+  - Close Combat
+  - Coaching
+  - Confide
+  - Counter
+  - Crunch
+  - Curse
+  - Dark Pulse
+  - Detect
+  - Dig
+  - Double Team
+  - Double-Edge
+  - Dragon Claw
+  - Dragon Dance
+  - Dragon Pulse
+  - Dragon Tail
+  - Drain Punch
+  - Dual Chop
+  - Encore
+  - Endeavor
+  - Endure
+  - Facade
+  - Fake Out
+  - Fake Tears
+  - Feint Attack
+  - Fire Punch
+  - Fling
+  - Focus Blast
+  - Focus Punch
+  - Foul Play
+  - Frustration
+  - Giga Impact
+  - Grass Knot
+  - Head Smash
+  - Headbutt
+  - Helping Hand
+  - Hidden Power
+  - High Jump Kick
+  - Hyper Beam
+  - Ice Punch
+  - Incinerate
+  - Iron Defense
+  - Iron Head
+  - Iron Tail
+  - Knock Off
+  - Lash Out
+  - Leer
+  - Low Kick
+  - Low Sweep
+  - Mega Kick
+  - Mega Punch
+  - Metronome
+  - Outrage
+  - Payback
+  - Poison Jab
+  - Power-Up Punch
+  - Protect
+  - Quick Guard
+  - Rain Dance
+  - Rest
+  - Retaliate
+  - Return
+  - Revenge
+  - Reversal
+  - Roar
+  - Rock Climb
+  - Rock Slide
+  - Rock Smash
+  - Rock Tomb
+  - Round
+  - Sand Attack
+  - Scary Face
+  - Secret Power
+  - Sleep Talk
+  - Sludge Bomb
+  - Smack Down
+  - Snarl
+  - Snatch
+  - Snore
+  - Spite
+  - Stone Edge
+  - Strength
+  - Substitute
+  - Sunny Day
+  - Super Fang
+  - Swagger
+  - Swords Dance
+  - Take Down
+  - Taunt
+  - Tera Blast
+  - Thief
+  - Throat Chop
+  - Thunder Punch
+  - Torment
+  - Toxic
+  - Trailblaze
+  - Upper Hand
+  - Uproar
+  - Work Up
+  - Zen Headbutt
 added_in_regulation: M-A or earlier (base) / M-B (Mega)
 legal_in_regulations: [M-B]  # earliest confirmed regulation only; may be legal earlier too
 notes: >
@@ -43,3 +152,11 @@ data_confidence: >
   Pokemon Champions client, which has already been shown to diverge from
   mainline in places (see items-m-b.yaml re: Choice items). Re-verify before
   relying on it for a real draft/build decision.
+
+  Full `learnset` (108 moves) fetched from PokeAPI's mainline movepool for
+  pokemon/scrafty (level-up + TM/HM + egg + tutor moves combined) by
+  backfill_learnset.py. This is NOT confirmed against the live Pokemon
+  Champions client -- Champions has already been shown to diverge from
+  mainline itemization (see items-m-b.yaml), so some listed moves may not
+  actually be learnable in Champions. Treat as a candidate pool, not a
+  guarantee.
