@@ -11,9 +11,118 @@ abilities:
     hidden: true
 mega: null  # TODO: fill in if this species has a Mega Evolution
 moves: null  # TODO: curate competitive movepool (moves actually run in Reg M-B sets)
+learnset:
+  - Aerial Ace
+  - Arm Thrust
+  - Assurance
+  - Attract
+  - Bide
+  - Body Slam
+  - Brick Break
+  - Brutal Swing
+  - Bug Bite
+  - Bug Buzz
+  - Bulk Up
+  - Bulldoze
+  - Bullet Seed
+  - Captivate
+  - Chip Away
+  - Circle Throw
+  - Close Combat
+  - Coaching
+  - Confide
+  - Counter
+  - Curse
+  - Cut
+  - Detect
+  - Dig
+  - Double Team
+  - Double-Edge
+  - Earthquake
+  - Endeavor
+  - Endure
+  - Facade
+  - False Swipe
+  - Feint
+  - Flail
+  - Fling
+  - Focus Blast
+  - Focus Punch
+  - Frustration
+  - Fury Attack
+  - Fury Cutter
+  - Giga Impact
+  - Harden
+  - Headbutt
+  - Helping Hand
+  - Hidden Power
+  - High Horsepower
+  - Horn Attack
+  - Hyper Beam
+  - Iron Defense
+  - Knock Off
+  - Leer
+  - Low Kick
+  - Lunge
+  - Megahorn
+  - Mimic
+  - Natural Gift
+  - Night Slash
+  - Pin Missile
+  - Pounce
+  - Protect
+  - Pursuit
+  - Rain Dance
+  - Rest
+  - Retaliate
+  - Return
+  - Revenge
+  - Reversal
+  - Rock Blast
+  - Rock Slide
+  - Rock Smash
+  - Rock Tomb
+  - Round
+  - Secret Power
+  - Seismic Toss
+  - Shadow Claw
+  - Skitter Smack
+  - Slash
+  - Sleep Talk
+  - Smack Down
+  - Smart Strike
+  - Snore
+  - Spikes
+  - Stone Edge
+  - Strength
+  - Struggle Bug
+  - Substitute
+  - Sunny Day
+  - Swagger
+  - Swords Dance
+  - Tackle
+  - Take Down
+  - Tera Blast
+  - Thief
+  - Thrash
+  - Throat Chop
+  - Toxic
+  - Trailblaze
+  - Upper Hand
+  - Vacuum Wave
+  - Venoshock
+  - Work Up
 added_in_regulation: M-B
 legal_in_regulations: [M-B]
 notes: >
   TODO: add competitive notes (role, speed-control relevance, etc).
 data_confidence: >
   Base stats/types/abilities fetched live from PokeAPI (https://pokeapi.co/api/v2) by fetch_pokemon_data.py. Mega Evolution data (if any) and competitive notes are NOT from PokeAPI and should be verified/updated by hand each season.
+
+  Full `learnset` (100 moves) fetched from PokeAPI's mainline movepool for
+  pokemon/heracross (level-up + TM/HM + egg + tutor moves combined) by
+  backfill_learnset.py. This is NOT confirmed against the live Pokemon
+  Champions client -- Champions has already been shown to diverge from
+  mainline itemization (see items-m-b.yaml), so some listed moves may not
+  actually be learnable in Champions. Treat as a candidate pool, not a
+  guarantee.

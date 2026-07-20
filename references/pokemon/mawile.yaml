@@ -20,6 +20,116 @@ mega:
     Atk), one of the hardest physical hitters in the game despite mediocre
     Speed. Confirmed via PokeAPI (pokemon/mawile-mega) on 2026-07-18.
 moves: [Play Rough, Sucker Punch, Iron Head, Protect]
+learnset:
+  - Ancient Power
+  - Assurance
+  - Astonish
+  - Attract
+  - Baton Pass
+  - Bite
+  - Body Slam
+  - Brick Break
+  - Brutal Swing
+  - Captivate
+  - Charge Beam
+  - Confide
+  - Counter
+  - Crunch
+  - Dark Pulse
+  - Double Team
+  - Double-Edge
+  - Draining Kiss
+  - Dynamic Punch
+  - Embargo
+  - Endure
+  - Facade
+  - Fairy Wind
+  - Fake Tears
+  - False Swipe
+  - Feint Attack
+  - Fire Blast
+  - Fire Fang
+  - Flamethrower
+  - Flash Cannon
+  - Fling
+  - Focus Blast
+  - Focus Punch
+  - Foul Play
+  - Frustration
+  - Giga Impact
+  - Grass Knot
+  - Growl
+  - Guard Swap
+  - Headbutt
+  - Helping Hand
+  - Hidden Power
+  - Hyper Beam
+  - Ice Beam
+  - Ice Fang
+  - Ice Punch
+  - Icy Wind
+  - Incinerate
+  - Iron Defense
+  - Iron Head
+  - Knock Off
+  - Laser Focus
+  - Last Resort
+  - Magnet Rise
+  - Mega Kick
+  - Mega Punch
+  - Metal Burst
+  - Mimic
+  - Misty Terrain
+  - Mud-Slap
+  - Natural Gift
+  - Pain Split
+  - Payback
+  - Play Rough
+  - Poison Fang
+  - Power-Up Punch
+  - Protect
+  - Psych Up
+  - Psychic Fangs
+  - Punishment
+  - Rain Dance
+  - Rest
+  - Return
+  - Rock Slide
+  - Rock Smash
+  - Rock Tomb
+  - Round
+  - Sandstorm
+  - Secret Power
+  - Seismic Toss
+  - Shadow Ball
+  - Sing
+  - Slam
+  - Sleep Talk
+  - Sludge Bomb
+  - Snatch
+  - Snore
+  - Solar Beam
+  - Spit Up
+  - Stealth Rock
+  - Steel Beam
+  - Stockpile
+  - Stone Edge
+  - Strength
+  - Substitute
+  - Sucker Punch
+  - Sunny Day
+  - Super Fang
+  - Swagger
+  - Swallow
+  - Sweet Scent
+  - Swords Dance
+  - Taunt
+  - Thunder Fang
+  - Thunder Punch
+  - Tickle
+  - Torment
+  - Toxic
+  - Vise Grip
 added_in_regulation: M-A (base) / M-B (Mega)
 legal_in_regulations: [M-B]  # earliest confirmed regulation only; may be legal earlier too
 notes: >
@@ -38,3 +148,11 @@ data_confidence: >
   Pokemon Champions client, which has already been shown to diverge from
   mainline in places (see items-m-b.yaml re: Choice items). Re-verify before
   relying on it for a real draft/build decision.
+
+  Full `learnset` (109 moves) fetched from PokeAPI's mainline movepool for
+  pokemon/mawile (level-up + TM/HM + egg + tutor moves combined) by
+  backfill_learnset.py. This is NOT confirmed against the live Pokemon
+  Champions client -- Champions has already been shown to diverge from
+  mainline itemization (see items-m-b.yaml), so some listed moves may not
+  actually be learnable in Champions. Treat as a candidate pool, not a
+  guarantee.

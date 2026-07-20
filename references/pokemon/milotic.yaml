@@ -11,9 +11,108 @@ abilities:
     hidden: true
 mega: null  # TODO: fill in if this species has a Mega Evolution
 moves: null  # TODO: curate competitive movepool (moves actually run in Reg M-B sets)
+learnset:
+  - Alluring Voice
+  - Aqua Ring
+  - Aqua Tail
+  - Attract
+  - Avalanche
+  - Bind
+  - Blizzard
+  - Body Slam
+  - Breaking Swipe
+  - Brine
+  - Brutal Swing
+  - Bulldoze
+  - Captivate
+  - Chilling Water
+  - Coil
+  - Confide
+  - Confuse Ray
+  - Disarming Voice
+  - Dive
+  - Double Team
+  - Double-Edge
+  - Dragon Breath
+  - Dragon Cheer
+  - Dragon Dance
+  - Dragon Pulse
+  - Dragon Tail
+  - Draining Kiss
+  - Endure
+  - Facade
+  - Flail
+  - Flip Turn
+  - Frustration
+  - Giga Impact
+  - Hail
+  - Haze
+  - Helping Hand
+  - Hidden Power
+  - Hydro Pump
+  - Hyper Beam
+  - Hypnosis
+  - Ice Beam
+  - Icy Wind
+  - Imprison
+  - Iron Head
+  - Iron Tail
+  - Laser Focus
+  - Life Dew
+  - Light Screen
+  - Magic Coat
+  - Mimic
+  - Mirror Coat
+  - Mist
+  - Mud Shot
+  - Mud-Slap
+  - Muddy Water
+  - Natural Gift
+  - Protect
+  - Psych Up
+  - Rain Dance
+  - Recover
+  - Refresh
+  - Rest
+  - Return
+  - Round
+  - Safeguard
+  - Scald
+  - Scale Shot
+  - Secret Power
+  - Skitter Smack
+  - Sleep Talk
+  - Snore
+  - Splash
+  - Substitute
+  - Surf
+  - Swagger
+  - Swift
+  - Tackle
+  - Take Down
+  - Tera Blast
+  - Tickle
+  - Toxic
+  - Triple Axel
+  - Twister
+  - Water Gun
+  - Water Pulse
+  - Water Sport
+  - Waterfall
+  - Weather Ball
+  - Whirlpool
+  - Wrap
 added_in_regulation: M-B
 legal_in_regulations: [M-B]
 notes: >
   TODO: add competitive notes (role, speed-control relevance, etc).
 data_confidence: >
   Base stats/types/abilities fetched live from PokeAPI (https://pokeapi.co/api/v2) by fetch_pokemon_data.py. Mega Evolution data (if any) and competitive notes are NOT from PokeAPI and should be verified/updated by hand each season.
+
+  Full `learnset` (90 moves) fetched from PokeAPI's mainline movepool for
+  pokemon/milotic (level-up + TM/HM + egg + tutor moves combined) by
+  backfill_learnset.py. This is NOT confirmed against the live Pokemon
+  Champions client -- Champions has already been shown to diverge from
+  mainline itemization (see items-m-b.yaml), so some listed moves may not
+  actually be learnable in Champions. Treat as a candidate pool, not a
+  guarantee.

@@ -11,9 +11,137 @@ abilities:
     hidden: true
 mega: null  # TODO: fill in if this species has a Mega Evolution
 moves: null  # TODO: curate competitive movepool (moves actually run in Reg M-B sets)
+learnset:
+  - Aerial Ace
+  - Agility
+  - Attract
+  - Aura Sphere
+  - Bite
+  - Blaze Kick
+  - Body Slam
+  - Bone Rush
+  - Brick Break
+  - Bulk Up
+  - Bulldoze
+  - Bullet Punch
+  - Calm Mind
+  - Captivate
+  - Circle Throw
+  - Close Combat
+  - Coaching
+  - Confide
+  - Copycat
+  - Counter
+  - Cross Chop
+  - Crunch
+  - Dark Pulse
+  - Detect
+  - Dig
+  - Double Team
+  - Dragon Pulse
+  - Drain Punch
+  - Dual Chop
+  - Earthquake
+  - Endure
+  - Extreme Speed
+  - Facade
+  - Feint
+  - Final Gambit
+  - Flash Cannon
+  - Fling
+  - Focus Blast
+  - Focus Energy
+  - Focus Punch
+  - Force Palm
+  - Foresight
+  - Frustration
+  - Fury Cutter
+  - Giga Impact
+  - Headbutt
+  - Heal Pulse
+  - Helping Hand
+  - Hidden Power
+  - High Jump Kick
+  - Hone Claws
+  - Howl
+  - Hyper Beam
+  - Ice Punch
+  - Iron Defense
+  - Iron Tail
+  - Laser Focus
+  - Life Dew
+  - Low Kick
+  - Low Sweep
+  - Mach Punch
+  - Magnet Rise
+  - Me First
+  - Mega Kick
+  - Mega Punch
+  - Metal Claw
+  - Metal Sound
+  - Meteor Mash
+  - Metronome
+  - Mud-Slap
+  - Nasty Plot
+  - Natural Gift
+  - Payback
+  - Poison Jab
+  - Power-Up Punch
+  - Protect
+  - Psych Up
+  - Psychic
+  - Quick Attack
+  - Quick Guard
+  - Rain Dance
+  - Rest
+  - Retaliate
+  - Return
+  - Revenge
+  - Reversal
+  - Roar
+  - Rock Climb
+  - Rock Slide
+  - Rock Smash
+  - Rock Tomb
+  - Role Play
+  - Round
+  - Scary Face
+  - Screech
+  - Secret Power
+  - Shadow Ball
+  - Shadow Claw
+  - Sleep Talk
+  - Snore
+  - Steel Beam
+  - Stone Edge
+  - Strength
+  - Substitute
+  - Sunny Day
+  - Swagger
+  - Swift
+  - Swords Dance
+  - Take Down
+  - Tera Blast
+  - Terrain Pulse
+  - Thunder Punch
+  - Toxic
+  - Trailblaze
+  - Upper Hand
+  - Vacuum Wave
+  - Water Pulse
+  - Work Up
+  - Zen Headbutt
 added_in_regulation: M-B
 legal_in_regulations: [M-B]
 notes: >
   TODO: add competitive notes (role, speed-control relevance, etc).
 data_confidence: >
   Base stats/types/abilities fetched live from PokeAPI (https://pokeapi.co/api/v2) by fetch_pokemon_data.py. Mega Evolution data (if any) and competitive notes are NOT from PokeAPI and should be verified/updated by hand each season.
+
+  Full `learnset` (119 moves) fetched from PokeAPI's mainline movepool for
+  pokemon/lucario (level-up + TM/HM + egg + tutor moves combined) by
+  backfill_learnset.py. This is NOT confirmed against the live Pokemon
+  Champions client -- Champions has already been shown to diverge from
+  mainline itemization (see items-m-b.yaml), so some listed moves may not
+  actually be learnable in Champions. Treat as a candidate pool, not a
+  guarantee.

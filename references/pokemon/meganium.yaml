@@ -9,9 +9,114 @@ abilities:
     hidden: true
 mega: null  # TODO: fill in if this species has a Mega Evolution
 moves: null  # TODO: curate competitive movepool (moves actually run in Reg M-B sets)
+learnset:
+  - Ancient Power
+  - Aromatherapy
+  - Attract
+  - Body Press
+  - Body Slam
+  - Bulldoze
+  - Bullet Seed
+  - Captivate
+  - Charm
+  - Confide
+  - Counter
+  - Curse
+  - Cut
+  - Dazzling Gleam
+  - Detect
+  - Double Team
+  - Double-Edge
+  - Dragon Tail
+  - Earth Power
+  - Earthquake
+  - Echoed Voice
+  - Encore
+  - Endeavor
+  - Endure
+  - Energy Ball
+  - Facade
+  - Fake Tears
+  - Flail
+  - Flash
+  - Frenzy Plant
+  - Frustration
+  - Fury Cutter
+  - Giga Drain
+  - Giga Impact
+  - Grass Knot
+  - Grass Pledge
+  - Grassy Glide
+  - Grassy Terrain
+  - Growl
+  - Headbutt
+  - Heal Pulse
+  - Helping Hand
+  - Hidden Power
+  - Hyper Beam
+  - Ingrain
+  - Iron Tail
+  - Knock Off
+  - Laser Focus
+  - Leaf Blade
+  - Leaf Storm
+  - Leech Seed
+  - Light Screen
+  - Magic Coat
+  - Magical Leaf
+  - Mimic
+  - Mud-Slap
+  - Natural Gift
+  - Nature Power
+  - Outrage
+  - Petal Blizzard
+  - Petal Dance
+  - Poison Powder
+  - Pollen Puff
+  - Protect
+  - Razor Leaf
+  - Reflect
+  - Rest
+  - Return
+  - Rock Climb
+  - Rock Smash
+  - Round
+  - Safeguard
+  - Secret Power
+  - Seed Bomb
+  - Sleep Talk
+  - Snore
+  - Solar Beam
+  - Solar Blade
+  - Stomping Tantrum
+  - Strength
+  - Substitute
+  - Sunny Day
+  - Swagger
+  - Sweet Scent
+  - Swords Dance
+  - Synthesis
+  - Tackle
+  - Take Down
+  - Tera Blast
+  - Toxic
+  - Trailblaze
+  - Vine Whip
+  - Weather Ball
+  - Work Up
+  - Worry Seed
+  - Zen Headbutt
 added_in_regulation: M-B
 legal_in_regulations: [M-B]
 notes: >
   TODO: add competitive notes (role, speed-control relevance, etc).
 data_confidence: >
   Base stats/types/abilities fetched live from PokeAPI (https://pokeapi.co/api/v2) by fetch_pokemon_data.py. Mega Evolution data (if any) and competitive notes are NOT from PokeAPI and should be verified/updated by hand each season.
+
+  Full `learnset` (96 moves) fetched from PokeAPI's mainline movepool for
+  pokemon/meganium (level-up + TM/HM + egg + tutor moves combined) by
+  backfill_learnset.py. This is NOT confirmed against the live Pokemon
+  Champions client -- Champions has already been shown to diverge from
+  mainline itemization (see items-m-b.yaml), so some listed moves may not
+  actually be learnable in Champions. Treat as a candidate pool, not a
+  guarantee.

@@ -7,6 +7,95 @@ abilities:
     hidden: false
 mega: null  # TODO: fill in if this species has a Mega Evolution
 moves: [Play Rough, Shadow Sneak, Swords Dance, Trick Room]
+learnset:
+  - After You
+  - Astonish
+  - Attract
+  - Baby-Doll Eyes
+  - Beat Up
+  - Bulk Up
+  - Burning Jealousy
+  - Charge Beam
+  - Charm
+  - Confide
+  - Confuse Ray
+  - Copycat
+  - Covet
+  - Curse
+  - Dark Pulse
+  - Dazzling Gleam
+  - Destiny Bond
+  - Double Team
+  - Drain Punch
+  - Draining Kiss
+  - Dream Eater
+  - Embargo
+  - Endure
+  - Facade
+  - Feint Attack
+  - Fling
+  - Frustration
+  - Giga Drain
+  - Giga Impact
+  - Grudge
+  - Hex
+  - Hidden Power
+  - Hone Claws
+  - Hyper Beam
+  - Infestation
+  - Last Resort
+  - Leech Life
+  - Light Screen
+  - Magic Room
+  - Mimic
+  - Misty Terrain
+  - Night Shade
+  - Night Slash
+  - Nightmare
+  - Pain Split
+  - Payback
+  - Phantom Force
+  - Play Rough
+  - Pounce
+  - Protect
+  - Psych Up
+  - Psychic
+  - Rain Dance
+  - Rest
+  - Return
+  - Round
+  - Safeguard
+  - Scratch
+  - Screech
+  - Shadow Ball
+  - Shadow Claw
+  - Shadow Sneak
+  - Slash
+  - Sleep Talk
+  - Snatch
+  - Snore
+  - Spite
+  - Splash
+  - Substitute
+  - Sunny Day
+  - Swagger
+  - Swords Dance
+  - Take Down
+  - Taunt
+  - Telekinesis
+  - Tera Blast
+  - Thief
+  - Thunder
+  - Thunder Wave
+  - Thunderbolt
+  - Toxic
+  - Trailblaze
+  - Trick
+  - Trick Room
+  - Will-O-Wisp
+  - Wood Hammer
+  - Work Up
+  - X-Scissor
 added_in_regulation: M-B
 legal_in_regulations: [M-B]
 notes: >
@@ -24,3 +113,11 @@ data_confidence: >
   Pokemon Champions client, which has already been shown to diverge from
   mainline in places (see items-m-b.yaml re: Choice items). Re-verify before
   relying on it for a real draft/build decision.
+
+  Full `learnset` (88 moves) fetched from PokeAPI's mainline movepool for
+  pokemon/mimikyu-disguised (level-up + TM/HM + egg + tutor moves combined) by
+  backfill_learnset.py. This is NOT confirmed against the live Pokemon
+  Champions client -- Champions has already been shown to diverge from
+  mainline itemization (see items-m-b.yaml), so some listed moves may not
+  actually be learnable in Champions. Treat as a candidate pool, not a
+  guarantee.

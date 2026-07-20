@@ -11,9 +11,77 @@ abilities:
     hidden: true
 mega: null  # TODO: fill in if this species has a Mega Evolution
 moves: null  # TODO: curate competitive movepool (moves actually run in Reg M-B sets)
+learnset:
+  - Astonish
+  - Body Press
+  - Body Slam
+  - Breaking Swipe
+  - Bug Bite
+  - Bullet Seed
+  - Curse
+  - Defense Curl
+  - Double Hit
+  - Double-Edge
+  - Draco Meteor
+  - Dragon Breath
+  - Dragon Cheer
+  - Dragon Pulse
+  - Dragon Tail
+  - Earth Power
+  - Earthquake
+  - Endure
+  - Energy Ball
+  - Facade
+  - Fickle Beam
+  - Giga Drain
+  - Giga Impact
+  - Grass Knot
+  - Grassy Glide
+  - Grassy Terrain
+  - Growth
+  - Gyro Ball
+  - Heavy Slam
+  - Hydro Pump
+  - Hyper Beam
+  - Infestation
+  - Leaf Storm
+  - Magical Leaf
+  - Nasty Plot
+  - Outrage
+  - Pollen Puff
+  - Pounce
+  - Power Whip
+  - Protect
+  - Rain Dance
+  - Recover
+  - Recycle
+  - Reflect
+  - Rest
+  - Rollout
+  - Seed Bomb
+  - Sleep Talk
+  - Solar Beam
+  - Substitute
+  - Sucker Punch
+  - Sunny Day
+  - Sweet Scent
+  - Syrup Bomb
+  - Take Down
+  - Tera Blast
+  - Uproar
+  - Withdraw
+  - Yawn
 added_in_regulation: M-B
 legal_in_regulations: [M-B]
 notes: >
   TODO: add competitive notes (role, speed-control relevance, etc).
 data_confidence: >
   Base stats/types/abilities fetched live from PokeAPI (https://pokeapi.co/api/v2) by fetch_pokemon_data.py. Mega Evolution data (if any) and competitive notes are NOT from PokeAPI and should be verified/updated by hand each season.
+
+  Full `learnset` (59 moves) fetched from PokeAPI's mainline movepool for
+  pokemon/hydrapple (level-up + TM/HM + egg + tutor moves combined) by
+  backfill_learnset.py. This is NOT confirmed against the live Pokemon
+  Champions client -- Champions has already been shown to diverge from
+  mainline itemization (see items-m-b.yaml), so some listed moves may not
+  actually be learnable in Champions. Treat as a candidate pool, not a
+  guarantee.

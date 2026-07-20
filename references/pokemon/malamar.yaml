@@ -21,6 +21,98 @@ mega:
     form -- turns its already-notable Contrary (regular ability) set into a
     much scarier stat-up sweeper once Mega Evolved.
 moves: [Superpower, Psycho Cut, Knock Off, Protect]
+learnset:
+  - Acupressure
+  - Aerial Ace
+  - Ally Switch
+  - Attract
+  - Baton Pass
+  - Bind
+  - Block
+  - Brutal Swing
+  - Calm Mind
+  - Confide
+  - Constrict
+  - Cut
+  - Dark Pulse
+  - Destiny Bond
+  - Disable
+  - Double Team
+  - Embargo
+  - Endure
+  - Expanding Force
+  - Facade
+  - Fake Tears
+  - Flamethrower
+  - Flash
+  - Fling
+  - Foul Play
+  - Frustration
+  - Future Sight
+  - Giga Impact
+  - Gravity
+  - Guard Swap
+  - Helping Hand
+  - Hidden Power
+  - Hyper Beam
+  - Hypnosis
+  - Knock Off
+  - Lash Out
+  - Light Screen
+  - Liquidation
+  - Lunge
+  - Nasty Plot
+  - Night Slash
+  - Payback
+  - Peck
+  - Pluck
+  - Protect
+  - Psybeam
+  - Psych Up
+  - Psychic
+  - Psychic Noise
+  - Psycho Cut
+  - Psyshock
+  - Psywave
+  - Rain Dance
+  - Reflect
+  - Rest
+  - Retaliate
+  - Return
+  - Reversal
+  - Rock Slide
+  - Role Play
+  - Round
+  - Scary Face
+  - Secret Power
+  - Signal Beam
+  - Skill Swap
+  - Slash
+  - Sleep Talk
+  - Snatch
+  - Snore
+  - Spite
+  - Stored Power
+  - Substitute
+  - Sunny Day
+  - Superpower
+  - Swagger
+  - Swift
+  - Switcheroo
+  - Tackle
+  - Taunt
+  - Telekinesis
+  - Tera Blast
+  - Thief
+  - Throat Chop
+  - Thunderbolt
+  - Topsy-Turvy
+  - Torment
+  - Toxic
+  - Trailblaze
+  - Trick
+  - Trick Room
+  - Wrap
 added_in_regulation: M-A or earlier (base) / M-B (Mega)
 legal_in_regulations: [M-B]  # earliest confirmed regulation only; may be legal earlier too
 notes: >
@@ -44,3 +136,11 @@ data_confidence: >
   Pokemon Champions client, which has already been shown to diverge from
   mainline in places (see items-m-b.yaml re: Choice items). Re-verify before
   relying on it for a real draft/build decision.
+
+  Full `learnset` (91 moves) fetched from PokeAPI's mainline movepool for
+  pokemon/malamar (level-up + TM/HM + egg + tutor moves combined) by
+  backfill_learnset.py. This is NOT confirmed against the live Pokemon
+  Champions client -- Champions has already been shown to diverge from
+  mainline itemization (see items-m-b.yaml), so some listed moves may not
+  actually be learnable in Champions. Treat as a candidate pool, not a
+  guarantee.

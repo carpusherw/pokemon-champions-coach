@@ -11,6 +11,62 @@ abilities:
     hidden: true
 mega: null  # TODO: fill in if this species has a Mega Evolution
 moves: [Population Bomb, Tidy Up, Encore, Protect]
+learnset:
+  - Aerial Ace
+  - After You
+  - Agility
+  - Baby-Doll Eyes
+  - Baton Pass
+  - Beat Up
+  - Bite
+  - Bullet Seed
+  - Charm
+  - Chilling Water
+  - Copycat
+  - Crunch
+  - Dig
+  - Double Hit
+  - Double-Edge
+  - Echoed Voice
+  - Encore
+  - Endure
+  - Facade
+  - Fake Tears
+  - Feint
+  - Follow Me
+  - Giga Impact
+  - Grass Knot
+  - Helping Hand
+  - Hyper Beam
+  - Hyper Voice
+  - Low Kick
+  - Low Sweep
+  - Mud Shot
+  - Mud-Slap
+  - Play Rough
+  - Population Bomb
+  - Pound
+  - Protect
+  - Rain Dance
+  - Rest
+  - Seed Bomb
+  - Shadow Claw
+  - Sleep Talk
+  - Substitute
+  - Sunny Day
+  - Super Fang
+  - Swift
+  - Switcheroo
+  - Take Down
+  - Taunt
+  - Tera Blast
+  - Thief
+  - Thunder Wave
+  - Tickle
+  - Tidy Up
+  - Trailblaze
+  - U-turn
+  - Water Pulse
 added_in_regulation: M-B
 legal_in_regulations: [M-B]
 notes: >
@@ -26,3 +82,11 @@ data_confidence: >
   Pokemon Champions client, which has already been shown to diverge from
   mainline in places (see items-m-b.yaml re: Choice items). Re-verify before
   relying on it for a real draft/build decision.
+
+  Full `learnset` (55 moves) fetched from PokeAPI's mainline movepool for
+  pokemon/maushold-family-of-four (level-up + TM/HM + egg + tutor moves
+  combined) by backfill_learnset.py. This is NOT confirmed against the live
+  Pokemon Champions client -- Champions has already been shown to diverge from
+  mainline itemization (see items-m-b.yaml), so some listed moves may not
+  actually be learnable in Champions. Treat as a candidate pool, not a
+  guarantee.

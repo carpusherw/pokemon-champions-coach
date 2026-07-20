@@ -11,9 +11,108 @@ abilities:
     hidden: true
 mega: null  # TODO: fill in if this species has a Mega Evolution
 moves: null  # TODO: curate competitive movepool (moves actually run in Reg M-B sets)
+learnset:
+  - Alluring Voice
+  - Ally Switch
+  - Attract
+  - Baton Pass
+  - Calm Mind
+  - Charge Beam
+  - Charm
+  - Confide
+  - Confusion
+  - Covet
+  - Cut
+  - Dark Pulse
+  - Dig
+  - Disarming Voice
+  - Double Team
+  - Dream Eater
+  - Echoed Voice
+  - Endure
+  - Energy Ball
+  - Expanding Force
+  - Extrasensory
+  - Facade
+  - Fake Out
+  - Fake Tears
+  - Flash
+  - Frustration
+  - Future Sight
+  - Giga Impact
+  - Gravity
+  - Heal Bell
+  - Helping Hand
+  - Hidden Power
+  - Hyper Beam
+  - Iron Tail
+  - Leer
+  - Light Screen
+  - Magic Coat
+  - Magic Room
+  - Magical Leaf
+  - Me First
+  - Nasty Plot
+  - Pay Day
+  - Payback
+  - Play Rough
+  - Power-Up Punch
+  - Protect
+  - Psybeam
+  - Psych Up
+  - Psychic
+  - Psychic Noise
+  - Psychic Terrain
+  - Psyshock
+  - Rain Dance
+  - Recycle
+  - Reflect
+  - Rest
+  - Return
+  - Role Play
+  - Round
+  - Safeguard
+  - Scratch
+  - Secret Power
+  - Shadow Ball
+  - Shock Wave
+  - Signal Beam
+  - Skill Swap
+  - Sleep Talk
+  - Snatch
+  - Snore
+  - Stored Power
+  - Substitute
+  - Sucker Punch
+  - Sunny Day
+  - Swagger
+  - Swift
+  - Tail Slap
+  - Telekinesis
+  - Tera Blast
+  - Thunder Wave
+  - Thunderbolt
+  - Tickle
+  - Torment
+  - Toxic
+  - Trailblaze
+  - Trick
+  - Trick Room
+  - Wonder Room
+  - Work Up
+  - Yawn
+  - Zen Headbutt
 added_in_regulation: M-B
 legal_in_regulations: [M-B]
 notes: >
   TODO: add competitive notes (role, speed-control relevance, etc).
 data_confidence: >
   Base stats/types/abilities fetched live from PokeAPI (https://pokeapi.co/api/v2) by fetch_pokemon_data.py. Mega Evolution data (if any) and competitive notes are NOT from PokeAPI and should be verified/updated by hand each season.
+
+  Full `learnset` (90 moves) fetched from PokeAPI's mainline movepool for
+  pokemon/meowstic-female (level-up + TM/HM + egg + tutor moves combined) by
+  backfill_learnset.py. This is NOT confirmed against the live Pokemon
+  Champions client -- Champions has already been shown to diverge from
+  mainline itemization (see items-m-b.yaml), so some listed moves may not
+  actually be learnable in Champions. Treat as a candidate pool, not a
+  guarantee.

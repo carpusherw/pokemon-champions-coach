@@ -19,6 +19,110 @@ mega:
     meaningful speed-tier change to track. Confirmed via PokeAPI
     (pokemon/metagross-mega) on 2026-07-18.
 moves: [Meteor Mash, Zen Headbutt, Bullet Punch, Protect]
+learnset:
+  - Aerial Ace
+  - Agility
+  - Ally Switch
+  - Block
+  - Body Press
+  - Body Slam
+  - Brick Break
+  - Brutal Swing
+  - Bulldoze
+  - Bullet Punch
+  - Confide
+  - Confusion
+  - Cosmic Power
+  - Cut
+  - Defense Curl
+  - Double Team
+  - Double-Edge
+  - Dynamic Punch
+  - Earthquake
+  - Endure
+  - Expanding Force
+  - Explosion
+  - Facade
+  - Flash
+  - Flash Cannon
+  - Focus Punch
+  - Frustration
+  - Fury Cutter
+  - Future Sight
+  - Giga Impact
+  - Grass Knot
+  - Gravity
+  - Gyro Ball
+  - Hammer Arm
+  - Hard Press
+  - Headbutt
+  - Heavy Slam
+  - Hidden Power
+  - Hone Claws
+  - Hyper Beam
+  - Ice Punch
+  - Icy Wind
+  - Iron Defense
+  - Iron Head
+  - Knock Off
+  - Laser Focus
+  - Light Screen
+  - Magnet Rise
+  - Metal Claw
+  - Meteor Beam
+  - Meteor Mash
+  - Mimic
+  - Miracle Eye
+  - Mud-Slap
+  - Natural Gift
+  - Power-Up Punch
+  - Protect
+  - Psych Up
+  - Psychic
+  - Psychic Fangs
+  - Psychic Noise
+  - Psycho Cut
+  - Psyshock
+  - Pursuit
+  - Rain Dance
+  - Reflect
+  - Rest
+  - Return
+  - Rock Polish
+  - Rock Slide
+  - Rock Smash
+  - Rock Tomb
+  - Rollout
+  - Round
+  - Sandstorm
+  - Scary Face
+  - Secret Power
+  - Self-Destruct
+  - Shadow Ball
+  - Shadow Claw
+  - Signal Beam
+  - Sleep Talk
+  - Sludge Bomb
+  - Snore
+  - Stealth Rock
+  - Steel Beam
+  - Steel Roller
+  - Stomping Tantrum
+  - Stone Edge
+  - Strength
+  - Substitute
+  - Sunny Day
+  - Swagger
+  - Swift
+  - Tackle
+  - Take Down
+  - Telekinesis
+  - Tera Blast
+  - Thunder Punch
+  - Toxic
+  - Trailblaze
+  - Trick
+  - Zen Headbutt
 added_in_regulation: M-A (base) / M-B (Mega)
 legal_in_regulations: [M-B]  # earliest confirmed regulation only; may be legal earlier too
 notes: >
@@ -38,3 +142,11 @@ data_confidence: >
   Pokemon Champions client, which has already been shown to diverge from
   mainline in places (see items-m-b.yaml re: Choice items). Re-verify before
   relying on it for a real draft/build decision.
+
+  Full `learnset` (103 moves) fetched from PokeAPI's mainline movepool for
+  pokemon/metagross (level-up + TM/HM + egg + tutor moves combined) by
+  backfill_learnset.py. This is NOT confirmed against the live Pokemon
+  Champions client -- Champions has already been shown to diverge from
+  mainline itemization (see items-m-b.yaml), so some listed moves may not
+  actually be learnable in Champions. Treat as a candidate pool, not a
+  guarantee.
