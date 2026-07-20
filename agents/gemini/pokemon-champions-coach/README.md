@@ -15,7 +15,7 @@ it by hand.
 
 - `gem-instructions.md` -- paste the contents (below the divider) into the
   Gem's Instructions field.
-- `knowledge-bundle/` -- upload these 5 files under the Gem's Knowledge
+- `knowledge-bundle/` -- upload these 6 files under the Gem's Knowledge
   panel. Generated from `references/` (plus the skill-bundled reference
   files noted below) by `scripts/build_knowledge_bundle.py`; don't hand-edit
   them.
@@ -26,7 +26,7 @@ it by hand.
 1. Go to gemini.google.com -> Gem Manager -> New Gem.
 2. Name it (e.g. "Pokemon Champions Coach") and paste `gem-instructions.md`'s
    content (everything after the `---` divider) into Instructions.
-3. Under Knowledge, upload all 5 files from `knowledge-bundle/`.
+3. Under Knowledge, upload all 6 files from `knowledge-bundle/`.
 4. Enable the Google Search grounding toggle if offered -- move-order
    coaching uses it for "what set does this Pokemon usually run" lookups
    when the reference notes don't cover it.
@@ -45,7 +45,7 @@ repo -- both are one-way, human-driven steps:
    that changes `references/`, `speed-mechanics.md`, `archetypes-doubles.md`,
    or `archetypes-singles.md` without also regenerating this bundle, so this
    step can't silently get skipped.
-3. In Gem Manager, remove the 5 old Knowledge files and upload the new
+3. In Gem Manager, remove the 6 old Knowledge files and upload the new
    ones (there's no Gems API to automate this upload).
 4. If `agents/claude/.../move-order-coach/SKILL.md`, `.../team-builder-doubles/SKILL.md`,
    `.../team-builder-singles/SKILL.md`, `.../team-recorder/SKILL.md`, or
@@ -74,8 +74,17 @@ repo -- both are one-way, human-driven steps:
 
 - **10-file Knowledge cap.** The bundle only ships species legal in the
   *current* regulation, not full historical rosters — that's a deliberate
-  cut, not a bug, to leave headroom under the cap (5 of 10 files used as of
-  `team-builder-singles`'s addition).
+  cut, not a bug, to leave headroom under the cap (6 of 10 files used as of
+  `pokemon-learnsets.md`'s addition).
+- **`pokemon-learnsets.md` is PokeAPI's mainline movepool, not
+  Champions-confirmed.** Same caveat as the Claude-side `learnset` field
+  it's generated from (see `references/pokemon/README.md`): some listed
+  moves may not actually be learnable in Pokemon Champions. It's also a
+  much bigger file than the others (~230KB); Gemini's Knowledge retrieval
+  chunks and embeds files rather than loading them whole, so it should only
+  surface when a query is actually about a species' move options, not
+  crowd out every answer — but if retrieval ever looks like it's missing an
+  obvious entry, that's the likely cause, not the data being absent.
 - **No live file reads.** Everything the Gem knows about rules/roster is
   whatever was in the bundle at last upload. It's instructed to flag
   stale-looking data rather than assume it's current.

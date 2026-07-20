@@ -231,6 +231,48 @@ def build_pokemon_dex():
     return "\n".join(lines).rstrip() + "\n"
 
 
+def build_pokemon_learnsets():
+    season = load_yaml(os.path.join(REFERENCES_DIR, "current-season.yaml"))
+    current_regulation = season["current_regulation"]
+
+    entries = []
+    for filename in sorted(os.listdir(POKEMON_DIR)):
+        if not filename.endswith(".yaml"):
+            continue
+        data = load_yaml(os.path.join(POKEMON_DIR, filename))
+        legal_in = data.get("legal_in_regulations") or []
+        if current_regulation not in legal_in:
+            continue
+        entries.append(data)
+
+    lines = [BUNDLE_HEADER.rstrip(), ""]
+    lines.append("# Pokemon learnsets")
+    lines.append("")
+    lines.append(
+        f"{len(entries)} species legal in the current regulation ({current_regulation}). "
+        "One entry per species: its full learnable movepool (level-up + TM/HM + "
+        "egg + tutor moves combined), fetched from PokeAPI's mainline data -- "
+        "NOT confirmed against the live Pokemon Champions client, and NOT the "
+        "same thing as pokemon-dex.md's curated \"common moves\" list (a "
+        "handful of moves the species actually runs). Use this file for \"could "
+        "X learn move Y\" or \"what are X's options\" questions; use "
+        "pokemon-dex.md for \"what does X actually run.\" A species with no "
+        "learnset entry here hasn't been backfilled yet -- say so rather than "
+        "guessing its movepool from general knowledge."
+    )
+    lines.append("")
+
+    for data in entries:
+        learnset = data.get("learnset")
+        if not learnset:
+            continue
+        lines.append(f"## {data['name']} (#{data.get('national_dex_number')})")
+        lines.append(", ".join(learnset))
+        lines.append("")
+
+    return "\n".join(lines).rstrip() + "\n"
+
+
 def build_speed_mechanics():
     with open(SPEED_MECHANICS_SOURCE) as f:
         body = f.read()
@@ -255,6 +297,7 @@ def write_bundle(output_dir):
         "season-and-rules.md": build_season_and_rules(),
         "speed-mechanics.md": build_speed_mechanics(),
         "pokemon-dex.md": build_pokemon_dex(),
+        "pokemon-learnsets.md": build_pokemon_learnsets(),
         "archetypes-doubles.md": build_archetypes_doubles(),
         "archetypes-singles.md": build_archetypes_singles(),
     }
